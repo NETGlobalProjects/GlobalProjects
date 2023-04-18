@@ -1,0 +1,11 @@
+C:\01 DEBUG\FELCOM\FELCOM.exe.config
+C:\01 DEBUG\FELCOM\FELCOM.exe
+C:\01 DEBUG\FELCOM\FELCOM.pdb
+C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.csproj.AssemblyReference.cache
+C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.csproj.SuggestedBindingRedirects.cache
+C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.Properties.Resources.resources
+C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.csproj.GenerateResource.cache
+C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.csproj.CoreCompileInputs.cache
+C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.exe
+C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.pdb
+C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.Form1.resources
