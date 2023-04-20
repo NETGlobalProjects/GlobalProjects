@@ -75,6 +75,6 @@ namespace FELCOM.Vista
         private System.Windows.Forms.MenuStrip menuStrip1;
         private ToolStripMenuItem ajustesToolStripMenuItem;
 
-       
+        public ToolStripMenuItem AjustesToolStripMenuItem { get => ajustesToolStripMenuItem; set => ajustesToolStripMenuItem = value; }
     }
 }

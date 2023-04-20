@@ -18,13 +18,21 @@ namespace FELCOM.Controlador
         {
             this.vista = v;
             this.vista.Load += frmPantallaPrincipal_Load;
+            this.vista.AjustesToolStripMenuItem.Click += ajustesMenuStrip_Click;
         }
         private void frmPantallaPrincipal_Load(object sender, EventArgs e)
         {
             
            
         }
-
+        private void ajustesMenuStrip_Click(object sender, EventArgs e)
+        {
+            frmConfiguraciones config = new frmConfiguraciones();
+            ctrlFrmConfiguraciones ctrl = new ctrlFrmConfiguraciones(config);
+            config.WindowState = FormWindowState.Normal;
+            config.StartPosition = FormStartPosition.CenterScreen;
+            config.ShowDialog();
+        }
             
     }
 }

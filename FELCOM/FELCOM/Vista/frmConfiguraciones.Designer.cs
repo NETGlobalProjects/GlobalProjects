@@ -58,16 +58,17 @@ namespace FELCOM.Vista
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.puertoSMTPtextBox5 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.servidorSMTPtextBox4 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.contraseñaCorreotextBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.correotextBox2 = new System.Windows.Forms.TextBox();
             this.usuarioCorreotextBox3 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.servidorSMTPtextBox4 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.puertoSMTPtextBox5 = new System.Windows.Forms.TextBox();
+            this.explorarfolderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             ((System.ComponentModel.ISupportInitialize)(this.tiemponumericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -204,7 +205,7 @@ namespace FELCOM.Vista
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(49, 136);
+            this.label5.Location = new System.Drawing.Point(49, 131);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 14);
             this.label5.TabIndex = 14;
@@ -229,7 +230,6 @@ namespace FELCOM.Vista
             // 
             // urlWStextBox5
             // 
-            this.urlWStextBox5.Enabled = false;
             this.urlWStextBox5.Location = new System.Drawing.Point(180, 28);
             this.urlWStextBox5.Name = "urlWStextBox5";
             this.urlWStextBox5.Size = new System.Drawing.Size(295, 20);
@@ -246,7 +246,6 @@ namespace FELCOM.Vista
             // 
             // usuarioWStextBox6
             // 
-            this.usuarioWStextBox6.Enabled = false;
             this.usuarioWStextBox6.Location = new System.Drawing.Point(180, 55);
             this.usuarioWStextBox6.Name = "usuarioWStextBox6";
             this.usuarioWStextBox6.Size = new System.Drawing.Size(155, 20);
@@ -278,7 +277,6 @@ namespace FELCOM.Vista
             // 
             // contraseñaWStextBox7
             // 
-            this.contraseñaWStextBox7.Enabled = false;
             this.contraseñaWStextBox7.Location = new System.Drawing.Point(180, 81);
             this.contraseñaWStextBox7.Name = "contraseñaWStextBox7";
             this.contraseñaWStextBox7.Size = new System.Drawing.Size(155, 20);
@@ -336,9 +334,40 @@ namespace FELCOM.Vista
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Notificaciones";
             // 
+            // puertoSMTPtextBox5
+            // 
+            this.puertoSMTPtextBox5.Location = new System.Drawing.Point(180, 133);
+            this.puertoSMTPtextBox5.Name = "puertoSMTPtextBox5";
+            this.puertoSMTPtextBox5.Size = new System.Drawing.Size(155, 20);
+            this.puertoSMTPtextBox5.TabIndex = 26;
+            // 
+            // label14
+            // 
+            this.label14.Location = new System.Drawing.Point(48, 139);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(126, 14);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Puerto";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // servidorSMTPtextBox4
+            // 
+            this.servidorSMTPtextBox4.Location = new System.Drawing.Point(180, 107);
+            this.servidorSMTPtextBox4.Name = "servidorSMTPtextBox4";
+            this.servidorSMTPtextBox4.Size = new System.Drawing.Size(155, 20);
+            this.servidorSMTPtextBox4.TabIndex = 24;
+            // 
+            // label13
+            // 
+            this.label13.Location = new System.Drawing.Point(49, 113);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(126, 14);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Servidor SMTP";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // contraseñaCorreotextBox1
             // 
-            this.contraseñaCorreotextBox1.Enabled = false;
             this.contraseñaCorreotextBox1.Location = new System.Drawing.Point(180, 81);
             this.contraseñaCorreotextBox1.Name = "contraseñaCorreotextBox1";
             this.contraseñaCorreotextBox1.Size = new System.Drawing.Size(155, 20);
@@ -355,7 +384,6 @@ namespace FELCOM.Vista
             // 
             // correotextBox2
             // 
-            this.correotextBox2.Enabled = false;
             this.correotextBox2.Location = new System.Drawing.Point(180, 28);
             this.correotextBox2.Name = "correotextBox2";
             this.correotextBox2.Size = new System.Drawing.Size(295, 20);
@@ -363,7 +391,6 @@ namespace FELCOM.Vista
             // 
             // usuarioCorreotextBox3
             // 
-            this.usuarioCorreotextBox3.Enabled = false;
             this.usuarioCorreotextBox3.Location = new System.Drawing.Point(180, 55);
             this.usuarioCorreotextBox3.Name = "usuarioCorreotextBox3";
             this.usuarioCorreotextBox3.Size = new System.Drawing.Size(155, 20);
@@ -386,40 +413,6 @@ namespace FELCOM.Vista
             this.label12.TabIndex = 19;
             this.label12.Text = "Usuario";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label13
-            // 
-            this.label13.Location = new System.Drawing.Point(49, 113);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(126, 14);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Servidor SMTP";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // servidorSMTPtextBox4
-            // 
-            this.servidorSMTPtextBox4.Enabled = false;
-            this.servidorSMTPtextBox4.Location = new System.Drawing.Point(180, 107);
-            this.servidorSMTPtextBox4.Name = "servidorSMTPtextBox4";
-            this.servidorSMTPtextBox4.Size = new System.Drawing.Size(155, 20);
-            this.servidorSMTPtextBox4.TabIndex = 24;
-            // 
-            // label14
-            // 
-            this.label14.Location = new System.Drawing.Point(48, 139);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(126, 14);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "Puerto";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // puertoSMTPtextBox5
-            // 
-            this.puertoSMTPtextBox5.Enabled = false;
-            this.puertoSMTPtextBox5.Location = new System.Drawing.Point(180, 133);
-            this.puertoSMTPtextBox5.Name = "puertoSMTPtextBox5";
-            this.puertoSMTPtextBox5.Size = new System.Drawing.Size(155, 20);
-            this.puertoSMTPtextBox5.TabIndex = 26;
             // 
             // frmConfiguraciones
             // 
@@ -485,6 +478,7 @@ namespace FELCOM.Vista
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox servidorSMTPtextBox4;
         private System.Windows.Forms.Label label13;
+        private FolderBrowserDialog explorarfolderBrowserDialog1;
 
         public Button Cancelarbutton1 { get => cancelarbutton1; set => cancelarbutton1 = value; }
         public Button Aceptarbutton21 { get => Aceptarbutton2; set => Aceptarbutton2 = value; }
@@ -506,5 +500,6 @@ namespace FELCOM.Vista
         public TextBox UsuarioCorreotextBox3 { get => usuarioCorreotextBox3; set => usuarioCorreotextBox3 = value; }
         public TextBox PuertoSMTPtextBox5 { get => puertoSMTPtextBox5; set => puertoSMTPtextBox5 = value; }
         public TextBox ServidorSMTPtextBox4 { get => servidorSMTPtextBox4; set => servidorSMTPtextBox4 = value; }
+        public FolderBrowserDialog ExplorarfolderBrowserDialog1 { get => explorarfolderBrowserDialog1; set => explorarfolderBrowserDialog1 = value; }
     }
 }
