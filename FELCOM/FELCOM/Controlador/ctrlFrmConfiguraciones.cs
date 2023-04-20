@@ -30,8 +30,8 @@ namespace FELCOM.Controlador
             this.vista.ErrorestextBox4.Text = Properties.Settings.Default.CarpetaErrores;
             this.vista.TiemponumericUpDown1.Value =  Properties.Settings.Default.TiempoSegundosEscaneo;
             this.vista.UrlWStextBox5.Text = Properties.Settings.Default.URLWS;
-            this.vista.UsuarioWStextBox6.Text = Properties.Settings.Default.URLWS;
-            this.vista.ContraseñaWStextBox7.Text = Properties.Settings.Default.UsuarioWS;
+            this.vista.UsuarioWStextBox6.Text = Properties.Settings.Default.UsuarioWS;
+            this.vista.ContraseñaWStextBox7.Text = Properties.Settings.Default.PassWS;
             this.vista.CorreotextBox2.Text = Properties.Settings.Default.CuentaCorreo;
             this.vista.UsuarioCorreotextBox3.Text = Properties.Settings.Default.UsuarioCorreo;
             this.vista.ContraseñaCorreotextBox1 .Text = Properties.Settings.Default.PassCorreo;
@@ -101,6 +101,7 @@ namespace FELCOM.Controlador
                 Properties.Settings.Default.PassWS = this.vista.ContraseñaWStextBox7.Text;
                 Properties.Settings.Default.CuentaCorreo = this.vista.CorreotextBox2.Text;
                 Properties.Settings.Default.UsuarioCorreo = this.vista.UsuarioCorreotextBox3.Text;
+                Properties.Settings.Default.PassCorreo = this.vista.ContraseñaCorreotextBox1.Text;
                 Properties.Settings.Default.ServidorSMTP = this.vista.ServidorSMTPtextBox4.Text;
                 Properties.Settings.Default.PuertoSMTP = this.vista.PuertoSMTPtextBox5.Text;
                 Properties.Settings.Default.Save();
