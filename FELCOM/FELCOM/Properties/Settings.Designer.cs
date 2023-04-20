@@ -94,5 +94,89 @@ namespace FELCOM.Properties {
                 this["URLWS"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string UsuarioWS {
+            get {
+                return ((string)(this["UsuarioWS"]));
+            }
+            set {
+                this["UsuarioWS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PassWS {
+            get {
+                return ((string)(this["PassWS"]));
+            }
+            set {
+                this["PassWS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CuentaCorreo {
+            get {
+                return ((string)(this["CuentaCorreo"]));
+            }
+            set {
+                this["CuentaCorreo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string UsuarioCorreo {
+            get {
+                return ((string)(this["UsuarioCorreo"]));
+            }
+            set {
+                this["UsuarioCorreo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PassCorreo {
+            get {
+                return ((string)(this["PassCorreo"]));
+            }
+            set {
+                this["PassCorreo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ServidorSMTP {
+            get {
+                return ((string)(this["ServidorSMTP"]));
+            }
+            set {
+                this["ServidorSMTP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PuertoSMTP {
+            get {
+                return ((string)(this["PuertoSMTP"]));
+            }
+            set {
+                this["PuertoSMTP"] = value;
+            }
+        }
     }
 }
