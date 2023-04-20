@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FELCOM.Controlador;
 using FELCOM.Vista;
 namespace FELCOM
 {
@@ -16,7 +17,9 @@ namespace FELCOM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            frmPantallaPrincipal pr = new frmPantallaPrincipal();
+            ctrlFrmPantallaPrincipal ctr = new  ctrlFrmPantallaPrincipal(pr);
+            Application.Run(pr);
         }
     }
 }
