@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FELCOM.Vista;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace FELCOM
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmPantallaPrincipal pr = new frmPantallaPrincipal();
+            pr.Show();
         }
     }
 }
