@@ -21,8 +21,8 @@ namespace FELCOM.Controlador
         }
         private void frmPantallaPrincipal_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola");
-            this.vista.NombreLbl.Text = "Hola Mundo";
+            
+           
         }
 
             
