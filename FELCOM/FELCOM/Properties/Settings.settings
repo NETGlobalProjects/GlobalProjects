@@ -1,7 +1,24 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FELCOM.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CarpetaRaiz" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\FELCOM\</Value>
+    </Setting>
+    <Setting Name="CarpetaProcesados" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\FELCOM\Procesados\</Value>
+    </Setting>
+    <Setting Name="CarpetaErrores" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\FELCOM\Errores\</Value>
+    </Setting>
+    <Setting Name="CarpetaRespuestas" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\FELCOM\Respuesta\</Value>
+    </Setting>
+    <Setting Name="TiempoSegundosEscaneo" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="URLWS" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
 </SettingsFile>

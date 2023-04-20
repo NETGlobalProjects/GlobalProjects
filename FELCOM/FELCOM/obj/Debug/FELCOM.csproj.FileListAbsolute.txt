@@ -9,3 +9,4 @@ C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.csproj.CoreCom
 C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.exe
 C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.pdb
 C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.Form1.resources
+C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.Vista.frmPantallaPrincipal.resources
