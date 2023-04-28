@@ -178,5 +178,56 @@ namespace FELCOM.Properties {
                 this["PuertoSMTP"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int PeticionesParalelas {
+            get {
+                return ((int)(this["PeticionesParalelas"]));
+            }
+            set {
+                this["PeticionesParalelas"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://pruebassalvador.ekomercio.com/WSFEBuilderSV_GLOBALIMENTOS/WSFEBuilderSV.as" +
+            "mx")]
+        public string FELCOM_ekomercio_WSFEBuilder {
+            get {
+                return ((string)(this["FELCOM_ekomercio_WSFEBuilder"]));
+            }
+            set
+            {
+                this["FELCOM_ekomercio_WSFEBuilder"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\FELCOM\\Procesando\\")]
+        public string CarpetaProcesando {
+            get {
+                return ((string)(this["CarpetaProcesando"]));
+            }
+            set {
+                this["CarpetaProcesando"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool EscanerSwitch {
+            get {
+                return ((bool)(this["EscanerSwitch"]));
+            }
+            set {
+                this["EscanerSwitch"] = value;
+            }
+        }
     }
 }

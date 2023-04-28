@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FELCOM.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,21 @@ using System.Windows.Forms;
 
 namespace FELCOM.Vista
 {
-    public partial class frmPantallaPrincipal : Form
+    public partial class frmPantallaPrincipal : DevComponents.DotNetBar.Office2007Form
     {
-        public frmPantallaPrincipal()
+        public frmPantallaPrincipal(ProgressBar progressBar1 = null)
         {
             InitializeComponent();
+            ctrlFrmPantallaPrincipal crl = new ctrlFrmPantallaPrincipal(this);
+           
         }
+
+        private void ajustesbuttonX1_Click(object sender, EventArgs e)
+        {
+            frmConfiguraciones cf = new frmConfiguraciones();
+            cf.Show();
+        }
+
+        
     }
 }
