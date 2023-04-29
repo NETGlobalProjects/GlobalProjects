@@ -58,6 +58,7 @@ namespace FELCOM.Vista
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.styleManagerAmbient1 = new DevComponents.DotNetBar.StyleManagerAmbient(this.components);
             this.ajustesbuttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.listaProcesosdataGridViewX1)).BeginInit();
             this.panelEx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
@@ -175,6 +176,7 @@ namespace FELCOM.Vista
             // 
             // superTabControl1
             // 
+            this.superTabControl1.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
@@ -193,6 +195,7 @@ namespace FELCOM.Vista
             this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControl1.ForeColor = System.Drawing.Color.Black;
             this.superTabControl1.Location = new System.Drawing.Point(0, 0);
             this.superTabControl1.Name = "superTabControl1";
             this.superTabControl1.ReorderTabsEnabled = true;
@@ -283,21 +286,31 @@ namespace FELCOM.Vista
             this.ajustesbuttonX1.Text = "Ajustes";
             this.ajustesbuttonX1.Click += new System.EventHandler(this.ajustesbuttonX1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(257, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(10, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "-";
+            // 
             // frmPantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 270);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ajustesbuttonX1);
             this.Controls.Add(this.switchButton1);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPantallaPrincipal";
             this.Text = "FELCOM";
-            
             ((System.ComponentModel.ISupportInitialize)(this.listaProcesosdataGridViewX1)).EndInit();
             this.panelEx1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
@@ -330,8 +343,8 @@ namespace FELCOM.Vista
         private StyleManager styleManager1;
         private StyleManagerAmbient styleManagerAmbient1;
         private ButtonX ajustesbuttonX1;
+        private Label label1;
 
-        
         public DataGridViewX ListaProcesosdataGridViewX1 { get => listaProcesosdataGridViewX1; set => listaProcesosdataGridViewX1 = value; }
         public PanelEx PanelEx1 { get => panelEx1; set => panelEx1 = value; }
         public SuperTabControl SuperTabControl1 { get => superTabControl1; set => superTabControl1 = value; }
@@ -348,5 +361,6 @@ namespace FELCOM.Vista
         public Timer TimerScanner { get => timerScanner; set => timerScanner = value; }
         public SwitchButton SwitchButton1 { get => switchButton1; set => switchButton1 = value; }
         public ButtonX AjustesbuttonX1 { get => ajustesbuttonX1; set => ajustesbuttonX1 = value; }
+        public Label Label1 { get => label1; set => label1 = value; }
     }
 }

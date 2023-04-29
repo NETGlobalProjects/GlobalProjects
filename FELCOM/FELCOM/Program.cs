@@ -18,7 +18,7 @@ namespace FELCOM
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             frmPantallaPrincipal pr = new frmPantallaPrincipal();
-            ctrlFrmPantallaPrincipal ctr = new  ctrlFrmPantallaPrincipal(pr);
+           
             Application.Run(pr);
         }
     }

@@ -13,13 +13,12 @@ namespace FELCOM.Vista
 {
     public partial class frmPantallaPrincipal : DevComponents.DotNetBar.Office2007Form
     {
-        public frmPantallaPrincipal(ProgressBar progressBar1 = null)
+        public frmPantallaPrincipal()
         {
             InitializeComponent();
-            ctrlFrmPantallaPrincipal crl = new ctrlFrmPantallaPrincipal(this);
-           
-        }
+            ctrlFrmPantallaPrincipal ctrl = new ctrlFrmPantallaPrincipal(this);
 
+        }
         private void ajustesbuttonX1_Click(object sender, EventArgs e)
         {
             frmConfiguraciones cf = new frmConfiguraciones();

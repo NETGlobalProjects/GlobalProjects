@@ -21,10 +21,11 @@ namespace FELCOM.Controlador
     public class ctrlFrmPantallaPrincipal
     {
         private frmPantallaPrincipal vista;
-        static int segundos;
+         int segundos;
         List<ProcesandoModel> procesando = new List<ProcesandoModel>();
         string archivo;
         string directorioProcesando;
+        string hilo;
         private TaskScheduler _scheduler;
 
         public ctrlFrmPantallaPrincipal(frmPantallaPrincipal v)
@@ -88,6 +89,7 @@ namespace FELCOM.Controlador
             revisarCarpetas();
             _scheduler = TaskScheduler.FromCurrentSynchronizationContext();
             directorioProcesando = DateTime.Now.ToString("ddMMyyyyHHmmss");
+            hilo = directorioProcesando;
             if(!Directory.Exists(Properties.Settings.Default.CarpetaProcesando + directorioProcesando))
             {
                 Directory.CreateDirectory(Properties.Settings.Default.CarpetaProcesando + directorioProcesando);
@@ -102,12 +104,12 @@ namespace FELCOM.Controlador
                 DirectoryInfo d = new DirectoryInfo(Properties.Settings.Default.CarpetaRaiz);
                 int contador = 1;
                 int PeticionesParalelas = Properties.Settings.Default.PeticionesParalelas;
+
                 Stopwatch stopWatch = new Stopwatch();
 
                 stopWatch.Start();
-               
-               
-                
+
+                //List<Task> TaskList = new List<Task>();
                 foreach (var file in d.GetFiles("*.txt"))
                 {
                     if(contador <= PeticionesParalelas)
@@ -117,6 +119,10 @@ namespace FELCOM.Controlador
                         string[] nombreArchivo = file.Name.Split('-');
                         procesando.Add(new ProcesandoModel { Archivo = file.Name, Estado = "Procesando...", TipoDocumento = nombreArchivo[1] });
                         //ejecutar(file.Name);
+                        //var LastTask = Task.Factory.StartNew(() => procesarArchivo(file.Name), CancellationToken.None, TaskCreationOptions.None, _scheduler);
+                        //LastTask.Start();
+                        //TaskList.Add(LastTask);
+
                         procesarArchivo(file.Name);
                     }
                     else
@@ -126,12 +132,14 @@ namespace FELCOM.Controlador
                     contador++;
                 }
                 stopWatch.Stop();
+
+                //Task.WaitAll(TaskList.ToArray());
             }
             catch (Exception ex)
             {
-                if(!ex.Message.Contains("No se pudo encontrar el archivo"))
+                if(!ex.Message.Contains("No se pudo encontrar el archivo") && !ex.Message.Contains("Start no se puede invocar en una tarea que ya se ha iniciado"))
                 {
-                    escribirTxt(Properties.Settings.Default.CarpetaErrores + "Log.txt", "Fecha:" + DateTime.Now.ToString() + " | Errror: " + ex.Message, false);
+                    escribirTxt(Properties.Settings.Default.CarpetaErrores + "Log_" + hilo + ".txt", "Fecha:" + DateTime.Now.ToString() + " | Errror: " + ex.Message, false);
                 }
             }
         }
@@ -230,7 +238,7 @@ namespace FELCOM.Controlador
 
                 if (respuesta.Contains("ErrorCode"))
                 {
-                    escribirTxt(Properties.Settings.Default.CarpetaErrores + "Log.txt", "Fecha: " + DateTime.Now.ToString() + " | Archivo: " + archivo + " | Respuesta: " + respuesta);
+                    escribirTxt(Properties.Settings.Default.CarpetaErrores + "Log_" + hilo + ".txt", "Fecha: " + DateTime.Now.ToString() + " | Archivo: " + archivo + " | Respuesta: " + respuesta);
                     File.Move( directorioProcesando +  archivo, Properties.Settings.Default.CarpetaErrores);
 
                     Thread.Sleep(5);
@@ -239,10 +247,9 @@ namespace FELCOM.Controlador
                 }
                 else
                 {
-                    string pathRespuestaTxt = Properties.Settings.Default.CarpetaRespuestas + "_" + archivo + ".txt";
+                    string pathRespuestaTxt = Properties.Settings.Default.CarpetaRespuestas + "_" + DateTime.Now.ToString("ddMMyyyyHHmmss") + "_" + archivo  ;
                     escribirTxt(pathRespuestaTxt, respuesta);
                   
-
                     Thread.Sleep(5);
                     actualizarProgresos(40, _archivo, "Obteniendo respuesta...");
                     actualizarListado();
@@ -312,35 +319,44 @@ namespace FELCOM.Controlador
                             }
                         }
                     }
-                    Thread.Sleep(5);
-                    actualizarProgresos(85, _archivo, "Obtiendo respuesta PDF...");
-                    actualizarListado();
-
-                    using (FileStream stream = File.Create("c:\\FE_PDF\\" + respuestaProcesarTextoPlano.ReturnUUID + ".pdf"))
+                    if (respPDFStr.Contains("ErrorCode"))
                     {
-                        Byte[] byteArray = Convert.FromBase64String(respGetPDF.ReturnBase64);
-                        stream.Write(byteArray, 0, byteArray.Length);
+                        escribirTxt(Properties.Settings.Default.CarpetaErrores + "Log_" + hilo + ".txt", "Fecha: " + DateTime.Now.ToString() + " | Archivo: " + archivo + " | Respuesta: " + respuesta);
+                        
+                        Thread.Sleep(5);
+                        actualizarProgresos(100, _archivo, "Finalizado (No se pudo crear el PDF)");
+                        actualizarListado();
                     }
+                    else
+                    {
+                        Thread.Sleep(5);
+                        actualizarProgresos(85, _archivo, "Obtiendo respuesta PDF...");
+                        actualizarListado();
 
-                    Thread.Sleep(5);
-                    actualizarProgresos(95, _archivo, "Creando archivo en Carpeta...");
-                    actualizarListado();
+                        using (FileStream stream = File.Create("c:\\FE_PDF\\" + respuestaProcesarTextoPlano.ReturnUUID + ".pdf"))
+                        {
+                            Byte[] byteArray = Convert.FromBase64String(respGetPDF.ReturnBase64);
+                            stream.Write(byteArray, 0, byteArray.Length);
+                        }
 
+                        Thread.Sleep(5);
+                        actualizarProgresos(95, _archivo, "Creando archivo en Carpeta...");
+                        actualizarListado();
+                    }
+                   
                     File.Move(directorioProcesando + _archivo, Properties.Settings.Default.CarpetaProcesados + _archivo);
                     Thread.Sleep(5);
                     actualizarProgresos(100, _archivo, "Finalizado");
                     actualizarListado();
                 }
-
-                
             }
             catch (Exception ex)
             {
                 Thread.Sleep(5);
                 actualizarProgresos(100, _archivo, "Finalizado con errores");
                 actualizarListado();
-                escribirTxt(Properties.Settings.Default.CarpetaErrores + "log.txt", "Fecha: "+ DateTime.Now.ToString() + " | Error: " + ex.Message + " | Archivo: " + archivo);
-                File.Move(directorioProcesando + _archivo, Properties.Settings.Default.CarpetaErrores + _archivo);
+                escribirTxt(Properties.Settings.Default.CarpetaErrores + "log_" + hilo + ".txt", "Fecha: "+ DateTime.Now.ToString() + " | Error: " + ex.Message + " | Archivo: " + archivo);
+                //File.Move(directorioProcesando + _archivo, Properties.Settings.Default.CarpetaErrores + _archivo);
             }
         }
         void actualizarListado()
@@ -384,8 +400,10 @@ namespace FELCOM.Controlador
             if(this.vista.SwitchButton1.Value == true)
             {
                 segundos += 1;
+                this.vista.Label1.Text = directorioProcesando;
                 if (segundos == Properties.Settings.Default.TiempoSegundosEscaneo)
                 {
+                    
                     for (int i = 0; i <= procesando.Count - 1; i++)
                     {
                         if (procesando[i].Estado.Contains("Finalizado"))
@@ -393,6 +411,7 @@ namespace FELCOM.Controlador
                             procesando.RemoveAt(i);
                         }
                     }
+                    
                     explorarRaiz();
                     segundos = 0;
                 }
