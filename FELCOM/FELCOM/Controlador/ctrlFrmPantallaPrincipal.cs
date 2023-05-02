@@ -411,7 +411,6 @@ namespace FELCOM.Controlador
                             procesando.RemoveAt(i);
                         }
                     }
-                    
                     explorarRaiz();
                     segundos = 0;
                 }
