@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.TextFormatting;
 using System.Xml;
+using static FELCOM.Logica.PrincipalLogica;
 
 namespace FELCOM.Controlador
 {
@@ -162,7 +163,7 @@ namespace FELCOM.Controlador
 
                 string rutaArchivo = directorioProcesando + _archivo;
                 string textoPlano = File.ReadAllText(rutaArchivo);
-               
+                string[] x_archivo = _archivo.Split('-');
                
                  Thread.Sleep(5);
                 actualizarProgresos(10, _archivo, "Preparando archivo...");
@@ -171,7 +172,7 @@ namespace FELCOM.Controlador
                 string respuesta;
                 string usuario = Properties.Settings.Default.UsuarioWS;
                 string passw = Properties.Settings.Default.PassWS;
-                string id = "06141210830014";
+                string id = x_archivo[3];
                 ekomercio.WSFEBuilder ws = new ekomercio.WSFEBuilder();
                 respuesta = ws.procesarTextoPlano(ref usuario, ref passw, ref id, ref textoPlano);
 
@@ -231,8 +232,6 @@ namespace FELCOM.Controlador
                         {
                             respuestaProcesarTextoPlano.ReturnDateTime = Convert.ToString(node.InnerText);
                         }
-
-                        
                     }
                 }
 
@@ -247,6 +246,39 @@ namespace FELCOM.Controlador
                 }
                 else
                 {
+                    
+                    if(Properties.Settings.Default.EscribirEnTabla)
+                    {
+                        try
+                        {
+                            FacturaModel factura = new FacturaModel();
+                            factura = PrincipalLogica.Instancia.getFacturaInfo(x_archivo[4].Replace(".txt", ""));
+                            if (factura != null)
+                            {
+                                string codPais = factura.CodPais;
+                                int dealer = factura.Dealer;
+                                string tda = factura.Tda;
+                                string serie = factura.Serie;
+                                string tipoDoc = factura.TipoDoc;
+                                int docNo = factura.DocNo;
+                                string tDocF = x_archivo[1];
+                                string sDocF = respuestaProcesarTextoPlano.ReturnUUID;
+                                string nDocF = respuestaProcesarTextoPlano.ReturnFolio;
+                                string resolucion = respuestaProcesarTextoPlano.ReturnNumValidacion;
+                                string idTrans = factura.IdTrans;
+                                DateTime fechaCreacion = DateTime.Now;
+                                string origen = "FE";
+                                string archivoTxt = _archivo;
+                                PrincipalLogica.Instancia.escribirRespuestaTabla(new FacturaCorrFiscalModel { CodPais = codPais, Dealer = dealer, Tda = tda, Serie = serie, TipoDoc = tipoDoc, DocNo = docNo, TDocF = tDocF, SDocF = sDocF, NDocF = nDocF, Archivo = archivoTxt, FechaCreacion = fechaCreacion, IdTrans = idTrans, Origen = origen, Resolucion = resolucion });
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            escribirTxt(Properties.Settings.Default.CarpetaErrores + "Log_" + hilo + ".txt", "Fecha: " + DateTime.Now.ToString() + " | Error: " + ex.Message);
+                        }
+                    }
+                    
+
                     string pathRespuestaTxt = Properties.Settings.Default.CarpetaRespuestas + "_" + DateTime.Now.ToString("ddMMyyyyHHmmss") + "_" + archivo  ;
                     escribirTxt(pathRespuestaTxt, respuesta);
                   
@@ -333,7 +365,7 @@ namespace FELCOM.Controlador
                         actualizarProgresos(85, _archivo, "Obtiendo respuesta PDF...");
                         actualizarListado();
 
-                        using (FileStream stream = File.Create("c:\\FE_PDF\\" + respuestaProcesarTextoPlano.ReturnUUID + ".pdf"))
+                        using (FileStream stream = File.Create(Properties.Settings.Default.CarpetaPDF + respuestaProcesarTextoPlano.ReturnUUID + ".pdf"))
                         {
                             Byte[] byteArray = Convert.FromBase64String(respGetPDF.ReturnBase64);
                             stream.Write(byteArray, 0, byteArray.Length);
@@ -382,11 +414,8 @@ namespace FELCOM.Controlador
         private void ajustesMenuStrip_Click(object sender, EventArgs e)
         {
             frmConfiguraciones config = new frmConfiguraciones();
-           
-            
             config.Show();
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             this.vista.ListaProcesosdataGridViewX1.DataSource = null;

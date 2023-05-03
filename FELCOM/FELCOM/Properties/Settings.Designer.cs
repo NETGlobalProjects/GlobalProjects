@@ -191,7 +191,7 @@ namespace FELCOM.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
         [global::System.Configuration.DefaultSettingValueAttribute("http://pruebassalvador.ekomercio.com/WSFEBuilderSV_GLOBALIMENTOS/WSFEBuilderSV.as" +
@@ -200,8 +200,7 @@ namespace FELCOM.Properties {
             get {
                 return ((string)(this["FELCOM_ekomercio_WSFEBuilder"]));
             }
-            set
-            {
+            set {
                 this["FELCOM_ekomercio_WSFEBuilder"] = value;
             }
         }
@@ -227,6 +226,54 @@ namespace FELCOM.Properties {
             }
             set {
                 this["EscanerSwitch"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\FELCOM\\ToPrinter\\")]
+        public string CarpetaToPrinter {
+            get {
+                return ((string)(this["CarpetaToPrinter"]));
+            }
+            set {
+                this["CarpetaToPrinter"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\FELCOM\\Impresos\\")]
+        public string CarpetaImpresos {
+            get {
+                return ((string)(this["CarpetaImpresos"]));
+            }
+            set {
+                this["CarpetaImpresos"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\FE_PDF\\")]
+        public string CarpetaPDF {
+            get {
+                return ((string)(this["CarpetaPDF"]));
+            }
+            set {
+                this["CarpetaPDF"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool EscribirEnTabla {
+            get {
+                return ((bool)(this["EscribirEnTabla"]));
+            }
+            set {
+                this["EscribirEnTabla"] = value;
             }
         }
     }

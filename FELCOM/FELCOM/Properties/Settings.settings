@@ -44,7 +44,7 @@
     <Setting Name="PeticionesParalelas" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="FELCOM_ekomercio_WSFEBuilder" Type="(Web Service URL)" Scope="Application">
+    <Setting Name="FELCOM_ekomercio_WSFEBuilder" Type="(Web Service URL)" Scope="User">
       <Value Profile="(Default)">http://pruebassalvador.ekomercio.com/WSFEBuilderSV_GLOBALIMENTOS/WSFEBuilderSV.asmx</Value>
     </Setting>
     <Setting Name="CarpetaProcesando" Type="System.String" Scope="User">
@@ -52,6 +52,18 @@
     </Setting>
     <Setting Name="EscanerSwitch" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CarpetaToPrinter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\FELCOM\ToPrinter\</Value>
+    </Setting>
+    <Setting Name="CarpetaImpresos" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\FELCOM\Impresos\</Value>
+    </Setting>
+    <Setting Name="CarpetaPDF" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\FE_PDF\</Value>
+    </Setting>
+    <Setting Name="EscribirEnTabla" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

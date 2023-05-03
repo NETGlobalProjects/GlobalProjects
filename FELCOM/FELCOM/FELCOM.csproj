@@ -57,6 +57,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConexionDB.cs" />
     <Compile Include="Controlador\ctrlFrmConfiguraciones.cs" />
     <Compile Include="Controlador\ctrlFrmPantallaPrincipal.cs" />
     <Compile Include="Form1.cs">

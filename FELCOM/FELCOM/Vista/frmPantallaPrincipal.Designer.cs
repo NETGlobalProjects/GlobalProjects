@@ -116,7 +116,7 @@ namespace FELCOM.Vista
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.listaProcesosdataGridViewX1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.listaProcesosdataGridViewX1.Size = new System.Drawing.Size(935, 213);
+            this.listaProcesosdataGridViewX1.Size = new System.Drawing.Size(935, 388);
             this.listaProcesosdataGridViewX1.TabIndex = 0;
             // 
             // Archivo
@@ -165,7 +165,7 @@ namespace FELCOM.Vista
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Location = new System.Drawing.Point(0, 24);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(935, 246);
+            this.panelEx1.Size = new System.Drawing.Size(935, 421);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -201,7 +201,7 @@ namespace FELCOM.Vista
             this.superTabControl1.ReorderTabsEnabled = true;
             this.superTabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.superTabControl1.SelectedTabIndex = 0;
-            this.superTabControl1.Size = new System.Drawing.Size(935, 246);
+            this.superTabControl1.Size = new System.Drawing.Size(935, 421);
             this.superTabControl1.TabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.superTabControl1.TabIndex = 1;
             this.superTabControl1.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -216,7 +216,7 @@ namespace FELCOM.Vista
             this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel1.Location = new System.Drawing.Point(0, 33);
             this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(935, 213);
+            this.superTabControlPanel1.Size = new System.Drawing.Size(935, 388);
             this.superTabControlPanel1.TabIndex = 1;
             this.superTabControlPanel1.TabItem = this.superTabItem1;
             // 
@@ -299,7 +299,7 @@ namespace FELCOM.Vista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 270);
+            this.ClientSize = new System.Drawing.Size(935, 445);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ajustesbuttonX1);
             this.Controls.Add(this.switchButton1);
@@ -307,7 +307,6 @@ namespace FELCOM.Vista
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPantallaPrincipal";
             this.Text = "FELCOM";

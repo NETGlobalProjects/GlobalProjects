@@ -22,6 +22,9 @@ namespace FELCOM.Controlador
             this.vista.ExplorarErroresbutton4.Click += errorestextBox4_Click;
             this.vista.Aceptarbutton21.Click += aceptarButton_Click;
             this.vista.Proceasandobutton1 .Click += procesandoBtn_Click;
+            this.vista.ToPrintertextBox1 .Click += toPrinterBtn_Click;
+            this.vista.PdftextBox3 .Click += pdfBtn_Click;
+            this.vista.ExplorarImpresosbutton2 .Click += impresosBtn_Click;
         }
         private void frmConfiguraciones_Load(object sender, EventArgs e)
         {
@@ -40,6 +43,10 @@ namespace FELCOM.Controlador
             this.vista.PuertoSMTPtextBox5.Text = Properties.Settings.Default.PuertoSMTP;
             this.vista.PeticionesParalelasnumericUpDown1.Value = Properties.Settings.Default.PeticionesParalelas;
             this.vista.ProcesandotextBox1.Text = Properties.Settings.Default.CarpetaProcesando;
+            this.vista.ToPrintertextBox1.Text = Properties.Settings.Default.CarpetaToPrinter;
+            this.vista.ImpresostextBox2.Text = Properties.Settings.Default.CarpetaImpresos;
+            this.vista.PdftextBox3.Text = Properties.Settings.Default.CarpetaPDF;
+            this.vista.EscribirTablaRespuestacheckBoxX1.Checked = Properties.Settings.Default.EscribirEnTabla;
         }
         private void cancelarButton_Click(object sender, EventArgs e)
         {
@@ -100,6 +107,39 @@ namespace FELCOM.Controlador
                 }
             }
         }
+        private void toPrinterBtn_Click(object sender, EventArgs e)
+        {
+            if (this.vista.ExplorarfolderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+
+                if (this.vista.ExplorarfolderBrowserDialog1.SelectedPath != "")
+                {
+                    this.vista.ToPrintertextBox1.Text = this.vista.ExplorarfolderBrowserDialog1.SelectedPath + "\\";
+                }
+            }
+        }
+        private void pdfBtn_Click(object sender, EventArgs e)
+        {
+            if (this.vista.ExplorarfolderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+
+                if (this.vista.ExplorarfolderBrowserDialog1.SelectedPath != "")
+                {
+                    this.vista.PdftextBox3.Text = this.vista.ExplorarfolderBrowserDialog1.SelectedPath + "\\";
+                }
+            }
+        }
+        private void impresosBtn_Click(object sender, EventArgs e)
+        {
+            if (this.vista.ExplorarfolderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+
+                if (this.vista.ExplorarfolderBrowserDialog1.SelectedPath != "")
+                {
+                    this.vista.ImpresostextBox2.Text = this.vista.ExplorarfolderBrowserDialog1.SelectedPath + "\\";
+                }
+            }
+        }
 
         private void aceptarButton_Click(object sender, EventArgs e)
         {
@@ -120,6 +160,10 @@ namespace FELCOM.Controlador
                 Properties.Settings.Default.PuertoSMTP = this.vista.PuertoSMTPtextBox5.Text;
                 Properties.Settings.Default.PeticionesParalelas = Convert.ToInt32( this.vista.PeticionesParalelasnumericUpDown1.Value);
                 Properties.Settings.Default.CarpetaProcesando = this.vista.ProcesandotextBox1.Text;
+                Properties.Settings.Default.CarpetaPDF = this.vista.PdftextBox3.Text;
+                Properties.Settings.Default.CarpetaImpresos = this.vista.ImpresostextBox2.Text;
+                Properties.Settings.Default.CarpetaToPrinter = this.vista.ToPrintertextBox1.Text;
+                Properties.Settings.Default.EscribirEnTabla = this.vista.EscribirTablaRespuestacheckBoxX1.Checked;
                 Properties.Settings.Default.Save();
                 this.vista.Close();
             }
