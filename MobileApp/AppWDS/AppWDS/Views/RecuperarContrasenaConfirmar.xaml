@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWDS.Views.RecuperarContrasenaConfirmar" Title="Resetear contraseña" BackgroundColor="White">
+
+
+    <StackLayout Padding="10,0">
+        <Grid RowDefinitions="250,50,50,1,50,1,70,*" BackgroundColor="White">
+            <StackLayout Grid.Row="0" HorizontalOptions="Center">
+                <Image Source="resetear_contrasena" BackgroundColor="Transparent" WidthRequest="250"></Image>
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <Label Text="Establezca una nueva contraseña, le sugerimos no compartir su contraseña con nadie." FontSize="14" TextColor="Gray" HorizontalTextAlignment="Center"></Label>
+            </StackLayout>
+            <StackLayout Grid.Row="2" >
+                <Frame Padding="0" Margin="0" CornerRadius="10" HasShadow="False" >
+                    <Entry
+                    Visual="Material"
+                        Grid.Row="2"
+                        Text=""
+                        Placeholder="Nueva contraseña"
+                        PlaceholderColor="Gray" BackgroundColor="White" x:Name="contrasenaTxt" FontSize="15" TextColor="Black" HorizontalTextAlignment="Center" ReturnType="Next" Keyboard="Text" IsPassword="True" />
+                </Frame>
+            </StackLayout>
+            <BoxView Grid.Row="3"  BackgroundColor="Gray" HeightRequest="1" IsVisible="false"></BoxView>
+            <StackLayout Grid.Row="4">
+                <Frame Padding="0" Margin="0" CornerRadius="10" HasShadow="False" >
+                    <Entry
+                    Visual="Material"
+                        Grid.Row="2"
+                        Text=""
+                        Placeholder="Repetir nueva contraseña"
+                        PlaceholderColor="Gray" BackgroundColor="White" x:Name="repContrasenaTxt" FontSize="15" TextColor="Black" HorizontalTextAlignment="Center" ReturnType="Done" Keyboard="Text" IsPassword="True" />
+                </Frame>
+            </StackLayout>
+            <BoxView Grid.Row="5"  BackgroundColor="Gray" HeightRequest="1" IsVisible="false"></BoxView>
+            <StackLayout Grid.Row="6" Padding="0,20,0,0">
+                <Button CornerRadius="10" BackgroundColor="#17468f" TextColor="White" Text="Cambiar" x:Name="btnCambiar"  Clicked="btnCambiar_Clicked" ></Button>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

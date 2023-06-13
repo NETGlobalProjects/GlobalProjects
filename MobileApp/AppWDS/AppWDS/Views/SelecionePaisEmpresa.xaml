@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Controls="clr-namespace:AppWDS.Controls" 
+             x:Class="AppWDS.Views.SelecionePaisEmpresa"
+             NavigationPage.HasBackButton="True"
+             Title="Seleccione" BackgroundColor="White" Visual="Material">
+    <Grid RowDefinitions="150,70,70,70,60" Padding="10" BackgroundColor="White">
+        <StackLayout Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image Source="select_empresa" WidthRequest="200"></Image>
+        </StackLayout>
+
+        <!--Paises-->
+        <StackLayout Grid.Row="1" VerticalOptions="Start">
+            <Controls:BorderlessPicker Visual="Material" x:Name="cbxPaises" Title="País"  CornerRadius="10" BackgroundColor="White" FontSize="15"  BorderColor="White" TextColor="Gray" TitleColor="Gray" ItemDisplayBinding="{Binding pai_nombre} "  SelectedIndexChanged="cbxPaises_SelectedIndexChanged" >
+            </Controls:BorderlessPicker>
+         </StackLayout>
+        
+       <!--Empresas-->
+        <StackLayout Grid.Row="2" VerticalOptions="Start">
+            <Controls:BorderlessPicker Visual="Material" x:Name="cbxEmpresas" Title="Empresa" CornerRadius="10" TextColor="Gray" FontSize="15" BackgroundColor="White" TitleColor="Gray" ItemDisplayBinding="{Binding emp_nombre}" BorderColor="White" SelectedIndexChanged="cbxEmpresas_SelectedIndexChanged"  >
+            </Controls:BorderlessPicker>
+        </StackLayout>
+
+        <!--Plantel-->
+        <StackLayout Grid.Row="3" VerticalOptions="Start">
+            <Controls:BorderlessPicker Visual="Material" x:Name="cbxPlantel" Title="Plantel" CornerRadius="10" TextColor="Gray" FontSize="15" BackgroundColor="White" TitleColor="Gray" ItemDisplayBinding="{Binding pla_descripcion_id} "  BorderColor="White"  >
+            </Controls:BorderlessPicker>
+        </StackLayout>
+
+        
+        <StackLayout Grid.Row="4" Padding="0,0,0,0" VerticalOptions="End">
+            <Button CornerRadius="10" BackgroundColor="#17468f" TextColor="White" Text="Seleccionar" x:Name="btnSeleccionar" Clicked="btnSeleccionar_Clicked"></Button>
+        </StackLayout>
+        
+    </Grid>
+</ContentPage>

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWDS.Views.RevisarOrdenAsig" BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView >
+        <StackLayout Padding="10">
+            <Grid RowDefinitions="Auto,50,*,*">
+                 <StackLayout Grid.Row="0" >
+                    <Frame Padding="10" BorderColor="Gray" CornerRadius="5" HasShadow="True" >
+                        <Grid  RowDefinitions="Auto,1,50,1,25,1,25,1,Auto,1,Auto" ColumnDefinitions="*,*" ColumnSpacing="0" Padding="0" Visual="Material">
+
+                            <!--Descripcion-->
+                            <StackLayout Grid.ColumnSpan="2" Grid.Row="0">
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                                    <Image BackgroundColor="Transparent" Source="ic_notes" WidthRequest="30"></Image>
+                                    <Label Text="" FontSize="20" TextColor="Gray" x:Name="lblDescripcion" HorizontalOptions="Center" FontAttributes="Bold" ></Label>
+                                </StackLayout>
+
+                            </StackLayout>
+                            <BoxView Grid.ColumnSpan="2" Grid.Row="1" BackgroundColor="Gray" ></BoxView>
+
+
+                            <!--Prioridad y Esado-->
+                            <Grid Grid.Row="2" Grid.ColumnSpan="2" RowDefinitions="*,*" ColumnDefinitions="*,1,*" Padding="0,0,0,10">
+                                <!--Prioridad-->
+                                <StackLayout Grid.Column="0" Grid.Row="0" VerticalOptions="CenterAndExpand">
+                                    <Label Text="Prioridad" FontSize="14" TextColor="Gray" FontAttributes="Bold" HeightRequest="40"></Label>
+                                </StackLayout>
+
+                                <StackLayout Grid.Column="0" Grid.Row="1" HeightRequest="24" Padding="20,0,20,0" >
+                                    <Frame x:Name="fPrioridad" CornerRadius="10" Padding="5" VerticalOptions="Center"  >
+                                        <Label Text="" FontSize="12" TextColor="White" x:Name="lblPrioridad"  HorizontalTextAlignment="Center"></Label>
+                                    </Frame>
+                                </StackLayout>
+
+
+                                <BoxView Grid.Column="1" Grid.RowSpan="2"  BackgroundColor="Gray" ></BoxView>
+
+                                <!--Estado-->
+                                <StackLayout Grid.Column="2" Grid.Row="0"  VerticalOptions="CenterAndExpand"  >
+                                    <Label Text="Estado" FontSize="14" TextColor="Gray" FontAttributes="Bold"></Label>
+                                </StackLayout>
+
+                                <StackLayout  Grid.Column="2" Grid.Row="1"  HeightRequest="24" Padding="10,0,10,0" >
+                                    <Frame x:Name="fEstado" CornerRadius="10" Padding="5"  >
+                                        <Label Text="" FontSize="12" TextColor="White" x:Name="lblEstado"  HorizontalOptions="Center"></Label>
+                                    </Frame>
+                                </StackLayout>
+
+                            </Grid>
+
+                            <BoxView Grid.Row="3" Grid.ColumnSpan="2"  BackgroundColor="Gray"  ></BoxView>
+
+                            <!--Area-->
+                            <StackLayout Grid.ColumnSpan="2" Grid.Row="4" Orientation="Horizontal">
+                                <StackLayout >
+                                    <Label Text="Área:" FontSize="14" TextColor="Gray" FontAttributes="Bold" WidthRequest="70"></Label>
+                                </StackLayout>
+                                <StackLayout >
+                                    <Label Text="" FontSize="14" TextColor="Gray" x:Name="lblArea"></Label>
+                                </StackLayout>
+                            </StackLayout>
+
+                            <BoxView Grid.Row="5" Grid.ColumnSpan="2"  BackgroundColor="Gray" ></BoxView>
+
+                            <!--Sub Area-->
+                            <StackLayout Grid.ColumnSpan="2" Grid.Row="6" Orientation="Horizontal">
+                                <StackLayout>
+                                    <Label Text="Sub Área:" FontSize="14" TextColor="Gray" FontAttributes="Bold" WidthRequest="70"></Label>
+                                </StackLayout>
+                                <StackLayout>
+                                    <Label Text="" FontSize="14" TextColor="Gray" x:Name="lblSubArea"></Label>
+                                </StackLayout>
+                            </StackLayout>
+
+                            <BoxView Grid.Row="7" Grid.ColumnSpan="2"  BackgroundColor="Gray" ></BoxView>
+
+                            <!--Maquina-->
+                            <StackLayout Grid.ColumnSpan="2" Grid.Row="8" Orientation="Horizontal">
+                                <StackLayout >
+                                    <Label Text="Máquina:" FontSize="14" TextColor="Gray" FontAttributes="Bold" WidthRequest="70"></Label>
+                                </StackLayout>
+                                <StackLayout >
+                                    <Label Text="" FontSize="14" TextColor="Gray" x:Name="lblMaquina"></Label>
+
+                                </StackLayout>
+                            </StackLayout>
+
+                            <BoxView Grid.Row="9" Grid.ColumnSpan="2"  BackgroundColor="Gray" ></BoxView>
+
+                            <!--Tipo Orden y Avance-->
+                            <Grid Grid.Row="10" Grid.ColumnSpan="2" RowDefinitions="*,*" ColumnDefinitions="*,1,*" >
+                                <!--Tipo Orden-->
+
+                                <StackLayout Grid.Column="0" Grid.Row="0" >
+                                    <Label Text="Tipo Orden" FontSize="14" TextColor="Gray" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                                <StackLayout Grid.Column="0" Grid.Row="1" >
+                                    <Label Text="" FontSize="14" TextColor="Gray" x:Name="lblTipoOrden"></Label>
+                                </StackLayout>
+
+                                <BoxView Grid.Column="1" Grid.RowSpan="2"  BackgroundColor="Gray" ></BoxView>
+                                <!--Avance-->
+
+                                <StackLayout  Grid.Column="2" Grid.Row="0"  >
+                                    <Label Text="Avance" FontSize="14" TextColor="Gray" FontAttributes="Bold" x:Name="lblAvance"></Label>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2" Grid.Row="1">
+                                    <ProgressBar x:Name="pbAvance"></ProgressBar>
+
+                                </StackLayout>
+
+                            </Grid>
+
+                        </Grid>
+
+                    </Frame>
+                </StackLayout>
+                <StackLayout Grid.Row="1"  >
+                <Frame Padding="5" BorderColor="Gray" CornerRadius="5" HasShadow="True">
+                    <Grid ColumnDefinitions="34,1,*,1,50" RowDefinitions="*">
+
+                        <Image Grid.Row="0" Grid.Column="0" Source="ic_list" WidthRequest="25"></Image>
+
+                        <BoxView Grid.Row="0" Grid.Column="1"  BackgroundColor="Gray" WidthRequest="1"></BoxView>
+                                <StackLayout Grid.Row="0" Grid.Column="2" VerticalOptions="Center" >
+                                    <Label Text="No. Partes/Repuestos" TextColor="Gray" x:Name="lblNoRepuestos"></Label>
+                                </StackLayout>
+                    
+                        <BoxView Grid.Row="0" Grid.Column="3"  BackgroundColor="Gray" WidthRequest="1"></BoxView>
+
+                                <Button Grid.Row="0" CornerRadius="10" Grid.Column="4" Text="+" BackgroundColor="#77bf41" FontAttributes="Bold" TextColor="White" x:Name="btnAñadirMateriales" Clicked="btnAñadirMateriales_Clicked"></Button>
+
+                    </Grid>
+                </Frame>
+                </StackLayout>
+                <StackLayout Grid.Row="2"  >
+                        <Frame Padding="10" BorderColor="Gray" CornerRadius="5" HasShadow="True" HeightRequest="120">
+                        <Grid ColumnDefinitions="30,1,*" RowDefinitions="30,1,100">
+                            <Image Grid.Row="0" Grid.Column="0" Source="ic_comment" WidthRequest="25"></Image>
+
+                            <BoxView Grid.Row="0" Grid.Column="1"  BackgroundColor="Gray" WidthRequest="1"></BoxView>
+
+                            <StackLayout Grid.Row="0" Grid.Column="2" VerticalOptions="Center" >
+                                <Label Text="Sección exclusiva para el mecánico" TextColor="Gray" ></Label>
+                            </StackLayout>
+
+                            <BoxView Grid.Row="1" Grid.ColumnSpan="3"  BackgroundColor="Gray" HeightRequest="1"></BoxView>
+
+                            <StackLayout Grid.Row="2" Grid.ColumnSpan="3" VerticalOptions="Start" HeightRequest="100" Padding="0"  >
+                                <Editor Visual="Material" x:Name="txtComentariosMecanico" Text="" BackgroundColor="White" IsTextPredictionEnabled="True" VerticalOptions="FillAndExpand" FontSize="14"  CharacterSpacing="0" HeightRequest="100" Margin="0,-5,0,0" Placeholder="Comentarios" ></Editor>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                    <StackLayout Grid.Row="3">
+                        <Frame Padding="10" BorderColor="Gray" CornerRadius="5" HasShadow="True"  HeightRequest="120">
+                            <Grid ColumnDefinitions="30,1,*" RowDefinitions="30,1,100">
+                                <Image Grid.Row="0" Grid.Column="0" Source="ic_dvr" WidthRequest="25"></Image>
+
+                                <BoxView Grid.Row="0" Grid.Column="1"  BackgroundColor="Gray" WidthRequest="1"></BoxView>
+
+                                <StackLayout Grid.Row="0" Grid.Column="2" VerticalOptions="Center" >
+                                    <Label Text="Acciones" TextColor="Gray" ></Label>
+                                </StackLayout>
+
+                                <BoxView Grid.Row="1" Grid.ColumnSpan="3"  BackgroundColor="Gray" HeightRequest="1"></BoxView>
+
+                                <Grid Grid.Row="2" Grid.ColumnSpan="3"  ColumnDefinitions="*,*,*" RowDefinitions="*,*">
+                                    <StackLayout Grid.Column="0" HorizontalOptions="Center">
+                                        <Button ImageSource="ic_play_circle_filled" Text="" BackgroundColor="White" x:Name="imgBtnIniciar" Clicked="imgBtnIniciar_Clicked" FontSize="12" TextColor="Gray" ></Button>
+                                    </StackLayout>
+                                    <StackLayout Grid.Column="1" HorizontalOptions="Center">
+                                        <Button ImageSource="ic_pause_circle_filled" Text="" BackgroundColor="White" x:Name="imgBtnPausar" Clicked="imgBtnPausar_Clicked" FontSize="12" TextColor="Gray"></Button>
+                                    </StackLayout>
+                                    <StackLayout Grid.Column="2" HorizontalOptions="Center">
+                                        <Button ImageSource="ic_check_circle" Text="" BackgroundColor="White" x:Name="imgBtnFinalizar" Clicked="imgBtnFinalizar_Clicked" FontSize="12" TextColor="Gray"></Button>
+                                    </StackLayout>
+
+
+                                    <StackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center">
+                                        <Label Text="Iniciar" TextColor="Gray" FontSize="12"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
+                                        <Label Text="Pausar" TextColor="Gray" FontSize="12"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Grid.Column="2" HorizontalOptions="Center">
+                                        <Label Text="Finalizar" TextColor="Gray" FontSize="12"></Label>
+                                    </StackLayout>
+                                </Grid>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+        </StackLayout>
+       </ScrollView>
+    </ContentPage.Content>
+   
+</ContentPage>

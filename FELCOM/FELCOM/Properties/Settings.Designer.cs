@@ -276,5 +276,43 @@ namespace FELCOM.Properties {
                 this["EscribirEnTabla"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.148\\NETDATASQL;Initial Catalog=NDTEST;User ID=sa;Password=F" +
+            "resasc0ncrema;MultipleActiveResultSets=True;Connect Timeout=100;Encrypt=False;Ap" +
+            "plication Name=FELCOM;Current Language=spanish")]
+        public string cString {
+            get {
+                return ((string)(this["cString"]));
+            }
+            set {
+                this["cString"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool UTF8 {
+            get {
+                return ((bool)(this["UTF8"]));
+            }
+            set {
+                this["UTF8"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool imprimir {
+            get {
+                return ((bool)(this["imprimir"]));
+            }
+            set {
+                this["imprimir"] = value;
+            }
+        }
     }
 }

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:AppWDS.Controls"
+             x:Class="AppWDS.MainPage"
+             NavigationPage.HasNavigationBar="False" Visual="Material">
+    <ScrollView >
+        
+   
+    <Grid BackgroundColor="White" Padding="0" ColumnSpacing="0" RowSpacing="0" Visual="Material">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Frame Padding="20"  Margin="0" BackgroundColor="white"   HasShadow="False"   Grid.Row="0" Grid.Column="0" VerticalOptions="Start" >
+            <Image x:Name="image"   Source="logo_global.png" Aspect="AspectFit" BackgroundColor="White" WidthRequest="300"></Image>
+        </Frame>
+       
+        <StackLayout Grid.Row="1" HorizontalOptions="Center" Padding="0">
+            <Label  Text="Bienvenido(a) a Global WDS" FontSize="Medium"  TextColor="Gray"/>
+        </StackLayout>
+        <StackLayout Padding="10,0,10,5" Grid.Row="2" HorizontalOptions="Center">
+            <Label  Text="Para entrar al sistema ingrese sus credenciales" FontSize="Micro" TextColor="Gray"/>
+        </StackLayout>
+        <StackLayout Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Start">
+            <Image Source="login_banner" WidthRequest="250"></Image>
+        </StackLayout>
+        <StackLayout Grid.Row="4" Padding="20,20,20,0">
+                <Frame Padding="0" Margin="0" CornerRadius="10" HasShadow="False" >
+                    <Entry
+                    Visual="Material"
+                        Grid.Row="2"
+                        Text=""
+                        Placeholder="Usuario"
+                        PlaceholderColor="Gray" BackgroundColor="White" x:Name="UsuarioTxt" FontSize="15" TextColor="Black" HorizontalTextAlignment="Center" ReturnType="Next"/>
+                </Frame>
+                
+              
+        </StackLayout>
+        <StackLayout Grid.Row="5" Padding="20,20,20,10">
+                <Frame Padding="0" Margin="0" CornerRadius="10" HasShadow="False">
+                    <Entry
+                    Visual="Material"
+                        Grid.Row="2"
+                        Text=""
+                        Placeholder="Contraseña"
+                        PlaceholderColor="Gray" BackgroundColor="White" x:Name="ContraseñaTxt" FontSize="15" TextColor="Black" HorizontalTextAlignment="Center" ReturnType="Done" IsPassword="True"  />
+                </Frame>
+            </StackLayout>
+        <StackLayout Grid.Row="6" Padding="20,25,20,10">
+                <Button CornerRadius="10" BackgroundColor="#17468f" TextColor="White" Text="Ingresar" x:Name="btnIngresar" Clicked="btnIngresar_Clicked"></Button>
+        </StackLayout>
+        <StackLayout Grid.Row="7" Padding="20,10,20,10">
+                <Button CornerRadius="10" BackgroundColor="White" TextColor="#76be43" Text="Olvidé mi contraseña" BorderColor="White" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+            <StackLayout Grid.Row="8" Padding="20,10,20,10" VerticalOptions="Center">
+                <Label Text="Ver. 1.0.0.4" TextColor="Gray"></Label>
+            </StackLayout>
+
+
+    </Grid>
+    </ScrollView>
+</ContentPage>

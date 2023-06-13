@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWDS.Menu"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <Grid BackgroundColor="White" Padding="0" Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <StackLayout Grid.Row="0" BackgroundColor="#17468f" >
+            <Grid BackgroundColor="Transparent" Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="40"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" Grid.RowSpan="2">
+                    <Frame Padding="0" Margin="2" CornerRadius="50" HeightRequest="60" WidthRequest="60" BorderColor="White" >
+                        <ImageButton Source="http://aplicativos.agroalim.com.sv/emp_fts/JDURAN.PNG" WidthRequest="70" x:Name="imgBtnFotoPerfil"  Aspect="AspectFill"></ImageButton>
+                    </Frame>
+                </StackLayout>
+               
+                <StackLayout Grid.Column="1" Grid.Row="0">
+                   
+                   
+                    <Label Text="Bienvenido(a) " TextColor="White" x:Name="lblBienvenido" FontSize="20"></Label>
+                </StackLayout>
+                
+                <StackLayout Grid.Column="2" Grid.Row="0" BackgroundColor="Transparent">
+                    <ImageButton Source="btn_salir.png" BackgroundColor="Transparent" WidthRequest="30" x:Name="imgBtnSalir" Clicked="imgBtnSalir_Clicked"></ImageButton>
+                </StackLayout>
+                <StackLayout Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="1" Padding="0,0,0,0">
+                    <Label Text="Mantenimiento" TextColor="White"  FontSize="16" x:Name="lblEmpresa"></Label>
+                </StackLayout>
+                
+            </Grid>
+        </StackLayout>
+        <StackLayout  Grid.Row="1" Padding="5,2,5,2">
+            <Frame CornerRadius="5" BackgroundColor="#76be43" Padding="2" >
+                <Grid ColumnDefinitions="40,*,*" Padding="5" BackgroundColor="Transparent" HorizontalOptions="Start" >
+                    <StackLayout Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" >
+                        <Image Source="ic_playlist_play" BackgroundColor="Transparent"></Image>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1"  VerticalOptions="Center" >
+                        <Label Text="Total de ordenes en ejecusión" TextColor="White" FontSize="15" ></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center" Padding="0" Spacing="0">
+                        <Frame  CornerRadius="10" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
+                            <Label  Text="0" TextColor="#17468f" FontSize="14" x:Name="lblOrdenesEjecusion"></Label>
+                        </Frame>
+                    </StackLayout>
+
+                </Grid>
+            </Frame>
+        </StackLayout>
+        <StackLayout  Grid.Row="2">
+            <Grid ColumnDefinitions="*"  RowDefinitions="*,*,*,*" Padding="0" x:Name="stlCrearOrden">
+                
+                <!--CREAR ORDEN-->
+                    <StackLayout  Grid.Column="0" Grid.Row="0" Padding="5,0,5,0">
+
+                    <Frame BorderColor="Green" Padding="0" CornerRadius="10" >
+
+                        <Grid ColumnDefinitions="*,*,*" Padding="0" ColumnSpacing="0" RowSpacing="0">
+                            <StackLayout Grid.Column="0">
+                                <ImageButton Source="crear_orden_1" BackgroundColor="Transparent" HeightRequest="100" x:Name="btnCrearOrden" Clicked="btnCrearOrden_Clicked"></ImageButton>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                                <Grid RowDefinitions="10,*">
+                                    <StackLayout Grid.Row="0" VerticalOptions="End">
+                                        <Label  Text="Ahora" TextColor="#17468f" FontSize="14" HorizontalTextAlignment="Center"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Padding="10">
+                                        <Frame BackgroundColor="#17468f"  CornerRadius="10"  >
+                                            <Label  Text="10" TextColor="White" FontSize="14" HorizontalTextAlignment="Center" x:Name="lblCreadasHoy"></Label>
+                                        </Frame>
+                                    </StackLayout>
+                                    
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center">
+                                <Grid RowDefinitions="10,*">
+                                    <StackLayout Grid.Row="0" VerticalOptions="End">
+                                        <Label  Text="Total" TextColor="#17468f" FontSize="14" HorizontalTextAlignment="Center"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Padding="10">
+                                        <Frame BackgroundColor="#17468f"  CornerRadius="10"  >
+                                            <Label  Text="20" TextColor="White" FontSize="14" HorizontalTextAlignment="Center" x:Name="lblCreadasHoyTotal"></Label>
+                                        </Frame>
+                                    </StackLayout>
+
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2">
+
+                            </StackLayout>
+
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+
+
+                
+                <!--MIS ASIGNADAS-->
+                <StackLayout  Grid.Column="0" Grid.Row="1" Padding="5,0,5,0" x:Name="stlMisAsignadas">
+
+                    <Frame BorderColor="Green" Padding="0" CornerRadius="10" >
+
+                        <Grid ColumnDefinitions="*,*,*" Padding="0" ColumnSpacing="0" RowSpacing="0">
+                            <StackLayout Grid.Column="0">
+                                <ImageButton Source="mis_asingadas" BackgroundColor="Transparent" HeightRequest="100" x:Name="btnMisAsignadas"></ImageButton>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                                <Grid RowDefinitions="10,*">
+                                    <StackLayout Grid.Row="0" VerticalOptions="End">
+                                        <Label  Text="Ahora" TextColor="#17468f" FontSize="14" HorizontalTextAlignment="Center"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Padding="10">
+                                        <Frame BackgroundColor="#17468f"  CornerRadius="10"  >
+                                            <Label  Text="10" TextColor="White" FontSize="14" HorizontalTextAlignment="Center" x:Name="lblAsingadasHoy"></Label>
+                                        </Frame>
+                                    </StackLayout>
+
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center">
+                                <Grid RowDefinitions="10,*">
+                                    <StackLayout Grid.Row="0" VerticalOptions="End">
+                                        <Label  Text="Total" TextColor="#17468f" FontSize="14" HorizontalTextAlignment="Center"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Padding="10">
+                                        <Frame BackgroundColor="#17468f"  CornerRadius="10"  >
+                                            <Label  Text="20" TextColor="White" FontSize="14" HorizontalTextAlignment="Center" x:Name="lblAsingadasHoyTotal"></Label>
+                                        </Frame>
+                                    </StackLayout>
+
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2">
+
+                            </StackLayout>
+
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+
+
+                <!--ASIGNAR-->
+                <StackLayout  Grid.Column="0" Grid.Row="2" Padding="5,0,5,0" x:Name="stlAsignar">
+
+                    <Frame BorderColor="Green" Padding="0" CornerRadius="10" >
+
+                        <Grid ColumnDefinitions="*,*,*" Padding="0" ColumnSpacing="0" RowSpacing="0">
+                            <StackLayout Grid.Column="0">
+                                <ImageButton Source="asignar_orden" BackgroundColor="Transparent" HeightRequest="100" x:Name="btnAsignar"></ImageButton>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                                <Grid RowDefinitions="10,*">
+                                    <StackLayout Grid.Row="0" VerticalOptions="End">
+                                        <Label  Text="Ahora" TextColor="#17468f" FontSize="14" HorizontalTextAlignment="Center"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Padding="10">
+                                        <Frame BackgroundColor="#17468f"  CornerRadius="10"  >
+                                            <Label  Text="10" TextColor="White" FontSize="14" HorizontalTextAlignment="Center" x:Name="lblAsingarHoy"></Label>
+                                        </Frame>
+                                    </StackLayout>
+
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center">
+                                <Grid RowDefinitions="10,*">
+                                    <StackLayout Grid.Row="0" VerticalOptions="End">
+                                        <Label  Text="Total" TextColor="#17468f" FontSize="14" HorizontalTextAlignment="Center"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Padding="10">
+                                        <Frame BackgroundColor="#17468f"  CornerRadius="10"  >
+                                            <Label  Text="20" TextColor="White" FontSize="14" HorizontalTextAlignment="Center" x:Name="lblAsingarHoyTotal"></Label>
+                                        </Frame>
+                                    </StackLayout>
+
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2">
+
+                            </StackLayout>
+
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+
+
+
+                <!--HISTORIAL-->
+                <StackLayout  Grid.Column="0" Grid.Row="3" Padding="5,0,5,0" x:Name="stlHistorial">
+
+                    <Frame BorderColor="Green" Padding="0" CornerRadius="10" >
+
+                        <Grid ColumnDefinitions="*,*,*" Padding="0" ColumnSpacing="0" RowSpacing="0">
+                            <StackLayout Grid.Column="0">
+                                <ImageButton Source="historial" BackgroundColor="Transparent" HeightRequest="100" x:Name="btnHistorial"></ImageButton>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                                <Grid RowDefinitions="10,*">
+                                    <StackLayout Grid.Row="0" VerticalOptions="End">
+                                        <Label  Text="Ahora" TextColor="#17468f" FontSize="14" HorizontalTextAlignment="Center"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Padding="10">
+                                        <Frame BackgroundColor="#17468f"  CornerRadius="10"  >
+                                            <Label  Text="10" TextColor="White" FontSize="14" HorizontalTextAlignment="Center" x:Name="lblHistorialHoy"></Label>
+                                        </Frame>
+                                    </StackLayout>
+
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center">
+                                <Grid RowDefinitions="10,*">
+                                    <StackLayout Grid.Row="0" VerticalOptions="End">
+                                        <Label  Text="Total" TextColor="#17468f" FontSize="14" HorizontalTextAlignment="Center"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Padding="10">
+                                        <Frame BackgroundColor="#17468f"  CornerRadius="10"  >
+                                            <Label  Text="20" TextColor="White" FontSize="14" HorizontalTextAlignment="Center" x:Name="lblHistorialHoyTotal"></Label>
+                                        </Frame>
+                                    </StackLayout>
+
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2">
+
+                            </StackLayout>
+
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+
+            </Grid>
+        </StackLayout>
+        
+    </Grid>
+
+</ContentPage>
+    

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWDS.Views.autorizacionPreciosDetalle"
+             Title="Autorización Precios - Productos">
+    <Frame CornerRadius="10">
+        <Grid RowDefinitions="50,*">
+
+            <StackLayout Grid.Row="0">
+                <SearchBar Grid.Row="0" Placeholder="Búscar" PlaceholderColor="Gray" TextColor="Gray" x:Name="scBuscar" SearchButtonPressed="scBuscar_SearchButtonPressed" TextChanged="scBuscar_TextChanged" ></SearchBar>
+            </StackLayout>
+
+            <RefreshView Grid.Row="1" x:Name="rvAutorizacionDet" Refreshing="rvAutorizacionDet_Refreshing">
+                <ScrollView>
+                    <CollectionView  HeightRequest="200" x:Name="cvAutorizacionDet" SelectionMode="Single" SelectionChanged="cvAutorizacionDet_SelectionChanged">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid BackgroundColor="Transparent" ColumnDefinitions="40,*,70,70,30" RowDefinitions="Auto, 1" RowSpacing="10" >
+                                    <VisualStateManager.VisualStateGroups>
+                                        <VisualStateGroup Name="CommonStates">
+                                            <VisualState Name="Normal" />
+                                            <VisualState Name="Selected">
+                                                <VisualState.Setters>
+                                                    <Setter Property="BackgroundColor" Value="#E5E5E5"/>
+                                                </VisualState.Setters>
+                                            </VisualState>
+                                        </VisualStateGroup>
+                                    </VisualStateManager.VisualStateGroups>
+
+                                    <StackLayout Grid.Column="0" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center">
+                                        <Label Text="{Binding Cot_correlativo, StringFormat='{0}'}" x:Name="lblCotCorrelativo" TextColor="Gray" FontSize="15" FontAttributes="Bold"></Label>
+                                    
+                                    </StackLayout>
+
+                                    <StackLayout Grid.Column="1" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start">
+                                        <Label Text="{Binding Inv_id, StringFormat='ID: {0}'}" x:Name="lblUsuId" TextColor="Gray" FontSize="13" FontAttributes="Bold"></Label>
+                                        <Label Text="{Binding Cot_descripcion, StringFormat='Descripción: {0} '}" TextColor="Gray" FontSize="11"></Label>
+                                        <!--<Label Text="{Binding inv_descripcion_larga}" TextColor="Gray" FontSize="12"></Label>-->
+                                    </StackLayout>
+
+                                    <StackLayout Grid.Column="2" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start">
+                                        <StackLayout>
+                                            <Label Text="Cantidad: " TextColor="Gray" FontSize="10" FontAttributes="Bold"></Label>
+                                            <Label Text="{Binding Cot_cantidad}" TextColor="Gray" FontSize="11"></Label>
+                                        </StackLayout>
+
+                                        <StackLayout>
+                                            <Label Text="P. Sugerido: " TextColor="Gray" FontSize="10" FontAttributes="Bold"></Label>
+                                            <Label Text="{Binding Cot_precio_sugerido, StringFormat='$ {0:0.000000}'}" TextColor="Gray" FontSize="11" ></Label>
+                                        </StackLayout>
+                                        
+                                    </StackLayout>
+                                    <StackLayout Grid.Column="3" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start">
+                                        
+                                        <StackLayout>
+                                            <Label Text="P. Solicitado: " TextColor="Gray" FontSize="10" FontAttributes="Bold"></Label>
+                                            <Label Text="{Binding Cot_preciosiva, StringFormat='$ {0:0.000000}'}" TextColor="Gray" FontSize="12" ></Label>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                    <StackLayout Grid.Column="4" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center">
+                                        <Image Source="ic_arrow_forward_ios" BackgroundColor="Transparent" WidthRequest="20"></Image>
+                                    </StackLayout>
+
+                                    <ContentView Grid.ColumnSpan="5" Grid.Row="1" HeightRequest="1" BackgroundColor="#DBDBDB"  />
+
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+
+                    </CollectionView>
+                </ScrollView>
+
+            </RefreshView>
+        </Grid>
+    </Frame>
+</ContentPage>

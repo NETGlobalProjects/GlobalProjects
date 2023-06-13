@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWDS.Views.LogOut" BackgroundColor="White" Title="Salir">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start" Padding="0,20,0,0">
+            <StackLayout Padding="0,10,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout Padding="0,10,0,0">
+                    <Frame CornerRadius="100" 
+                               HeightRequest="150"
+                               WidthRequest="150"
+                               HorizontalOptions="Center"
+                               Padding="0"
+                               IsClippedToBounds="True">
+                        <Image Source="http://aplicativos.agroalim.com.sv/emp_fts/JDURAN.PNG" x:Name="imgBtnFotoPerfil" Aspect="AspectFill" WidthRequest="200"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                    </Frame>
+                </StackLayout>
+                <Label Text="Adam Pedley" x:Name="lblNombre" TextColor="Gray" FontSize="Large" HorizontalTextAlignment="Center" />
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image Source="ic_business_verde"></Image>
+                    <Label Text="(DISALI)" x:Name="lblEmpresa" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Center" />
+                </StackLayout>
+
+
+
+            </StackLayout>
+            <ContentView   HeightRequest="1" BackgroundColor="#DBDBDB" />
+            <Label Text="¿Confirma que desea salir de la aplicación?" TextColor="Gray" FontSize="20" HorizontalTextAlignment="Center"></Label>
+          
+            <StackLayout Orientation="Horizontal" Padding="0,20,0,0" HorizontalOptions="Center">
+                <Button Text="Si, Confirmar!!" CornerRadius="10" BackgroundColor="#194d93" HeightRequest="40" x:Name="btnSiSalir" TextColor="White" Clicked="btnSiSalir_Clicked"></Button>
+                <Button Text="No, Cancelar!!" CornerRadius="10" BackgroundColor="Black" HeightRequest="40" x:Name="btnNoSalir" TextColor="White" Clicked="btnNoSalir_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

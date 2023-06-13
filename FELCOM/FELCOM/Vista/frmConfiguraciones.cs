@@ -18,5 +18,7 @@ namespace FELCOM.Vista
             InitializeComponent();
             ctrlFrmConfiguraciones ctrl = new ctrlFrmConfiguraciones(this);
         }
+
+        
     }
 }

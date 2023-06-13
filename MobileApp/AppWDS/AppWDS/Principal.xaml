@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWDS.Principal"
+                  NavigationPage.HasNavigationBar="False"
+                  Title="Menú Principal">
+
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <Grid BackgroundColor="#184d92" Padding="0" Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <!--<Image Source="fondo_azul.png" Aspect="AspectFill" />-->
+                    <ScrollView BackgroundColor="#104490"></ScrollView>
+                    <StackLayout Padding="0,10,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <StackLayout Padding="0,10,0,0">
+                            <Frame CornerRadius="100" 
+                               HeightRequest="100"
+                               WidthRequest="100"
+                               HorizontalOptions="Center"
+                               Padding="0"
+                               IsClippedToBounds="True">
+                                <Image Source="http://aplicativos.agroalim.com.sv/emp_fts/JDURAN.PNG" x:Name="imgBtnFotoPerfil" Aspect="AspectFill" WidthRequest="100"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                            </Frame>
+                        </StackLayout>
+                        <Label Text="Adam Pedley" x:Name="lblNombre" TextColor="White" FontSize="Large" HorizontalTextAlignment="Center" />
+                      
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Image Source="ic_business" WidthRequest="15"></Image>
+                                <Label Text="(DISALI)" x:Name="lblEmpresa" TextColor="White"  HorizontalTextAlignment="Center" FontSize="13" />
+                            </StackLayout>
+                            
+                       
+                        
+                    </StackLayout>
+                </Grid>
+                <StackLayout Margin="0,0,0,0" Grid.Row="1" Spacing="15">
+                    <ListView x:Name="navigationDrawerList" RowHeight="60" SeparatorVisibility="Default" SeparatorColor="Gray" BackgroundColor="White"  ItemSelected="OnMenuItemSelected" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <!-- Main design for our menu items -->
+                                    <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="20,10,0,10" Spacing="20">
+                                        <Image Source="{Binding Icon}" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" />
+                                        <Label Text="{Binding Title}" FontSize="15" VerticalOptions="Center" TextColor="Gray" />
+                                        <!--<ContentView   HeightRequest="0.02" BackgroundColor="#DBDBDB" />-->
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Grid>
+           
+        </ContentPage>
+      
+    </MasterDetailPage.Master>
+    
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+         
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

@@ -65,5 +65,14 @@
     <Setting Name="EscribirEnTabla" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="cString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=192.168.0.148\NETDATASQL;Initial Catalog=NDTEST;User ID=sa;Password=Fresasc0ncrema;MultipleActiveResultSets=True;Connect Timeout=100;Encrypt=False;Application Name=FELCOM;Current Language=spanish</Value>
+    </Setting>
+    <Setting Name="UTF8" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="imprimir" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

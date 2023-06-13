@@ -37,6 +37,9 @@ namespace FELCOM.Vista
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPantallaPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.listaProcesosdataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
@@ -47,10 +50,15 @@ namespace FELCOM.Vista
             this.vacio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
+            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.logsDgv = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mensaje = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.timerScanner = new System.Windows.Forms.Timer(this.components);
@@ -59,10 +67,13 @@ namespace FELCOM.Vista
             this.styleManagerAmbient1 = new DevComponents.DotNetBar.StyleManagerAmbient(this.components);
             this.ajustesbuttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             ((System.ComponentModel.ISupportInitialize)(this.listaProcesosdataGridViewX1)).BeginInit();
             this.panelEx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
+            this.superTabControlPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logsDgv)).BeginInit();
             this.superTabControlPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,7 +99,8 @@ namespace FELCOM.Vista
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.listaProcesosdataGridViewX1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.listaProcesosdataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listaProcesosdataGridViewX1.ColumnHeadersHeight = 25;
+            this.listaProcesosdataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.listaProcesosdataGridViewX1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Archivo,
             this.TipoDocumento,
@@ -116,7 +128,7 @@ namespace FELCOM.Vista
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.listaProcesosdataGridViewX1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.listaProcesosdataGridViewX1.Size = new System.Drawing.Size(935, 388);
+            this.listaProcesosdataGridViewX1.Size = new System.Drawing.Size(935, 391);
             this.listaProcesosdataGridViewX1.TabIndex = 0;
             // 
             // Archivo
@@ -207,16 +219,111 @@ namespace FELCOM.Vista
             this.superTabControl1.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabItem1,
             this.superTabItem2});
-            this.superTabControl1.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.OfficeMobile2014;
+            this.superTabControl1.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.VisualStudio2008Document;
             this.superTabControl1.Text = "superTabControl1";
+            // 
+            // superTabControlPanel2
+            // 
+            this.superTabControlPanel2.Controls.Add(this.logsDgv);
+            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 30);
+            this.superTabControlPanel2.Name = "superTabControlPanel2";
+            this.superTabControlPanel2.Size = new System.Drawing.Size(935, 391);
+            this.superTabControlPanel2.TabIndex = 0;
+            this.superTabControlPanel2.TabItem = this.superTabItem2;
+            // 
+            // logsDgv
+            // 
+            this.logsDgv.AllowUserToAddRows = false;
+            this.logsDgv.AllowUserToDeleteRows = false;
+            this.logsDgv.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.logsDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.logsDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.logsDgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.Fecha,
+            this.Tipo,
+            this.Mensaje});
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.logsDgv.DefaultCellStyle = dataGridViewCellStyle5;
+            this.logsDgv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.logsDgv.EnableHeadersVisualStyles = false;
+            this.logsDgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.logsDgv.Location = new System.Drawing.Point(0, 0);
+            this.logsDgv.Name = "logsDgv";
+            this.logsDgv.ReadOnly = true;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.logsDgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.logsDgv.Size = new System.Drawing.Size(935, 391);
+            this.logsDgv.TabIndex = 0;
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "ID";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 70;
+            // 
+            // Fecha
+            // 
+            this.Fecha.DataPropertyName = "Fecha";
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            this.Fecha.Width = 130;
+            // 
+            // Tipo
+            // 
+            this.Tipo.DataPropertyName = "Tipo";
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
+            this.Tipo.Width = 80;
+            // 
+            // Mensaje
+            // 
+            this.Mensaje.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Mensaje.DataPropertyName = "Mensaje";
+            this.Mensaje.HeaderText = "Mensaje";
+            this.Mensaje.Name = "Mensaje";
+            this.Mensaje.ReadOnly = true;
+            // 
+            // superTabItem2
+            // 
+            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
+            this.superTabItem2.GlobalItem = false;
+            this.superTabItem2.Name = "superTabItem2";
+            this.superTabItem2.Symbol = "";
+            this.superTabItem2.SymbolSize = 14F;
+            this.superTabItem2.Text = "Logs";
             // 
             // superTabControlPanel1
             // 
             this.superTabControlPanel1.Controls.Add(this.listaProcesosdataGridViewX1);
             this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 33);
+            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 30);
             this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(935, 388);
+            this.superTabControlPanel1.Size = new System.Drawing.Size(935, 391);
             this.superTabControlPanel1.TabIndex = 1;
             this.superTabControlPanel1.TabItem = this.superTabItem1;
             // 
@@ -225,23 +332,9 @@ namespace FELCOM.Vista
             this.superTabItem1.AttachedControl = this.superTabControlPanel1;
             this.superTabItem1.GlobalItem = false;
             this.superTabItem1.Name = "superTabItem1";
+            this.superTabItem1.Symbol = "";
+            this.superTabItem1.SymbolSize = 14F;
             this.superTabItem1.Text = "Procesos";
-            // 
-            // superTabControlPanel2
-            // 
-            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 33);
-            this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(1008, 525);
-            this.superTabControlPanel2.TabIndex = 0;
-            this.superTabControlPanel2.TabItem = this.superTabItem2;
-            // 
-            // superTabItem2
-            // 
-            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
-            this.superTabItem2.GlobalItem = false;
-            this.superTabItem2.Name = "superTabItem2";
-            this.superTabItem2.Text = "Errores";
             // 
             // timer1
             // 
@@ -276,9 +369,9 @@ namespace FELCOM.Vista
             // 
             this.ajustesbuttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.ajustesbuttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta;
-            this.ajustesbuttonX1.Location = new System.Drawing.Point(3, 2);
+            this.ajustesbuttonX1.Location = new System.Drawing.Point(-3, 2);
             this.ajustesbuttonX1.Name = "ajustesbuttonX1";
-            this.ajustesbuttonX1.Size = new System.Drawing.Size(98, 23);
+            this.ajustesbuttonX1.Size = new System.Drawing.Size(98, 22);
             this.ajustesbuttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ajustesbuttonX1.Symbol = "";
             this.ajustesbuttonX1.SymbolSize = 12F;
@@ -295,11 +388,26 @@ namespace FELCOM.Vista
             this.label1.TabIndex = 4;
             this.label1.Text = "-";
             // 
+            // labelX1
+            // 
+            this.labelX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.Location = new System.Drawing.Point(761, 3);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(51, 23);
+            this.labelX1.TabIndex = 5;
+            this.labelX1.Text = "Escaner:";
+            // 
             // frmPantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 445);
+            this.Controls.Add(this.labelX1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ajustesbuttonX1);
             this.Controls.Add(this.switchButton1);
@@ -314,6 +422,8 @@ namespace FELCOM.Vista
             this.panelEx1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
+            this.superTabControlPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logsDgv)).EndInit();
             this.superTabControlPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -343,6 +453,12 @@ namespace FELCOM.Vista
         private StyleManagerAmbient styleManagerAmbient1;
         private ButtonX ajustesbuttonX1;
         private Label label1;
+        private DataGridViewX logsDgv;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn Fecha;
+        private DataGridViewTextBoxColumn Tipo;
+        private DataGridViewTextBoxColumn Mensaje;
+        private LabelX labelX1;
 
         public DataGridViewX ListaProcesosdataGridViewX1 { get => listaProcesosdataGridViewX1; set => listaProcesosdataGridViewX1 = value; }
         public PanelEx PanelEx1 { get => panelEx1; set => panelEx1 = value; }
@@ -361,5 +477,6 @@ namespace FELCOM.Vista
         public SwitchButton SwitchButton1 { get => switchButton1; set => switchButton1 = value; }
         public ButtonX AjustesbuttonX1 { get => ajustesbuttonX1; set => ajustesbuttonX1 = value; }
         public Label Label1 { get => label1; set => label1 = value; }
+        public DataGridViewX LogsDgv { get => logsDgv; set => logsDgv = value; }
     }
 }

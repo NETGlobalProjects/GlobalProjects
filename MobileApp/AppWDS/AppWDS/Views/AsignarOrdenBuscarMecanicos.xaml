@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWDS.Views.AsignarOrdenBuscarMecanicos" BackgroundColor="White" Title="Listado de Mecánicos">
+
+
+    <!--<Frame CornerRadius="5">-->
+        <Grid RowDefinitions="50,*">
+
+            <StackLayout Grid.Row="0">
+                <SearchBar Grid.Row="0" Placeholder="Búscar" PlaceholderColor="Gray" TextColor="Gray" x:Name="scBuscar" SearchButtonPressed="scBuscar_SearchButtonPressed" TextChanged="scBuscar_TextChanged" ></SearchBar>
+            </StackLayout>
+
+            <RefreshView Grid.Row="1" x:Name="rvMecanicos" Refreshing="rvMecanicos_Refreshing">
+                <ScrollView>
+                    <CollectionView  HeightRequest="200" x:Name="cvMecanicos" SelectionMode="Single" SelectionChanged="cvMecanicos_SelectionChanged">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid BackgroundColor="Transparent" ColumnDefinitions="60,*,60,30" RowDefinitions="Auto, 1" RowSpacing="10" >
+                                    <VisualStateManager.VisualStateGroups>
+                                        <VisualStateGroup Name="CommonStates">
+                                            <VisualState Name="Normal" />
+                                            <VisualState Name="Selected">
+                                                <VisualState.Setters>
+                                                    <Setter Property="BackgroundColor" Value="#E5E5E5" />
+                                                </VisualState.Setters>
+                                            </VisualState>
+                                        </VisualStateGroup>
+                                    </VisualStateManager.VisualStateGroups>
+
+                                    <StackLayout Grid.Column="0" Grid.Row="0"  Padding="2,0,2,0" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="Center">
+                                        <Frame CornerRadius="100" 
+                                               HeightRequest="50"
+                                               WidthRequest="50"
+                                               HorizontalOptions="Center"
+                                               Padding="0"
+                                               IsClippedToBounds="True">
+                                                    <Image Source="{Binding usu_nomina_fotografia}" x:Name="imgBtnFotoPerfil" Aspect="AspectFill" WidthRequest="100"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center" />  
+                                        </Frame>
+                                    </StackLayout>
+
+                                    <StackLayout Grid.Column="1" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start">
+                                        <Label Text="{Binding mec_id}" x:Name="lblInvId" TextColor="Gray" FontSize="13" FontAttributes="Bold"></Label>
+                                        <Label Text="{Binding mec_nombre}" TextColor="Gray" FontSize="13"></Label>
+                                        <Label Text="{Binding ordenes_asignadas}" TextColor="Gray" FontSize="13"></Label>
+                                        <!--<Label Text="{Binding inv_descripcion_larga}" TextColor="Gray" FontSize="12"></Label>-->
+                                    </StackLayout>
+
+                                    <StackLayout Grid.Column="2" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start">
+                                        <Frame BackgroundColor="{Binding mec_estado_color}" Padding="5" CornerRadius="10">
+                                            <Label Text="{Binding mec_estado}" TextColor="White" FontSize="13"></Label>
+                                        </Frame>
+                                       
+                                    </StackLayout>
+
+                                    <StackLayout Grid.Column="3" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center">
+                                        <Image Source="ic_arrow_forward_ios" BackgroundColor="Transparent" WidthRequest="20"></Image>
+                                    </StackLayout>
+
+                                    <ContentView Grid.ColumnSpan="4" Grid.Row="1" HeightRequest="1" BackgroundColor="#DBDBDB"  />
+
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+
+                    </CollectionView>
+                </ScrollView>
+
+            </RefreshView>
+        </Grid>
+    <!--</Frame>-->
+</ContentPage>

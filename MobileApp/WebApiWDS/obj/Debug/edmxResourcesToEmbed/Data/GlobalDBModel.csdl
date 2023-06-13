@@ -1,0 +1,1202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GlobalDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="general_areas">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="are_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="are_id" Type="Int32" Nullable="false" />
+    <Property Name="cco_id" Type="Int32" />
+    <Property Name="are_descripcion" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ctc_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="are_activo" Type="Boolean" />
+    <Property Name="are_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="are_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="pla_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="general_sub_areas">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="are_id" />
+      <PropertyRef Name="sba_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="are_id" Type="Int32" Nullable="false" />
+    <Property Name="sba_id" Type="Int32" Nullable="false" />
+    <Property Name="sba_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sba_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="ctc_id" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="cco_id" Type="Int32" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="sba_fecha_hora_ult_mod" Type="DateTime" Precision="3" />
+    <Property Name="sba_activo" Type="Boolean" />
+    <Property Name="pla_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="mantto_orden_capa">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="ord_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="ord_id" Type="Int32" Nullable="false" />
+    <Property Name="tio_id" Type="Int32" />
+    <Property Name="pla_id" Type="Int32" />
+    <Property Name="are_id" Type="Int32" />
+    <Property Name="sba_id" Type="Int32" />
+    <Property Name="pri_id" Type="Int32" />
+    <Property Name="maq_id" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="mec_id_responsable" Type="Int32" />
+    <Property Name="oes_id" Type="Int32" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="ord_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="ord_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="ord_fecha_programado" Type="DateTime" Precision="3" />
+    <Property Name="ord_fecha_hora_inicio" Type="DateTime" Precision="3" />
+    <Property Name="ord_fecha_hora_fin" Type="DateTime" Precision="3" />
+    <Property Name="ord_descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ord_horas_hombre_estimada" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ord_fecha_hora_cierre_orden" Type="DateTime" Precision="3" />
+    <Property Name="ord_calificacion" Type="Int32" />
+    <Property Name="ord_comentarios_cierre" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ord_id_padre" Type="Int32" />
+    <Property Name="ord_descripcion_falla" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ord_causa_falla" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ord_accion_correctiva" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ord_fecha_hora_peticion_materiales" Type="DateTime" Precision="3" />
+    <Property Name="ord_fecha_hora_entrega_materiales" Type="DateTime" Precision="3" />
+    <Property Name="cda_id" Type="Int32" />
+    <Property Name="ord_comentarios_mecanico" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ord_causa_especial" Type="Int32" />
+    <Property Name="ord_comen_causa_especial" Type="String" MaxLength="300" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mantto_orden_centros_atencion">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="cda_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="cda_id" Type="Int32" Nullable="false" />
+    <Property Name="cda_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cda_activo" Type="Boolean" />
+    <Property Name="cda_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="cda_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="cda_correo" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mantto_orden_prioridades">
+    <Key>
+      <PropertyRef Name="pri_id" />
+    </Key>
+    <Property Name="pri_id" Type="Int32" Nullable="false" />
+    <Property Name="pri_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pri_nivel" Type="Int32" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="pri_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="pri_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="pri_clase" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mantto_orden_tipos">
+    <Key>
+      <PropertyRef Name="tio_id" />
+    </Key>
+    <Property Name="tio_id" Type="Int32" Nullable="false" />
+    <Property Name="tio_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="tio_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="tio_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="tio_progamada" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="usuario_usuarios">
+    <Key>
+      <PropertyRef Name="usu_id" />
+    </Key>
+    <Property Name="usu_id" Type="Int32" Nullable="false" />
+    <Property Name="dep_id" Type="Int32" />
+    <Property Name="car_id" Type="Int32" />
+    <Property Name="est_id" Type="Int32" />
+    <Property Name="usu_username" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="usu_password" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="usu_nombres" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="usu_apellidos" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="usu_genero" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usu_correo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usu_telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="usu_id_nomina" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="usu_direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="usu_fecha_registro" Type="DateTime" Precision="3" />
+    <Property Name="usu_fecha_nacimiento" Type="DateTime" Precision="3" />
+    <Property Name="usu_ultima_conexion" Type="DateTime" Precision="3" />
+    <Property Name="usu_cambiar_pass" Type="Int16" />
+    <Property Name="usu_ver_all" Type="Int32" />
+    <Property Name="usu_user_erp" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Usu_Id_Canal" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_general_sub_areas_general_areas">
+    <End Role="general_areas" Type="Self.general_areas" Multiplicity="1" />
+    <End Role="general_sub_areas" Type="Self.general_sub_areas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_areas">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="are_id" />
+      </Principal>
+      <Dependent Role="general_sub_areas">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="are_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mantto_orden_capa_general_areas">
+    <End Role="general_areas" Type="Self.general_areas" Multiplicity="0..1" />
+    <End Role="mantto_orden_capa" Type="Self.mantto_orden_capa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_areas">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="are_id" />
+      </Principal>
+      <Dependent Role="mantto_orden_capa">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="are_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mantto_orden_capa_general_sub_areas">
+    <End Role="general_sub_areas" Type="Self.general_sub_areas" Multiplicity="0..1" />
+    <End Role="mantto_orden_capa" Type="Self.mantto_orden_capa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_sub_areas">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="are_id" />
+        <PropertyRef Name="sba_id" />
+      </Principal>
+      <Dependent Role="mantto_orden_capa">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="are_id" />
+        <PropertyRef Name="sba_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mantto_orden_capa_mantto_orden_centros_atencion">
+    <End Role="mantto_orden_centros_atencion" Type="Self.mantto_orden_centros_atencion" Multiplicity="0..1" />
+    <End Role="mantto_orden_capa" Type="Self.mantto_orden_capa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mantto_orden_centros_atencion">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="cda_id" />
+      </Principal>
+      <Dependent Role="mantto_orden_capa">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="cda_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mantto_orden_capa_mantto_orden_prioridades">
+    <End Role="mantto_orden_prioridades" Type="Self.mantto_orden_prioridades" Multiplicity="0..1" />
+    <End Role="mantto_orden_capa" Type="Self.mantto_orden_capa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mantto_orden_prioridades">
+        <PropertyRef Name="pri_id" />
+      </Principal>
+      <Dependent Role="mantto_orden_capa">
+        <PropertyRef Name="pri_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mantto_orden_capa_mantto_orden_tipos">
+    <End Role="mantto_orden_tipos" Type="Self.mantto_orden_tipos" Multiplicity="0..1" />
+    <End Role="mantto_orden_capa" Type="Self.mantto_orden_capa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mantto_orden_tipos">
+        <PropertyRef Name="tio_id" />
+      </Principal>
+      <Dependent Role="mantto_orden_capa">
+        <PropertyRef Name="tio_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GlobalDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="general_areas" EntityType="Self.general_areas" />
+    <EntitySet Name="general_sub_areas" EntityType="Self.general_sub_areas" />
+    <EntitySet Name="mantto_orden_capa" EntityType="Self.mantto_orden_capa" />
+    <EntitySet Name="mantto_orden_centros_atencion" EntityType="Self.mantto_orden_centros_atencion" />
+    <EntitySet Name="mantto_orden_prioridades" EntityType="Self.mantto_orden_prioridades" />
+    <EntitySet Name="mantto_orden_tipos" EntityType="Self.mantto_orden_tipos" />
+    <EntitySet Name="usuario_usuarios" EntityType="Self.usuario_usuarios" />
+    <AssociationSet Name="FK_general_sub_areas_general_areas" Association="Self.FK_general_sub_areas_general_areas">
+      <End Role="general_areas" EntitySet="general_areas" />
+      <End Role="general_sub_areas" EntitySet="general_sub_areas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mantto_orden_capa_general_areas" Association="Self.FK_mantto_orden_capa_general_areas">
+      <End Role="general_areas" EntitySet="general_areas" />
+      <End Role="mantto_orden_capa" EntitySet="mantto_orden_capa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mantto_orden_capa_general_sub_areas" Association="Self.FK_mantto_orden_capa_general_sub_areas">
+      <End Role="general_sub_areas" EntitySet="general_sub_areas" />
+      <End Role="mantto_orden_capa" EntitySet="mantto_orden_capa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mantto_orden_capa_mantto_orden_centros_atencion" Association="Self.FK_mantto_orden_capa_mantto_orden_centros_atencion">
+      <End Role="mantto_orden_centros_atencion" EntitySet="mantto_orden_centros_atencion" />
+      <End Role="mantto_orden_capa" EntitySet="mantto_orden_capa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mantto_orden_capa_mantto_orden_prioridades" Association="Self.FK_mantto_orden_capa_mantto_orden_prioridades">
+      <End Role="mantto_orden_prioridades" EntitySet="mantto_orden_prioridades" />
+      <End Role="mantto_orden_capa" EntitySet="mantto_orden_capa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mantto_orden_capa_mantto_orden_tipos" Association="Self.FK_mantto_orden_capa_mantto_orden_tipos">
+      <End Role="mantto_orden_tipos" EntitySet="mantto_orden_tipos" />
+      <End Role="mantto_orden_capa" EntitySet="mantto_orden_capa" />
+    </AssociationSet>
+    <EntitySet Name="general_paises" EntityType="GlobalDBModel.general_paises" />
+    <AssociationSet Name="FK_general_paises_usuario_usuarios" Association="GlobalDBModel.FK_general_paises_usuario_usuarios">
+      <End Role="usuario_usuarios" EntitySet="usuario_usuarios" />
+      <End Role="general_paises" EntitySet="general_paises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_general_paises_usuario_usuarios1" Association="GlobalDBModel.FK_general_paises_usuario_usuarios1">
+      <End Role="usuario_usuarios" EntitySet="usuario_usuarios" />
+      <End Role="general_paises" EntitySet="general_paises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mantto_orden_capa_general_paises" Association="GlobalDBModel.FK_mantto_orden_capa_general_paises">
+      <End Role="general_paises" EntitySet="general_paises" />
+      <End Role="mantto_orden_capa" EntitySet="mantto_orden_capa" />
+    </AssociationSet>
+    <EntitySet Name="general_empresas" EntityType="GlobalDBModel.general_empresas" />
+    <AssociationSet Name="FK_general_empresas_general_paises" Association="GlobalDBModel.FK_general_empresas_general_paises">
+      <End Role="general_paises" EntitySet="general_paises" />
+      <End Role="general_empresas" EntitySet="general_empresas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mantto_orden_capa_general_empresas" Association="GlobalDBModel.FK_mantto_orden_capa_general_empresas">
+      <End Role="general_empresas" EntitySet="general_empresas" />
+      <End Role="mantto_orden_capa" EntitySet="mantto_orden_capa" />
+    </AssociationSet>
+    <EntitySet Name="v_usuario_empresa" EntityType="GlobalDBModel.v_usuario_empresa" />
+    <EntitySet Name="general_documentos_correlativos" EntityType="GlobalDBModel.general_documentos_correlativos" />
+    <EntitySet Name="activos_maquinas" EntityType="GlobalDBModel.activos_maquinas" />
+    <AssociationSet Name="FK_activos_maquinas_general_areas" Association="GlobalDBModel.FK_activos_maquinas_general_areas">
+      <End Role="general_areas" EntitySet="general_areas" />
+      <End Role="activos_maquinas" EntitySet="activos_maquinas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_activos_maquinas_general_paises" Association="GlobalDBModel.FK_activos_maquinas_general_paises">
+      <End Role="general_paises" EntitySet="general_paises" />
+      <End Role="activos_maquinas" EntitySet="activos_maquinas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_activos_maquinas_general_sub_areas" Association="GlobalDBModel.FK_activos_maquinas_general_sub_areas">
+      <End Role="general_sub_areas" EntitySet="general_sub_areas" />
+      <End Role="activos_maquinas" EntitySet="activos_maquinas" />
+    </AssociationSet>
+    <EntitySet Name="v_tablero_app" EntityType="GlobalDBModel.v_tablero_app" />
+    <EntitySet Name="mantto_orden_items" EntityType="GlobalDBModel.mantto_orden_items" />
+    <AssociationSet Name="FK_mantto_orden_items_mantto_orden_capa" Association="GlobalDBModel.FK_mantto_orden_items_mantto_orden_capa">
+      <End Role="mantto_orden_capa" EntitySet="mantto_orden_capa" />
+      <End Role="mantto_orden_items" EntitySet="mantto_orden_items" />
+    </AssociationSet>
+    <EntitySet Name="usuario_empresa_usuario" EntityType="GlobalDBModel.usuario_empresa_usuario" />
+    <EntitySet Name="general_plantas" EntityType="GlobalDBModel.general_plantas" />
+    <EntitySet Name="v_usuario_empresa_plantel" EntityType="GlobalDBModel.v_usuario_empresa_plantel" />
+    <EntitySet Name="inventario_inventarios" EntityType="GlobalDBModel.inventario_inventarios" />
+    <AssociationSet Name="FK_inventario_inventarios_general_paises" Association="GlobalDBModel.FK_inventario_inventarios_general_paises">
+      <End Role="general_paises" EntitySet="general_paises" />
+      <End Role="inventario_inventarios" EntitySet="inventario_inventarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_inventario_inventarios_usuario_usuarios" Association="GlobalDBModel.FK_inventario_inventarios_usuario_usuarios">
+      <End Role="usuario_usuarios" EntitySet="usuario_usuarios" />
+      <End Role="inventario_inventarios" EntitySet="inventario_inventarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_inventario_inventarios_usuario_usuarios1" Association="GlobalDBModel.FK_inventario_inventarios_usuario_usuarios1">
+      <End Role="usuario_usuarios" EntitySet="usuario_usuarios" />
+      <End Role="inventario_inventarios" EntitySet="inventario_inventarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mantto_orden_items_inventario_inventarios" Association="GlobalDBModel.FK_mantto_orden_items_inventario_inventarios">
+      <End Role="inventario_inventarios" EntitySet="inventario_inventarios" />
+      <End Role="mantto_orden_items" EntitySet="mantto_orden_items" />
+    </AssociationSet>
+    <EntitySet Name="general_unidades_medida" EntityType="GlobalDBModel.general_unidades_medida" />
+    <AssociationSet Name="FK_activos_maquinas_general_unidades_medida" Association="GlobalDBModel.FK_activos_maquinas_general_unidades_medida">
+      <End Role="general_unidades_medida" EntitySet="general_unidades_medida" />
+      <End Role="activos_maquinas" EntitySet="activos_maquinas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_inventario_inventarios_general_unidades_medida" Association="GlobalDBModel.FK_inventario_inventarios_general_unidades_medida">
+      <End Role="general_unidades_medida" EntitySet="general_unidades_medida" />
+      <End Role="inventario_inventarios" EntitySet="inventario_inventarios" />
+    </AssociationSet>
+    <EntitySet Name="mantto_orden_estados" EntityType="GlobalDBModel.mantto_orden_estados" />
+    <AssociationSet Name="FK_mantto_orden_capa_mantto_orden_estados" Association="GlobalDBModel.FK_mantto_orden_capa_mantto_orden_estados">
+      <End Role="mantto_orden_estados" EntitySet="mantto_orden_estados" />
+      <End Role="mantto_orden_capa" EntitySet="mantto_orden_capa" />
+    </AssociationSet>
+    <EntitySet Name="notificaciones_push" EntityType="GlobalDBModel.notificaciones_push" />
+    <EntitySet Name="v_ordenes_asignadas" EntityType="GlobalDBModel.v_ordenes_asignadas" />
+    <EntitySet Name="v_ordenes_mantto" EntityType="GlobalDBModel.v_ordenes_mantto" />
+    <EntitySet Name="v_estados_ordenes" EntityType="GlobalDBModel.v_estados_ordenes" />
+    <EntitySet Name="v_mecanicos_orden_mantto" EntityType="GlobalDBModel.v_mecanicos_orden_mantto" />
+    <EntitySet Name="mantto_orden_mano_obra" EntityType="GlobalDBModel.mantto_orden_mano_obra" />
+    <AssociationSet Name="FK_mantto_orden_mano_obra_mantto_orden_capa" Association="GlobalDBModel.FK_mantto_orden_mano_obra_mantto_orden_capa">
+      <End Role="mantto_orden_capa" EntitySet="mantto_orden_capa" />
+      <End Role="mantto_orden_mano_obra" EntitySet="mantto_orden_mano_obra" />
+    </AssociationSet>
+    <EntitySet Name="v_listado_mecanicos" EntityType="GlobalDBModel.v_listado_mecanicos" />
+    <EntitySet Name="v_usuario_nomina" EntityType="GlobalDBModel.v_usuario_nomina" />
+    <EntitySet Name="v_usuario_usuarios" EntityType="GlobalDBModel.v_usuario_usuarios" />
+    <EntitySet Name="menu_asignaciones" EntityType="GlobalDBModel.menu_asignaciones" />
+    <EntitySet Name="menu_submenu" EntityType="GlobalDBModel.menu_submenu" />
+    <AssociationSet Name="FK_menu_asignaciones_menu_submenu" Association="GlobalDBModel.FK_menu_asignaciones_menu_submenu">
+      <End Role="menu_submenu" EntitySet="menu_submenu" />
+      <End Role="menu_asignaciones" EntitySet="menu_asignaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_menu_asignaciones_usuario_usuarios" Association="GlobalDBModel.FK_menu_asignaciones_usuario_usuarios">
+      <End Role="usuario_usuarios" EntitySet="usuario_usuarios" />
+      <End Role="menu_asignaciones" EntitySet="menu_asignaciones" />
+    </AssociationSet>
+    <EntitySet Name="cotizacion_detalle" EntityType="GlobalDBModel.cotizacion_detalle" />
+    <EntitySet Name="cotizacion_capa" EntityType="GlobalDBModel.cotizacion_capa" />
+    <AssociationSet Name="FK_cotizacion_detalle_cotizacion_capa" Association="GlobalDBModel.FK_cotizacion_detalle_cotizacion_capa">
+      <End Role="cotizacion_capa" EntitySet="cotizacion_capa" />
+      <End Role="cotizacion_detalle" EntitySet="cotizacion_detalle" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="general_paises">
+    <Key>
+      <PropertyRef Name="pai_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="pai_abreviatura" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="pai_nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="pai_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="pai_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_general_paises_usuario_usuarios">
+    <End Type="GlobalDBModel.usuario_usuarios" Role="usuario_usuarios" Multiplicity="0..1" />
+    <End Type="GlobalDBModel.general_paises" Role="general_paises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario_usuarios">
+        <PropertyRef Name="usu_id" />
+      </Principal>
+      <Dependent Role="general_paises">
+        <PropertyRef Name="usu_id_crea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_general_paises_usuario_usuarios1">
+    <End Type="GlobalDBModel.usuario_usuarios" Role="usuario_usuarios" Multiplicity="0..1" />
+    <End Type="GlobalDBModel.general_paises" Role="general_paises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario_usuarios">
+        <PropertyRef Name="usu_id" />
+      </Principal>
+      <Dependent Role="general_paises">
+        <PropertyRef Name="usu_id_modifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mantto_orden_capa_general_paises">
+    <End Type="GlobalDBModel.general_paises" Role="general_paises" Multiplicity="1" />
+    <End Type="GlobalDBModel.mantto_orden_capa" Role="mantto_orden_capa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_paises">
+        <PropertyRef Name="pai_id" />
+      </Principal>
+      <Dependent Role="mantto_orden_capa">
+        <PropertyRef Name="pai_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="general_empresas">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="emp_nombre_corto" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="emp_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="emp_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="cli_id_rel" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="prv_id_rel" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="emp_direccion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="emp_nombre_banco" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="emp_tipo_cuenta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="emp_no_cuenta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_general_empresas_general_paises">
+    <End Type="GlobalDBModel.general_paises" Role="general_paises" Multiplicity="1" />
+    <End Type="GlobalDBModel.general_empresas" Role="general_empresas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_paises">
+        <PropertyRef Name="pai_id" />
+      </Principal>
+      <Dependent Role="general_empresas">
+        <PropertyRef Name="pai_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mantto_orden_capa_general_empresas">
+    <End Type="GlobalDBModel.general_empresas" Role="general_empresas" Multiplicity="1" />
+    <End Type="GlobalDBModel.mantto_orden_capa" Role="mantto_orden_capa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_empresas">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+      </Principal>
+      <Dependent Role="mantto_orden_capa">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="v_usuario_empresa">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="usu_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="usu_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="emp_nombre_corto" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="general_documentos_correlativos">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="doc_serie" />
+      <PropertyRef Name="doc_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="doc_serie" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="doc_id" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="doc_correlativo" Type="Int32" />
+    <Property Name="doc_estado" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="doc_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="doc_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="activos_maquinas">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="maq_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="maq_id" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="maq_nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="maq_descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="maq_no_serie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="maq_capacidad" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="maq_fecha_ingreso" Type="DateTime" Precision="3" />
+    <Property Name="maq_potencia" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="mar_id" Type="Int32" />
+    <Property Name="maq_modelo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="cco_id" Type="Int32" />
+    <Property Name="maq_fecha_fabricacion" Type="DateTime" Precision="3" />
+    <Property Name="maq_dimensiones" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="maq_cap_diseno" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ctc_id" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="maq_activo_fijo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="maq_peso_neto" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="maq_fecha_instalacion" Type="DateTime" Precision="3" />
+    <Property Name="are_id" Type="Int32" />
+    <Property Name="sba_id" Type="Int32" />
+    <Property Name="prv_id" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="uni_id" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="maq_estado" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="maq_manual_fab" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="pla_id" Type="Int32" />
+    <Property Name="maq_periodicidad" Type="Int32" />
+    <Property Name="maq_fecha_ult_mantto" Type="DateTime" Precision="3" />
+    <Property Name="maq_fecha_sig_mantto" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_activos_maquinas_general_areas">
+    <End Type="GlobalDBModel.general_areas" Role="general_areas" Multiplicity="0..1" />
+    <End Type="GlobalDBModel.activos_maquinas" Role="activos_maquinas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_areas">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="are_id" />
+      </Principal>
+      <Dependent Role="activos_maquinas">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="are_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_activos_maquinas_general_paises">
+    <End Type="GlobalDBModel.general_paises" Role="general_paises" Multiplicity="1" />
+    <End Type="GlobalDBModel.activos_maquinas" Role="activos_maquinas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_paises">
+        <PropertyRef Name="pai_id" />
+      </Principal>
+      <Dependent Role="activos_maquinas">
+        <PropertyRef Name="pai_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_activos_maquinas_general_sub_areas">
+    <End Type="GlobalDBModel.general_sub_areas" Role="general_sub_areas" Multiplicity="0..1" />
+    <End Type="GlobalDBModel.activos_maquinas" Role="activos_maquinas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_sub_areas">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="are_id" />
+        <PropertyRef Name="sba_id" />
+      </Principal>
+      <Dependent Role="activos_maquinas">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="are_id" />
+        <PropertyRef Name="sba_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="v_tablero_app">
+    <Key>
+      <PropertyRef Name="usu_id" />
+    </Key>
+    <Property Name="usu_id" Type="Int32" Nullable="false" />
+    <Property Name="t_ord_ejecusion" Type="Int32" />
+    <Property Name="t_creadas_hoy" Type="Int32" />
+    <Property Name="t_creadas_anio" Type="Int32" />
+    <Property Name="t_asignadas_hoy" Type="Int32" />
+    <Property Name="t_asingadas_anio" Type="Int32" />
+    <Property Name="t_asignar_hoy" Type="Int32" />
+    <Property Name="t_asignar_anio" Type="Int32" />
+    <Property Name="t_historial_hoy" Type="Int32" />
+    <Property Name="t_historial_anio" Type="Int32" />
+  </EntityType>
+  <EntityType Name="mantto_orden_items">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="ord_id" />
+      <PropertyRef Name="dor_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="ord_id" Type="Int32" Nullable="false" />
+    <Property Name="dor_id" Type="Int32" Nullable="false" />
+    <Property Name="inv_id" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="dor_descripcion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="dor_cantidad" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="dor_unitario" Type="Decimal" Precision="14" Scale="4" />
+    <Property Name="dor_costo" Type="Decimal" Precision="14" Scale="4" />
+    <Property Name="dor_importe" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="dor_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="dor_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="dor_tipo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="reg_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dor_estado" Type="Int32" />
+    <Property Name="dor_descripcion_larga" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_mantto_orden_items_mantto_orden_capa">
+    <End Type="GlobalDBModel.mantto_orden_capa" Role="mantto_orden_capa" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="GlobalDBModel.mantto_orden_items" Role="mantto_orden_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mantto_orden_capa">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="ord_id" />
+      </Principal>
+      <Dependent Role="mantto_orden_items">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="ord_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="usuario_empresa_usuario">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="usu_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="usu_id" Type="Int32" Nullable="false" />
+    <Property Name="suc_id" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="bod_id" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="pla_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="general_plantas">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="pla_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="pla_id" Type="Int32" Nullable="false" />
+    <Property Name="cco_id" Type="Int32" />
+    <Property Name="pla_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="v_usuario_empresa_plantel">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="usu_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="usu_id" Type="Int32" Nullable="false" />
+    <Property Name="suc_id" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="suc_nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="bod_id" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="bod_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pla_id" Type="Int32" />
+    <Property Name="pla_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="inventario_inventarios">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="inv_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="inv_id" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="inv_descripcion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="inv_descripcion_larga" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="mar_id" Type="Int32" />
+    <Property Name="inv_modelo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="uni_id" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="inv_kit" Type="Boolean" />
+    <Property Name="inv_tipo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="inv_cod_barra" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="cla_id" Type="Int32" />
+    <Property Name="lin_id" Type="Int32" />
+    <Property Name="sbl_id" Type="Int32" />
+    <Property Name="inv_maneja_existencias" Type="Boolean" />
+    <Property Name="inv_imagen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="inv_peso" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="inv_estado" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="inv_otros_datos" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="inv_unidad_presentacion" Type="Int32" />
+    <Property Name="ctc_id" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="ctc_id_venta" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="ctc_id_rebaja" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="ctc_id_descuento" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="ctc_id_requisicion" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="ctc_id_prod_proceso" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="ctc_id_devolucion" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="ctc_id_costo_venta" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="ctc_id_pedido_transito" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="inv_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="inv_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="inv_cod_fabrica" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="inv_fecha_hora_sincronizacion" Type="DateTime" Precision="3" />
+    <Property Name="prv_id" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_inventario_inventarios_general_paises">
+    <End Type="GlobalDBModel.general_paises" Role="general_paises" Multiplicity="1" />
+    <End Type="GlobalDBModel.inventario_inventarios" Role="inventario_inventarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_paises">
+        <PropertyRef Name="pai_id" />
+      </Principal>
+      <Dependent Role="inventario_inventarios">
+        <PropertyRef Name="pai_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_inventario_inventarios_usuario_usuarios">
+    <End Type="GlobalDBModel.usuario_usuarios" Role="usuario_usuarios" Multiplicity="0..1" />
+    <End Type="GlobalDBModel.inventario_inventarios" Role="inventario_inventarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario_usuarios">
+        <PropertyRef Name="usu_id" />
+      </Principal>
+      <Dependent Role="inventario_inventarios">
+        <PropertyRef Name="usu_id_crea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_inventario_inventarios_usuario_usuarios1">
+    <End Type="GlobalDBModel.usuario_usuarios" Role="usuario_usuarios" Multiplicity="0..1" />
+    <End Type="GlobalDBModel.inventario_inventarios" Role="inventario_inventarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario_usuarios">
+        <PropertyRef Name="usu_id" />
+      </Principal>
+      <Dependent Role="inventario_inventarios">
+        <PropertyRef Name="usu_id_modifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mantto_orden_items_inventario_inventarios">
+    <End Type="GlobalDBModel.inventario_inventarios" Role="inventario_inventarios" Multiplicity="0..1" />
+    <End Type="GlobalDBModel.mantto_orden_items" Role="mantto_orden_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventario_inventarios">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="inv_id" />
+      </Principal>
+      <Dependent Role="mantto_orden_items">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="inv_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="general_unidades_medida">
+    <Key>
+      <PropertyRef Name="uni_id" />
+    </Key>
+    <Property Name="uni_id" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="uni_descripcion" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="uni_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="uni_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_activos_maquinas_general_unidades_medida">
+    <End Type="GlobalDBModel.general_unidades_medida" Role="general_unidades_medida" Multiplicity="0..1" />
+    <End Type="GlobalDBModel.activos_maquinas" Role="activos_maquinas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_unidades_medida">
+        <PropertyRef Name="uni_id" />
+      </Principal>
+      <Dependent Role="activos_maquinas">
+        <PropertyRef Name="uni_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_inventario_inventarios_general_unidades_medida">
+    <End Type="GlobalDBModel.general_unidades_medida" Role="general_unidades_medida" Multiplicity="0..1" />
+    <End Type="GlobalDBModel.inventario_inventarios" Role="inventario_inventarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="general_unidades_medida">
+        <PropertyRef Name="uni_id" />
+      </Principal>
+      <Dependent Role="inventario_inventarios">
+        <PropertyRef Name="uni_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="mantto_orden_estados">
+    <Key>
+      <PropertyRef Name="oes_id" />
+    </Key>
+    <Property Name="oes_id" Type="Int32" Nullable="false" />
+    <Property Name="oes_descripcion" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_mantto_orden_capa_mantto_orden_estados">
+    <End Type="GlobalDBModel.mantto_orden_estados" Role="mantto_orden_estados" Multiplicity="0..1" />
+    <End Type="GlobalDBModel.mantto_orden_capa" Role="mantto_orden_capa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mantto_orden_estados">
+        <PropertyRef Name="oes_id" />
+      </Principal>
+      <Dependent Role="mantto_orden_capa">
+        <PropertyRef Name="oes_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="notificaciones_push">
+    <Key>
+      <PropertyRef Name="pus_id" />
+    </Key>
+    <Property Name="pus_id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pai_id" Type="Int32" />
+    <Property Name="emp_id" Type="Int32" />
+    <Property Name="ord_id" Type="Int32" />
+    <Property Name="usu_id" Type="Int32" />
+    <Property Name="pus_read" Type="Boolean" />
+    <Property Name="pus_fecha" Type="DateTime" Precision="3" />
+    <Property Name="pus_title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="pus_descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="v_ordenes_asignadas">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="ord_id" />
+      <PropertyRef Name="mec_id" />
+      <PropertyRef Name="detalle" />
+      <PropertyRef Name="are_descripcion" />
+      <PropertyRef Name="sba_descripcion" />
+      <PropertyRef Name="maq_descripcion" />
+      <PropertyRef Name="maq_nombre" />
+      <PropertyRef Name="maq_id" />
+      <PropertyRef Name="no_materiales" />
+      <PropertyRef Name="no_mecanicos" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="ord_id" Type="Int32" Nullable="false" />
+    <Property Name="ord_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="oes_descripcion" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="mec_id" Type="Int32" Nullable="false" />
+    <Property Name="mec_nombres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_nombres" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="usu_nomina_fotografia" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="usu_id_mec" Type="Int32" />
+    <Property Name="ord_descripcion" Type="String" MaxLength="233" FixedLength="false" Unicode="true" />
+    <Property Name="estado_color" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="detalle" Type="String" Nullable="false" MaxLength="186" FixedLength="false" Unicode="true" />
+    <Property Name="are_descripcion" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="sba_descripcion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="maq_descripcion" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="maq_nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="maq_id" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="no_materiales" Type="Int32" Nullable="false" />
+    <Property Name="no_mecanicos" Type="Int32" Nullable="false" />
+    <Property Name="color_prioridad" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="avance" Type="Decimal" Precision="3" Scale="2" />
+    <Property Name="pla_id" Type="Int32" />
+    <Property Name="pri_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tio_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ord_comentarios_mecanico" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="v_ordenes_mantto">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="ord_id" />
+      <PropertyRef Name="mecanicos_asignados" />
+      <PropertyRef Name="detalle" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="ord_id" Type="Int32" Nullable="false" />
+    <Property Name="tio_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pla_id" Type="Int32" />
+    <Property Name="pla_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="ord_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="are_id" Type="Int32" />
+    <Property Name="are_descripcion" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="sba_id" Type="Int32" />
+    <Property Name="sba_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="maq_id" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="maq_nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="pri_id" Type="Int32" />
+    <Property Name="pri_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="color_prioridad" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="avance" Type="Decimal" Precision="3" Scale="2" />
+    <Property Name="estado_color" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="oes_id" Type="Int32" />
+    <Property Name="oes_descripcion" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ord_descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="mecanicos_asignados" Type="Int32" Nullable="false" />
+    <Property Name="usu_nomina_fotografia" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="ord_descripcion_2" Type="String" MaxLength="233" FixedLength="false" Unicode="true" />
+    <Property Name="detalle" Type="String" Nullable="false" MaxLength="186" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="v_estados_ordenes">
+    <Key>
+      <PropertyRef Name="oes_id" />
+    </Key>
+    <Property Name="oes_id" Type="Int32" Nullable="false" />
+    <Property Name="oes_descripcion" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="estado_color" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="avance" Type="Decimal" Precision="3" Scale="2" />
+    <Property Name="oes_descripcion2" Type="String" MaxLength="62" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="v_mecanicos_orden_mantto">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="ord_id" />
+      <PropertyRef Name="mod_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="ord_id" Type="Int32" Nullable="false" />
+    <Property Name="mod_id" Type="Int32" Nullable="false" />
+    <Property Name="mec_id" Type="Int32" />
+    <Property Name="mec_nombre" Type="String" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Name="mec_telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="usu_nomina_fotografia" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="mantto_orden_mano_obra">
+    <Key>
+      <PropertyRef Name="pai_id" />
+      <PropertyRef Name="emp_id" />
+      <PropertyRef Name="ord_id" />
+      <PropertyRef Name="mod_id" />
+    </Key>
+    <Property Name="pai_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="ord_id" Type="Int32" Nullable="false" />
+    <Property Name="mod_id" Type="Int32" Nullable="false" />
+    <Property Name="mod_estado" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="mec_id" Type="Int32" />
+    <Property Name="usu_id_nomina" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="mod_fecha_hora_inicio" Type="DateTime" Precision="3" />
+    <Property Name="mod_fecha_hora_fin" Type="DateTime" Precision="3" />
+    <Property Name="mod_costo_por_hora" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="mod_total_costo" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="mod_comentarios" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="mod_fecha_hora_creacion" Type="DateTime" Precision="3" />
+    <Property Name="mod_fecha_hora_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="mod_nombre_mecanico" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="mod_externo" Type="Boolean" />
+  </EntityType>
+  <Association Name="FK_mantto_orden_mano_obra_mantto_orden_capa">
+    <End Type="GlobalDBModel.mantto_orden_capa" Role="mantto_orden_capa" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="GlobalDBModel.mantto_orden_mano_obra" Role="mantto_orden_mano_obra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mantto_orden_capa">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="ord_id" />
+      </Principal>
+      <Dependent Role="mantto_orden_mano_obra">
+        <PropertyRef Name="pai_id" />
+        <PropertyRef Name="emp_id" />
+        <PropertyRef Name="ord_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="v_listado_mecanicos">
+    <Key>
+      <PropertyRef Name="mec_id" />
+    </Key>
+    <Property Name="mec_id" Type="Int32" Nullable="false" />
+    <Property Name="mec_nombre" Type="String" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Name="usu_nomina_fotografia" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="mec_estado" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="mec_estado_color" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="ordenes_asignadas" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="v_usuario_nomina">
+    <Key>
+      <PropertyRef Name="FechaIngreso" />
+      <PropertyRef Name="Dealer" />
+    </Key>
+    <Property Name="usu_id_nomina" Type="String" MaxLength="63" FixedLength="false" Unicode="false" />
+    <Property Name="usu_nomina_nombre" Type="String" MaxLength="62" FixedLength="false" Unicode="true" />
+    <Property Name="usu_nomina_fotografia" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Nombre_Gerencia" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Dealer" Type="Int32" Nullable="false" />
+    <Property Name="usu_id_nomina2" Type="String" MaxLength="94" FixedLength="false" Unicode="true" />
+    <Property Name="Cargo" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="v_usuario_usuarios">
+    <Key>
+      <PropertyRef Name="usu_id" />
+    </Key>
+    <Property Name="usu_id" Type="Int32" Nullable="false" />
+    <Property Name="dep_id" Type="Int32" />
+    <Property Name="car_id" Type="Int32" />
+    <Property Name="est_id" Type="Int32" />
+    <Property Name="usu_username" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="usu_password" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="usu_nombres" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="usu_apellidos" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="usu_genero" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usu_correo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usu_telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="usu_id_nomina" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="usu_direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="usu_fecha_registro" Type="DateTime" Precision="3" />
+    <Property Name="usu_fecha_nacimiento" Type="DateTime" Precision="3" />
+    <Property Name="usu_ultima_conexion" Type="DateTime" Precision="3" />
+    <Property Name="usu_cambiar_pass" Type="Int16" />
+    <Property Name="usu_ver_all" Type="Int32" />
+    <Property Name="es_mecanico" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="menu_asignaciones">
+    <Key>
+      <PropertyRef Name="men_id" />
+      <PropertyRef Name="sub_id" />
+      <PropertyRef Name="usu_id" />
+    </Key>
+    <Property Name="men_id" Type="Int32" Nullable="false" />
+    <Property Name="sub_id" Type="Int32" Nullable="false" />
+    <Property Name="usu_id" Type="Int32" Nullable="false" />
+    <Property Name="asi_insertar" Type="Int32" />
+    <Property Name="asi_borrar" Type="Int32" />
+    <Property Name="asi_modificar" Type="Int32" />
+  </EntityType>
+  <EntityType Name="menu_submenu">
+    <Key>
+      <PropertyRef Name="sub_id" />
+      <PropertyRef Name="men_id" />
+    </Key>
+    <Property Name="sub_id" Type="Int32" Nullable="false" />
+    <Property Name="men_id" Type="Int32" Nullable="false" />
+    <Property Name="sub_descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sub_icon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="sub_funcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="sub_orden" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_menu_asignaciones_menu_submenu">
+    <End Type="GlobalDBModel.menu_submenu" Role="menu_submenu" Multiplicity="1" />
+    <End Type="GlobalDBModel.menu_asignaciones" Role="menu_asignaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="menu_submenu">
+        <PropertyRef Name="sub_id" />
+        <PropertyRef Name="men_id" />
+      </Principal>
+      <Dependent Role="menu_asignaciones">
+        <PropertyRef Name="sub_id" />
+        <PropertyRef Name="men_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_menu_asignaciones_usuario_usuarios">
+    <End Type="GlobalDBModel.usuario_usuarios" Role="usuario_usuarios" Multiplicity="1" />
+    <End Type="GlobalDBModel.menu_asignaciones" Role="menu_asignaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario_usuarios">
+        <PropertyRef Name="usu_id" />
+      </Principal>
+      <Dependent Role="menu_asignaciones">
+        <PropertyRef Name="usu_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="cotizacion_detalle">
+    <Key>
+      <PropertyRef Name="cot_id" />
+      <PropertyRef Name="cot_correlativo" />
+    </Key>
+    <Property Name="cot_id" Type="Int32" Nullable="false" />
+    <Property Name="cot_correlativo" Type="Int32" Nullable="false" />
+    <Property Name="inv_id" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="cbo_id" Type="Int32" />
+    <Property Name="cot_descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cot_cantidad" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="cot_preciociva" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_preciosiva" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_importeciva" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_importesiva" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_peso" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="cot_margen" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_costoproduccion" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="usu_id_autorizadaprecio" Type="Int32" />
+    <Property Name="cot_fechaautorizacion" Type="DateTime" Precision="3" />
+    <Property Name="cot_precioautorizado" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="scp_id" Type="Int32" />
+    <Property Name="ran_pesodesde" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="ran_pesohasta" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="ran_valor" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_existeinventario" Type="Boolean" />
+    <Property Name="cot_req_auto_precio" Type="Boolean" />
+    <Property Name="cot_origenprecio" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="inv_unidadpresentacion" Type="Int32" />
+    <Property Name="cot_costo_unitario_mo" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_costo_unitario" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_precio_sugerido" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_estado" Type="Int32" />
+    <Property Name="cot_estado_aut_precio" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="cot_key_pedido" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cot_inv_prorrateado" Type="Boolean" />
+    <Property Name="cot_valor_prorrateo_siva" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_valor_prorrateo_siva_uni" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_precio_final_siva" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_precio_final_civa" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_total_final_civa" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="cot_total_final_siva" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="cot_und_paq" Type="Int32" />
+    <Property Name="cot_det_insumo" Type="Int32" />
+  </EntityType>
+  <EntityType Name="cotizacion_capa">
+    <Key>
+      <PropertyRef Name="cot_id" />
+    </Key>
+    <Property Name="cot_id" Type="Int32" Nullable="false" />
+    <Property Name="cot_tipo" Type="Int32" />
+    <Property Name="cli_id" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="cot_cli_nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cot_cli_nit" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="cot_cli_direccion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="cot_cli_telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="cot_fecharequerido" Type="DateTime" Precision="3" />
+    <Property Name="cot_diasvalidez" Type="Int32" />
+    <Property Name="cot_totalcantidad" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="cot_totalpeso" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="cot_totalsiva" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_totalciva" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="usu_id_crea" Type="Int32" />
+    <Property Name="usu_id_modifica" Type="Int32" />
+    <Property Name="usu_id_autoriza" Type="Int32" />
+    <Property Name="cot_fechacreacion" Type="DateTime" Precision="3" />
+    <Property Name="cot_fechamodificacion" Type="DateTime" Precision="3" />
+    <Property Name="cot_fechaautorizacion" Type="DateTime" Precision="3" />
+    <Property Name="cot_estado" Type="Int32" />
+    <Property Name="cot_keypedido" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="cot_clienteregistrado" Type="Int32" />
+    <Property Name="cot_no_paquetes" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="cot_cli_registrado" Type="Int32" />
+    <Property Name="cot_retencion" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_percepcion" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_iva" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_subtotal" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="bod_id" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="cot_descuento_gral" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="cot_gravadas" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="usu_id_fin" Type="Int32" />
+    <Property Name="cot_fechafin" Type="DateTime" Precision="3" />
+    <Property Name="cot_fechaenvprod" Type="DateTime" Precision="3" />
+    <Property Name="usu_id_gen_ped_nd" Type="Int32" />
+    <Property Name="cot_fecha_gen_ped_nd" Type="DateTime" Precision="3" />
+    <Property Name="cot_tipo_doc" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="cot_pedido_gen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="emp_id" Type="Int32" />
+    <Property Name="cot_flete" Type="Decimal" Precision="14" Scale="2" />
+    <Property Name="cot_id_canal" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="cot_cli_exento" Type="Boolean" />
+    <Property Name="cot_fecha_prorroga" Type="DateTime" Precision="3" />
+    <Property Name="cot_comentario_prorroga" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="cot_exentas" Type="Decimal" Precision="14" Scale="6" />
+    <Property Name="cot_comentario_cancela" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_cotizacion_detalle_cotizacion_capa">
+    <End Type="GlobalDBModel.cotizacion_capa" Role="cotizacion_capa" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="GlobalDBModel.cotizacion_detalle" Role="cotizacion_detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cotizacion_capa">
+        <PropertyRef Name="cot_id" />
+      </Principal>
+      <Dependent Role="cotizacion_detalle">
+        <PropertyRef Name="cot_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

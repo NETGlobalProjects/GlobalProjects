@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWDS.Views.MisAsignadas" BackgroundColor="White" Title="Asignadas">
+
+    <Grid RowDefinitions="50,*" BackgroundColor="White">
+        <SearchBar Grid.Row="0" Placeholder="Búscar" PlaceholderColor="Gray" TextColor="Gray" Visual="Material"  x:Name="scBuscar" SearchButtonPressed="scBuscar_SearchButtonPressed" TextChanged="scBuscar_TextChanged" >
+            
+        </SearchBar>
+        <RefreshView Grid.Row="1" x:Name="rvPanel" RefreshColor="#78b947" Refreshing="RefreshView_Refreshing"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            
+       
+        <ScrollView  Padding="5,5,5,0" BackgroundColor="Transparent">
+
+            <CollectionView x:Name="cvOrdenesAsig"  SelectionMode="Single"  SelectionChanged="cvOrdenesAsig_SelectionChanged">
+
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate>
+                        <Grid BackgroundColor="Transparent" ColumnDefinitions="55,*,60,30" RowDefinitions="Auto, 1" RowSpacing="10" >
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal" />
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="#E5E5E5" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+
+                            <Label Text="{Binding ord_id}" TextColor="Gray" VerticalTextAlignment="Start" IsVisible="false"></Label>
+                            <!--Foto de Perfil-->
+                            <StackLayout Grid.Column="0" Grid.Row="0"  Padding="2,0,2,0" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="Center">
+                                <Frame CornerRadius="100" 
+                                   HeightRequest="50"
+                                   WidthRequest="50"
+                                   HorizontalOptions="Center"
+                                   Padding="0"
+                                   IsClippedToBounds="True">
+                                        <Image Source="{Binding usu_nomina_fotografia}" x:Name="imgBtnFotoPerfil" Aspect="AspectFill" WidthRequest="100"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center" />
+                                </Frame>
+                            </StackLayout>
+
+                            <!--Descripcion-->
+                            <StackLayout Grid.Column="1" Grid.Row="0" Padding="0,0,0,0">
+                                <StackLayout VerticalOptions="Start">
+                                    <Label Text="{Binding ord_descripcion}" TextColor="Gray" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                                <StackLayout VerticalOptions="Start">
+                                    <Label Text="{Binding detalle}" TextColor="Gray" VerticalTextAlignment="Start"></Label>
+                                </StackLayout>
+                            </StackLayout>
+
+                       
+                            <!--Estado-->
+                            <StackLayout Grid.Column="2" Grid.Row="0" Padding="0,0,0,0" VerticalOptions="Center" HorizontalOptions="Center">
+                                <Frame CornerRadius="10" Padding="5" BackgroundColor="{Binding estado_color}">
+                                   <Label Text="{Binding oes_descripcion}" TextColor="White" FontSize="10" HorizontalTextAlignment="Center"></Label>
+                                </Frame>
+                            </StackLayout>
+
+                            <!--next icon-->
+                            <StackLayout Grid.Column="3" Grid.Row="0" Padding="0,0,0,0" VerticalOptions="Center" HorizontalOptions="Center">
+                                <Image Source="ic_arrow_forward_ios" WidthRequest="20"></Image>
+                            </StackLayout>
+
+                                <ContentView Grid.ColumnSpan="4" Grid.Row="1" HeightRequest="1" BackgroundColor="#DBDBDB"  />
+                            </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+        </RefreshView>
+    </Grid>
+    
+</ContentPage>

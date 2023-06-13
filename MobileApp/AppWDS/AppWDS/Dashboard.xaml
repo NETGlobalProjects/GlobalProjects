@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWDS.Dashboard" Title="Global WDS" BackgroundColor="White">
+    <ContentPage.Content>
+        <RefreshView x:Name="rvPanel" RefreshColor="#78b947" Refreshing="rvPanel_Refreshing">
+            <WebView x:Name="wvNavegador" >
+
+            </WebView>
+        </RefreshView>
+        
+    </ContentPage.Content>
+</ContentPage>

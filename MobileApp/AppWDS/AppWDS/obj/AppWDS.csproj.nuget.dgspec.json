@@ -1,0 +1,117 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\00 GITHUB GLOBAL\\GlobalProjects\\MobileApp\\AppWDS\\AppWDS\\AppWDS.csproj": {}
+  },
+  "projects": {
+    "C:\\00 GITHUB GLOBAL\\GlobalProjects\\MobileApp\\AppWDS\\AppWDS\\AppWDS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\00 GITHUB GLOBAL\\GlobalProjects\\MobileApp\\AppWDS\\AppWDS\\AppWDS.csproj",
+        "projectName": "WDS Global",
+        "projectPath": "C:\\00 GITHUB GLOBAL\\GlobalProjects\\MobileApp\\AppWDS\\AppWDS\\AppWDS.csproj",
+        "packagesPath": "C:\\Users\\JoseDuran\\.nuget\\packages\\",
+        "outputPath": "C:\\00 GITHUB GLOBAL\\GlobalProjects\\MobileApp\\AppWDS\\AppWDS\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JoseDuran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.1.0.514, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Plugin.LocalNotification": {
+              "target": "Package",
+              "version": "[9.0.0-preview01, )"
+            },
+            "Prism.Forms": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            },
+            "Syncfusion.Xamarin.Buttons": {
+              "target": "Package",
+              "version": "[19.2.0.51, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0-preview.6.21352.12, )"
+            },
+            "Xam.Plugin.SimpleAudioPlayer": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2083, )"
+            },
+            "Xamarin.Forms.ComboBox": {
+              "target": "Package",
+              "version": "[1.0.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

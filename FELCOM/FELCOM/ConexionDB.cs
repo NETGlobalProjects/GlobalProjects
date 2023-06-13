@@ -24,7 +24,7 @@ namespace FELCOM
             }
 
         }
-        SqlConnection cn = new SqlConnection("Data Source=192.168.0.148\\NETDATASQL;Initial Catalog=NDTEST;User ID=sa;Password=Fresasc0ncrema;MultipleActiveResultSets=True;Connect Timeout=100;Encrypt=False;Application Name=FELCOM;Current Language=spanish");
+        SqlConnection cn = new SqlConnection(Properties.Settings.Default.cString);
         public string getString()
         {
             return cn.ConnectionString;

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AppWDS.Maestro" Title="Master" BackgroundColor="White" xmlns:local="clr-namespace:AppWDS" xmlns:Views="clr-namespace:AppWDS.Views" >
+    
+    
+    
+    <ContentPage.Content>
+
+     
+
+        <ScrollView Grid.Row="1" Padding="0" BackgroundColor="Transparent" >
+            
+            
+            <Grid BackgroundColor="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="175" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Image Source="fondo_azul" Aspect="AspectFill" />
+                    <StackLayout Padding="0,10,0,0" >
+                        <!--<Grid ColumnDefinitions="*">-->
+
+                        <StackLayout Padding="0,10,0,0">
+                            <Frame CornerRadius="100" 
+                               HeightRequest="100"
+                               WidthRequest="100"
+                               HorizontalOptions="Center"
+                               Padding="0"
+                               IsClippedToBounds="True">
+                                <Image Source="http://aplicativos.agroalim.com.sv/emp_fts/JDURAN.PNG" x:Name="imgBtnFotoPerfil" Aspect="AspectFill" WidthRequest="100"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                            </Frame>
+                        </StackLayout>
+                        <Label Text="Adam Pedley" x:Name="lblNombre" TextColor="White" FontSize="Large" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </Grid>
+                <StackLayout Margin="20,0,20,0" Grid.Row="1" Spacing="5">
+
+                    <!--<Grid
+                         Grid.Row="1"
+                        Grid.Column="0"
+                        HeightRequest="40"
+                        HorizontalOptions="Fill"
+                        IsClippedToBounds="False"
+                        VerticalOptions="Center">       
+
+                        --><!--  Button Control  --><!--
+                        <Button BackgroundColor="Black" Clicked="btnAddNew_Clicked" >
+                            <Button.Margin>
+                                <OnPlatform x:TypeArguments="Thickness">
+                                    <On Platform="Android" Value="-4,-6,-4,-5" />
+                                    <On Platform="iOS" Value="0" />
+                                </OnPlatform>
+                            </Button.Margin>
+                           
+                        </Button>
+
+                        --><!--  Text Label  --><!--
+                        <Label
+                            Margin="10,0,0,0"
+                                                Padding="30,0,0,0"
+                            FontAttributes="Bold"
+                            FontSize="Small"
+                            HorizontalOptions="Start"
+                            HorizontalTextAlignment="Center"
+                            InputTransparent="True"
+                            Text="Nueva Orden"
+                            TextColor="Black"
+                            VerticalOptions="Center"
+                            VerticalTextAlignment="Center" />
+
+                                            --><!--  Icon Image  --><!--
+                                        <Image
+                            Margin="0,0,5,0"
+                            HeightRequest="30"
+                            HorizontalOptions="Start"
+                            InputTransparent="True"
+                            Source="ic_add_circle"
+                            VerticalOptions="Center"
+                            WidthRequest="30" />    
+                    </Grid>-->
+                    <Grid RowDefinitions="*" BackgroundColor="White" HorizontalOptions="Fill" >
+                        
+                        <Label Grid.Row="0" Text="Crear Orden" WidthRequest="40" TextColor="Black" BackgroundColor="Transparent" InputTransparent="True"></Label>
+                        <Image  Grid.Row="0" Source="ic_add_circle" BackgroundColor="Transparent" WidthRequest="30"></Image>
+                        <Button Visual="Material" Grid.Row="0" BackgroundColor="White"></Button>
+
+                     
+                    </Grid>
+
+                    
+
+                    <ImageButton BackgroundColor="White" Source="ic_add_circle" HorizontalOptions="Start"></ImageButton>
+                    <Button ImageSource="ic_add_circle" Text="   Crear Orden"  ContentLayout="left,0" TextColor="Gray" BackgroundColor="White" HeightRequest="40" HorizontalOptions="Start" x:Name="btnAddNew" Clicked="btnAddNew_Clicked" WidthRequest="300"></Button>
+                    <ContentView   HeightRequest="0.02" BackgroundColor="#DBDBDB" />
+                    <Button   ImageSource="ic_assignment_ind" Text="  asignadas" ContentLayout="left,0" TextColor="Gray" BackgroundColor="White" HeightRequest="40" HorizontalOptions="Start" x:Name="btnAsignadas" Clicked="btnAsignadas_Clicked" WidthRequest="300"></Button>
+                    <ContentView  HeightRequest="0.02" BackgroundColor="#DBDBDB" />
+                    <Button   ImageSource="ic_attach_file" Text="   Asignar Orden" ContentLayout="left,0" TextColor="Gray" BackgroundColor="White" HeightRequest="40" HorizontalOptions="Start" x:Name="btnAsignar" Clicked="btnAsignar_Clicked" WidthRequest="300"></Button>
+                    <ContentView   HeightRequest="0.02" BackgroundColor="#DBDBDB" />
+                    <Button  ImageSource="ic_history" Text="   Historial" ContentLayout="left,0" TextColor="Gray" BackgroundColor="White" HeightRequest="40" HorizontalOptions="Start" x:Name="btnHistorial" Clicked="btnHistorial_Clicked" WidthRequest="300"  ></Button>
+                    <ContentView   HeightRequest="0.02" BackgroundColor="#DBDBDB" />
+                    <Button   ImageSource="ic_logout" Text="   Salir" ContentLayout="left,0" TextColor="Gray" BackgroundColor="White" HeightRequest="40" HorizontalOptions="Start" x:Name="btnSalir" Clicked="btnSalir_Clicked" WidthRequest="300"></Button>
+
+                </StackLayout>
+                
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

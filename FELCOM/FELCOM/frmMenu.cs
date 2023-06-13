@@ -18,7 +18,6 @@ namespace FELCOM
         {
             InitializeComponent();
         }
-
         private void buttonItem2_Click(object sender, EventArgs e)
         {
             frmPantallaPrincipal hilo = new frmPantallaPrincipal();
@@ -26,7 +25,6 @@ namespace FELCOM
             hilo.MdiParent  = this;
             hilo.Show();
         }
-
         private void buttonItem1_Click(object sender, EventArgs e)
         {
             this.LayoutMdi(MdiLayout.TileVertical);

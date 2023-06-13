@@ -1,0 +1,92 @@
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\WDS Global.deps.json
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\WDS Global.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\ref\WDS Global.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\WDS Global.pdb
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\Mono.Android.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\Xamarin.Forms.Platform.Android.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\FormsViewGroup.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\Mono.Android.pdb
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\Mono.Android.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\Xamarin.Forms.Platform.Android.pdb
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\FormsViewGroup.pdb
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Dashboard.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Maestro.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Menu.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Navegaciones.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Principal.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AsignarOrden.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AñadirModificarMaterial.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\BuscarMaterial.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\CrearOrden.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\LogOut.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\MisAsignadas.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\PartesOrden.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\RevisarOrdenAsig.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\SelecionePaisEmpresa.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.AssemblyInfoInputs.cache
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.AssemblyInfo.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.csproj.CoreCompileInputs.cache
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\WDS Global.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\ref\WDS Global.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\WDS Global.pdb
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\MisOrdenes.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AsignarOrdenAñadirMecanico.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AsignarOrdenBuscarMecanicos.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AsignarOrdenDetalle.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\RecuperarContrasena.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\RecuperarContrasenaConfirmar.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AutorizacionPrecios.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\autorizacionPreciosDetalle.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\autorizacionPreciosDetalleXProd.xaml.g.cs
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.csproj.CopyComplete
+C:\Users\JoseDuran\source\AppWDS\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.csproj.AssemblyReference.cache
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\WDS Global.deps.json
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\WDS Global.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\ref\WDS Global.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\WDS Global.pdb
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\Mono.Android.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\Xamarin.Forms.Platform.Android.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\FormsViewGroup.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\Mono.Android.pdb
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\Mono.Android.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\Xamarin.Forms.Platform.Android.pdb
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Release\netstandard2.0\FormsViewGroup.pdb
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.csproj.AssemblyReference.cache
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.GeneratedMSBuildEditorConfig.editorconfig
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Dashboard.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Maestro.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Menu.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Navegaciones.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Principal.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AsignarOrden.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AsignarOrdenAñadirMecanico.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AsignarOrdenBuscarMecanicos.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AsignarOrdenDetalle.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AutorizacionPrecios.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\autorizacionPreciosDetalle.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\autorizacionPreciosDetalleXProd.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\AñadirModificarMaterial.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\BuscarMaterial.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\CrearOrden.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\LogOut.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\MisAsignadas.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\MisOrdenes.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\PartesOrden.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\RecuperarContrasena.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\RecuperarContrasenaConfirmar.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\RevisarOrdenAsig.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\Views\SelecionePaisEmpresa.xaml.g.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.AssemblyInfoInputs.cache
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.AssemblyInfo.cs
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.csproj.CoreCompileInputs.cache
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\XamlC.stamp
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.csproj.CopyComplete
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\WDS Global.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\ref\WDS Global.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\WDS Global.pdb

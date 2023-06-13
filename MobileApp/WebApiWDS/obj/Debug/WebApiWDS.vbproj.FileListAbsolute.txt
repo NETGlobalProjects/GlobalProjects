@@ -1,0 +1,206 @@
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.Resources.resources
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.GenerateResource.cache
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.CoreCompileInputs.cache
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\WebApiWDS.dll.config
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\WebApiWDS.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\WebApiWDS.pdb
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\WebApiWDS.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\csc.exe
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\csc.exe.config
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\csc.rsp
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\csi.exe
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\csi.exe.config
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\csi.rsp
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.AppContext.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Console.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.IO.Compression.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Net.Http.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.ValueTuple.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\vbc.exe
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\vbc.exe.config
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\vbc.rsp
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\VBCSCompiler.exe
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\Antlr3.Runtime.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\EntityFramework.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\EntityFramework.SqlServer.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\Newtonsoft.Json.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Net.Http.Formatting.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Helpers.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Http.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Http.WebHost.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Mvc.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Optimization.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Razor.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.WebPages.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.WebPages.Razor.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\WebGrease.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\EntityFramework.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\EntityFramework.SqlServer.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\Newtonsoft.Json.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Net.Http.Formatting.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Helpers.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Http.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Http.WebHost.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Mvc.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Optimization.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.Razor.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.WebPages.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\System.Web.WebPages.Razor.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\Antlr3.Runtime.pdb
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\es\System.Web.Helpers.resources.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\es\System.Web.Http.resources.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\es\System.Web.Mvc.resources.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\es\System.Web.Optimization.resources.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\es\System.Web.Razor.resources.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\es\System.Web.WebPages.resources.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.dll
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.xml
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.pdb
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.AssemblyReference.cache
+C:\Users\JoseDuran\source\AppWDS\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.CopyComplete
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\WebApiWDS.dll.config
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\WebApiWDS.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\WebApiWDS.pdb
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\WebApiWDS.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\csc.exe
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\csc.exe.config
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\csc.rsp
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\csi.exe
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\csi.exe.config
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\csi.rsp
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.AppContext.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Collections.Immutable.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Console.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Globalization.Calendars.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.IO.Compression.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.IO.FileSystem.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Net.Http.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Net.Sockets.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Reflection.Metadata.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.ValueTuple.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Xml.XPath.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\vbc.exe
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\vbc.exe.config
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\vbc.rsp
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\VBCSCompiler.exe
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\roslyn\VBCSCompiler.exe.config
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\Antlr3.Runtime.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\EntityFramework.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\EntityFramework.SqlServer.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\Microsoft.Web.Infrastructure.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\Newtonsoft.Json.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Net.Http.Formatting.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Helpers.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Http.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Http.WebHost.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Mvc.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Optimization.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Razor.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.WebPages.Deployment.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.WebPages.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.WebPages.Razor.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\WebGrease.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\EntityFramework.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\EntityFramework.SqlServer.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\Newtonsoft.Json.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Net.Http.Formatting.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Helpers.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Http.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Http.WebHost.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Mvc.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Optimization.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.Razor.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.WebPages.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.WebPages.Deployment.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\System.Web.WebPages.Razor.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\Antlr3.Runtime.pdb
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Net.Http.Formatting.resources.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.Helpers.resources.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.Http.resources.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.Http.WebHost.resources.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.Mvc.resources.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.Optimization.resources.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.Razor.resources.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.WebPages.resources.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.AssemblyReference.cache
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.Resources.resources
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.GenerateResource.cache
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.CoreCompileInputs.cache
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.CopyComplete
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.pdb

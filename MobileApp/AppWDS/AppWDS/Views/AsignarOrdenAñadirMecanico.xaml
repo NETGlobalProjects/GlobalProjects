@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWDS.Views.AsignarOrdenAñadirMecanico" BackgroundColor="White" Title="Añadir Mecánico">
+
+    <Grid RowDefinitions="80,120,50,60,*">
+        <StackLayout Grid.Row="0" HorizontalOptions="Center" Padding="3,10,3,0">
+            <Label Text="¿Confirma que desea añadir el mécanico?" x:Name="lblConfirma" FontSize="20" TextColor="Gray" HorizontalTextAlignment="Center"></Label>
+        </StackLayout>
+        <StackLayout  Grid.Row="1"  Padding="2,0,2,0" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="Center">
+            <Frame CornerRadius="100" 
+                                   HeightRequest="100"
+                                   WidthRequest="100"
+                                   HorizontalOptions="Center"
+                                   Padding="0"
+                                   IsClippedToBounds="True">
+                <Image Source="{Binding usu_nomina_fotografia}" x:Name="imgBtnFotoPerfil" Aspect="AspectFill" WidthRequest="100"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center" />
+            </Frame>
+        </StackLayout>
+        <StackLayout Grid.Row="2" HorizontalOptions="Center">
+            <Label Text="" x:Name="lblNombre" FontSize="20" TextColor="Gray" HorizontalTextAlignment="Center"></Label>
+        </StackLayout>
+        
+        <StackLayout Grid.Row="3" Orientation="Horizontal" Padding="0,20,0,0" HorizontalOptions="Center">
+            <Button Text="Si, Confirmar!!" CornerRadius="10" BackgroundColor="#194d93" HeightRequest="40" x:Name="btnSiConfirmar" TextColor="White" Clicked="btnSiConfirmar_Clicked"></Button>
+            <Button Text="No, Cancelar!!" CornerRadius="10" BackgroundColor="Black" HeightRequest="40" x:Name="btnNoCancelar" TextColor="White" Clicked="btnNoCancelar_Clicked"></Button>
+        </StackLayout>
+    </Grid>
+</ContentPage>

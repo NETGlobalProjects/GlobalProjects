@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Controls="clr-namespace:AppWDS.Controls"
+             x:Class="AppWDS.Views.CrearOrden"
+             Title="Nueva Orden"
+             BackgroundColor="#17468f"
+            >
+   
+    <Grid BackgroundColor="White" Padding="10,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+           
+        </Grid.RowDefinitions>
+
+        
+            <ScrollView  Grid.Row="0">
+                <StackLayout>
+                    <StackLayout VerticalOptions="Start" HorizontalOptions="Center">
+                        <Image Source="mantenimiento22" BackgroundColor="Transparent"  WidthRequest="300" ></Image>
+                    </StackLayout>
+                    <!--<StackLayout  VerticalOptions="End">
+                        <Label Text="Área" TextColor="Gray" FontSize="Micro"></Label>
+                    </StackLayout>-->
+                    <StackLayout  VerticalOptions="Start">
+                        <!--<Frame Margin="0" CornerRadius="10" Padding="5,0,5,0">-->
+                            <Controls:BorderlessPicker Visual="Material" BackgroundColor="White" x:Name="cbxAreas" Title="Área" TextColor="Gray" FontSize="15" TitleColor="Gray"  ItemDisplayBinding="{Binding are_descripcion} " SelectedItem="{Binding are_descripcion}"   SelectedIndexChanged="cbxAreas_SelectedIndexChanged" >
+                            </Controls:BorderlessPicker>
+                        <!--</Frame>-->
+                    </StackLayout>
+
+                    <!--<StackLayout VerticalOptions="End">
+                        <Label Text="Sub Área" TextColor="Gray" FontSize="Micro"></Label>
+                    </StackLayout>-->
+                    <StackLayout  VerticalOptions="Start">
+                        <!--<Frame Margin="0" CornerRadius="10" Padding="5,0,5,0">-->
+                    <Controls:BorderlessPicker Visual="Material" BackgroundColor="White" x:Name="cbxSubAreas" Title="Sub Área" TextColor="Gray"  FontSize="15" TitleColor="Gray" ItemDisplayBinding="{Binding sba_descripcion} " SelectedItem="{Binding sba_descripcion}" SelectedIndexChanged="cbxSubAreas_SelectedIndexChanged" >
+                            </Controls:BorderlessPicker>
+                        <!--/Frame>-->
+                    </StackLayout>
+
+
+                    <!--<StackLayout VerticalOptions="End">
+                        <Label Text="Máquina" TextColor="Gray" FontSize="Micro"></Label>
+                    </StackLayout>-->
+                    <StackLayout  VerticalOptions="Start">
+                        <!--<Frame Margin="0" CornerRadius="10" Padding="5,0,5,0">-->
+                    <Controls:BorderlessPicker Visual="Material" BackgroundColor="White" x:Name="cbxMaquinas" Title="Máquina" TextColor="Gray" FontSize="15" TitleColor="Gray" ItemDisplayBinding="{Binding maq_codigo_nombre} " SelectedItem="{Binding maq_codigo_nombre}" >
+                            </Controls:BorderlessPicker>
+                        <!--</Frame>-->
+                    </StackLayout>
+
+
+                    <!--<StackLayout  VerticalOptions="End">
+                        <Label Text="Tipo Orden" TextColor="Gray" FontSize="Micro"></Label>
+                    </StackLayout>-->
+                    <StackLayout  VerticalOptions="Start">
+                        <!--<Frame Margin="0" CornerRadius="10" Padding="5,0,5,0">-->
+                    <Controls:BorderlessPicker Visual="Material" BackgroundColor="White" x:Name="cbxTipoOrden" Title="Tipo de Orden"  FontSize="15" TextColor="Gray" TitleColor="Gray" ItemDisplayBinding="{Binding tio_descripcion} " SelectedItem="{Binding tio_descripcion}">
+                            </Controls:BorderlessPicker>
+                        <!--</Frame>-->
+                    </StackLayout>
+
+
+                    <!--<StackLayout  VerticalOptions="End">
+                        <Label Text="Prioridad" TextColor="Gray" FontSize="Micro"></Label>
+                    </StackLayout>-->
+                    <StackLayout VerticalOptions="Start">
+                        <!--<Frame Margin="0" CornerRadius="10" Padding="5,0,5,0">-->
+                    <Controls:BorderlessPicker Visual="Material" BackgroundColor="White" x:Name="cbxProridad" Title="Prioridad" FontSize="15" TextColor="Gray" TitleColor="Gray" ItemDisplayBinding="{Binding pri_descripcion} " SelectedItem="{Binding pri_descripcion}">
+                            </Controls:BorderlessPicker>
+                        <!--</Frame>-->
+                    </StackLayout>
+
+                    <!--<StackLayout  VerticalOptions="End">
+                        <Label Text="Centro de Atención" TextColor="Gray" FontSize="Micro"></Label>
+                    </StackLayout>-->
+                    <StackLayout  VerticalOptions="Start">
+                        <!--<Frame Margin="0" CornerRadius="10" Padding="5,0,5,0">-->
+                    <Controls:BorderlessPicker Visual="Material" BackgroundColor="White" x:Name="cbxCentroAtencion" Title="Centro de Atención" FontSize="15" TextColor="Gray" TitleColor="Gray" ItemDisplayBinding="{Binding cda_descripcion} " SelectedItem="{Binding cda_descripcion}">
+                            </Controls:BorderlessPicker>
+                        <!--</Frame>-->
+                    </StackLayout>
+
+                    <!--<StackLayout  VerticalOptions="End">
+                        <Label Text="Comentarios" TextColor="Gray" FontSize="Micro"></Label>
+                    </StackLayout>-->
+                <StackLayout  VerticalOptions="Start" BackgroundColor="White">
+                        <Frame Margin="0" CornerRadius="10" Padding="5,0,5,0" HeightRequest="200">
+                        <Editor Visual="Material" x:Name="txtComentarios" BackgroundColor="White"  Placeholder="Comentarios" PlaceholderColor="Gray" FontSize="15" TextColor="Gray" HeightRequest="200"></Editor>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+        <Frame Grid.Row="0" WidthRequest="50" HeightRequest="50"  VerticalOptions="End" HorizontalOptions="End" BackgroundColor="#17468f" Margin="10"   HasShadow="False" CornerRadius="100"  Padding="10">
+
+            <Button Visual="Material" CornerRadius="100" BackgroundColor="#17468f"  VerticalOptions="End" HorizontalOptions="End" Clicked="ImageButton_Clicked" ImageSource="ic_save" Text=""  WidthRequest="60" HeightRequest="60" Padding="10"  ></Button>
+        </Frame>
+        
+       
+
+    </Grid>
+
+
+
+
+</ContentPage>
