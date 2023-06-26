@@ -45,8 +45,8 @@ namespace AppWDS
         public App()
         {
             InitializeComponent();
-            url_api = "http://aplicativos.agroalim.com.sv/net/webapi_test/api/";
-            //url_api = "http://aplicativos.agroalim.com.sv/net/webapi/api/";
+            //url_api = "http://aplicativos.agroalim.com.sv/net/webapi_test/api/";
+            url_api = "http://aplicativos.agroalim.com.sv/net/webapi/api/";
             MainPage = new NavigationPage(new MainPage());
 
             Device.StartTimer(TimeSpan.FromSeconds(15), () =>

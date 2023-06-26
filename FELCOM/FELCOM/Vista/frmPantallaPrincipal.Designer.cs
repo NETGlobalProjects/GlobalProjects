@@ -51,11 +51,12 @@ namespace FELCOM.Vista
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
             this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.logsDgv = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Mensaje = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.richTextBoxEx1 = new DevComponents.DotNetBar.Controls.RichTextBoxEx();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
@@ -68,12 +69,28 @@ namespace FELCOM.Vista
             this.ajustesbuttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.label1 = new System.Windows.Forms.Label();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.pdfBtn = new DevComponents.DotNetBar.ButtonX();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mensaje = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.XMLResponse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vacio2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.listaProcesosdataGridViewX1)).BeginInit();
             this.panelEx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
             this.superTabControlPanel2.SuspendLayout();
+            this.panelEx2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logsDgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             this.superTabControlPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +99,7 @@ namespace FELCOM.Vista
             this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(935, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1058, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -177,7 +194,7 @@ namespace FELCOM.Vista
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Location = new System.Drawing.Point(0, 24);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(935, 421);
+            this.panelEx1.Size = new System.Drawing.Size(1058, 551);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -204,8 +221,8 @@ namespace FELCOM.Vista
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
-            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel2);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControl1.ForeColor = System.Drawing.Color.Black;
             this.superTabControl1.Location = new System.Drawing.Point(0, 0);
@@ -213,7 +230,7 @@ namespace FELCOM.Vista
             this.superTabControl1.ReorderTabsEnabled = true;
             this.superTabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.superTabControl1.SelectedTabIndex = 0;
-            this.superTabControl1.Size = new System.Drawing.Size(935, 421);
+            this.superTabControl1.Size = new System.Drawing.Size(1058, 551);
             this.superTabControl1.TabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.superTabControl1.TabIndex = 1;
             this.superTabControl1.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -224,13 +241,49 @@ namespace FELCOM.Vista
             // 
             // superTabControlPanel2
             // 
-            this.superTabControlPanel2.Controls.Add(this.logsDgv);
+            this.superTabControlPanel2.Controls.Add(this.panelEx2);
             this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel2.Location = new System.Drawing.Point(0, 30);
             this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(935, 391);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(1058, 521);
             this.superTabControlPanel2.TabIndex = 0;
             this.superTabControlPanel2.TabItem = this.superTabItem2;
+            // 
+            // panelEx2
+            // 
+            this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.Controls.Add(this.splitContainer1);
+            this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEx2.Location = new System.Drawing.Point(0, 0);
+            this.panelEx2.Name = "panelEx2";
+            this.panelEx2.Size = new System.Drawing.Size(1058, 521);
+            this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx2.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx2.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx2.Style.GradientAngle = 90;
+            this.panelEx2.TabIndex = 1;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.logsDgv);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
+            this.splitContainer1.Size = new System.Drawing.Size(1058, 521);
+            this.splitContainer1.SplitterDistance = 199;
+            this.splitContainer1.TabIndex = 1;
             // 
             // logsDgv
             // 
@@ -250,7 +303,9 @@ namespace FELCOM.Vista
             this.Id,
             this.Fecha,
             this.Tipo,
-            this.Mensaje});
+            this.Mensaje,
+            this.XMLResponse,
+            this.vacio2});
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -273,40 +328,53 @@ namespace FELCOM.Vista
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.logsDgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.logsDgv.Size = new System.Drawing.Size(935, 391);
+            this.logsDgv.Size = new System.Drawing.Size(1058, 199);
             this.logsDgv.TabIndex = 0;
             // 
-            // Id
+            // splitContainer2
             // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "ID";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 70;
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // Fecha
+            // splitContainer2.Panel1
             // 
-            this.Fecha.DataPropertyName = "Fecha";
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
-            this.Fecha.Width = 130;
+            this.splitContainer2.Panel1.Controls.Add(this.richTextBoxEx1);
             // 
-            // Tipo
+            // splitContainer2.Panel2
             // 
-            this.Tipo.DataPropertyName = "Tipo";
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            this.Tipo.Width = 80;
+            this.splitContainer2.Panel2.Controls.Add(this.webBrowser1);
+            this.splitContainer2.Size = new System.Drawing.Size(1058, 318);
+            this.splitContainer2.SplitterDistance = 77;
+            this.splitContainer2.TabIndex = 1;
             // 
-            // Mensaje
+            // richTextBoxEx1
             // 
-            this.Mensaje.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Mensaje.DataPropertyName = "Mensaje";
-            this.Mensaje.HeaderText = "Mensaje";
-            this.Mensaje.Name = "Mensaje";
-            this.Mensaje.ReadOnly = true;
+            // 
+            // 
+            // 
+            this.richTextBoxEx1.BackgroundStyle.Class = "RichTextBoxBorder";
+            this.richTextBoxEx1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.richTextBoxEx1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBoxEx1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxEx1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBoxEx1.Name = "richTextBoxEx1";
+            this.richTextBoxEx1.Rtf = "{\\rtf1\\ansi\\deff0\\nouicompat{\\fonttbl{\\f0\\fnil\\fcharset0 Microsoft Sans Serif;}}\r" +
+    "\n{\\*\\generator Riched20 10.0.22621}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs20\\lang6154 richT" +
+    "extBoxEx1\\par\r\n}\r\n";
+            this.richTextBoxEx1.Size = new System.Drawing.Size(1058, 77);
+            this.richTextBoxEx1.TabIndex = 0;
+            this.richTextBoxEx1.Text = "richTextBoxEx1";
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(1058, 237);
+            this.webBrowser1.TabIndex = 0;
             // 
             // superTabItem2
             // 
@@ -352,7 +420,7 @@ namespace FELCOM.Vista
             // 
             // 
             this.switchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.switchButton1.Location = new System.Drawing.Point(818, 2);
+            this.switchButton1.Location = new System.Drawing.Point(941, 2);
             this.switchButton1.Name = "switchButton1";
             this.switchButton1.OffText = "APAGADO";
             this.switchButton1.OnText = "ENCENDIDO";
@@ -396,17 +464,76 @@ namespace FELCOM.Vista
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX1.Location = new System.Drawing.Point(761, 3);
+            this.labelX1.Location = new System.Drawing.Point(884, 3);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(51, 23);
             this.labelX1.TabIndex = 5;
             this.labelX1.Text = "Escaner:";
             // 
+            // pdfBtn
+            // 
+            this.pdfBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.pdfBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.pdfBtn.Location = new System.Drawing.Point(589, 3);
+            this.pdfBtn.Name = "pdfBtn";
+            this.pdfBtn.Size = new System.Drawing.Size(75, 23);
+            this.pdfBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.pdfBtn.TabIndex = 6;
+            this.pdfBtn.Text = "PDF";
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "ID";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 70;
+            // 
+            // Fecha
+            // 
+            this.Fecha.DataPropertyName = "Fecha";
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            this.Fecha.Width = 130;
+            // 
+            // Tipo
+            // 
+            this.Tipo.DataPropertyName = "Tipo";
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
+            this.Tipo.Width = 80;
+            // 
+            // Mensaje
+            // 
+            this.Mensaje.DataPropertyName = "Mensaje";
+            this.Mensaje.HeaderText = "Mensaje";
+            this.Mensaje.Name = "Mensaje";
+            this.Mensaje.ReadOnly = true;
+            this.Mensaje.Width = 350;
+            // 
+            // XMLResponse
+            // 
+            this.XMLResponse.DataPropertyName = "XMLResponse";
+            this.XMLResponse.HeaderText = "Respuesta XML";
+            this.XMLResponse.Name = "XMLResponse";
+            this.XMLResponse.ReadOnly = true;
+            this.XMLResponse.Width = 350;
+            // 
+            // vacio2
+            // 
+            this.vacio2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.vacio2.HeaderText = "";
+            this.vacio2.Name = "vacio2";
+            this.vacio2.ReadOnly = true;
+            // 
             // frmPantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 445);
+            this.ClientSize = new System.Drawing.Size(1058, 575);
+            this.Controls.Add(this.pdfBtn);
             this.Controls.Add(this.labelX1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ajustesbuttonX1);
@@ -423,7 +550,16 @@ namespace FELCOM.Vista
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
             this.superTabControlPanel2.ResumeLayout(false);
+            this.panelEx2.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logsDgv)).EndInit();
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             this.superTabControlPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -454,11 +590,19 @@ namespace FELCOM.Vista
         private ButtonX ajustesbuttonX1;
         private Label label1;
         private DataGridViewX logsDgv;
+        private LabelX labelX1;
+        private ButtonX pdfBtn;
+        private PanelEx panelEx2;
+        private SplitContainer splitContainer1;
+        private RichTextBoxEx richTextBoxEx1;
+        private SplitContainer splitContainer2;
+        private WebBrowser webBrowser1;
         private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn Fecha;
         private DataGridViewTextBoxColumn Tipo;
         private DataGridViewTextBoxColumn Mensaje;
-        private LabelX labelX1;
+        private DataGridViewTextBoxColumn XMLResponse;
+        private DataGridViewTextBoxColumn vacio2;
 
         public DataGridViewX ListaProcesosdataGridViewX1 { get => listaProcesosdataGridViewX1; set => listaProcesosdataGridViewX1 = value; }
         public PanelEx PanelEx1 { get => panelEx1; set => panelEx1 = value; }
@@ -478,5 +622,8 @@ namespace FELCOM.Vista
         public ButtonX AjustesbuttonX1 { get => ajustesbuttonX1; set => ajustesbuttonX1 = value; }
         public Label Label1 { get => label1; set => label1 = value; }
         public DataGridViewX LogsDgv { get => logsDgv; set => logsDgv = value; }
+        public ButtonX PdfBtn { get => pdfBtn; set => pdfBtn = value; }
+        public RichTextBoxEx RichTextBoxEx1 { get => richTextBoxEx1; set => richTextBoxEx1 = value; }
+        public WebBrowser WebBrowser1 { get => webBrowser1; set => webBrowser1 = value; }
     }
 }

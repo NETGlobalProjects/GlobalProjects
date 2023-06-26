@@ -15,5 +15,6 @@ namespace FELCOM.Modelo
         public string ReturnNumValidacion { get; set; }
         public string ReturnDateTime { get; set; }
         public string PDF { get; set; }
+        public string ReturnfhProcesamiento { get; set; }
     }
 }

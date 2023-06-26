@@ -13,5 +13,10 @@ namespace FELCOM.Salida.DevolucionFactura
             InitializeComponent();
         }
 
+        private void xrLine1_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+
+        }
     }
 }
