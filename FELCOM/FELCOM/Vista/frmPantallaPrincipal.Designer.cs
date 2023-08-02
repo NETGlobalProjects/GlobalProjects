@@ -54,6 +54,12 @@ namespace FELCOM.Vista
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.logsDgv = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mensaje = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.XMLResponse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vacio2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.richTextBoxEx1 = new DevComponents.DotNetBar.Controls.RichTextBoxEx();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
@@ -70,12 +76,6 @@ namespace FELCOM.Vista
             this.label1 = new System.Windows.Forms.Label();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.pdfBtn = new DevComponents.DotNetBar.ButtonX();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Mensaje = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.XMLResponse = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vacio2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.listaProcesosdataGridViewX1)).BeginInit();
             this.panelEx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
@@ -145,7 +145,7 @@ namespace FELCOM.Vista
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.listaProcesosdataGridViewX1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.listaProcesosdataGridViewX1.Size = new System.Drawing.Size(935, 391);
+            this.listaProcesosdataGridViewX1.Size = new System.Drawing.Size(1058, 521);
             this.listaProcesosdataGridViewX1.TabIndex = 0;
             // 
             // Archivo
@@ -221,8 +221,8 @@ namespace FELCOM.Vista
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
-            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel1);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControl1.ForeColor = System.Drawing.Color.Black;
             this.superTabControl1.Location = new System.Drawing.Point(0, 0);
@@ -331,6 +331,53 @@ namespace FELCOM.Vista
             this.logsDgv.Size = new System.Drawing.Size(1058, 199);
             this.logsDgv.TabIndex = 0;
             // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "ID";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 70;
+            // 
+            // Fecha
+            // 
+            this.Fecha.DataPropertyName = "Fecha";
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            this.Fecha.Width = 130;
+            // 
+            // Tipo
+            // 
+            this.Tipo.DataPropertyName = "Tipo";
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
+            this.Tipo.Width = 80;
+            // 
+            // Mensaje
+            // 
+            this.Mensaje.DataPropertyName = "Mensaje";
+            this.Mensaje.HeaderText = "Mensaje";
+            this.Mensaje.Name = "Mensaje";
+            this.Mensaje.ReadOnly = true;
+            this.Mensaje.Width = 350;
+            // 
+            // XMLResponse
+            // 
+            this.XMLResponse.DataPropertyName = "XMLResponse";
+            this.XMLResponse.HeaderText = "Respuesta XML";
+            this.XMLResponse.Name = "XMLResponse";
+            this.XMLResponse.ReadOnly = true;
+            this.XMLResponse.Width = 350;
+            // 
+            // vacio2
+            // 
+            this.vacio2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.vacio2.HeaderText = "";
+            this.vacio2.Name = "vacio2";
+            this.vacio2.ReadOnly = true;
+            // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -391,7 +438,7 @@ namespace FELCOM.Vista
             this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel1.Location = new System.Drawing.Point(0, 30);
             this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(935, 391);
+            this.superTabControlPanel1.Size = new System.Drawing.Size(1058, 521);
             this.superTabControlPanel1.TabIndex = 1;
             this.superTabControlPanel1.TabItem = this.superTabItem1;
             // 
@@ -479,54 +526,7 @@ namespace FELCOM.Vista
             this.pdfBtn.Size = new System.Drawing.Size(75, 23);
             this.pdfBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.pdfBtn.TabIndex = 6;
-            this.pdfBtn.Text = "PDF";
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "ID";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 70;
-            // 
-            // Fecha
-            // 
-            this.Fecha.DataPropertyName = "Fecha";
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
-            this.Fecha.Width = 130;
-            // 
-            // Tipo
-            // 
-            this.Tipo.DataPropertyName = "Tipo";
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            this.Tipo.Width = 80;
-            // 
-            // Mensaje
-            // 
-            this.Mensaje.DataPropertyName = "Mensaje";
-            this.Mensaje.HeaderText = "Mensaje";
-            this.Mensaje.Name = "Mensaje";
-            this.Mensaje.ReadOnly = true;
-            this.Mensaje.Width = 350;
-            // 
-            // XMLResponse
-            // 
-            this.XMLResponse.DataPropertyName = "XMLResponse";
-            this.XMLResponse.HeaderText = "Respuesta XML";
-            this.XMLResponse.Name = "XMLResponse";
-            this.XMLResponse.ReadOnly = true;
-            this.XMLResponse.Width = 350;
-            // 
-            // vacio2
-            // 
-            this.vacio2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.vacio2.HeaderText = "";
-            this.vacio2.Name = "vacio2";
-            this.vacio2.ReadOnly = true;
+            this.pdfBtn.Text = "PDFF";
             // 
             // frmPantallaPrincipal
             // 
