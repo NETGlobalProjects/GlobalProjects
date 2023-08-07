@@ -626,7 +626,7 @@ namespace FELCOM.Logica
             {
                 using (SqlConnection cn = new SqlConnection(ConexionDB.instancia.getString()))
                 {
-                    string q = @"SELECT TipoDoc, upper(Nombre) Nombre, TipoDocFE, TablaRespuesta FROM TipoDocumentoFE  where TipoDoc <> 'Ti'";
+                    string q = @"SELECT TipoDoc, upper(Nombre) Nombre, TipoDocFE, TablaRespuesta, nombRespAnulacion, tipoDocRepAnulacion, numRepAnulacion, nombSolAnulacion, tipoDocSolAnulacion, numSolAnulacion, alias FROM TipoDocumentoFE  where TipoDoc <> 'Ti'";
                     SqlCommand cmd = new SqlCommand(q, cn);
 
                     cmd.CommandType = CommandType.Text;
@@ -929,6 +929,13 @@ namespace FELCOM.Logica
             public string Nombre { get; set; }
             public string TipoDocFE { get; set; }
             public string TablaRespuesta { get; set; }
+            public string nombRespAnulacion { get; set; }
+            public string tipoDocRepAnulacion { get; set; }
+            public string numRepAnulacion { get; set; }
+            public string nombSolAnulacion { get; set; }
+            public string tipoDocSolAnulacion { get; set; }
+            public string numSolAnulacion { get; set; }
+            public string alias { get; set; }
         }
         public class anioMesModel
         {

@@ -174,7 +174,7 @@ namespace FELCOM.Controlador
             directorioProcesando = Properties.Settings.Default.CarpetaProcesando + directorioProcesando + "\\";
             this.vista.SwitchButton1.Value = Properties.Settings.Default.EscanerSwitch;
         }
-        void explorarRaiz()
+        private async void  explorarRaiz()
         {
             try
             {
@@ -196,13 +196,13 @@ namespace FELCOM.Controlador
                         //File.Move(file.FullName, directorioProcesando + file.Name);
 
                         string[] nombreArchivo = file.Name.Split('-');
-                        procesando.Add(new ProcesandoModel { Archivo = file.Name, Estado = "Procesando...", TipoDocumento = tiposDocsFe.Where(a => a.TipoDocFE == Convert.ToString(nombreArchivo[1])).Select(a => a.Nombre).Single() });
+                        procesando.Add(new ProcesandoModel { Archivo = file.Name, Estado = "Procesando...", TipoDocumento = tiposDocsFe.Where(a => a.alias == Convert.ToString(nombreArchivo[1])).Select(a => a.Nombre).Single() });
                         //ejecutar(file.Name);
                         //var LastTask = Task.Factory.StartNew(() => procesarArchivo(file.Name), CancellationToken.None, TaskCreationOptions.None, _scheduler);
                         //LastTask.Start();
                         //TaskList.Add(LastTask);
 
-                        procesarArchivo(file.Name);
+                         procesarArchivo(file.Name);
                     }
                     else
                     {
@@ -279,7 +279,7 @@ namespace FELCOM.Controlador
                 throw new Exception(ex.Message, ex.InnerException);
             }    
         }
-        private void procesarArchivo(string _archivo)
+        private async void procesarArchivo(string _archivo)
         {
             archivo = _archivo;
             try
@@ -313,7 +313,7 @@ namespace FELCOM.Controlador
                 ekomercio.WSFEBuilder ws = new ekomercio.WSFEBuilder();
                 if (_archivo.Contains("-INVALIDACION"))
                 {
-                    respuesta = ws.enviar_Invalidacion(usuario, passw, id, textoPlano);
+                    respuesta =  ws.enviar_Invalidacion(usuario, passw, id, textoPlano);
                 }
                 else
                 {
@@ -416,7 +416,7 @@ namespace FELCOM.Controlador
                             actualizarListado();
 
                             string[] keyDoc = x_archivo[4].Split('!');
-                            if (tiposDocsFe.Where(a => a.TipoDocFE == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "FacturaCorrFiscal")
+                            if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "FacturaCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt32(keyDoc[1]);
@@ -445,7 +445,7 @@ namespace FELCOM.Controlador
                                 }
 
                             }
-                            else if (tiposDocsFe.Where(a => a.TipoDocFE == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "NotaCreditoCorrFiscal")
+                            else if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "NotaCreditoCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt32(keyDoc[1]);
@@ -478,7 +478,7 @@ namespace FELCOM.Controlador
                                 }
 
                             }
-                            else if (tiposDocsFe.Where(a => a.TipoDocFE == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "NotaRemisionCorrFiscal")
+                            else if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "NotaRemisionCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt16(keyDoc[1]);
@@ -506,7 +506,7 @@ namespace FELCOM.Controlador
                                 }
 
                             }
-                            else if (tiposDocsFe.Where(a => a.TipoDocFE == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "RetencionIvaCorrFiscal")
+                            else if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "RetencionIvaCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt32(keyDoc[1]);
@@ -535,7 +535,7 @@ namespace FELCOM.Controlador
                                 }
 
                             }
-                            else if (tiposDocsFe.Where(a => a.TipoDocFE == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "CompraCorrFiscal")
+                            else if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "CompraCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt32(keyDoc[1]);
@@ -562,7 +562,7 @@ namespace FELCOM.Controlador
                                 }
 
                             }
-                            else if (tiposDocsFe.Where(a => a.TipoDocFE == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "ComprasChicaCorrFiscal")
+                            else if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "ComprasChicaCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt32(keyDoc[1]);
@@ -762,9 +762,7 @@ namespace FELCOM.Controlador
                     procesando[i].Estado = _estado;
                 }
             }
-           
             Application.DoEvents();
-
         }
         private void ajustesMenuStrip_Click(object sender, EventArgs e)
         {
