@@ -20,15 +20,13 @@
                 <table style ="width :95%">
                     <tr>
                        <td style ="text-align :left ;">
-                            <dx:ASPxButton ID="regresarASPxButton1" runat="server" Text="<-REGRESAR" Width ="10%" Theme="SoftOrange" Height ="40px" CssClass ="botonincialmenu ">
+                            <dx:ASPxButton ID="regresarASPxButton1" runat="server" Text="REGRESAR" Width ="10%" Theme="SoftOrange" Height ="40px" CssClass ="botonincialmenu ">
                                 <Image IconID="navigation_backward_16x16">
                                 </Image>
                             </dx:ASPxButton>
                            
                        </td>
                    </tr>
-                    
-
                     <tr>
 
                     <td style ="text-align :left ;">
