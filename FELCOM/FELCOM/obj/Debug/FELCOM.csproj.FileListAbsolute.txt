@@ -14,4 +14,3 @@ C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.csproj.CopyCom
 C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.frmMenu.resources
 C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.Salida.DevolucionFactura.xDevolucionFactura.resources
 C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.exe.licenses
-C:\00 GITHUB GLOBAL\GlobalProjects\FELCOM\FELCOM\obj\Debug\FELCOM.csproj.SuggestedBindingRedirects.cache

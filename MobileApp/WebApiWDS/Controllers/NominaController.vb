@@ -21,7 +21,7 @@ Public Class NominaController
         If (datos IsNot Nothing) Then
             Return Request.CreateResponse(HttpStatusCode.OK, datos)
         Else
-            Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontraro datos")
+            Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontraro datos de nomina")
         End If
     End Function
 

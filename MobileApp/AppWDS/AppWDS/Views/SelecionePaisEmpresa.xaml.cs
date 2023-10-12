@@ -20,7 +20,8 @@ namespace AppWDS.Views
 		{
 			InitializeComponent ();
             cargarPaises();
-		}
+           
+        }
         [Obsolete]
         private async void btnSeleccionar_Clicked(object sender, EventArgs e)
         {
@@ -90,6 +91,7 @@ namespace AppWDS.Views
         {
             try
             {
+
                 //UserDialogs.Instance.ShowLoading("Cargando Plantel...");
                 var request = new HttpRequestMessage();
                 request.RequestUri = new Uri(App.url_api + "UsuarioEmpresa/" + p_pai_id + ";" + p_emp_id + ";" + App.usu_id);
@@ -101,10 +103,10 @@ namespace AppWDS.Views
                 {
 
                     string content = await response.Content.ReadAsStringAsync();
-                    var resultado = JsonConvert.DeserializeObject<UsuarioEmpresa>(content);
+                    var resultado = JsonConvert.DeserializeObject<List<UsuarioEmpresa>>(content);
 
-                    App.pla_id = resultado.pla_id;
-                    App.pla_descripcion = resultado.pla_descripcion;
+                    //App.pla_id = resultado.pla_id;
+                    //App.pla_descripcion = resultado.pla_descripcion;
                 }
                 UserDialogs.Instance.HideLoading();
                 cargarPlanteles(p_pai_id, p_emp_id);
@@ -119,7 +121,7 @@ namespace AppWDS.Views
         {
             UserDialogs.Instance.ShowLoading("Cargando Planteles...");
             var request = new HttpRequestMessage();
-            request.RequestUri = new Uri(App.url_api + "Planteles/" + p_pai_id + ";" + p_emp_id);
+            request.RequestUri = new Uri(App.url_api + "Planteles/" + p_pai_id + ";" + p_emp_id + ";" + App.usu_id);
             request.Method = HttpMethod.Get;
             request.Headers.Add("accept", "application/json");
             var client = new HttpClient();

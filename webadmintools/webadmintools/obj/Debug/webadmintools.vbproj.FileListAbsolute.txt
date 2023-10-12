@@ -1,0 +1,129 @@
+c:\users\joseduran\documents\visual studio 2012\Projects\webadmintools\webadmintools\bin\webadmintools.dll
+c:\users\joseduran\documents\visual studio 2012\Projects\webadmintools\webadmintools\bin\webadmintools.pdb
+c:\users\joseduran\documents\visual studio 2012\Projects\webadmintools\webadmintools\bin\webadmintools.xml
+c:\users\joseduran\documents\visual studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.Resources.resources
+c:\users\joseduran\documents\visual studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.vbproj.GenerateResource.Cache
+c:\users\joseduran\documents\visual studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.dll.licenses
+c:\users\joseduran\documents\visual studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.dll
+c:\users\joseduran\documents\visual studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.xml
+c:\users\joseduran\documents\visual studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.pdb
+C:\Users\joseduran\Desktop\Jose Duran 06112017\Docs\Visual Studio 2012\Projects\webadmintools\webadmintools\bin\webadmintools.dll
+C:\Users\joseduran\Desktop\Jose Duran 06112017\Docs\Visual Studio 2012\Projects\webadmintools\webadmintools\bin\webadmintools.pdb
+C:\Users\joseduran\Desktop\Jose Duran 06112017\Docs\Visual Studio 2012\Projects\webadmintools\webadmintools\bin\webadmintools.xml
+C:\Users\joseduran\Desktop\Jose Duran 06112017\Docs\Visual Studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.Resources.resources
+C:\Users\joseduran\Desktop\Jose Duran 06112017\Docs\Visual Studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.vbproj.GenerateResource.Cache
+C:\Users\joseduran\Desktop\Jose Duran 06112017\Docs\Visual Studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.dll.licenses
+C:\Users\joseduran\Desktop\Jose Duran 06112017\Docs\Visual Studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.dll
+C:\Users\joseduran\Desktop\Jose Duran 06112017\Docs\Visual Studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.xml
+C:\Users\joseduran\Desktop\Jose Duran 06112017\Docs\Visual Studio 2012\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.pdb
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.vbprojAssemblyReference.cache
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.Resources.resources
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.vbproj.GenerateResource.cache
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.dll.licenses
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.pdb
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\webadmintools.dll.config
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\webadmintools.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\webadmintools.pdb
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\webadmintools.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\DevExpress.Data.v14.2.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\DevExpress.Printing.v14.2.Core.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\DevExpress.RichEdit.v14.2.Core.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\DevExpress.Web.ASPxThemes.v14.2.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\DevExpress.Web.v14.2.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\DevExpress.Office.v14.2.Core.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\DevExpress.Data.v14.2.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\DevExpress.Printing.v14.2.Core.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\DevExpress.RichEdit.v14.2.Core.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\DevExpress.Web.v14.2.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\DevExpress.Office.v14.2.Core.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\de\DevExpress.Data.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\es\DevExpress.Data.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\ja\DevExpress.Data.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\ru\DevExpress.Data.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\de\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\es\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\ja\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\ru\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\de\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\es\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\ja\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\ru\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\de\DevExpress.Web.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\es\DevExpress.Web.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\ja\DevExpress.Web.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\ru\DevExpress.Web.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\de\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\es\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\ja\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\ru\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.vbproj.CopyComplete
+\\192.168.100.214\c$\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\webadmintools.dll
+\\192.168.100.214\c$\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\webadmintools.pdb
+\\192.168.100.214\c$\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\bin\webadmintools.xml
+\\192.168.100.214\c$\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.Resources.resources
+\\192.168.100.214\c$\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.vbproj.GenerateResource.Cache
+\\192.168.100.214\c$\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.dll.licenses
+\\192.168.100.214\c$\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.dll
+\\192.168.100.214\c$\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.xml
+\\192.168.100.214\c$\Users\JoseDuran\Documents\Visual Studio 2019\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.pdb
+C:\ProyectosVB2019\webadmintools\webadmintools\obj\Debug\webadmintools.Resources.resources
+C:\ProyectosVB2019\webadmintools\webadmintools\obj\Debug\webadmintools.vbproj.GenerateResource.Cache
+C:\ProyectosVB2019\webadmintools\webadmintools\obj\Debug\webadmintools.dll.licenses
+C:\ProyectosVB2019\webadmintools\webadmintools\obj\Debug\webadmintools.dll
+C:\ProyectosVB2019\webadmintools\webadmintools\obj\Debug\webadmintools.xml
+C:\ProyectosVB2019\webadmintools\webadmintools\obj\Debug\webadmintools.pdb
+C:\ProyectosVB2019\webadmintools\webadmintools\bin\webadmintools.dll
+C:\ProyectosVB2019\webadmintools\webadmintools\bin\webadmintools.pdb
+C:\ProyectosVB2019\webadmintools\webadmintools\bin\webadmintools.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.Resources.resources
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.vbproj.GenerateResource.cache
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.dll.licenses
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.vbproj.CoreCompileInputs.cache
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.pdb
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.vbproj.AssemblyReference.cache
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\webadmintools.dll.config
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\webadmintools.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\webadmintools.pdb
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\webadmintools.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.Data.v14.2.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.Office.v14.2.Core.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.Printing.v14.2.Core.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.RichEdit.v14.2.Core.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.Web.ASPxRichEdit.v14.2.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.Web.ASPxThemes.v14.2.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.Web.v14.2.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.Data.v14.2.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.Office.v14.2.Core.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.Printing.v14.2.Core.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.RichEdit.v14.2.Core.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.Web.ASPxRichEdit.v14.2.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\DevExpress.Web.v14.2.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\de\DevExpress.Data.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\es\DevExpress.Data.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ja\DevExpress.Data.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ru\DevExpress.Data.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\de\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\es\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ja\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ru\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\de\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\es\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ja\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ru\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\de\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\es\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ja\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ru\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\de\DevExpress.Web.ASPxRichEdit.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\es\DevExpress.Web.ASPxRichEdit.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ja\DevExpress.Web.ASPxRichEdit.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ru\DevExpress.Web.ASPxRichEdit.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\de\DevExpress.Web.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\es\DevExpress.Web.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ja\DevExpress.Web.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\bin\ru\DevExpress.Web.v14.2.resources.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2017\Projects\webadmintools\webadmintools\obj\Debug\webadmintools.vbproj.CopyComplete

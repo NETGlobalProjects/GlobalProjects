@@ -18,7 +18,8 @@ Partial Public Class v_usuario_empresa_plantel
     Public Property suc_nombre As String
     Public Property bod_id As String
     Public Property bod_descripcion As String
-    Public Property pla_id As Nullable(Of Integer)
+    Public Property pla_id As Integer
     Public Property pla_descripcion As String
+    Public Property emp_nombre_corto As String
 
 End Class

@@ -127,7 +127,7 @@ namespace AppWDS
                 {
                     UserDialogs.Instance.HideLoading();
 
-                    UserDialogs.Instance.Toast(contenido);
+                    //UserDialogs.Instance.Toast(contenido);
                 }
 
             }

@@ -196,7 +196,6 @@ C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.Razor.r
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.WebPages.resources.dll
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.AssemblyReference.cache
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.Resources.resources
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.GenerateResource.cache
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.CoreCompileInputs.cache
@@ -204,3 +203,4 @@ C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbpro
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.dll
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.xml
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.pdb
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\WebApiWDS\obj\Debug\WebApiWDS.vbproj.AssemblyReference.cache

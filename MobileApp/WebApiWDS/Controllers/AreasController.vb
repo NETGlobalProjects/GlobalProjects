@@ -18,16 +18,16 @@ Public Class AreasController
         Dim parametros() As String = id.Split(";")
         Dim pai_id As Integer = CInt(parametros(0))
         Dim emp_id As Integer = CInt(parametros(1))
-
+        Dim pla_id As Integer = CInt(parametros(2))
 
         ctx = New GlobalDBEntities
         Dim datos = (From a In ctx.general_areas
-                     Where a.pai_id = pai_id And a.emp_id = emp_id
+                     Where a.pai_id = pai_id And a.emp_id = emp_id And a.pla_id = pla_id
                      Select are_descripcion = a.are_id & "; " & a.are_descripcion, a.are_activo).ToList().AsEnumerable()
         If (datos IsNot Nothing) Then
             Return Request.CreateResponse(HttpStatusCode.OK, datos)
         Else
-            Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Registro no encontrado")
+            Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Registro no encontrado de areas")
         End If
 
 

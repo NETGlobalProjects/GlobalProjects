@@ -27,7 +27,7 @@ Public Class EmpresasController
         If (datos IsNot Nothing) Then
             Return Request.CreateResponse(HttpStatusCode.OK, datos)
         Else
-            Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón registros")
+            Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón registros de Empresas")
         End If
     End Function
 

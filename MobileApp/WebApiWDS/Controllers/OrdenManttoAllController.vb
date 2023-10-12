@@ -35,7 +35,7 @@ Public Class OrdenManttoAllController
             If datos IsNot Nothing Then
                 Return Request.CreateResponse(HttpStatusCode.OK, datos)
             Else
-                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón registros")
+                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón registros de ordenes de mantto")
             End If
 
         Catch ex As Exception

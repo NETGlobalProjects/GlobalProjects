@@ -6,6 +6,7 @@ namespace AppWDS.Modelos
 {
    public class UsuarioEmpresa
     {
+        public int id { get; set; }
         public int pai_id { get; set; }
         public int emp_id { get; set; }
         public int usu_id { get; set; }
@@ -15,5 +16,7 @@ namespace AppWDS.Modelos
         public string bod_descripcion { get; set; }
         public int pla_id { get; set; }
         public string pla_descripcion { get; set; }
+        public string emp_nombre_corto { get; set; }
+       
     }
 }

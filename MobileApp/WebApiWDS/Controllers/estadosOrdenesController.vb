@@ -16,7 +16,7 @@ Public Class estadosOrdenesController
             If dato IsNot Nothing Then
                 Return Request.CreateResponse(HttpStatusCode.OK, dato)
             Else
-                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontraron registros")
+                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontraron registros de estados ordenes")
             End If
         Catch ex As Exception
             Return Request.CreateErrorResponse(HttpStatusCode.NotFound, ex.Message.ToString())
@@ -34,7 +34,7 @@ Public Class estadosOrdenesController
             If dato IsNot Nothing Then
                 Return Request.CreateResponse(HttpStatusCode.OK, dato)
             Else
-                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontraron registros")
+                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontraron registros de estados ordenes")
             End If
         Catch ex As Exception
             Return Request.CreateErrorResponse(HttpStatusCode.NotFound, ex.Message.ToString())

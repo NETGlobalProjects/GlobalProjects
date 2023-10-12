@@ -19,10 +19,11 @@ Public Class subAreasController
         Dim pai_id As Integer = CInt(parametros(0))
         Dim emp_id As Integer = CInt(parametros(1))
         Dim are_id As Integer = CInt(parametros(2))
+        Dim pla_id As Integer = CInt(parametros(3))
 
         ctx = New GlobalDBEntities
         Dim datos = (From a In ctx.general_sub_areas
-                     Where a.pai_id = pai_id And a.emp_id = emp_id And a.are_id = are_id
+                     Where a.pai_id = pai_id And a.emp_id = emp_id And a.are_id = are_id And a.pla_id = pla_id
                      Select sba_descripcion = a.sba_id & "; " & a.sba_descripcion, a.sba_activo).ToList().AsEnumerable()
         If (datos IsNot Nothing) Then
             Return Request.CreateResponse(HttpStatusCode.OK, datos)

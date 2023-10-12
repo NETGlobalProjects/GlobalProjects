@@ -13,7 +13,7 @@ Public Class ListaMecanicosController
             If datos IsNot Nothing Then
                 Return Request.CreateResponse(HttpStatusCode.OK, datos)
             Else
-                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón datos")
+                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón datos de mecanicos")
             End If
         Catch ex As Exception
             Return Request.CreateErrorResponse(HttpStatusCode.NotFound, ex.Message.ToString())
@@ -30,7 +30,7 @@ Public Class ListaMecanicosController
             If datos IsNot Nothing Then
                 Return Request.CreateResponse(HttpStatusCode.OK, datos)
             Else
-                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón datos")
+                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón datos  de mecanicos")
             End If
         Catch ex As Exception
             Return Request.CreateErrorResponse(HttpStatusCode.NotFound, ex.Message.ToString())

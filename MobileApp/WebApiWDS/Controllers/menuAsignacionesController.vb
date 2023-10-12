@@ -26,7 +26,7 @@ Public Class menuAsignacionesController
         If (datos IsNot Nothing) Then
             Return Request.CreateResponse(HttpStatusCode.OK, datos)
         Else
-            Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encotrarón registros")
+            Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encotrarón registros de menu asignaciones")
         End If
     End Function
 

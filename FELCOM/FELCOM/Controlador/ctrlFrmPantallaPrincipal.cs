@@ -1,6 +1,8 @@
 ﻿
+using DevExpress.DataProcessing;
 using DevExpress.XtraReports.Design;
 using DevExpress.XtraReports.UI;
+using DevExpress.XtraRichEdit.Import.OpenXml;
 using FELCOM.Logica;
 using FELCOM.Modelo;
 using FELCOM.Salida.DevolucionFactura;
@@ -33,6 +35,7 @@ namespace FELCOM.Controlador
     {
         private frmPantallaPrincipal vista;
         int segundos;
+        static string resultAsync;
         List<ProcesandoModel> procesando = new List<ProcesandoModel>();
         List<TipoDocumentoFE> tiposDocsFe;
         string archivo;
@@ -76,6 +79,7 @@ namespace FELCOM.Controlador
                 }                                         
             }
         }
+        
         private void pdfBtn_Click(object sender, EventArgs e)
         {
             //xDevolucionFactura x = new xDevolucionFactura();
@@ -174,7 +178,7 @@ namespace FELCOM.Controlador
             directorioProcesando = Properties.Settings.Default.CarpetaProcesando + directorioProcesando + "\\";
             this.vista.SwitchButton1.Value = Properties.Settings.Default.EscanerSwitch;
         }
-        private async void  explorarRaiz()
+        private  void  explorarRaiz()
         {
             try
             {
@@ -191,8 +195,13 @@ namespace FELCOM.Controlador
                 {
                     if (contador <= PeticionesParalelas)
                     {
-                        File.Copy(file.FullName, directorioProcesando + file.Name, true);
-                        File.Delete(file.FullName);
+                        if (File.Exists(directorioProcesando + file.Name))
+                        {
+                            File.Delete(directorioProcesando + file.Name);
+                        }
+                        File.Move(file.FullName, directorioProcesando + file.Name);
+                        //File.Copy(file.FullName, directorioProcesando + file.Name, true);
+                        //File.Delete(file.FullName);
                         //File.Move(file.FullName, directorioProcesando + file.Name);
 
                         string[] nombreArchivo = file.Name.Split('-');
@@ -279,9 +288,14 @@ namespace FELCOM.Controlador
                 throw new Exception(ex.Message, ex.InnerException);
             }    
         }
+        private void obj_ProcesarTextoPlanoAsynCompleted(object sender, ekomercio.procesarTextoPlanoCompletedEventArgs e)
+        {
+            this.vista.LblResultAsync.Text = e.Result;
+        }
         private async void procesarArchivo(string _archivo)
         {
             archivo = _archivo;
+            this.vista.LblResultAsync.Text = "";
             try
             {
                 Thread.Sleep(5);
@@ -311,13 +325,18 @@ namespace FELCOM.Controlador
                 string passw = Properties.Settings.Default.PassWS;
                 string id = x_archivo[3];
                 ekomercio.WSFEBuilder ws = new ekomercio.WSFEBuilder();
+                //ws.procesarTextoPlanoCompleted += new ekomercio.procesarTextoPlanoCompletedEventHandler(obj_ProcesarTextoPlanoAsynCompleted);
+                //       ws.procesarTextoPlanoAsync( usuario,  passw,  id,  textoPlano);
                 if (_archivo.Contains("-INVALIDACION"))
                 {
                     respuesta =  ws.enviar_Invalidacion(usuario, passw, id, textoPlano);
                 }
                 else
                 {
-                    respuesta = ws.procesarTextoPlano(ref usuario, ref passw, ref id, ref textoPlano);
+                    //ws.procesarTextoPlanoCompleted += new ekomercio.procesarTextoPlanoCompletedEventHandler(obj_ProcesarTextoPlanoAsynCompleted);
+                    //await ws.procesarTextoPlanoAsync(usuario, passw, id, textoPlano);
+                    //respuesta = this.vista.LblResultAsync.Text;
+                    respuesta =  ws.procesarTextoPlano(ref usuario,ref  passw, ref id, ref  textoPlano);
                 }
                 Thread.Sleep(5);
                 actualizarProgresos(20, _archivo, "Consumiendo WS...");
@@ -416,7 +435,8 @@ namespace FELCOM.Controlador
                             actualizarListado();
 
                             string[] keyDoc = x_archivo[4].Split('!');
-                            if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "FacturaCorrFiscal")
+                            string tipoDocFEE = tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single();
+                            if (tipoDocFEE == "FacturaCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt32(keyDoc[1]);
@@ -445,7 +465,7 @@ namespace FELCOM.Controlador
                                 }
 
                             }
-                            else if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "NotaCreditoCorrFiscal")
+                            else if (tipoDocFEE == "NotaCreditoCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt32(keyDoc[1]);
@@ -478,7 +498,7 @@ namespace FELCOM.Controlador
                                 }
 
                             }
-                            else if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "NotaRemisionCorrFiscal")
+                            else if (tipoDocFEE == "NotaRemisionCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt16(keyDoc[1]);
@@ -506,7 +526,7 @@ namespace FELCOM.Controlador
                                 }
 
                             }
-                            else if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "RetencionIvaCorrFiscal")
+                            else if (tipoDocFEE == "RetencionIvaCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt32(keyDoc[1]);
@@ -535,7 +555,7 @@ namespace FELCOM.Controlador
                                 }
 
                             }
-                            else if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "CompraCorrFiscal")
+                            else if (tipoDocFEE == "CompraCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt32(keyDoc[1]);
@@ -562,7 +582,7 @@ namespace FELCOM.Controlador
                                 }
 
                             }
-                            else if (tiposDocsFe.Where(a => a.alias == x_archivo[1]).Select(a => a.TablaRespuesta).Single() == "ComprasChicaCorrFiscal")
+                            else if (tipoDocFEE == "ComprasChicaCorrFiscal")
                             {
                                 string codPais = keyDoc[0];
                                 int dealer = Convert.ToInt32(keyDoc[1]);

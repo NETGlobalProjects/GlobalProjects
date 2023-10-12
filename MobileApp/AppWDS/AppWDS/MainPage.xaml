@@ -63,7 +63,7 @@
                 <Button CornerRadius="10" BackgroundColor="White" TextColor="#76be43" Text="Olvidé mi contraseña" BorderColor="White" Clicked="Button_Clicked"></Button>
         </StackLayout>
             <StackLayout Grid.Row="8" Padding="20,10,20,10" VerticalOptions="Center">
-                <Label Text="Ver. 1.0.0.4" TextColor="Gray"></Label>
+                <Label Text="Ver. 1.0.0.5" TextColor="Gray"></Label>
             </StackLayout>
 
 

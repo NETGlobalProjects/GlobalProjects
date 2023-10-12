@@ -28,7 +28,7 @@ namespace AppWDS.Views
         public int oes_id { get; set; }
         public string oes_descripcion { get; set; }
         public string ord_descripcion { get; set; }
-        public int mecanicos_asignados { get; set; }
+        public int? mecanicos_asignados { get; set; }
         public string usu_nomina_fotografia { get; set; }
         public string ord_descripcion_2 { get; set; }
         public string detalle { get; set; }

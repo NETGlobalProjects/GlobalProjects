@@ -31,7 +31,7 @@ namespace AppWDS.Views
             try {
                 UserDialogs.Instance.ShowLoading("Cargando Areas...");
                 var request = new HttpRequestMessage();
-                request.RequestUri = new Uri(App.url_api + "Areas/" + App.pai_id + ";" + App.emp_id);
+                request.RequestUri = new Uri(App.url_api + "Areas/" + App.pai_id + ";" + App.emp_id + ";" + App.pla_id);
                 request.Method = HttpMethod.Get;
                 request.Headers.Add("accept", "application/json");
                 var client2 = new HttpClient();
@@ -75,7 +75,7 @@ namespace AppWDS.Views
             {
                 UserDialogs.Instance.ShowLoading("Cargando Sub Areas...");
                 var request = new HttpRequestMessage();
-                request.RequestUri = new Uri(App.url_api + "subAreas/" + App.pai_id + ";" + App.emp_id + ";" + are_id);
+                request.RequestUri = new Uri(App.url_api + "subAreas/" + App.pai_id + ";" + App.emp_id + ";" + are_id + ";"+ App.pla_id);
                 request.Method = HttpMethod.Get;
                 request.Headers.Add("accept", "application/json");
                 var client2 = new HttpClient();
@@ -100,7 +100,7 @@ namespace AppWDS.Views
         {
             UserDialogs.Instance.ShowLoading("Cargando Máquinas...");
             var request = new HttpRequestMessage();
-            request.RequestUri = new Uri(App.url_api + "maquinas/" + App.pai_id + ";" + App.emp_id + ";" + are_id + ";" + sba_id);
+            request.RequestUri = new Uri(App.url_api + "maquinas/" + App.pai_id + ";" + App.emp_id + ";" + are_id + ";" + sba_id + ";" + App.pla_id);
             request.Method = HttpMethod.Get;
             request.Headers.Add("accept", "application/json");
             var client2 = new HttpClient();

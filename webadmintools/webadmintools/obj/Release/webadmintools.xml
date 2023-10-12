@@ -1,0 +1,1533 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+webadmintools
+</name>
+</assembly>
+<members>
+<member name="T:webadmintools.My.MyWebExtension">
+ <summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:webadmintools.My.MyWebExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:webadmintools.My.MyWebExtension.User">
+ <summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member>
+<member name="P:webadmintools.My.MyWebExtension.Request">
+ <summary>
+ Devuelve un objeto Request.
+ </summary>
+</member>
+<member name="P:webadmintools.My.MyWebExtension.Response">
+ <summary>
+ Devuelve un objeto Response.
+ </summary>
+</member>
+<member name="P:webadmintools.My.MyWebExtension.Log">
+ <summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._APROBADA">
+<summary>
+Control APROBADA.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._RECHAZADA">
+<summary>
+Control RECHAZADA.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._lbMensaje">
+<summary>
+Control lbMensaje.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._OrdenNoASPxTextBox1">
+<summary>
+Control OrdenNoASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._proveedorASPxTextBox1">
+<summary>
+Control proveedorASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._fechaocASPxTextBox1">
+<summary>
+Control fechaocASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._fechaentregaASPxTextBox1">
+<summary>
+Control fechaentregaASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._tipoASPxTextBox2">
+<summary>
+Control tipoASPxTextBox2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._solicitadoporASPxTextBox1">
+<summary>
+Control solicitadoporASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._motivoASPxTextBox1">
+<summary>
+Control motivoASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._totalordenASPxTextBox1">
+<summary>
+Control totalordenASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._formapagoASPxTextBox1">
+<summary>
+Control formapagoASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._diascreditoASPxTextBox1">
+<summary>
+Control diascreditoASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._usuarioNDASPxTextBox1">
+<summary>
+Control usuarioNDASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._nombresolicitaASPxTextBox1">
+<summary>
+Control nombresolicitaASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._ASPxGridView1">
+<summary>
+Control ASPxGridView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._ASPxLabel1">
+<summary>
+Control ASPxLabel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._comentarioASPxTextBox1">
+<summary>
+Control comentarioASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._aprobadaASPxRadioButton1">
+<summary>
+Control aprobadaASPxRadioButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._rechazadaASPxRadioButton2">
+<summary>
+Control rechazadaASPxRadioButton2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.solicitudautorizacionoc._enviarrespuestaButton1">
+<summary>
+Control enviarrespuestaButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cxcmenu._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cxcmenu._aprobacionpedidosASPxButton1">
+<summary>
+Control aprobacionpedidosASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cxcmenu._ASPxButton3">
+<summary>
+Control ASPxButton3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cxcmenu._lbnotificacion">
+<summary>
+Control lbnotificacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.pedidosvta._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.pedidosvta._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.pedidosvta._dealerASPxComboBox1">
+<summary>
+Control dealerASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.pedidosvta._pedidonoASPxTextBox1">
+<summary>
+Control pedidonoASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.pedidosvta._resultadosASPxLabel1">
+<summary>
+Control resultadosASPxLabel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.pedidosvta._DataList1">
+<summary>
+Control DataList1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.pedidosvta._cambiarASPxButton1">
+<summary>
+Control cambiarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.pedidosvta._lbnotificaciones">
+<summary>
+Control lbnotificaciones.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="T:webadmintools.dtsNETDATA">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.tbSeguridadDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DealerDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.GuiaDigitacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.GuiaDigitacionAdminDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.LogsAdminToolDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.FacturaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.SucursalDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DespachoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.GuiaDigitacionProveeduriaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.LiquidadoresdeCajaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA._PedidosVta_ConsultaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.PedidoVtaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.ListaUsuariosCompletaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DerechosMenuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.ListaUsuariosSegunJefeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DetOrdenCompraSolicitudAutorizacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.OrdenCompraSolicitudAutorizacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.tbSeguridadRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DealerRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.GuiaDigitacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.GuiaDigitacionAdminRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.LogsAdminToolRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.FacturaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.SucursalRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DespachoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.GuiaDigitacionProveeduriaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.LiquidadoresdeCajaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA._PedidosVta_ConsultaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.PedidoVtaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.ListaUsuariosCompletaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DerechosMenuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.ListaUsuariosSegunJefeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DetOrdenCompraSolicitudAutorizacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.OrdenCompraSolicitudAutorizacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.tbSeguridadRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DealerRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.GuiaDigitacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.GuiaDigitacionAdminRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.LogsAdminToolRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.FacturaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.SucursalRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DespachoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.GuiaDigitacionProveeduriaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.LiquidadoresdeCajaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA._PedidosVta_ConsultaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.PedidoVtaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.ListaUsuariosCompletaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DerechosMenuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.ListaUsuariosSegunJefeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.DetOrdenCompraSolicitudAutorizacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATA.OrdenCompraSolicitudAutorizacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.tbSeguridadTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.DealerTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.GuiaDigitacionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.GuiaDigitacionAdminTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.LogsAdminToolTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.FacturaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.SucursalTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.DespachoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.GuiaDigitacionProveeduriaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.LiquidadoresdeCajaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.PedidosVta_ConsultaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.PedidoVtaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.ListaUsuariosCompletaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.DerechosMenuTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.ListaUsuariosSegunJefeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.DetOrdenCompraSolicitudAutorizacionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.OrdenCompraSolicitudAutorizacionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:webadmintools.dtsNETDATATableAdapters.TableAdapterManager.UpdateUpdatedRows(webadmintools.dtsNETDATA,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:webadmintools.dtsNETDATATableAdapters.TableAdapterManager.UpdateInsertedRows(webadmintools.dtsNETDATA,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:webadmintools.dtsNETDATATableAdapters.TableAdapterManager.UpdateDeletedRows(webadmintools.dtsNETDATA,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:webadmintools.dtsNETDATATableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:webadmintools.dtsNETDATATableAdapters.TableAdapterManager.UpdateAll(webadmintools.dtsNETDATA)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:webadmintools.cambiarestatusdocs._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambiarestatusdocs._dealerASPxComboBox1">
+<summary>
+Control dealerASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambiarestatusdocs._sucursalASPxComboBox1">
+<summary>
+Control sucursalASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambiarestatusdocs._fechaASPxDateEdit1">
+<summary>
+Control fechaASPxDateEdit1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambiarestatusdocs._serieASPxTextBox1">
+<summary>
+Control serieASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambiarestatusdocs._vendedorASPxTextBox1">
+<summary>
+Control vendedorASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambiarestatusdocs._mostrarASPxButton1">
+<summary>
+Control mostrarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambiarestatusdocs._ASPxCheckBox1">
+<summary>
+Control ASPxCheckBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambiarestatusdocs._GridView1">
+<summary>
+Control GridView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambiarestatusdocs._guardarASPxButton1">
+<summary>
+Control guardarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambiarestatusdocs._lbnotificaciones">
+<summary>
+Control lbnotificaciones.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.facturacion._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.facturacion._cambioestatustiketsASPxButton1">
+<summary>
+Control cambioestatustiketsASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.facturacion._ASPxButton3">
+<summary>
+Control ASPxButton3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.facturacion._lbnotificacion">
+<summary>
+Control lbnotificacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._dealerASPxComboBox1">
+<summary>
+Control dealerASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._sucursalASPxComboBox1">
+<summary>
+Control sucursalASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._despachoASPxTextBox1">
+<summary>
+Control despachoASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._mostrarASPxButton1">
+<summary>
+Control mostrarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._GridView1">
+<summary>
+Control GridView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._hechoporLabel">
+<summary>
+Control hechoporLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._estatusASPxCheckBox1">
+<summary>
+Control estatusASPxCheckBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._ASPxLabel1">
+<summary>
+Control ASPxLabel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._motivoASPxTextBox1">
+<summary>
+Control motivoASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._guardarButton1">
+<summary>
+Control guardarButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.anulardespacho._lbnotificaciones">
+<summary>
+Control lbnotificaciones.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.CambioFecha._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.CambioFecha._mostrarpornombreASPxCheckBox1">
+<summary>
+Control mostrarpornombreASPxCheckBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.CambioFecha._MODOASPxCheckBox1">
+<summary>
+Control MODOASPxCheckBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.CambioFecha._todasempresasASPxCheckBox1">
+<summary>
+Control todasempresasASPxCheckBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.CambioFecha._dealerASPxComboBox1">
+<summary>
+Control dealerASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.CambioFecha._usuariosASPxComboBox1">
+<summary>
+Control usuariosASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.CambioFecha._fechaASPxDateEdit1">
+<summary>
+Control fechaASPxDateEdit1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.CambioFecha._cambiarASPxButton1">
+<summary>
+Control cambiarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.CambioFecha._lbnotificaciones">
+<summary>
+Control lbnotificaciones.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._dealerASPxComboBox1">
+<summary>
+Control dealerASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._sucursalASPxComboBox1">
+<summary>
+Control sucursalASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._despachoASPxTextBox1">
+<summary>
+Control despachoASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._mostrarASPxButton1">
+<summary>
+Control mostrarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._GridView1">
+<summary>
+Control GridView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._hechoporLabel">
+<summary>
+Control hechoporLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._estatusASPxCheckBox1">
+<summary>
+Control estatusASPxCheckBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._ASPxLabel1">
+<summary>
+Control ASPxLabel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._motivoASPxTextBox1">
+<summary>
+Control motivoASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._guardarASPxButton1">
+<summary>
+Control guardarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.Formulario_web1._lbnotificaciones">
+<summary>
+Control lbnotificaciones.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.logistica._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.logistica._cambioestatustiketsASPxButton1">
+<summary>
+Control cambioestatustiketsASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.logistica._anulardespachoASPxButton1">
+<summary>
+Control anulardespachoASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.logistica._ASPxButton3">
+<summary>
+Control ASPxButton3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.logistica._lbnotificacion">
+<summary>
+Control lbnotificacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.login._ASPxTextBox1">
+<summary>
+Control ASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.login._ASPxTextBox2">
+<summary>
+Control ASPxTextBox2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.login._ASPxButton1">
+<summary>
+Control ASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.login._lbinfo">
+<summary>
+Control lbinfo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.menu._generalASPxButton1">
+<summary>
+Control generalASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.menu._logisticaASPxButton1">
+<summary>
+Control logisticaASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.menu._cuentasporcobrarASPxButton1">
+<summary>
+Control cuentasporcobrarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.menu._facturacionASPxButton2">
+<summary>
+Control facturacionASPxButton2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.menu._proveeduriaASPxButton1">
+<summary>
+Control proveeduriaASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.menu._ASPxButton3">
+<summary>
+Control ASPxButton3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.menu._lbnotificacion">
+<summary>
+Control lbnotificacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.principal._head">
+<summary>
+Control head.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.principal._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.principal._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.principal._UpdateProgress1">
+<summary>
+Control UpdateProgress1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.principal._ContentPlaceHolder1">
+<summary>
+Control ContentPlaceHolder1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambioliquidador._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambioliquidador._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambioliquidador._dealerASPxComboBox1">
+<summary>
+Control dealerASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambioliquidador._usuariosASPxComboBox1">
+<summary>
+Control usuariosASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambioliquidador._liquidadoractualASPxTextBox1">
+<summary>
+Control liquidadoractualASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambioliquidador._liquidadoresASPxComboBox1">
+<summary>
+Control liquidadoresASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambioliquidador._nombreliqactualASPxLabel1">
+<summary>
+Control nombreliqactualASPxLabel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambioliquidador._nombrenuevoliqASPxLabel1">
+<summary>
+Control nombrenuevoliqASPxLabel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambioliquidador._guardarASPxButton1">
+<summary>
+Control guardarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.cambioliquidador._lbnotificaciones">
+<summary>
+Control lbnotificaciones.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.proveeduria._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.proveeduria._cambioloquidadorASPxButton1">
+<summary>
+Control cambioloquidadorASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.proveeduria._ASPxButton3">
+<summary>
+Control ASPxButton3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.proveeduria._lbnotificacion">
+<summary>
+Control lbnotificacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.general._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.general._cambiofechaASPxButton1">
+<summary>
+Control cambiofechaASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.general._ASPxButton3">
+<summary>
+Control ASPxButton3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.general._lbnotificacion">
+<summary>
+Control lbnotificacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+</members>
+</doc>

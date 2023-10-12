@@ -1,0 +1,47 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="principal.master.vb" Inherits="webadmintools.principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+     <link href ="estilo.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style ="margin-top :0px; margin-left :0px; margin-right : 0px; margin-bottom : 0px;" >
+    <form id="form1" runat="server"  >
+         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+            <ProgressTemplate>
+            <asp:Panel ID="Panel2" CssClass="overlay" runat="server" >
+                <asp:Panel ID="Panel3" CssClass="loader" runat="server"  >
+                    <asp:Image ID="Image3" runat="server" ImageUrl ="~/imgs/loader.gif" Width ="70px"  />
+                </asp:Panel>
+              
+            </asp:Panel>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+
+        <table style ="width :100%; background-color :#0026ff;" >
+            <tr>
+                <td style ="height  :40px; text-align :center ; color :white  ; font-size :27px; font-family : 'Lucida Sans'; box-shadow :#808080 3px 2px 6px 1px">
+                    GLOBAL ALIMENTOS<br />
+                    <div style ="font-size :20px">
+                        Cambios Web
+                    </div> 
+                </td>
+            </tr>
+            
+           
+        </table>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

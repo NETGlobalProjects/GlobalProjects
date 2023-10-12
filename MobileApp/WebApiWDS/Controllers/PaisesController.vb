@@ -16,7 +16,7 @@ Public Class PaisesController
         If (datos IsNot Nothing) Then
             Return Request.CreateResponse(HttpStatusCode.OK, datos)
         Else
-            Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón registros")
+            Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón registros de Paises")
         End If
     End Function
 

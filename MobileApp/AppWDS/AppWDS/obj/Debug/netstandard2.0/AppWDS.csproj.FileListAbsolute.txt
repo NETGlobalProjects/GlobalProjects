@@ -55,7 +55,6 @@ C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Debug\netstandard
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Debug\netstandard2.0\Mono.Android.xml
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Debug\netstandard2.0\Xamarin.Forms.Platform.Android.pdb
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\bin\Debug\netstandard2.0\FormsViewGroup.pdb
-C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Debug\netstandard2.0\AppWDS.csproj.AssemblyReference.cache
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Debug\netstandard2.0\AppWDS.GeneratedMSBuildEditorConfig.editorconfig
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Debug\netstandard2.0\Dashboard.xaml.g.cs

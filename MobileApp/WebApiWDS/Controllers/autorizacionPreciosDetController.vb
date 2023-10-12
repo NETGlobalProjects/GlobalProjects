@@ -36,7 +36,7 @@ Public Class autorizacionPreciosDetController
             If listado IsNot Nothing Then
                 Return Request.CreateResponse(HttpStatusCode.OK, listado.ToList().AsEnumerable())
             Else
-                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón registros")
+                Return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No se encontrarón registros de auto. precios")
             End If
 
         Catch ex As Exception
