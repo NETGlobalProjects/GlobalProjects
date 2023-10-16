@@ -30,8 +30,14 @@
                        </td>
                    </tr>
                    <tr>
+                       <td >
+                        
+                           <dx:ASPxButton ID="RecibirTrasladoASPxButton1" runat="server" Text="RECEPCIÓN DE TRASLADOS" Width ="100%" Theme="SoftOrange" Height ="40px"></dx:ASPxButton>
+                       </td>
+                   </tr>
+                   <tr>
                        <td>
-                           <dx:ASPxButton ID="ASPxButton3" runat="server" Text="CERRAR SESIÓN" Width ="100%" Theme="SoftOrange" Height ="40px" CssClass ="botonfinalmenu "></dx:ASPxButton>
+                           <dx:ASPxButton ID="ASPxButton3" runat="server" Text="CERRAR SESIÓN" Width ="100%" Theme="SoftOrange" Height ="42px" CssClass ="botonfinalmenu "></dx:ASPxButton>
                        </td>
                    </tr>
                    <tr>

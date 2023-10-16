@@ -75,33 +75,33 @@ Public Class pedidosvta
 
                 'Try
                 If chckAprobar.CheckState = CheckState.Checked Then
-                        pedidosVtaAdap.ActualizarEstatus("Ap", Session("usuario"), "SAL", Me.dealerASPxComboBox1.SelectedItem.Value, RTrim(tdalabel.Text), RTrim(tipopedido.Text), pedidono.Text)
-                        If dealerASPxComboBox1.SelectedItem.Value = 0 Then
-                            Dim cnx As New SqlClient.SqlConnection(My.MySettings.Default.conNetdata.ToString)
-                            Try
-                                Dim cmd As New SqlClient.SqlCommand("Proc_DesglocePedido", cnx)
-                                cmd.CommandType = CommandType.StoredProcedure
-                                cmd.CommandTimeout = 300000
-                                cmd.Parameters.Add("@CodPais", SqlDbType.Char, 3).Value = "SAL"
-                                cmd.Parameters.Add("@PedidoNo", SqlDbType.Int).Value = dealerASPxComboBox1.SelectedItem.Value
-                                cmd.Parameters.Add("@TipoPedido", SqlDbType.Char, 2).Value = tipopedido.Text
-                                cmd.Parameters.Add("@FechaPedido", SqlDbType.DateTime).Value = fechapedido.Text
-                                cnx.Open()
-                                cmd.ExecuteNonQuery()
+                    pedidosVtaAdap.ActualizarEstatus("Ap", Session("usuario"), "SAL", Me.dealerASPxComboBox1.SelectedItem.Value, RTrim(tdalabel.Text), RTrim(tipopedido.Text), pedidono.Text)
+                    If dealerASPxComboBox1.SelectedItem.Value = 0 Then
+                        Dim cnx As New SqlClient.SqlConnection(My.MySettings.Default.conNetdata.ToString)
+                        Try
+                            Dim cmd As New SqlClient.SqlCommand("Proc_DesglocePedido", cnx)
+                            cmd.CommandType = CommandType.StoredProcedure
+                            cmd.CommandTimeout = 300000
+                            cmd.Parameters.Add("@CodPais", SqlDbType.Char, 3).Value = "SAL"
+                            cmd.Parameters.Add("@PedidoNo", SqlDbType.Int).Value = pedidonoASPxTextBox1.Text
+                            cmd.Parameters.Add("@TipoPedido", SqlDbType.Char, 2).Value = tipopedido.Text
+                            cmd.Parameters.Add("@FechaPedido", SqlDbType.DateTime).Value = fechapedido.Text
+                            cnx.Open()
+                            cmd.ExecuteNonQuery()
+                            cnx.Close()
+                        Catch ex As Exception
+                            Dim mensaje As String = "alert('ERROR: SE PRODUJO UN ERROR AL DESGLOSAR EL PEDIDO PEDIDO:  " & ex.Message & " ');"
+                            ScriptManager.RegisterStartupScript(Me, Me.GetType(), "newWindow", mensaje, True)
+                        Finally
+                            If cnx.State = ConnectionState.Open Then
                                 cnx.Close()
-                            Catch ex As Exception
-                                Dim mensaje As String = "alert('ERROR: SE PRODUJO UN ERROR AL DESGLOSAR EL PEDIDO PEDIDO:  " & ex.Message & " ');"
-                                ScriptManager.RegisterStartupScript(Me, Me.GetType(), "newWindow", mensaje, True)
-                            Finally
-                                If cnx.State = ConnectionState.Open Then
-                                    cnx.Close()
-                                End If
-                            End Try
-                        End If
-                        LogAdminAdapter.Insertar(Today, Format(TimeOfDay, "HH:mm:ss"), Session("usuario"), "Aprobacion Pedidos", "Tda: " & tdalabel.Text & "; Pedido No: " & pedidono.Text & "; Tipo Pedido: " & tipopedido.Text & ";  Fecha Pedido: " & fechapedido.Text & "; Total: " & totalpedido.Text & "; Estatus Anterior: " & estatusactualpedido.Text & "; Estatus Nuevo: Ap; ", Me.dealerASPxComboBox1.SelectedItem.Value, "SAL")
-                        Session("exitosos") += 1
-                        Session("pedidosOK") &= pedidono.Text & "; "
+                            End If
+                        End Try
                     End If
+                    LogAdminAdapter.Insertar(Today, Format(TimeOfDay, "HH:mm:ss"), Session("usuario"), "Aprobacion Pedidos", "Tda: " & tdalabel.Text & "; Pedido No: " & pedidono.Text & "; Tipo Pedido: " & tipopedido.Text & ";  Fecha Pedido: " & fechapedido.Text & "; Total: " & totalpedido.Text & "; Estatus Anterior: " & estatusactualpedido.Text & "; Estatus Nuevo: Ap; ", Me.dealerASPxComboBox1.SelectedItem.Value, "SAL")
+                    Session("exitosos") += 1
+                    Session("pedidosOK") &= pedidono.Text & "; "
+                End If
                 'Catch ex As Exception
                 '    'Dim mensaje As String = "alert('ERROR: " & ex.Message & "');"
                 '    'ScriptManager.RegisterStartupScript(Me, Me.GetType(), "newWindow", mensaje, True)

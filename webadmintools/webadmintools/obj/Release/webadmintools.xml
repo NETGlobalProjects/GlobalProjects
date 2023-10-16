@@ -383,11 +383,6 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:webadmintools.dtsNETDATA.DespachoDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:webadmintools.dtsNETDATA.GuiaDigitacionProveeduriaDataTable">
 <summary>
 Represents the strongly named DataTable class.
@@ -433,6 +428,11 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:webadmintools.dtsNETDATA.DespachoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:webadmintools.dtsNETDATA.tbSeguridadRow">
 <summary>
 Represents strongly named DataRow class.
@@ -464,11 +464,6 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:webadmintools.dtsNETDATA.SucursalRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:webadmintools.dtsNETDATA.DespachoRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -518,6 +513,11 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
+<member name="T:webadmintools.dtsNETDATA.DespachoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
 <member name="T:webadmintools.dtsNETDATA.tbSeguridadRowChangeEvent">
 <summary>
 Row event argument class
@@ -549,11 +549,6 @@ Row event argument class
 </summary>
 </member>
 <member name="T:webadmintools.dtsNETDATA.SucursalRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:webadmintools.dtsNETDATA.DespachoRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
@@ -603,6 +598,11 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:webadmintools.dtsNETDATA.DespachoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:webadmintools.dtsNETDATATableAdapters.tbSeguridadTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
@@ -634,11 +634,6 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:webadmintools.dtsNETDATATableAdapters.SucursalTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:webadmintools.dtsNETDATATableAdapters.DespachoTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -684,6 +679,11 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:webadmintools.dtsNETDATATableAdapters.OrdenCompraSolicitudAutorizacionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:webadmintools.dtsNETDATATableAdapters.DespachoTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -857,6 +857,123 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:webadmintools.facturacion._lbnotificacion">
 <summary>
 Control lbnotificacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._regresarASPxButton1">
+<summary>
+Control regresarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._dealerASPxComboBox1">
+<summary>
+Control dealerASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._sucursalASPxComboBox1">
+<summary>
+Control sucursalASPxComboBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._trasladoASPxTextBox1">
+<summary>
+Control trasladoASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._mostrarASPxButton1">
+<summary>
+Control mostrarASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._GridView1">
+<summary>
+Control GridView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._hechoporLabel">
+<summary>
+Control hechoporLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._estatusASPxCheckBox1">
+<summary>
+Control estatusASPxCheckBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._ASPxLabel1">
+<summary>
+Control ASPxLabel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._motivoASPxTextBox1">
+<summary>
+Control motivoASPxTextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._guardarButton1">
+<summary>
+Control guardarButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.recibirtraslado._lbnotificaciones">
+<summary>
+Control lbnotificaciones.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -1199,6 +1316,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:webadmintools.logistica._anulardespachoASPxButton1">
 <summary>
 Control anulardespachoASPxButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:webadmintools.logistica._RecibirTrasladoASPxButton1">
+<summary>
+Control RecibirTrasladoASPxButton1.
 </summary>
 <remarks>
 Campo generado automáticamente.

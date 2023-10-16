@@ -9,6 +9,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <_PublishTargetUrl>\\192.168.0.149\m.admin</_PublishTargetUrl>
     <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
     <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <History>True|2023-10-16T19:34:47.7686414Z;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="AutorizacionesOC/solicitudautorizacionfinalizada.aspx">
@@ -18,106 +19,106 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>03/20/2020 14:42:34</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Data.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:41</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Office.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:37</publishTime>
+      <publishTime>12/16/2020 13:53:53</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Printing.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:37</publishTime>
+      <publishTime>12/16/2020 13:53:54</publishTime>
     </File>
     <File Include="bin/de/DevExpress.RichEdit.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:40</publishTime>
+      <publishTime>12/16/2020 13:54:11</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Web.ASPxRichEdit.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Web.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/DevExpress.Data.v14.2.dll">
       <publishTime>09/16/2019 15:24:30</publishTime>
     </File>
     <File Include="bin/DevExpress.Office.v14.2.Core.dll">
-      <publishTime>09/16/2019 15:24:37</publishTime>
+      <publishTime>12/16/2020 13:53:53</publishTime>
     </File>
     <File Include="bin/DevExpress.Printing.v14.2.Core.dll">
-      <publishTime>09/16/2019 15:24:37</publishTime>
+      <publishTime>12/16/2020 13:53:54</publishTime>
     </File>
     <File Include="bin/DevExpress.RichEdit.v14.2.Core.dll">
-      <publishTime>09/16/2019 15:24:40</publishTime>
+      <publishTime>12/16/2020 13:54:11</publishTime>
     </File>
     <File Include="bin/DevExpress.Web.ASPxRichEdit.v14.2.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/DevExpress.Web.ASPxThemes.v14.2.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/DevExpress.Web.v14.2.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Data.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:41</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Office.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:37</publishTime>
+      <publishTime>12/16/2020 13:53:53</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Printing.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:37</publishTime>
+      <publishTime>12/16/2020 13:53:54</publishTime>
     </File>
     <File Include="bin/es/DevExpress.RichEdit.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:40</publishTime>
+      <publishTime>12/16/2020 13:54:11</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Web.ASPxRichEdit.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Web.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Data.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:41</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Office.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:37</publishTime>
+      <publishTime>12/16/2020 13:53:53</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Printing.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:37</publishTime>
+      <publishTime>12/16/2020 13:53:54</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.RichEdit.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:40</publishTime>
+      <publishTime>12/16/2020 13:54:11</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Web.ASPxRichEdit.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Web.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Data.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:41</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Office.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:37</publishTime>
+      <publishTime>12/16/2020 13:53:53</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Printing.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:37</publishTime>
+      <publishTime>12/16/2020 13:53:54</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.RichEdit.v14.2.Core.resources.dll">
-      <publishTime>09/16/2019 15:24:40</publishTime>
+      <publishTime>12/16/2020 13:54:11</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Web.ASPxRichEdit.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Web.v14.2.resources.dll">
-      <publishTime>09/16/2019 15:24:30</publishTime>
+      <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/webadmintools.dll">
-      <publishTime>09/04/2020 10:02:57</publishTime>
+      <publishTime>10/16/2023 13:34:40</publishTime>
     </File>
     <File Include="bin/webadmintools.pdb">
-      <publishTime>09/04/2020 10:02:57</publishTime>
+      <publishTime>10/16/2023 13:34:40</publishTime>
     </File>
     <File Include="bin/webadmintools.xml">
-      <publishTime>09/04/2020 10:02:56</publishTime>
+      <publishTime>10/16/2023 13:34:40</publishTime>
     </File>
     <File Include="cxc/cxcmenu.aspx">
       <publishTime>10/27/2016 08:10:34</publishTime>
@@ -129,7 +130,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>10/26/2016 18:31:28</publishTime>
     </File>
     <File Include="cxc/pedidosvta.aspx">
-      <publishTime>10/27/2016 08:10:18</publishTime>
+      <publishTime>10/12/2023 14:44:07</publishTime>
     </File>
     <File Include="cxc/pedidosvta.aspx.designer.vb">
       <publishTime>10/26/2016 18:22:30</publishTime>
@@ -141,13 +142,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>12/08/2017 13:17:51</publishTime>
     </File>
     <File Include="datos/dtsNETDATA.xsc">
-      <publishTime>09/04/2020 09:51:28</publishTime>
+      <publishTime>12/06/2021 15:34:00</publishTime>
     </File>
     <File Include="datos/dtsNETDATA.xsd">
       <publishTime>12/08/2017 13:17:50</publishTime>
     </File>
     <File Include="datos/dtsNETDATA.xss">
-      <publishTime>09/04/2020 09:51:28</publishTime>
+      <publishTime>12/06/2021 15:34:00</publishTime>
     </File>
     <File Include="default.aspx">
       <publishTime>06/28/2016 10:28:14</publishTime>
@@ -183,7 +184,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/24/2016 13:45:50</publishTime>
     </File>
     <File Include="fuentes/Roboto-Regular.ttf">
-      <publishTime>12/08/2017 16:59:09</publishTime>
+      <publishTime>08/12/2017 16:59:09</publishTime>
     </File>
     <File Include="General/cambiofecha.aspx">
       <publishTime>09/30/2017 13:42:50</publishTime>
@@ -219,7 +220,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/28/2016 13:08:16</publishTime>
     </File>
     <File Include="logistica/anulardespacho.aspx">
-      <publishTime>12/08/2017 14:43:40</publishTime>
+      <publishTime>08/12/2017 14:43:40</publishTime>
     </File>
     <File Include="logistica/anulardespacho.aspx.designer.vb">
       <publishTime>12/08/2017 09:36:26</publishTime>
@@ -231,13 +232,16 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>03/06/2016 19:21:50</publishTime>
     </File>
     <File Include="logistica/logistica.aspx">
-      <publishTime>07/12/2017 15:20:22</publishTime>
+      <publishTime>06/14/2021 10:57:17</publishTime>
     </File>
     <File Include="logistica/logistica.aspx.designer.vb">
       <publishTime>12/07/2017 14:56:10</publishTime>
     </File>
     <File Include="logistica/logistica.aspx.vb">
       <publishTime>12/07/2017 15:20:14</publishTime>
+    </File>
+    <File Include="logistica/recibirtraslado.aspx">
+      <publishTime>06/14/2021 10:57:17</publishTime>
     </File>
     <File Include="menu.aspx">
       <publishTime>10/26/2016 18:24:20</publishTime>
@@ -318,7 +322,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/23/2016 08:49:44</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/04/2020 10:02:57</publishTime>
+      <publishTime>10/16/2023 13:34:41</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>06/03/2016 17:45:56</publishTime>
