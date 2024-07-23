@@ -15,10 +15,13 @@ namespace ArchivadorFEL
         string empresass = "";
         DateTime desde;
         DateTime hasta;
+
         public Form1()
         {
             InitializeComponent();
+            empresasCbx.SelectedIndexChanged += new EventHandler(cambioEmpresaCbx);
         }
+
         void validarSesion()
         {
             if (!string.IsNullOrEmpty(Conexion.instancia.Usuario))
@@ -35,18 +38,21 @@ namespace ArchivadorFEL
                 this.usuariotextBox1.Focus();
             }
         }
+
         void habilitarCampos()
         {
             this.controlpanel1.Visible = true;
             this.Loginpanel1.Visible = false;
             this.cambiarOrigenToolStripMenuItem.Enabled = true;
         }
+
         void deshabilitarCampos()
         {
             this.controlpanel1.Visible = false;
             this.Loginpanel1.Visible = true;
             this.cambiarOrigenToolStripMenuItem.Enabled = false;
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             validarSesion();
@@ -59,29 +65,55 @@ namespace ArchivadorFEL
 
             cargarEmpresa();
         }
+
         void cargarEmpresa()
         {
             try
             {
-                this.empresasComboBox1.DataSource = accesoDatos.instancia.getDealers();
-                this.empresasComboBox1.ValueMember = "Dealer";
-                this.empresasComboBox1.DisplayMember = "Nombre";
+                this.empresasCbx.DataSource = accesoDatos.instancia.getDealers();
+                this.empresasCbx.ValueMember = "Dealer";
+                this.empresasCbx.DisplayMember = "Nombre";
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        void cargarSucursales()
+        {
+            try
+            {
+                this.sucursalesCbx.DataSource = accesoDatos.instancia.getSucursales(Convert.ToInt32(this.empresasCbx.SelectedValue));
+                this.sucursalesCbx.ValueMember = "Sucursal";
+                this.sucursalesCbx.DisplayMember = "Nombre";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            empresasComboBox1.Enabled = (checkBox1.Checked ? true : false);
+            if (empresaChk.Checked)
+            {
+                this.empresasCbx.Enabled = true;
+                this.sucursalChk.Enabled = true;
+            }
+            else
+            {
+                this.empresasCbx.Enabled = false;
+                this.sucursalChk.Checked = false;
+                this.sucursalChk.Enabled = false;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             rutaDestino = "";
@@ -94,12 +126,14 @@ namespace ArchivadorFEL
                 }
             }
         }
+
         void reportarProgreso(int progreso)
         {
             progressBar1.Value = progreso;
 
             this.groupBox2.Text = string.Format("Archivando {0} de {1} documento(s)...", progreso, datos.Count);
         }
+
         void iniciarProceso()
         {
             this.progressBar1.Maximum = datos.Count;
@@ -107,12 +141,13 @@ namespace ArchivadorFEL
             this.comenzarbutton3.Enabled = false;
             this.destinobutton1.Enabled = false;
             logslinkLabel1.Text = "";
-            allDealers = this.checkBox1.Checked;
-            empresass = (allDealers ? Convert.ToString(this.empresasComboBox1.SelectedText) : "Todas las Empresas");
+            allDealers = this.empresaChk.Checked;
+            empresass = (allDealers ? Convert.ToString(this.empresasCbx.SelectedText) : "Todas las Empresas");
             desde = this.desdeDateTimePicker1.Value;
             hasta = this.hastaDateTimePicker2.Value;
             BW.RunWorkerAsync();
         }
+
         private void button3_Click(object sender, EventArgs e)
         {
             if (rutaDestino != "")
@@ -122,7 +157,7 @@ namespace ArchivadorFEL
                 {
                     logss = new List<Logs>();
                     datos = new List<datosFELArchivadorModel>();
-                    datos = accesoDatos.instancia.getDatosFElArchivador(this.desdeDateTimePicker1.Value, this.hastaDateTimePicker2.Value, this.checkBox1.Checked, (int)this.empresasComboBox1.SelectedValue);
+                    datos = accesoDatos.instancia.getDatosFElArchivador(this.desdeDateTimePicker1.Value, this.hastaDateTimePicker2.Value, this.empresaChk.Checked, (int)this.empresasCbx.SelectedValue, this.sucursalChk.Checked, (int)this.sucursalesCbx.SelectedValue);
                     if (datos != null)
                     {
                         iniciarProceso();
@@ -271,7 +306,7 @@ namespace ArchivadorFEL
 
                 BW.ReportProgress(contador);
             }
-           
+
             string detalles = "Desde: " + desde.ToString("dd-MM-yyyy") + ", Hasta: " + hasta.ToString("dd-MM-yyyy") + ", Empresa(s): " + empresass + ",  Total Documentos: " + datos.Count.ToString() + ", Exitosos: " + exitosos.ToString() + ", Errores: " + errores.ToString();
             accesoDatos.instancia.registrarAuditoriaTabla(Conexion.instancia.Usuario, "Archivado de documentos", detalles);
 
@@ -356,7 +391,6 @@ namespace ArchivadorFEL
             {
                 SendKeys.Send(".");
             }
-           
         }
 
         private void hastaDateTimePicker2_ValueChanged(object sender, EventArgs e)
@@ -365,7 +399,28 @@ namespace ArchivadorFEL
             {
                 SendKeys.Send(".");
             }
-           
+        }
+
+        private void sucursalChk_CheckedChanged(object sender, EventArgs e)
+        {
+            if (sucursalChk.Checked)
+            {
+                cargarSucursales();
+                this.sucursalesCbx.Enabled = true;
+            }
+            else
+            {
+                sucursalesCbx.DataSource = null;
+                this.sucursalesCbx.Enabled = false;
+            }
+        }
+        private void cambioEmpresaCbx(object sender, EventArgs e)
+        {
+            if (sucursalChk.Checked)
+            {
+                sucursalesCbx.DataSource = null;
+                cargarSucursales();
+            }
         }
     }
 }
