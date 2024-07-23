@@ -133,3 +133,8 @@ C:\00 GITHUB GLOBAL\GlobalProjects\webadmintools\webadmintools\obj\Release\webad
 C:\00 GITHUB GLOBAL\GlobalProjects\webadmintools\webadmintools\obj\Release\webadmintools.dll
 C:\00 GITHUB GLOBAL\GlobalProjects\webadmintools\webadmintools\obj\Release\webadmintools.xml
 C:\00 GITHUB GLOBAL\GlobalProjects\webadmintools\webadmintools\obj\Release\webadmintools.pdb
+C:\00 GITHUB GLOBAL\GlobalProjects\webadmintools\webadmintools\bin\EntityFramework.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\webadmintools\webadmintools\bin\EntityFramework.SqlServer.dll
+C:\00 GITHUB GLOBAL\GlobalProjects\webadmintools\webadmintools\bin\EntityFramework.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\webadmintools\webadmintools\bin\EntityFramework.SqlServer.xml
+C:\00 GITHUB GLOBAL\GlobalProjects\webadmintools\webadmintools\obj\Release\webadmintools.vbproj.AssemblyReference.cache

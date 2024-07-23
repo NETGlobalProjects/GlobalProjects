@@ -89,3 +89,4 @@ C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstanda
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\WDS Global.dll
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\ref\WDS Global.dll
 C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\WDS Global.pdb
+C:\00 GITHUB GLOBAL\GlobalProjects\MobileApp\AppWDS\AppWDS\obj\Release\netstandard2.0\AppWDS.csproj.AssemblyReference.cache

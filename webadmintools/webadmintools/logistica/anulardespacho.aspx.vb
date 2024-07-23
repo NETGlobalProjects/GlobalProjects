@@ -8,7 +8,9 @@
     Dim despachoAdapter As New dtsNETDATATableAdapters.DespachoTableAdapter
 
     Private Sub anulardespacho_Init(sender As Object, e As EventArgs) Handles Me.Init
-        Me.dealerASPxComboBox1.DataSource = DealerAdapter.GetData()
+        Dim db As New NetDataModel
+
+        Me.dealerASPxComboBox1.DataSource = (From a In db.Dealer Select a).ToList()
         Me.dealerASPxComboBox1.ValueField = "Codigo"
         Me.dealerASPxComboBox1.TextField = "Nombre"
         Me.dealerASPxComboBox1.DataBind()
@@ -109,7 +111,6 @@
 
         End If
     End Sub
-
     Private Sub anulardespacho_Load(sender As Object, e As EventArgs) Handles Me.Load
         If Session("usuario") = "" Then
             Response.Redirect("~/default.aspx")

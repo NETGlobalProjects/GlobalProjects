@@ -1,12 +1,9 @@
 ﻿
 using DevExpress.DataProcessing;
-using DevExpress.XtraReports.Design;
-using DevExpress.XtraReports.UI;
-using DevExpress.XtraRichEdit.Import.OpenXml;
+
 using FELCOM.Logica;
 using FELCOM.Modelo;
-using FELCOM.Salida.DevolucionFactura;
-using FELCOM.Salida.DevolucionFactura.dtsNDTableAdapters;
+
 using FELCOM.Vista;
 using Spire.Pdf;
 using System;
@@ -19,12 +16,10 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Media.TextFormatting;
 using System.Xml;
 using static FELCOM.Logica.PrincipalLogica;
 

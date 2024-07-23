@@ -9,7 +9,8 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <_PublishTargetUrl>\\192.168.0.149\m.admin</_PublishTargetUrl>
     <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
     <LastUsedPlatform>Any CPU</LastUsedPlatform>
-    <History>True|2023-10-16T19:34:47.7686414Z;</History>
+    <History>True|2023-10-17T17:56:11.2670926Z;True|2023-10-16T13:34:47.7686414-06:00;</History>
+    <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="AutorizacionesOC/solicitudautorizacionfinalizada.aspx">
@@ -56,6 +57,12 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     </File>
     <File Include="bin/DevExpress.Web.v14.2.dll">
       <publishTime>12/16/2020 13:53:40</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 13:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 13:15:20</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Data.v14.2.resources.dll">
       <publishTime>12/16/2020 13:53:41</publishTime>
@@ -112,13 +119,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>12/16/2020 13:53:40</publishTime>
     </File>
     <File Include="bin/webadmintools.dll">
-      <publishTime>10/16/2023 13:34:40</publishTime>
+      <publishTime>10/17/2023 11:43:07</publishTime>
     </File>
     <File Include="bin/webadmintools.pdb">
-      <publishTime>10/16/2023 13:34:40</publishTime>
+      <publishTime>10/17/2023 11:43:07</publishTime>
     </File>
     <File Include="bin/webadmintools.xml">
-      <publishTime>10/16/2023 13:34:40</publishTime>
+      <publishTime>10/17/2023 11:43:07</publishTime>
     </File>
     <File Include="cxc/cxcmenu.aspx">
       <publishTime>10/27/2016 08:10:34</publishTime>
@@ -142,13 +149,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>12/08/2017 13:17:51</publishTime>
     </File>
     <File Include="datos/dtsNETDATA.xsc">
-      <publishTime>12/06/2021 15:34:00</publishTime>
+      <publishTime>10/17/2023 11:16:39</publishTime>
     </File>
     <File Include="datos/dtsNETDATA.xsd">
       <publishTime>12/08/2017 13:17:50</publishTime>
     </File>
     <File Include="datos/dtsNETDATA.xss">
-      <publishTime>12/06/2021 15:34:00</publishTime>
+      <publishTime>10/17/2023 11:16:39</publishTime>
     </File>
     <File Include="default.aspx">
       <publishTime>06/28/2016 10:28:14</publishTime>
@@ -184,7 +191,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/24/2016 13:45:50</publishTime>
     </File>
     <File Include="fuentes/Roboto-Regular.ttf">
-      <publishTime>08/12/2017 16:59:09</publishTime>
+      <publishTime>12/08/2017 16:59:09</publishTime>
     </File>
     <File Include="General/cambiofecha.aspx">
       <publishTime>09/30/2017 13:42:50</publishTime>
@@ -220,7 +227,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/28/2016 13:08:16</publishTime>
     </File>
     <File Include="logistica/anulardespacho.aspx">
-      <publishTime>08/12/2017 14:43:40</publishTime>
+      <publishTime>12/08/2017 14:43:40</publishTime>
     </File>
     <File Include="logistica/anulardespacho.aspx.designer.vb">
       <publishTime>12/08/2017 09:36:26</publishTime>
@@ -322,7 +329,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/23/2016 08:49:44</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/16/2023 13:34:41</publishTime>
+      <publishTime>10/17/2023 11:43:12</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>06/03/2016 17:45:56</publishTime>
