@@ -60,6 +60,9 @@
             cerrarSesionbutton1 = new Button();
             infoUsuariolabel7 = new Label();
             label7 = new Label();
+            checkBox2 = new CheckBox();
+            sucursalesComboBox1 = new ComboBox();
+            label8 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -70,7 +73,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(22, 23);
+            checkBox1.Location = new Point(22, 12);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(92, 19);
             checkBox1.TabIndex = 0;
@@ -83,7 +86,7 @@
             empresasComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             empresasComboBox1.Enabled = false;
             empresasComboBox1.FormattingEnabled = true;
-            empresasComboBox1.Location = new Point(249, 23);
+            empresasComboBox1.Location = new Point(249, 10);
             empresasComboBox1.Name = "empresasComboBox1";
             empresasComboBox1.Size = new Size(287, 23);
             empresasComboBox1.TabIndex = 1;
@@ -91,7 +94,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(120, 26);
+            label1.Location = new Point(120, 13);
             label1.Name = "label1";
             label1.Size = new Size(123, 15);
             label1.TabIndex = 2;
@@ -103,7 +106,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(desdeDateTimePicker1);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(23, 57);
+            groupBox1.Location = new Point(23, 80);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(513, 70);
             groupBox1.TabIndex = 3;
@@ -148,7 +151,7 @@
             // 
             // destinobutton1
             // 
-            destinobutton1.Location = new Point(25, 137);
+            destinobutton1.Location = new Point(25, 160);
             destinobutton1.Name = "destinobutton1";
             destinobutton1.Size = new Size(249, 31);
             destinobutton1.TabIndex = 4;
@@ -159,7 +162,7 @@
             // groupBox2
             // 
             groupBox2.Controls.Add(progressBar1);
-            groupBox2.Location = new Point(27, 207);
+            groupBox2.Location = new Point(27, 230);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(509, 57);
             groupBox2.TabIndex = 5;
@@ -177,7 +180,7 @@
             // 
             indicadorProgresolabel4.AutoSize = true;
             indicadorProgresolabel4.BackColor = SystemColors.Control;
-            indicadorProgresolabel4.Location = new Point(25, 267);
+            indicadorProgresolabel4.Location = new Point(25, 290);
             indicadorProgresolabel4.Name = "indicadorProgresolabel4";
             indicadorProgresolabel4.Size = new Size(12, 15);
             indicadorProgresolabel4.TabIndex = 1;
@@ -187,7 +190,7 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button2.Location = new Point(429, 357);
+            button2.Location = new Point(916, 446);
             button2.Name = "button2";
             button2.Size = new Size(143, 23);
             button2.TabIndex = 6;
@@ -198,7 +201,7 @@
             // informacionLabel
             // 
             informacionLabel.AutoSize = true;
-            informacionLabel.Location = new Point(29, 177);
+            informacionLabel.Location = new Point(29, 200);
             informacionLabel.Name = "informacionLabel";
             informacionLabel.Size = new Size(12, 15);
             informacionLabel.TabIndex = 7;
@@ -206,7 +209,7 @@
             // 
             // comenzarbutton3
             // 
-            comenzarbutton3.Location = new Point(287, 137);
+            comenzarbutton3.Location = new Point(287, 160);
             comenzarbutton3.Name = "comenzarbutton3";
             comenzarbutton3.Size = new Size(249, 31);
             comenzarbutton3.TabIndex = 8;
@@ -227,7 +230,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { cambiarOrigenToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(584, 24);
+            menuStrip1.Size = new Size(1071, 24);
             menuStrip1.TabIndex = 9;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -242,7 +245,7 @@
             // logslinkLabel1
             // 
             logslinkLabel1.AutoSize = true;
-            logslinkLabel1.Location = new Point(22, 287);
+            logslinkLabel1.Location = new Point(22, 310);
             logslinkLabel1.Name = "logslinkLabel1";
             logslinkLabel1.Size = new Size(12, 15);
             logslinkLabel1.TabIndex = 10;
@@ -258,7 +261,7 @@
             Loginpanel1.Controls.Add(usuariotextBox1);
             Loginpanel1.Controls.Add(label5);
             Loginpanel1.Controls.Add(label4);
-            Loginpanel1.Location = new Point(97, 75);
+            Loginpanel1.Location = new Point(599, 52);
             Loginpanel1.Name = "Loginpanel1";
             Loginpanel1.Size = new Size(390, 172);
             Loginpanel1.TabIndex = 0;
@@ -319,6 +322,9 @@
             // 
             // controlpanel1
             // 
+            controlpanel1.Controls.Add(sucursalesComboBox1);
+            controlpanel1.Controls.Add(label8);
+            controlpanel1.Controls.Add(checkBox2);
             controlpanel1.Controls.Add(empresasComboBox1);
             controlpanel1.Controls.Add(checkBox1);
             controlpanel1.Controls.Add(label1);
@@ -331,13 +337,13 @@
             controlpanel1.Controls.Add(informacionLabel);
             controlpanel1.Location = new Point(14, 32);
             controlpanel1.Name = "controlpanel1";
-            controlpanel1.Size = new Size(556, 318);
+            controlpanel1.Size = new Size(556, 377);
             controlpanel1.TabIndex = 13;
             // 
             // cerrarSesionbutton1
             // 
             cerrarSesionbutton1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            cerrarSesionbutton1.Location = new Point(468, 1);
+            cerrarSesionbutton1.Location = new Point(955, 1);
             cerrarSesionbutton1.Name = "cerrarSesionbutton1";
             cerrarSesionbutton1.Size = new Size(100, 25);
             cerrarSesionbutton1.TabIndex = 13;
@@ -348,7 +354,7 @@
             // infoUsuariolabel7
             // 
             infoUsuariolabel7.AutoSize = true;
-            infoUsuariolabel7.Location = new Point(17, 362);
+            infoUsuariolabel7.Location = new Point(12, 451);
             infoUsuariolabel7.Name = "infoUsuariolabel7";
             infoUsuariolabel7.Size = new Size(128, 15);
             infoUsuariolabel7.TabIndex = 11;
@@ -357,17 +363,46 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(252, 365);
+            label7.Location = new Point(247, 454);
             label7.Name = "label7";
             label7.Size = new Size(81, 15);
             label7.TabIndex = 14;
             label7.Text = "Version 1.0.0.2";
             // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(22, 49);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(91, 19);
+            checkBox2.TabIndex = 11;
+            checkBox2.Text = "Por Sucursal";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // sucursalesComboBox1
+            // 
+            sucursalesComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            sucursalesComboBox1.Enabled = false;
+            sucursalesComboBox1.FormattingEnabled = true;
+            sucursalesComboBox1.Location = new Point(249, 46);
+            sucursalesComboBox1.Name = "sucursalesComboBox1";
+            sucursalesComboBox1.Size = new Size(287, 23);
+            sucursalesComboBox1.TabIndex = 12;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(120, 49);
+            label8.Name = "label8";
+            label8.Size = new Size(122, 15);
+            label8.TabIndex = 13;
+            label8.Text = "Seleccione la Sucursal";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(584, 386);
+            ClientSize = new Size(1071, 475);
             Controls.Add(label7);
             Controls.Add(infoUsuariolabel7);
             Controls.Add(cerrarSesionbutton1);
@@ -428,5 +463,8 @@
         private Button cerrarSesionbutton1;
         private Label infoUsuariolabel7;
         private Label label7;
+        private ComboBox sucursalesComboBox1;
+        private Label label8;
+        private CheckBox checkBox2;
     }
 }
