@@ -78,7 +78,7 @@ namespace ArchivadorFEL.Datos
                     listaEmpresas.Add(new SucursalesModel
                     {
                         CodPais = Convert.ToString(leer["CodPais"]),
-                        Sucursal = Convert.ToInt32(leer["Sucursal"]),
+                        Sucursal = Convert.ToString(leer["Sucursal"]),
                         Nombre = Convert.ToString(leer["Nombre"])
                     });
                 }
@@ -99,7 +99,7 @@ namespace ArchivadorFEL.Datos
         }
 
 
-        public List<datosFELArchivadorModel> getDatosFElArchivador(DateTime desde, DateTime hasta, bool porEmpresa, int? empresa = null, bool porSucursal = false, int? sucursal = null)
+        public List<datosFELArchivadorModel> getDatosFElArchivador(DateTime desde, DateTime hasta, string sucursal, bool porEmpresa, int? empresa = null, bool porSucursal = false)
         {
             SqlConnection cn = new SqlConnection(Conexion.instancia.getCnString());
             try
@@ -119,7 +119,7 @@ namespace ArchivadorFEL.Datos
                     [Serie], 
                     [DocNo]
                 from vDatosFELArchivador f
-                where f.Fecha between @desde and @hasta";
+                where f.Fecha between @desde and @hasta ";
 
                 if (porEmpresa)
                 {
@@ -128,7 +128,7 @@ namespace ArchivadorFEL.Datos
 
                 if (porSucursal)
                 {
-                    cmdString += " and Sucursal = @sucursal";
+                    cmdString += " and Sucursal LIKE @sucursal + '%'";
                 }
 
                 SqlCommand cmd = new SqlCommand(cmdString, cn);
@@ -137,7 +137,7 @@ namespace ArchivadorFEL.Datos
                 cmd.Parameters.Add("@desde", System.Data.SqlDbType.DateTime).Value = desde;
                 cmd.Parameters.Add("@hasta", System.Data.SqlDbType.DateTime).Value = hasta;
                 if (porEmpresa && empresa != null) { cmd.Parameters.Add("@dealer", System.Data.SqlDbType.Int).Value = empresa; }
-                if (porSucursal && sucursal != null) { cmd.Parameters.Add("@sucursal", System.Data.SqlDbType.Int).Value = sucursal; }
+                if (porSucursal && sucursal != null) { cmd.Parameters.Add("@sucursal", System.Data.SqlDbType.VarChar).Value = sucursal.Trim(); }
                 List<datosFELArchivadorModel> datos = new List<datosFELArchivadorModel>();
                 SqlDataReader leer;
                 cn.Open();

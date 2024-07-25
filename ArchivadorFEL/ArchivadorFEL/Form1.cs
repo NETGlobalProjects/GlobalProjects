@@ -157,7 +157,7 @@ namespace ArchivadorFEL
                 {
                     logss = new List<Logs>();
                     datos = new List<datosFELArchivadorModel>();
-                    datos = accesoDatos.instancia.getDatosFElArchivador(this.desdeDateTimePicker1.Value, this.hastaDateTimePicker2.Value, this.empresaChk.Checked, (int)this.empresasCbx.SelectedValue, this.sucursalChk.Checked, (int)this.sucursalesCbx.SelectedValue);
+                    datos = accesoDatos.instancia.getDatosFElArchivador(this.desdeDateTimePicker1.Value, this.hastaDateTimePicker2.Value, Convert.ToString(this.sucursalesCbx.SelectedValue), this.empresaChk.Checked, (int)this.empresasCbx.SelectedValue, this.sucursalChk.Checked);
                     if (datos != null)
                     {
                         iniciarProceso();

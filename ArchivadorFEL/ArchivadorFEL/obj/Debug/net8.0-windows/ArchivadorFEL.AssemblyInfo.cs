@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArchivadorFEL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d76a95f504c3ea8a46c1a7eb3d90b0fa805179d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2468ab295ad891334d71746591e69ad7daa6f012")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArchivadorFEL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArchivadorFEL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
