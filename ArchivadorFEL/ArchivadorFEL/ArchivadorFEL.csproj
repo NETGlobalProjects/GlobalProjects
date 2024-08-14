@@ -8,6 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>08-07-2024_09-00-48-removebg-preview.ico</ApplicationIcon>
     <PlatformTarget>x64</PlatformTarget>
+    <BaseOutputPath></BaseOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

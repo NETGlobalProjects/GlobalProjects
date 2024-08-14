@@ -25,7 +25,6 @@ namespace ArchivadorFEL.Datos
                 return _instancia;
             }
         }
-
         public List<DealersModel> getDealers()
         {
             SqlConnection cn = new SqlConnection(Conexion.instancia.getCnString());
@@ -38,55 +37,51 @@ namespace ArchivadorFEL.Datos
                 List<DealersModel> listaEmpresas = new List<DealersModel>();
                 cn.Open();
                 leer = cmd.ExecuteReader();
-                while (leer.Read())
+                while (leer.Read()) 
                 {
-                    listaEmpresas.Add(new DealersModel { CodPais = Convert.ToString(leer["CodPais"]), Dealer = Convert.ToInt32(leer["Codigo"]), Nombre = Convert.ToString(leer["Nombre"]) });
+                    listaEmpresas.Add(new DealersModel { CodPais = Convert.ToString(leer["CodPais"]), Dealer = Convert.ToInt32(leer["Codigo"]), Nombre = Convert.ToString(leer["Nombre"])});
                 }
                 cn.Close();
                 return listaEmpresas;
-
+            
             }
             catch (Exception ex)
             {
+
                 throw new Exception("Error al obtener dealers: " + ex.Message + " " + ex.InnerException);
             }
             finally
             {
-                if (cn.State == System.Data.ConnectionState.Open)
+                if(cn.State == System.Data.ConnectionState.Open)
                 {
                     cn.Close();
                 }
             }
         }
-
-        public List<SucursalesModel> getSucursales(int dealer)
+        public List<SucursalesModel> getSucursales(string CodPais, int Dealer)
         {
             SqlConnection cn = new SqlConnection(Conexion.instancia.getCnString());
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT CodPais, Sucursal, Nombre FROM Sucursal WHERE Dealer = @Dealer", cn);
+                SqlCommand cmd = new SqlCommand("SELECT CodPais, Dealer,Sucursal, Nombre FROM Sucursal where CodPais = '"+CodPais+"' and Dealer = "+ Dealer.ToString()+"", cn);
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.CommandTimeout = 999;
-                cmd.Parameters.AddWithValue("@Dealer", dealer);
-
                 SqlDataReader leer;
-                List<SucursalesModel> listaEmpresas = new List<SucursalesModel>();
+                List<SucursalesModel> lista = new List<SucursalesModel>();
                 cn.Open();
                 leer = cmd.ExecuteReader();
                 while (leer.Read())
                 {
-                    listaEmpresas.Add(new SucursalesModel
-                    {
-                        CodPais = Convert.ToString(leer["CodPais"]),
-                        Sucursal = Convert.ToString(leer["Sucursal"]),
-                        Nombre = Convert.ToString(leer["Nombre"])
-                    });
+                    lista.Add(new SucursalesModel { CodPais = Convert.ToString(leer["CodPais"]), Dealer = Convert.ToInt32(leer["Dealer"]),Sucursal = Convert.ToString(leer["Sucursal"]), Nombre = Convert.ToString(leer["Nombre"]) });
                 }
                 cn.Close();
-                return listaEmpresas;
+
+                return lista;
+
             }
             catch (Exception ex)
             {
+
                 throw new Exception("Error al obtener sucursales: " + ex.Message + " " + ex.InnerException);
             }
             finally
@@ -97,38 +92,21 @@ namespace ArchivadorFEL.Datos
                 }
             }
         }
-
-
-        public List<datosFELArchivadorModel> getDatosFElArchivador(DateTime desde, DateTime hasta, string sucursal, bool porEmpresa, int? empresa = null, bool porSucursal = false)
+        public List<datosFELArchivadorModel> getDatosFElArchivador(DateTime desde, DateTime hasta, bool porEmpresa,bool porSucursal, int? empresa = null, string sucursal = null)
         {
             SqlConnection cn = new SqlConnection(Conexion.instancia.getCnString());
             try
             {
-                string cmdString = @"select [CodPais], 
-                    [Dealer], 
-                    rtrim([nombreCortoEmpresa]) nombreCortoEmpresa, 
-                    [Sucursal], 
-                    [Anio], 
-                    [Mes], 
-                    [Fecha], 
-                    [CodigoGeneracion], 
-                    [TipoDoc], 
-                    [Tipo], 
-                    [dia], 
-                    [completoRutaDestino], 
-                    [Serie], 
-                    [DocNo]
-                from vDatosFELArchivador f
-                where f.Fecha between @desde and @hasta ";
-
+                string cmdString = @"select [CodPais], [Dealer], rtrim([nombreCortoEmpresa]) nombreCortoEmpresa, [Sucursal], [Anio], [Mes], [Fecha], [CodigoGeneracion], [TipoDoc], [Tipo], [dia], [completoRutaDestino], [Serie], [DocNo]
+                                    from vDatosFELArchivador f
+                                    where f.Fecha between @desde and @hasta";
                 if (porEmpresa)
                 {
                     cmdString += " and Dealer = @dealer";
                 }
-
                 if (porSucursal)
                 {
-                    cmdString += " and Sucursal LIKE @sucursal + '%'";
+                    cmdString += " and Tda = @tda";
                 }
 
                 SqlCommand cmd = new SqlCommand(cmdString, cn);
@@ -136,8 +114,14 @@ namespace ArchivadorFEL.Datos
                 cmd.CommandTimeout = 999;
                 cmd.Parameters.Add("@desde", System.Data.SqlDbType.DateTime).Value = desde;
                 cmd.Parameters.Add("@hasta", System.Data.SqlDbType.DateTime).Value = hasta;
-                if (porEmpresa && empresa != null) { cmd.Parameters.Add("@dealer", System.Data.SqlDbType.Int).Value = empresa; }
-                if (porSucursal && sucursal != null) { cmd.Parameters.Add("@sucursal", System.Data.SqlDbType.VarChar).Value = sucursal.Trim(); }
+                if (porEmpresa)
+                {
+                    cmd.Parameters.Add("@dealer", System.Data.SqlDbType.Int).Value = empresa;
+                }
+                if (porSucursal)
+                {
+                    cmd.Parameters.Add("@tda", System.Data.SqlDbType.Char, 7).Value = sucursal;
+                }
                 List<datosFELArchivadorModel> datos = new List<datosFELArchivadorModel>();
                 SqlDataReader leer;
                 cn.Open();
@@ -146,25 +130,26 @@ namespace ArchivadorFEL.Datos
                 {
                     datos.Add(new datosFELArchivadorModel
                     {
-                        CodPais = Convert.ToString( leer["CodPais"]),
-                        Dealer = Convert.ToInt32(leer["Dealer"]),
-                        nombreCortoEmpresa = Convert.ToString(leer["nombreCortoEmpresa"]),
-                        Surursal  = Convert.ToString(leer["Sucursal"]),
-                        Anio = Convert.ToInt32(leer["Anio"]),
-                        Mes = Convert.ToString(leer["Mes"]),
-                        Fecha = Convert.ToDateTime(leer["Fecha"]),
-                        CodigoGeneracion  = Convert.ToString(leer["CodigoGeneracion"]),
-                        TipoDoc = Convert.ToString(leer["TipoDoc"]),
-                        Tipo = Convert.ToString(leer["Tipo"]),
-                        dia = Convert.ToString(leer["dia"]),
-                        completoRutaDestino = Convert.ToString(leer["completoRutaDestino"]),
-                        Serie = Convert.ToString(leer["Serie"]),
-                        DocNo = Convert.ToInt32(leer["DocNo"])
+                    CodPais = Convert.ToString( leer["CodPais"]),
+                    Dealer = Convert.ToInt32(leer["Dealer"]),
+                    nombreCortoEmpresa = Convert.ToString(leer["nombreCortoEmpresa"]),
+                    Surursal  = Convert.ToString(leer["Sucursal"]),
+                    Anio = Convert.ToInt32(leer["Anio"]),
+                    Mes = Convert.ToString(leer["Mes"]),
+                    Fecha = Convert.ToDateTime(leer["Fecha"]),
+                    CodigoGeneracion  = Convert.ToString(leer["CodigoGeneracion"]),
+                    TipoDoc = Convert.ToString(leer["TipoDoc"]),
+                    Tipo = Convert.ToString(leer["Tipo"]),
+                    dia = Convert.ToString(leer["dia"]),
+                    completoRutaDestino = Convert.ToString(leer["completoRutaDestino"]),
+                    Serie = Convert.ToString(leer["Serie"]),
+                    DocNo = Convert.ToInt32(leer["DocNo"])
                     });
                 }
                 cn.Close();
 
                 return datos;
+
             }
             catch (Exception ex)
             {
@@ -178,7 +163,6 @@ namespace ArchivadorFEL.Datos
                 }
             }
         }
-
         public int validarLogin(string Usuario, string Contraseña)
         {
             SqlConnection cn = new SqlConnection(Conexion.instancia.getCnStringInventario());
@@ -213,7 +197,6 @@ namespace ArchivadorFEL.Datos
                 }
             }
         }
-
         public bool registrarAuditoriaTabla(string Usuario, string Accion, string Detalle)
         {
             SqlConnection cn = new SqlConnection(Conexion.instancia.getCnString());
@@ -244,7 +227,6 @@ namespace ArchivadorFEL.Datos
                 }
             }
         }
-
         public DataTable ToDataTable<T>(IList<T> data)
         {
             PropertyDescriptorCollection props =

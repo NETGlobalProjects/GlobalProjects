@@ -1,8 +1,7 @@
 using ArchivadorFEL.Datos;
 using ArchivadorFEL.Modelos;
 using ArchivadorFEL.Properties;
-using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 namespace ArchivadorFEL
 {
@@ -15,13 +14,10 @@ namespace ArchivadorFEL
         string empresass = "";
         DateTime desde;
         DateTime hasta;
-
         public Form1()
         {
             InitializeComponent();
-            empresasCbx.SelectedIndexChanged += new EventHandler(cambioEmpresaCbx);
         }
-
         void validarSesion()
         {
             if (!string.IsNullOrEmpty(Conexion.instancia.Usuario))
@@ -38,21 +34,18 @@ namespace ArchivadorFEL
                 this.usuariotextBox1.Focus();
             }
         }
-
         void habilitarCampos()
         {
             this.controlpanel1.Visible = true;
             this.Loginpanel1.Visible = false;
             this.cambiarOrigenToolStripMenuItem.Enabled = true;
         }
-
         void deshabilitarCampos()
         {
             this.controlpanel1.Visible = false;
             this.Loginpanel1.Visible = true;
             this.cambiarOrigenToolStripMenuItem.Enabled = false;
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             validarSesion();
@@ -65,47 +58,32 @@ namespace ArchivadorFEL
 
             cargarEmpresa();
         }
-
         void cargarEmpresa()
         {
             try
             {
-                this.empresasCbx.DataSource = accesoDatos.instancia.getDealers();
-                this.empresasCbx.ValueMember = "Dealer";
-                this.empresasCbx.DisplayMember = "Nombre";
+                this.empresasComboBox1.DataSource = accesoDatos.instancia.getDealers();
+                this.empresasComboBox1.ValueMember = "Dealer";
+                this.empresasComboBox1.DisplayMember = "Nombre";
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        void cargarSucursales()
-        {
-            try
-            {
-                this.sucursalesCbx.DataSource = accesoDatos.instancia.getSucursales(Convert.ToInt32(this.empresasCbx.SelectedValue));
-                this.sucursalesCbx.ValueMember = "Sucursal";
-                this.sucursalesCbx.DisplayMember = "Nombre";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (empresaChk.Checked)
+            empresasComboBox1.Enabled = (porEmpresacheckBox1.Checked ? true : false);
+            if (porEmpresacheckBox1.Checked)
             {
-                this.empresasCbx.Enabled = true;
-                this.sucursalChk.Enabled = true;
+                this.porSucursalcheckBox2.Enabled = true;
+                //this.sucursalescomboBox1.Enabled = true;
             }
             else
             {
-                this.empresasCbx.Enabled = false;
-                this.sucursalChk.Checked = false;
-                this.sucursalChk.Enabled = false;
+                this.porSucursalcheckBox2.Enabled = false;
+                //this.sucursalescomboBox1.Enabled = false;
             }
         }
 
@@ -113,7 +91,6 @@ namespace ArchivadorFEL
         {
             this.Close();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             rutaDestino = "";
@@ -126,14 +103,12 @@ namespace ArchivadorFEL
                 }
             }
         }
-
         void reportarProgreso(int progreso)
         {
             progressBar1.Value = progreso;
 
             this.groupBox2.Text = string.Format("Archivando {0} de {1} documento(s)...", progreso, datos.Count);
         }
-
         void iniciarProceso()
         {
             this.progressBar1.Maximum = datos.Count;
@@ -141,13 +116,12 @@ namespace ArchivadorFEL
             this.comenzarbutton3.Enabled = false;
             this.destinobutton1.Enabled = false;
             logslinkLabel1.Text = "";
-            allDealers = this.empresaChk.Checked;
-            empresass = (allDealers ? Convert.ToString(this.empresasCbx.SelectedText) : "Todas las Empresas");
+            allDealers = this.porEmpresacheckBox1.Checked;
+            empresass = (allDealers ? Convert.ToString(this.empresasComboBox1.SelectedText) : "Todas las Empresas");
             desde = this.desdeDateTimePicker1.Value;
             hasta = this.hastaDateTimePicker2.Value;
             BW.RunWorkerAsync();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             if (rutaDestino != "")
@@ -157,7 +131,7 @@ namespace ArchivadorFEL
                 {
                     logss = new List<Logs>();
                     datos = new List<datosFELArchivadorModel>();
-                    datos = accesoDatos.instancia.getDatosFElArchivador(this.desdeDateTimePicker1.Value, this.hastaDateTimePicker2.Value, Convert.ToString(this.sucursalesCbx.SelectedValue), this.empresaChk.Checked, (int)this.empresasCbx.SelectedValue, this.sucursalChk.Checked);
+                    datos = accesoDatos.instancia.getDatosFElArchivador(this.desdeDateTimePicker1.Value, this.hastaDateTimePicker2.Value, this.porEmpresacheckBox1.Checked, porSucursalcheckBox2.Checked,(int)this.empresasComboBox1.SelectedValue, Convert.ToString( this.sucursalescomboBox1.SelectedValue));
                     if (datos != null)
                     {
                         iniciarProceso();
@@ -400,26 +374,34 @@ namespace ArchivadorFEL
                 SendKeys.Send(".");
             }
         }
-
-        private void sucursalChk_CheckedChanged(object sender, EventArgs e)
+        void cargarSucursales()
         {
-            if (sucursalChk.Checked)
+            try
             {
-                cargarSucursales();
-                this.sucursalesCbx.Enabled = true;
+                this.sucursalescomboBox1.DataSource = accesoDatos.instancia.getSucursales("SAL", (int)this.empresasComboBox1.SelectedValue);
+                this.sucursalescomboBox1.DisplayMember = "Nombre";
+                this.sucursalescomboBox1.ValueMember = "Sucursal";
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Error al cargar sucursales: " + ex.Message + " " + ex.InnerException);
+            }
+        }
+        private void empresasComboBox1_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            cargarSucursales();
+        }
+
+        private void porSucursalcheckBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (porSucursalcheckBox2.Checked)
+            {
+                this.sucursalescomboBox1.Enabled = true;
             }
             else
             {
-                sucursalesCbx.DataSource = null;
-                this.sucursalesCbx.Enabled = false;
-            }
-        }
-        private void cambioEmpresaCbx(object sender, EventArgs e)
-        {
-            if (sucursalChk.Checked)
-            {
-                sucursalesCbx.DataSource = null;
-                cargarSucursales();
+                this.sucursalescomboBox1.Enabled = false;
             }
         }
     }

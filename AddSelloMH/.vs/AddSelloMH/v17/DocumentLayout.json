@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JoseDuran\\Documents\\Visual Studio 2022\\Projects\\AddSelloMH\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1CAEFB36-817E-47F4-BA50-1CB66F3C82C2}|AddSelloMH\\AddSelloMH.csproj|C:\\Users\\JoseDuran\\Documents\\Visual Studio 2022\\Projects\\AddSelloMH\\addsellomh\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CAEFB36-817E-47F4-BA50-1CB66F3C82C2}|AddSelloMH\\AddSelloMH.csproj|solutionrelative:addsellomh\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CAEFB36-817E-47F4-BA50-1CB66F3C82C2}|AddSelloMH\\AddSelloMH.csproj|C:\\Users\\JoseDuran\\Documents\\Visual Studio 2022\\Projects\\AddSelloMH\\addsellomh\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1CAEFB36-817E-47F4-BA50-1CB66F3C82C2}|AddSelloMH\\AddSelloMH.csproj|solutionrelative:addsellomh\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CAEFB36-817E-47F4-BA50-1CB66F3C82C2}|AddSelloMH\\AddSelloMH.csproj|c:\\users\\joseduran\\documents\\visual studio 2022\\projects\\addsellomh\\addsellomh\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CAEFB36-817E-47F4-BA50-1CB66F3C82C2}|AddSelloMH\\AddSelloMH.csproj|solutionrelative:addsellomh\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\JoseDuran\\Documents\\Visual Studio 2022\\Projects\\AddSelloMH\\AddSelloMH\\Form1.cs",
+              "RelativeDocumentMoniker": "AddSelloMH\\Form1.cs",
+              "ToolTip": "C:\\Users\\JoseDuran\\Documents\\Visual Studio 2022\\Projects\\AddSelloMH\\AddSelloMH\\Form1.cs",
+              "RelativeToolTip": "AddSelloMH\\Form1.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAcwHYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T23:13:04.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JoseDuran\\Documents\\Visual Studio 2022\\Projects\\AddSelloMH\\AddSelloMH\\Form1.cs",
+              "RelativeDocumentMoniker": "AddSelloMH\\Form1.cs",
+              "ToolTip": "C:\\Users\\JoseDuran\\Documents\\Visual Studio 2022\\Projects\\AddSelloMH\\AddSelloMH\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AddSelloMH\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T23:13:02.331Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "accesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\JoseDuran\\Documents\\Visual Studio 2022\\Projects\\AddSelloMH\\AddSelloMH\\Datos\\accesoDatos.cs",
+              "RelativeDocumentMoniker": "AddSelloMH\\Datos\\accesoDatos.cs",
+              "ToolTip": "C:\\Users\\JoseDuran\\Documents\\Visual Studio 2022\\Projects\\AddSelloMH\\AddSelloMH\\Datos\\accesoDatos.cs",
+              "RelativeToolTip": "AddSelloMH\\Datos\\accesoDatos.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAowBoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T23:02:00.099Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

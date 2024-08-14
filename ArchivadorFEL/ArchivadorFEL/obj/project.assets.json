@@ -2493,35 +2493,42 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RobinCruz\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\JoseDuran\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\00 GITHUB GLOBAL\\GlobalProjects\\GlobalProjects\\ArchivadorFEL\\ArchivadorFEL\\ArchivadorFEL.csproj",
+      "projectUniqueName": "C:\\00 GITHUB GLOBAL\\GlobalProjects\\ArchivadorFEL\\ArchivadorFEL\\ArchivadorFEL.csproj",
       "projectName": "ArchivadorFEL",
-      "projectPath": "C:\\00 GITHUB GLOBAL\\GlobalProjects\\GlobalProjects\\ArchivadorFEL\\ArchivadorFEL\\ArchivadorFEL.csproj",
-      "packagesPath": "C:\\Users\\RobinCruz\\.nuget\\packages\\",
-      "outputPath": "C:\\00 GITHUB GLOBAL\\GlobalProjects\\GlobalProjects\\ArchivadorFEL\\ArchivadorFEL\\obj\\",
+      "projectPath": "C:\\00 GITHUB GLOBAL\\GlobalProjects\\ArchivadorFEL\\ArchivadorFEL\\ArchivadorFEL.csproj",
+      "packagesPath": "C:\\Users\\JoseDuran\\.nuget\\packages\\",
+      "outputPath": "C:\\00 GITHUB GLOBAL\\GlobalProjects\\ArchivadorFEL\\ArchivadorFEL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\RobinCruz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+        "C:\\Users\\JoseDuran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },

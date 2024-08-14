@@ -9,6 +9,7 @@ namespace ArchivadorFEL.Modelos
     public class SucursalesModel
     {
         public string CodPais { get; set; }
+        public int Dealer { get; set; }
         public string Sucursal { get; set; }
         public string Nombre { get; set; }
     }
