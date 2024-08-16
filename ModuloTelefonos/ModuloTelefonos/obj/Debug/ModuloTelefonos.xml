@@ -1,0 +1,1186 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ModuloTelefonos
+</name>
+</assembly>
+<members>
+<member name="T:ModuloTelefonos.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources._1328101896_Login">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources._20150926_115118">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources._4300_logoSQL_2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources._conbloqueo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources._Error">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources._sinbloqueo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Add">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Alexis">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.ALEXIS_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.ALEXIS_2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.atencion_revisar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.background">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.bajar_solicitud">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.BindingNavigatorMoveFirstItem_Image">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.BindingNavigatorMoveLastItem_Image">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.BindingNavigatorMoveNextItem_Image">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.BindingNavigatorMovePreviousItem_Image">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.binoculars">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.blog_5">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Bloque_icon">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.bloqueado">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.button_hover">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.button_normal">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.candado_abierto">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.candado_cerrado">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.cesar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.CESAR_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.CESAR_2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.change">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.change_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.check_usuario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.colores">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.comentario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.corr_compras">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.correo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.departamento">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.descarga">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.descuento">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.digitalizacion_rrhh">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.disable_image">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Documentos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.elimDespacho">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Eliminar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Eliminar2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Elmer">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Elmer_Min">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.enable_image">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.envelope_icon">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.estadisticas">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.fecha">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.ficha_01">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.floppy_disk">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Foto_JM">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.gestions">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.guardar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.header_01">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.icon_send_mail">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.image_marketing_mail">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.images">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.imprimir">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Index_view">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.inventario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.JOSE_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.JOSE_2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.kword_kwd">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.linea">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.lists">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.llave">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.loading">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.loading__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.loading__2_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.loading17">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.logo_admingt">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.logo_admingt_no_empty">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.logo_admingt_no_empty1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.logo_admingt1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.logo_excel">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.logo_global">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.logout_icon">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.logout_icon_png">
+<summary>
+  Busca un recurso adaptado de tipo System.Byte[].
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Mail">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.mail_close">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.mail_note">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.mail_open">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.mail_replay">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.menu2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.mobile_phone">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Mostrar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.movimiento">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Msn_Buddy_web">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.notas">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.nuevo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.ocultar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.offline">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.ok">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.online">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.password">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.preferences">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.preview">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.print_64">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.print_64_preview">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.ProgresoEnCurso_Grande">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.refresh">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Registry">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.robertoGT">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Salida">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.seguimiento">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.session">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.sessions">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Settings">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.sim_icon">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.sinbloqueo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.solicitudes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.Solicitudes_Revisadas">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.todo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.trash">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.tribal_dragon_tattoo_design">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.uno">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.update">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.user">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.usuarios">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.usuarios_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.viewmagfit">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.vistamedica_ojo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.WizardOffice2007Background">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.WizardOffice2007BackgroundBlack">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.WizardOffice2007BackgroundSilver">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.telefonosMarcasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.estados_telefonosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.SODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.propietariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.lotesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.motivos_movimientosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.cargosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.t_departamentosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.t_empresasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.lineasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.BuscarPropietariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.buscarNumerosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.reposiciones_simDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.FichasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.tipos_movimientosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.estadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.descuentos_x_reposicionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.telefonosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.telefonos2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.monitor_bloqueos_bdDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.buscartelefonosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.marcasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.movimientos_lineas_telefonosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.propietariosNombreApellidosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.telefonosMarcasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.estados_telefonosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.SORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.propietariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.lotesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.motivos_movimientosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.cargosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.t_departamentosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.t_empresasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.lineasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.BuscarPropietariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.buscarNumerosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.reposiciones_simRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.FichasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.tipos_movimientosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.estadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.descuentos_x_reposicionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.telefonosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.telefonos2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.monitor_bloqueos_bdRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.buscartelefonosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.marcasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.movimientos_lineas_telefonosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.propietariosNombreApellidosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.telefonosMarcasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.estados_telefonosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.SORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.propietariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.lotesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.motivos_movimientosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.cargosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.t_departamentosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.t_empresasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.lineasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.BuscarPropietariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.buscarNumerosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.reposiciones_simRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.FichasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.tipos_movimientosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.estadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.descuentos_x_reposicionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.telefonosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.telefonos2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.monitor_bloqueos_bdRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.buscartelefonosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.marcasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.movimientos_lineas_telefonosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonos.propietariosNombreApellidosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.telefonosMarcasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.estados_telefonosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.SOTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.propietariosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.lotesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.motivos_movimientosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.cargosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.t_departamentosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.t_empresasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.lineasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.BuscarPropietariosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.buscarNumerosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.reposiciones_simTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.FichasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.tipos_movimientosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.estadosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.descuentos_x_reposicionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.telefonosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.telefonos2TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.monitor_bloqueos_bdTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.buscartelefonosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.marcasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.movimientos_lineas_telefonosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.propietariosNombreApellidosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.TableAdapterManager.UpdateUpdatedRows(ModuloTelefonos.dtsInventarioTelefonos,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.TableAdapterManager.UpdateInsertedRows(ModuloTelefonos.dtsInventarioTelefonos,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.TableAdapterManager.UpdateDeletedRows(ModuloTelefonos.dtsInventarioTelefonos,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.TableAdapterManager.UpdateAll(ModuloTelefonos.dtsInventarioTelefonos)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:ModuloTelefonos.dtsInventarioTelefonosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

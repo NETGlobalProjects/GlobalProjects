@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C636866-6C97-4506-B3D0-30331467D162}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ModuloTelefonos.My.MyApplication</StartupObject>
+    <RootNamespace>ModuloTelefonos</RootNamespace>
+    <AssemblyName>ModuloTelefonos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>C:\Users\JoseDuran\Desktop\TM</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ModuloTelefonos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ModuloTelefonos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\logo admingt.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Export, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Extensions, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conex.vb" />
+    <Compile Include="Logica\EquiposClase.vb" />
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modelos\estados.vb">
+      <DependentUpon>ModuloTelefonosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\marcas.vb">
+      <DependentUpon>ModuloTelefonosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\ModuloTelefonosModel.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModuloTelefonosModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\ModuloTelefonosModel.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModuloTelefonosModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\ModuloTelefonosModel.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModuloTelefonosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\ModuloTelefonos_Equipos.vb">
+      <DependentUpon>ModuloTelefonosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\ModuloTelefonos_Equipos_Tipos.vb">
+      <DependentUpon>ModuloTelefonosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\v_ModuloTelefonos_Equipos.vb">
+      <DependentUpon>ModuloTelefonosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventariosEquipos\frmAddModEquipo.Designer.vb">
+      <DependentUpon>frmAddModEquipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventariosEquipos\frmAddModEquipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventariosEquipos\frmConsultarEquipos.Designer.vb">
+      <DependentUpon>frmConsultarEquipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventariosEquipos\frmConsultarEquipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventariosEquipos\frmManttoEquipos.Designer.vb">
+      <DependentUpon>frmManttoEquipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventariosEquipos\frmManttoEquipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgLineas\frmReposicionesSIM.Designer.vb">
+      <DependentUpon>frmReposicionesSIM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgLineas\frmReposicionesSIM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgMovimientos\dlgDescuentosxReposicion.Designer.vb">
+      <DependentUpon>dlgDescuentosxReposicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgMovimientos\dlgDescuentosxReposicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgCargos.Designer.vb">
+      <DependentUpon>dlgCargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgCargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgDepartamentos.Designer.vb">
+      <DependentUpon>dlgDepartamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgDepartamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgEmergentePropietarios.Designer.vb">
+      <DependentUpon>dlgEmergentePropietarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgEmergentePropietarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgEmpresas.Designer.vb">
+      <DependentUpon>dlgEmpresas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgEmpresas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\dtsInventarioTelefonos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsInventarioTelefonos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmLineas.Designer.vb">
+      <DependentUpon>frmLineas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmLineas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmLotesTelefonos.Designer.vb">
+      <DependentUpon>frmLotesTelefonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmLotesTelefonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmMenuModuloInventarioTelefonos.Designer.vb">
+      <DependentUpon>frmMenuModuloInventarioTelefonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmMenuModuloInventarioTelefonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmMovimientos.Designer.vb">
+      <DependentUpon>frmMovimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmMovimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmPropietarios.Designer.vb">
+      <DependentUpon>frmPropietarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmPropietarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmVista_Previa_Rpts.Designer.vb">
+      <DependentUpon>frmVista_Previa_Rpts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmVista_Previa_Rpts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\Informes\rptFicha.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptFicha.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\Informes\xRptFicha.Designer.vb">
+      <DependentUpon>xRptFicha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\Informes\xRptFicha.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\Informes\xRptFichaPolitica.Designer.vb">
+      <DependentUpon>xRptFichaPolitica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\Informes\xRptFichaPolitica.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\Mantenimientos\frmEstadosTelefonos.Designer.vb">
+      <DependentUpon>frmEstadosTelefonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\Mantenimientos\frmEstadosTelefonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\Mantenimientos\frmMarcasTelefonos.Designer.vb">
+      <DependentUpon>frmMarcasTelefonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\Mantenimientos\frmMarcasTelefonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\Mantenimientos\frmMotivosTelefonos.Designer.vb">
+      <DependentUpon>frmMotivosTelefonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\Mantenimientos\frmMotivosTelefonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\xFrmVisorDocumentos.Designer.vb">
+      <DependentUpon>xFrmVisorDocumentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\xFrmVisorDocumentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventariosEquipos\frmAddModEquipo.resx">
+      <DependentUpon>frmAddModEquipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventariosEquipos\frmConsultarEquipos.resx">
+      <DependentUpon>frmConsultarEquipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventariosEquipos\frmManttoEquipos.resx">
+      <DependentUpon>frmManttoEquipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\dlgLineas\frmReposicionesSIM.resx">
+      <DependentUpon>frmReposicionesSIM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\dlgMovimientos\dlgDescuentosxReposicion.resx">
+      <DependentUpon>dlgDescuentosxReposicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgCargos.resx">
+      <DependentUpon>dlgCargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgDepartamentos.resx">
+      <DependentUpon>dlgDepartamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgEmergentePropietarios.resx">
+      <DependentUpon>dlgEmergentePropietarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgEmpresas.resx">
+      <DependentUpon>dlgEmpresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\frmLineas.resx">
+      <DependentUpon>frmLineas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\frmLotesTelefonos.resx">
+      <DependentUpon>frmLotesTelefonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\frmMenuModuloInventarioTelefonos.resx">
+      <DependentUpon>frmMenuModuloInventarioTelefonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\frmMovimientos.resx">
+      <DependentUpon>frmMovimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\frmPropietarios.resx">
+      <DependentUpon>frmPropietarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\frmVista_Previa_Rpts.resx">
+      <DependentUpon>frmVista_Previa_Rpts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\Informes\rptFicha.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptFicha.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\Informes\xRptFicha.resx">
+      <DependentUpon>xRptFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\Informes\xRptFichaPolitica.resx">
+      <DependentUpon>xRptFichaPolitica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\Mantenimientos\frmEstadosTelefonos.resx">
+      <DependentUpon>frmEstadosTelefonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\Mantenimientos\frmMarcasTelefonos.resx">
+      <DependentUpon>frmMarcasTelefonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\Mantenimientos\frmMotivosTelefonos.resx">
+      <DependentUpon>frmMotivosTelefonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\xFrmVisorDocumentos.resx">
+      <DependentUpon>xFrmVisorDocumentos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Modelos\ModuloTelefonosModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModuloTelefonosModel.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Modelos\ModuloTelefonosModel.edmx.diagram">
+      <DependentUpon>ModuloTelefonosModel.edmx</DependentUpon>
+    </None>
+    <None Include="Modulos\InventarioTelefonos\dtsInventarioTelefonos.xsc">
+      <DependentUpon>dtsInventarioTelefonos.xsd</DependentUpon>
+    </None>
+    <None Include="Modulos\InventarioTelefonos\dtsInventarioTelefonos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsInventarioTelefonos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Modulos\InventarioTelefonos\dtsInventarioTelefonos.xss">
+      <DependentUpon>dtsInventarioTelefonos.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\logout_icon.png.es" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_conbloqueo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_sinbloqueo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4300.logoSQL_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20150926_115118.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1328101896_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alexis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALEXIS_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALEXIS_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atencion_revisar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bajar-solicitud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BindingNavigatorMoveFirstItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BindingNavigatorMoveLastItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BindingNavigatorMoveNextItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BindingNavigatorMovePreviousItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binoculars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bloque_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bloqueado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado abierto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado cerrado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cesar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CESAR_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CESAR_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comentario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corr compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departamento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descuento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disable_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elimDespacho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elmer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elmer-Min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enable_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\envelope_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estadisticas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ficha-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy_disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Foto JM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gestions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_send_mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_marketing_mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Index_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JOSE_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JOSE_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kword_kwd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading17.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo admingt no empty.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo admingt no empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo admingt.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo admingt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo global.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail close.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail note.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail open.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mail.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail_replay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile_phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mostrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Msn_Buddy-web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocultar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_64_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProgresoEnCurso-Grande.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robertoGT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seguimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\session.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sessions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sim-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinbloqueo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solicitudes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Solicitudes_Revisadas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\todo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tribal-dragon-tattoo-design.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewmagfit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vistamedica_ojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizardOffice2007Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizardOffice2007BackgroundBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizardOffice2007BackgroundSilver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modelos\ModuloTelefonosModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModuloTelefonosModel.Context.vb</LastGenOutput>
+      <DependentUpon>ModuloTelefonosModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Modelos\ModuloTelefonosModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModuloTelefonosModel.edmx</DependentUpon>
+      <LastGenOutput>ModuloTelefonosModel.vb</LastGenOutput>
+    </Content>
+    <None Include="Resources\digitalizacion-rrhh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

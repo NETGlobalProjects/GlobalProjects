@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ModuloTelefenosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="estados">
+          <Key>
+            <PropertyRef Name="id_estado" />
+          </Key>
+          <Property Name="id_estado" Type="int" Nullable="false" />
+          <Property Name="descripcion" Type="char" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="marcas">
+          <Key>
+            <PropertyRef Name="id_marca" />
+          </Key>
+          <Property Name="id_marca" Type="int" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ModuloTelefonos_Equipos">
+          <Key>
+            <PropertyRef Name="id_equipo" />
+          </Key>
+          <Property Name="id_equipo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_tipo" Type="int" />
+          <Property Name="id_marca" Type="int" />
+          <Property Name="serie" Type="nvarchar" MaxLength="50" />
+          <Property Name="modelo" Type="nvarchar" MaxLength="50" />
+          <Property Name="descripcion" Type="nvarchar" MaxLength="250" />
+          <Property Name="estado" Type="nvarchar" MaxLength="15" />
+          <Property Name="fecha_compra" Type="datetime" />
+          <Property Name="proveedor" Type="nvarchar" MaxLength="100" />
+          <Property Name="tiempo_garantia_meses" Type="int" />
+          <Property Name="id_estado" Type="int" />
+          <Property Name="disponible" Type="bit" />
+        </EntityType>
+        <EntityType Name="ModuloTelefonos_Equipos_Tipos">
+          <Key>
+            <PropertyRef Name="id_tipo" />
+          </Key>
+          <Property Name="id_tipo" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'INVENTARIO.dbo.v_ModuloTelefonos_Equipos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="v_ModuloTelefonos_Equipos">
+          <Key>
+            <PropertyRef Name="id_equipo" />
+          </Key>
+          <Property Name="id_equipo" Type="int" Nullable="false" />
+          <Property Name="tipo" Type="nvarchar" MaxLength="50" />
+          <Property Name="marca" Type="varchar" MaxLength="50" />
+          <Property Name="serie" Type="nvarchar" MaxLength="50" />
+          <Property Name="modelo" Type="nvarchar" MaxLength="50" />
+          <Property Name="descripcion" Type="nvarchar" MaxLength="250" />
+          <Property Name="estado" Type="char" MaxLength="20" />
+          <Property Name="fecha_compra" Type="datetime" />
+          <Property Name="proveedor" Type="nvarchar" MaxLength="100" />
+          <Property Name="tiempo_garantia_meses" Type="int" />
+          <Property Name="disponible" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="ModuloTelefenosModelStoreContainer">
+          <EntitySet Name="estados" EntityType="Self.estados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="marcas" EntityType="Self.marcas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ModuloTelefonos_Equipos" EntityType="Self.ModuloTelefonos_Equipos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ModuloTelefonos_Equipos_Tipos" EntityType="Self.ModuloTelefonos_Equipos_Tipos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="v_ModuloTelefonos_Equipos" EntityType="Self.v_ModuloTelefonos_Equipos" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [v_ModuloTelefonos_Equipos].[id_equipo] AS [id_equipo], 
+    [v_ModuloTelefonos_Equipos].[tipo] AS [tipo], 
+    [v_ModuloTelefonos_Equipos].[marca] AS [marca], 
+    [v_ModuloTelefonos_Equipos].[serie] AS [serie], 
+    [v_ModuloTelefonos_Equipos].[modelo] AS [modelo], 
+    [v_ModuloTelefonos_Equipos].[descripcion] AS [descripcion], 
+    [v_ModuloTelefonos_Equipos].[estado] AS [estado], 
+    [v_ModuloTelefonos_Equipos].[fecha_compra] AS [fecha_compra], 
+    [v_ModuloTelefonos_Equipos].[proveedor] AS [proveedor], 
+    [v_ModuloTelefonos_Equipos].[tiempo_garantia_meses] AS [tiempo_garantia_meses], 
+    [v_ModuloTelefonos_Equipos].[disponible] AS [disponible]
+    FROM [dbo].[v_ModuloTelefonos_Equipos] AS [v_ModuloTelefonos_Equipos]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ModuloTelefenosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ModuloTelefonosEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ModuloTelefonos_Equipos_Tipos" EntityType="ModuloTelefenosModel.ModuloTelefonos_Equipos_Tipos" />
+          <EntitySet Name="marcas" EntityType="ModuloTelefenosModel.marcas" />
+          <EntitySet Name="estados" EntityType="ModuloTelefenosModel.estados" />
+          <EntitySet Name="ModuloTelefonos_Equipos" EntityType="ModuloTelefenosModel.ModuloTelefonos_Equipos" />
+          <EntitySet Name="v_ModuloTelefonos_Equipos" EntityType="ModuloTelefenosModel.v_ModuloTelefonos_Equipos" />
+        </EntityContainer>
+        <EntityType Name="ModuloTelefonos_Equipos_Tipos">
+          <Key>
+            <PropertyRef Name="id_tipo" />
+          </Key>
+          <Property Name="id_tipo" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="marcas">
+          <Key>
+            <PropertyRef Name="id_marca" />
+          </Key>
+          <Property Name="id_marca" Type="Int32" Nullable="false" />
+          <Property Name="descripcion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="estados">
+          <Key>
+            <PropertyRef Name="id_estado" />
+          </Key>
+          <Property Name="id_estado" Type="Int32" Nullable="false" />
+          <Property Name="descripcion" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ModuloTelefonos_Equipos">
+          <Key>
+            <PropertyRef Name="id_equipo" />
+          </Key>
+          <Property Name="id_equipo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_tipo" Type="Int32" />
+          <Property Name="id_marca" Type="Int32" />
+          <Property Name="serie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="modelo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="estado" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="fecha_compra" Type="DateTime" Precision="3" />
+          <Property Name="proveedor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="tiempo_garantia_meses" Type="Int32" />
+          <Property Name="id_estado" Type="Int32" />
+          <Property Name="disponible" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="v_ModuloTelefonos_Equipos">
+          <Key>
+            <PropertyRef Name="id_equipo" />
+          </Key>
+          <Property Name="id_equipo" Type="Int32" Nullable="false" />
+          <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="marca" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="serie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="modelo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="estado" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="fecha_compra" Type="DateTime" Precision="3" />
+          <Property Name="proveedor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="tiempo_garantia_meses" Type="Int32" />
+          <Property Name="disponible" Type="Boolean" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModuloTelefenosModelStoreContainer" CdmEntityContainer="ModuloTelefonosEntities">
+          <EntitySetMapping Name="ModuloTelefonos_Equipos_Tipos">
+            <EntityTypeMapping TypeName="ModuloTelefenosModel.ModuloTelefonos_Equipos_Tipos">
+              <MappingFragment StoreEntitySet="ModuloTelefonos_Equipos_Tipos">
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="marcas">
+            <EntityTypeMapping TypeName="ModuloTelefenosModel.marcas">
+              <MappingFragment StoreEntitySet="marcas">
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="id_marca" ColumnName="id_marca" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="estados">
+            <EntityTypeMapping TypeName="ModuloTelefenosModel.estados">
+              <MappingFragment StoreEntitySet="estados">
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="id_estado" ColumnName="id_estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ModuloTelefonos_Equipos">
+            <EntityTypeMapping TypeName="ModuloTelefenosModel.ModuloTelefonos_Equipos">
+              <MappingFragment StoreEntitySet="ModuloTelefonos_Equipos">
+                <ScalarProperty Name="disponible" ColumnName="disponible" />
+                <ScalarProperty Name="id_estado" ColumnName="id_estado" />
+                <ScalarProperty Name="tiempo_garantia_meses" ColumnName="tiempo_garantia_meses" />
+                <ScalarProperty Name="proveedor" ColumnName="proveedor" />
+                <ScalarProperty Name="fecha_compra" ColumnName="fecha_compra" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="modelo" ColumnName="modelo" />
+                <ScalarProperty Name="serie" ColumnName="serie" />
+                <ScalarProperty Name="id_marca" ColumnName="id_marca" />
+                <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
+                <ScalarProperty Name="id_equipo" ColumnName="id_equipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v_ModuloTelefonos_Equipos">
+            <EntityTypeMapping TypeName="ModuloTelefenosModel.v_ModuloTelefonos_Equipos">
+              <MappingFragment StoreEntitySet="v_ModuloTelefonos_Equipos">
+                <ScalarProperty Name="disponible" ColumnName="disponible" />
+                <ScalarProperty Name="tiempo_garantia_meses" ColumnName="tiempo_garantia_meses" />
+                <ScalarProperty Name="proveedor" ColumnName="proveedor" />
+                <ScalarProperty Name="fecha_compra" ColumnName="fecha_compra" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="modelo" ColumnName="modelo" />
+                <ScalarProperty Name="serie" ColumnName="serie" />
+                <ScalarProperty Name="marca" ColumnName="marca" />
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
+                <ScalarProperty Name="id_equipo" ColumnName="id_equipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

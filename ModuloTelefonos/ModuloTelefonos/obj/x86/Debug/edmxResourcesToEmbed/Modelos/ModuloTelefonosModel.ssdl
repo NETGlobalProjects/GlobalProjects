@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModuloTelefenosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="estados">
+    <Key>
+      <PropertyRef Name="id_estado" />
+    </Key>
+    <Property Name="id_estado" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="char" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="marcas">
+    <Key>
+      <PropertyRef Name="id_marca" />
+    </Key>
+    <Property Name="id_marca" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ModuloTelefonos_Equipos">
+    <Key>
+      <PropertyRef Name="id_equipo" />
+    </Key>
+    <Property Name="id_equipo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_tipo" Type="int" />
+    <Property Name="id_marca" Type="int" />
+    <Property Name="serie" Type="nvarchar" MaxLength="50" />
+    <Property Name="modelo" Type="nvarchar" MaxLength="50" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="250" />
+    <Property Name="estado" Type="nvarchar" MaxLength="15" />
+    <Property Name="fecha_compra" Type="datetime" />
+    <Property Name="proveedor" Type="nvarchar" MaxLength="100" />
+    <Property Name="tiempo_garantia_meses" Type="int" />
+    <Property Name="id_estado" Type="int" />
+    <Property Name="disponible" Type="bit" />
+  </EntityType>
+  <EntityType Name="ModuloTelefonos_Equipos_Tipos">
+    <Key>
+      <PropertyRef Name="id_tipo" />
+    </Key>
+    <Property Name="id_tipo" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'INVENTARIO.dbo.v_ModuloTelefonos_Equipos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="v_ModuloTelefonos_Equipos">
+    <Key>
+      <PropertyRef Name="id_equipo" />
+    </Key>
+    <Property Name="id_equipo" Type="int" Nullable="false" />
+    <Property Name="tipo" Type="nvarchar" MaxLength="50" />
+    <Property Name="marca" Type="varchar" MaxLength="50" />
+    <Property Name="serie" Type="nvarchar" MaxLength="50" />
+    <Property Name="modelo" Type="nvarchar" MaxLength="50" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="250" />
+    <Property Name="estado" Type="char" MaxLength="20" />
+    <Property Name="fecha_compra" Type="datetime" />
+    <Property Name="proveedor" Type="nvarchar" MaxLength="100" />
+    <Property Name="tiempo_garantia_meses" Type="int" />
+    <Property Name="disponible" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="ModuloTelefenosModelStoreContainer">
+    <EntitySet Name="estados" EntityType="Self.estados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="marcas" EntityType="Self.marcas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ModuloTelefonos_Equipos" EntityType="Self.ModuloTelefonos_Equipos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ModuloTelefonos_Equipos_Tipos" EntityType="Self.ModuloTelefonos_Equipos_Tipos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="v_ModuloTelefonos_Equipos" EntityType="Self.v_ModuloTelefonos_Equipos" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [v_ModuloTelefonos_Equipos].[id_equipo] AS [id_equipo], 
+    [v_ModuloTelefonos_Equipos].[tipo] AS [tipo], 
+    [v_ModuloTelefonos_Equipos].[marca] AS [marca], 
+    [v_ModuloTelefonos_Equipos].[serie] AS [serie], 
+    [v_ModuloTelefonos_Equipos].[modelo] AS [modelo], 
+    [v_ModuloTelefonos_Equipos].[descripcion] AS [descripcion], 
+    [v_ModuloTelefonos_Equipos].[estado] AS [estado], 
+    [v_ModuloTelefonos_Equipos].[fecha_compra] AS [fecha_compra], 
+    [v_ModuloTelefonos_Equipos].[proveedor] AS [proveedor], 
+    [v_ModuloTelefonos_Equipos].[tiempo_garantia_meses] AS [tiempo_garantia_meses], 
+    [v_ModuloTelefonos_Equipos].[disponible] AS [disponible]
+    FROM [dbo].[v_ModuloTelefonos_Equipos] AS [v_ModuloTelefonos_Equipos]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

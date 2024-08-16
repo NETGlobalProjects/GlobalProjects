@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModuloTelefenosModelStoreContainer" CdmEntityContainer="ModuloTelefonosEntities">
+    <EntitySetMapping Name="ModuloTelefonos_Equipos_Tipos">
+      <EntityTypeMapping TypeName="ModuloTelefenosModel.ModuloTelefonos_Equipos_Tipos">
+        <MappingFragment StoreEntitySet="ModuloTelefonos_Equipos_Tipos">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="marcas">
+      <EntityTypeMapping TypeName="ModuloTelefenosModel.marcas">
+        <MappingFragment StoreEntitySet="marcas">
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_marca" ColumnName="id_marca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="estados">
+      <EntityTypeMapping TypeName="ModuloTelefenosModel.estados">
+        <MappingFragment StoreEntitySet="estados">
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_estado" ColumnName="id_estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModuloTelefonos_Equipos">
+      <EntityTypeMapping TypeName="ModuloTelefenosModel.ModuloTelefonos_Equipos">
+        <MappingFragment StoreEntitySet="ModuloTelefonos_Equipos">
+          <ScalarProperty Name="disponible" ColumnName="disponible" />
+          <ScalarProperty Name="id_estado" ColumnName="id_estado" />
+          <ScalarProperty Name="tiempo_garantia_meses" ColumnName="tiempo_garantia_meses" />
+          <ScalarProperty Name="proveedor" ColumnName="proveedor" />
+          <ScalarProperty Name="fecha_compra" ColumnName="fecha_compra" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="modelo" ColumnName="modelo" />
+          <ScalarProperty Name="serie" ColumnName="serie" />
+          <ScalarProperty Name="id_marca" ColumnName="id_marca" />
+          <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
+          <ScalarProperty Name="id_equipo" ColumnName="id_equipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_ModuloTelefonos_Equipos">
+      <EntityTypeMapping TypeName="ModuloTelefenosModel.v_ModuloTelefonos_Equipos">
+        <MappingFragment StoreEntitySet="v_ModuloTelefonos_Equipos">
+          <ScalarProperty Name="disponible" ColumnName="disponible" />
+          <ScalarProperty Name="tiempo_garantia_meses" ColumnName="tiempo_garantia_meses" />
+          <ScalarProperty Name="proveedor" ColumnName="proveedor" />
+          <ScalarProperty Name="fecha_compra" ColumnName="fecha_compra" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="modelo" ColumnName="modelo" />
+          <ScalarProperty Name="serie" ColumnName="serie" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="id_equipo" ColumnName="id_equipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

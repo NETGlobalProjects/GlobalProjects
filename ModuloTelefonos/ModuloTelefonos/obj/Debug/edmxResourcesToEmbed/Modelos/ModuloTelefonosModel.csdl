@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModuloTelefenosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ModuloTelefonosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ModuloTelefonos_Equipos_Tipos" EntityType="ModuloTelefenosModel.ModuloTelefonos_Equipos_Tipos" />
+    <EntitySet Name="marcas" EntityType="ModuloTelefenosModel.marcas" />
+    <EntitySet Name="estados" EntityType="ModuloTelefenosModel.estados" />
+    <EntitySet Name="ModuloTelefonos_Equipos" EntityType="ModuloTelefenosModel.ModuloTelefonos_Equipos" />
+    <EntitySet Name="v_ModuloTelefonos_Equipos" EntityType="ModuloTelefenosModel.v_ModuloTelefonos_Equipos" />
+  </EntityContainer>
+  <EntityType Name="ModuloTelefonos_Equipos_Tipos">
+    <Key>
+      <PropertyRef Name="id_tipo" />
+    </Key>
+    <Property Name="id_tipo" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="marcas">
+    <Key>
+      <PropertyRef Name="id_marca" />
+    </Key>
+    <Property Name="id_marca" Type="Int32" Nullable="false" />
+    <Property Name="descripcion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="estados">
+    <Key>
+      <PropertyRef Name="id_estado" />
+    </Key>
+    <Property Name="id_estado" Type="Int32" Nullable="false" />
+    <Property Name="descripcion" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ModuloTelefonos_Equipos">
+    <Key>
+      <PropertyRef Name="id_equipo" />
+    </Key>
+    <Property Name="id_equipo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_tipo" Type="Int32" />
+    <Property Name="id_marca" Type="Int32" />
+    <Property Name="serie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="modelo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="estado" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="fecha_compra" Type="DateTime" Precision="3" />
+    <Property Name="proveedor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tiempo_garantia_meses" Type="Int32" />
+    <Property Name="id_estado" Type="Int32" />
+    <Property Name="disponible" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="v_ModuloTelefonos_Equipos">
+    <Key>
+      <PropertyRef Name="id_equipo" />
+    </Key>
+    <Property Name="id_equipo" Type="Int32" Nullable="false" />
+    <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="marca" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="serie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="modelo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="fecha_compra" Type="DateTime" Precision="3" />
+    <Property Name="proveedor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tiempo_garantia_meses" Type="Int32" />
+    <Property Name="disponible" Type="Boolean" />
+  </EntityType>
+</Schema>
