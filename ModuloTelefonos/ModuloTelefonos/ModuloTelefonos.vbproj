@@ -248,6 +248,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dtsInventarioTelefonos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmBuscarNomina.Designer.vb">
+      <DependentUpon>frmBuscarNomina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\InventarioTelefonos\frmBuscarNomina.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modulos\InventarioTelefonos\frmLineas.Designer.vb">
       <DependentUpon>frmLineas.vb</DependentUpon>
     </Compile>
@@ -374,6 +380,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\InventarioTelefonos\dlgPropietarios\dlgEmpresas.resx">
       <DependentUpon>dlgEmpresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\InventarioTelefonos\frmBuscarNomina.resx">
+      <DependentUpon>frmBuscarNomina.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\InventarioTelefonos\frmLineas.resx">
       <DependentUpon>frmLineas.vb</DependentUpon>

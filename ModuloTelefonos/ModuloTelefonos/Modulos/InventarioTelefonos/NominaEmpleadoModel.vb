@@ -13,7 +13,10 @@
     Public Property DUI As String
     Public Property CargoDesempeñado As String
     Public Property FechaIngreso As DateTime
-    Public Property CdCosto As String
+    Public Property CCosto As Short?
     Public Property CodMunicipio As Short?
     Public Property TelefonoCorporativo As String
+
+    Public Property NombreCompleto As String
+    Public Property DealerNombre As String
 End Class
