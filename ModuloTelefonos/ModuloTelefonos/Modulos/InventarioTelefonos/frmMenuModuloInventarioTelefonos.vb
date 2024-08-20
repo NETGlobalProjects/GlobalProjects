@@ -44,11 +44,6 @@ Public Class frmMenuModuloInventarioTelefonos
         End With
     End Sub
 
-
-
-
-
-
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -56,9 +51,6 @@ Public Class frmMenuModuloInventarioTelefonos
     Private Sub ButtonX5_Click(sender As Object, e As EventArgs)
 
     End Sub
-
-
-
 
     Private Sub EstadosTeléfonosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EstadosTeléfonosToolStripMenuItem.Click
         With frmEstadosTelefonos

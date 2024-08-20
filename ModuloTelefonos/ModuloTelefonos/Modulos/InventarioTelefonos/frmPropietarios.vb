@@ -170,9 +170,6 @@ Public Class frmPropietarios
             MessageBox.Show(ex.Message, "Admin GT - Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
-    Private Sub GroupPanel1_Click(sender As Object, e As EventArgs) Handles GroupPanel1.Click
-
-    End Sub
 
     Private Sub ButtonX3_Click(sender As Object, e As EventArgs) Handles ButtonX3.Click
         With dlgCargos
@@ -351,6 +348,19 @@ Public Class frmPropietarios
                 bsPropitarios.Current("fecha_egreso") = "01/01/1901"
             End If
         End If
+    End Sub
 
+    Private Sub buscarBtn_Click(sender As Object, e As EventArgs) Handles buscarBtn.Click
+        cargar_propietarios(Me.localizarTextBoxX1.Text)
+    End Sub
+
+    Private Sub ButtonX4_Click(sender As Object, e As EventArgs) Handles ButtonX4.Click
+        Dim buscarNominaForm As New frmBuscarNomina()
+
+        If buscarNominaForm.ShowDialog() = DialogResult.OK Then
+            Dim empleado As NominaEmpleadoModel = buscarNominaForm.EmpleadoSeleccionado
+
+            MessageBox.Show("Empleado seleccionado: " & empleado.NombreCompleto)
+        End If
     End Sub
 End Class

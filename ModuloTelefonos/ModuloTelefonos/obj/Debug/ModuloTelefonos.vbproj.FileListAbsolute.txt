@@ -177,3 +177,4 @@ C:\00 GITHUB GLOBAL\GlobalProjects\GlobalProjects\ModuloTelefonos\ModuloTelefono
 C:\00 GITHUB GLOBAL\GlobalProjects\GlobalProjects\ModuloTelefonos\ModuloTelefonos\bin\Debug\DevExpress.XtraDiagram.v22.2.xml
 C:\00 GITHUB GLOBAL\GlobalProjects\GlobalProjects\ModuloTelefonos\ModuloTelefonos\bin\Debug\DevExpress.Diagram.v22.2.Core.xml
 C:\00 GITHUB GLOBAL\GlobalProjects\GlobalProjects\ModuloTelefonos\ModuloTelefonos\obj\Debug\ModuloTe.B25D1753.Up2Date
+C:\00 GITHUB GLOBAL\GlobalProjects\GlobalProjects\ModuloTelefonos\ModuloTelefonos\obj\Debug\ModuloTelefonos.frmBuscarNomina.resources
