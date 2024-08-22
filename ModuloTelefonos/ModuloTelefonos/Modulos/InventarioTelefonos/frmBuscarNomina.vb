@@ -20,6 +20,8 @@ Public Class frmBuscarNomina
             .DisplayMember = "Text"
             .ValueMember = "Value"
             .SelectedIndex = 0
+
+            cargar_propietarios(Me.busquedaTxt.Text, Me.filtroCbx.SelectedIndex)
         End With
     End Sub
 
@@ -92,5 +94,17 @@ Public Class frmBuscarNomina
 
     Private Sub cancelarBtn_Click(sender As Object, e As EventArgs) Handles cancelarBtn.Click
         Me.Close()
+    End Sub
+
+    Private Sub localizarTextBoxX1_KeyDown(sender As Object, e As KeyEventArgs) Handles busquedaTxt.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            cargar_propietarios(Me.busquedaTxt.Text, Me.filtroCbx.SelectedIndex)
+        End If
+    End Sub
+
+    Private Sub frmBuscarNomina_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then
+            Me.Close()
+        End If
     End Sub
 End Class

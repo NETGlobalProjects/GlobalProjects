@@ -29,8 +29,14 @@ Partial Class frmPropietarios
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.GroupPanel5 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.GroupPanel1 = New DevComponents.DotNetBar.Controls.GroupPanel()
-        Me.ButtonX4 = New DevComponents.DotNetBar.ButtonX()
-        Me.TextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.cargoTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.idCargoTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.depTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.idDepTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.empresaTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.idEmpresaTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.nominaBtn = New DevComponents.DotNetBar.ButtonX()
+        Me.cdCostosTextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX20 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX19 = New DevComponents.DotNetBar.LabelX()
         Me.duiMaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
@@ -44,26 +50,20 @@ Partial Class frmPropietarios
         Me.LabelX15 = New DevComponents.DotNetBar.LabelX()
         Me.GroupPanel4 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.propietariolineaTextBoxX5 = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.LabelX14 = New DevComponents.DotNetBar.LabelX()
         Me.lineactualTextBoxX4 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX13 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX14 = New DevComponents.DotNetBar.LabelX()
         Me.GroupPanel3 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.modeloTextBoxX3 = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.marcaTextBoxX2 = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.imeiactualTextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.LabelX12 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX11 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX10 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX12 = New DevComponents.DotNetBar.LabelX()
+        Me.imeiactualTextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.marcaTextBoxX2 = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.LabelX11 = New DevComponents.DotNetBar.LabelX()
         Me.fechabajaTextBoxX5 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX9 = New DevComponents.DotNetBar.LabelX()
         Me.fechaingresoTextBoxX4 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX8 = New DevComponents.DotNetBar.LabelX()
-        Me.ButtonX3 = New DevComponents.DotNetBar.ButtonX()
-        Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
-        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
-        Me.cargoComboBoxEx3 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
-        Me.departamentoComboBoxEx2 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
-        Me.empresaComboBoxEx1 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.LabelX7 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX6 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX5 = New DevComponents.DotNetBar.LabelX()
@@ -73,10 +73,16 @@ Partial Class frmPropietarios
         Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.idpropietarioTextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.seleccionarButtonX4 = New DevComponents.DotNetBar.ButtonX()
         Me.nuevoButtonX4 = New DevComponents.DotNetBar.ButtonX()
-        Me.modificarButtonX5 = New DevComponents.DotNetBar.ButtonX()
-        Me.eliminarButtonX6 = New DevComponents.DotNetBar.ButtonX()
         Me.guardarButtonX7 = New DevComponents.DotNetBar.ButtonX()
+        Me.eliminarButtonX6 = New DevComponents.DotNetBar.ButtonX()
+        Me.modificarButtonX5 = New DevComponents.DotNetBar.ButtonX()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.buscarBtn = New DevComponents.DotNetBar.ButtonX()
+        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
+        Me.localizarTextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.GroupPanel2 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.DataGridViewX1 = New DevComponents.DotNetBar.Controls.DataGridViewX()
         Me.id_propietario = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -85,25 +91,15 @@ Partial Class frmPropietarios
         Me.fecha_ingreso = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.fecha_baja = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.fill = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.seleccionarButtonX4 = New DevComponents.DotNetBar.ButtonX()
-        Me.localizarTextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.buscarBtn = New DevComponents.DotNetBar.ButtonX()
         Me.PanelEx1.SuspendLayout()
         Me.GroupPanel5.SuspendLayout()
         Me.GroupPanel1.SuspendLayout()
         Me.GroupPanel4.SuspendLayout()
         Me.GroupPanel3.SuspendLayout()
-        Me.GroupPanel2.SuspendLayout()
-        CType(Me.DataGridViewX1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
+        Me.GroupPanel2.SuspendLayout()
+        CType(Me.DataGridViewX1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelEx1
@@ -116,7 +112,7 @@ Partial Class frmPropietarios
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
         Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(779, 605)
+        Me.PanelEx1.Size = New System.Drawing.Size(778, 625)
         Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
@@ -137,7 +133,7 @@ Partial Class frmPropietarios
         Me.GroupPanel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupPanel5.Location = New System.Drawing.Point(0, 0)
         Me.GroupPanel5.Name = "GroupPanel5"
-        Me.GroupPanel5.Size = New System.Drawing.Size(779, 367)
+        Me.GroupPanel5.Size = New System.Drawing.Size(778, 387)
         '
         '
         '
@@ -170,11 +166,17 @@ Partial Class frmPropietarios
         '
         'GroupPanel1
         '
-        Me.GroupPanel1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer))
         Me.GroupPanel1.CanvasColor = System.Drawing.SystemColors.Control
         Me.GroupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
-        Me.GroupPanel1.Controls.Add(Me.ButtonX4)
-        Me.GroupPanel1.Controls.Add(Me.TextBoxX1)
+        Me.GroupPanel1.Controls.Add(Me.cargoTxt)
+        Me.GroupPanel1.Controls.Add(Me.idCargoTxt)
+        Me.GroupPanel1.Controls.Add(Me.depTxt)
+        Me.GroupPanel1.Controls.Add(Me.idDepTxt)
+        Me.GroupPanel1.Controls.Add(Me.empresaTxt)
+        Me.GroupPanel1.Controls.Add(Me.idEmpresaTxt)
+        Me.GroupPanel1.Controls.Add(Me.nominaBtn)
+        Me.GroupPanel1.Controls.Add(Me.cdCostosTextBoxX1)
         Me.GroupPanel1.Controls.Add(Me.LabelX20)
         Me.GroupPanel1.Controls.Add(Me.LabelX19)
         Me.GroupPanel1.Controls.Add(Me.duiMaskedTextBox1)
@@ -192,12 +194,6 @@ Partial Class frmPropietarios
         Me.GroupPanel1.Controls.Add(Me.LabelX9)
         Me.GroupPanel1.Controls.Add(Me.fechaingresoTextBoxX4)
         Me.GroupPanel1.Controls.Add(Me.LabelX8)
-        Me.GroupPanel1.Controls.Add(Me.ButtonX3)
-        Me.GroupPanel1.Controls.Add(Me.ButtonX2)
-        Me.GroupPanel1.Controls.Add(Me.ButtonX1)
-        Me.GroupPanel1.Controls.Add(Me.cargoComboBoxEx3)
-        Me.GroupPanel1.Controls.Add(Me.departamentoComboBoxEx2)
-        Me.GroupPanel1.Controls.Add(Me.empresaComboBoxEx1)
         Me.GroupPanel1.Controls.Add(Me.LabelX7)
         Me.GroupPanel1.Controls.Add(Me.LabelX6)
         Me.GroupPanel1.Controls.Add(Me.LabelX5)
@@ -211,7 +207,7 @@ Partial Class frmPropietarios
         Me.GroupPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupPanel1.Location = New System.Drawing.Point(127, 52)
         Me.GroupPanel1.Name = "GroupPanel1"
-        Me.GroupPanel1.Size = New System.Drawing.Size(646, 309)
+        Me.GroupPanel1.Size = New System.Drawing.Size(645, 329)
         '
         '
         '
@@ -242,39 +238,148 @@ Partial Class frmPropietarios
         Me.GroupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.GroupPanel1.TabIndex = 0
         '
-        'ButtonX4
+        'cargoTxt
         '
-        Me.ButtonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
-        Me.ButtonX4.Image = Global.ModuloTelefonos.My.Resources.Resources.ok
-        Me.ButtonX4.ImageFixedSize = New System.Drawing.Size(25, 25)
-        Me.ButtonX4.Location = New System.Drawing.Point(408, 12)
-        Me.ButtonX4.Name = "ButtonX4"
-        Me.ButtonX4.Size = New System.Drawing.Size(140, 25)
-        Me.ButtonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX4.Symbol = "58057"
-        Me.ButtonX4.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material
-        Me.ButtonX4.SymbolSize = 13.0!
-        Me.ButtonX4.TabIndex = 39
-        Me.ButtonX4.Text = "Agregar por Nomina"
-        '
-        'TextBoxX1
-        '
-        Me.TextBoxX1.BackColor = System.Drawing.Color.White
+        Me.cargoTxt.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
         '
         '
         '
-        Me.TextBoxX1.Border.Class = "TextBoxBorder"
-        Me.TextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.TextBoxX1.DisabledBackColor = System.Drawing.Color.White
-        Me.TextBoxX1.ForeColor = System.Drawing.Color.Black
-        Me.TextBoxX1.Location = New System.Drawing.Point(408, 121)
-        Me.TextBoxX1.MaxLength = 40
-        Me.TextBoxX1.Name = "TextBoxX1"
-        Me.TextBoxX1.ReadOnly = True
-        Me.TextBoxX1.Size = New System.Drawing.Size(140, 20)
-        Me.TextBoxX1.TabIndex = 38
-        Me.TextBoxX1.WatermarkText = "..."
+        Me.cargoTxt.Border.Class = "TextBoxBorder"
+        Me.cargoTxt.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.cargoTxt.DisabledBackColor = System.Drawing.Color.White
+        Me.cargoTxt.ForeColor = System.Drawing.Color.Black
+        Me.cargoTxt.Location = New System.Drawing.Point(443, 96)
+        Me.cargoTxt.MaxLength = 40
+        Me.cargoTxt.Name = "cargoTxt"
+        Me.cargoTxt.ReadOnly = True
+        Me.cargoTxt.Size = New System.Drawing.Size(181, 20)
+        Me.cargoTxt.TabIndex = 45
+        Me.cargoTxt.WatermarkText = "-"
+        '
+        'idCargoTxt
+        '
+        Me.idCargoTxt.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
+        '
+        '
+        '
+        Me.idCargoTxt.Border.Class = "TextBoxBorder"
+        Me.idCargoTxt.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.idCargoTxt.DisabledBackColor = System.Drawing.Color.White
+        Me.idCargoTxt.ForeColor = System.Drawing.Color.Black
+        Me.idCargoTxt.Location = New System.Drawing.Point(408, 96)
+        Me.idCargoTxt.MaxLength = 40
+        Me.idCargoTxt.Name = "idCargoTxt"
+        Me.idCargoTxt.ReadOnly = True
+        Me.idCargoTxt.Size = New System.Drawing.Size(34, 20)
+        Me.idCargoTxt.TabIndex = 44
+        Me.idCargoTxt.WatermarkText = "-"
+        '
+        'depTxt
+        '
+        Me.depTxt.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
+        '
+        '
+        '
+        Me.depTxt.Border.Class = "TextBoxBorder"
+        Me.depTxt.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.depTxt.DisabledBackColor = System.Drawing.Color.White
+        Me.depTxt.ForeColor = System.Drawing.Color.Black
+        Me.depTxt.Location = New System.Drawing.Point(443, 70)
+        Me.depTxt.MaxLength = 40
+        Me.depTxt.Name = "depTxt"
+        Me.depTxt.ReadOnly = True
+        Me.depTxt.Size = New System.Drawing.Size(181, 20)
+        Me.depTxt.TabIndex = 43
+        Me.depTxt.WatermarkText = "-"
+        '
+        'idDepTxt
+        '
+        Me.idDepTxt.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
+        '
+        '
+        '
+        Me.idDepTxt.Border.Class = "TextBoxBorder"
+        Me.idDepTxt.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.idDepTxt.DisabledBackColor = System.Drawing.Color.White
+        Me.idDepTxt.ForeColor = System.Drawing.Color.Black
+        Me.idDepTxt.Location = New System.Drawing.Point(408, 70)
+        Me.idDepTxt.MaxLength = 40
+        Me.idDepTxt.Name = "idDepTxt"
+        Me.idDepTxt.ReadOnly = True
+        Me.idDepTxt.Size = New System.Drawing.Size(34, 20)
+        Me.idDepTxt.TabIndex = 42
+        Me.idDepTxt.WatermarkText = "-"
+        '
+        'empresaTxt
+        '
+        Me.empresaTxt.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
+        '
+        '
+        '
+        Me.empresaTxt.Border.Class = "TextBoxBorder"
+        Me.empresaTxt.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.empresaTxt.DisabledBackColor = System.Drawing.Color.White
+        Me.empresaTxt.ForeColor = System.Drawing.Color.Black
+        Me.empresaTxt.Location = New System.Drawing.Point(443, 43)
+        Me.empresaTxt.MaxLength = 40
+        Me.empresaTxt.Name = "empresaTxt"
+        Me.empresaTxt.ReadOnly = True
+        Me.empresaTxt.Size = New System.Drawing.Size(181, 20)
+        Me.empresaTxt.TabIndex = 41
+        Me.empresaTxt.WatermarkText = "-"
+        '
+        'idEmpresaTxt
+        '
+        Me.idEmpresaTxt.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
+        '
+        '
+        '
+        Me.idEmpresaTxt.Border.Class = "TextBoxBorder"
+        Me.idEmpresaTxt.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.idEmpresaTxt.DisabledBackColor = System.Drawing.Color.White
+        Me.idEmpresaTxt.ForeColor = System.Drawing.Color.Black
+        Me.idEmpresaTxt.Location = New System.Drawing.Point(408, 43)
+        Me.idEmpresaTxt.MaxLength = 40
+        Me.idEmpresaTxt.Name = "idEmpresaTxt"
+        Me.idEmpresaTxt.ReadOnly = True
+        Me.idEmpresaTxt.Size = New System.Drawing.Size(34, 20)
+        Me.idEmpresaTxt.TabIndex = 40
+        Me.idEmpresaTxt.WatermarkText = "-"
+        '
+        'nominaBtn
+        '
+        Me.nominaBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.nominaBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
+        Me.nominaBtn.Enabled = False
+        Me.nominaBtn.Image = Global.ModuloTelefonos.My.Resources.Resources.ok
+        Me.nominaBtn.ImageFixedSize = New System.Drawing.Size(25, 25)
+        Me.nominaBtn.Location = New System.Drawing.Point(408, 12)
+        Me.nominaBtn.Name = "nominaBtn"
+        Me.nominaBtn.Size = New System.Drawing.Size(140, 25)
+        Me.nominaBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.nominaBtn.Symbol = "58057"
+        Me.nominaBtn.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material
+        Me.nominaBtn.SymbolSize = 13.0!
+        Me.nominaBtn.TabIndex = 39
+        Me.nominaBtn.Text = "&Agregar por Nomina"
+        '
+        'cdCostosTextBoxX1
+        '
+        Me.cdCostosTextBoxX1.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
+        '
+        '
+        '
+        Me.cdCostosTextBoxX1.Border.Class = "TextBoxBorder"
+        Me.cdCostosTextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.cdCostosTextBoxX1.DisabledBackColor = System.Drawing.Color.White
+        Me.cdCostosTextBoxX1.ForeColor = System.Drawing.Color.Black
+        Me.cdCostosTextBoxX1.Location = New System.Drawing.Point(408, 121)
+        Me.cdCostosTextBoxX1.MaxLength = 40
+        Me.cdCostosTextBoxX1.Name = "cdCostosTextBoxX1"
+        Me.cdCostosTextBoxX1.ReadOnly = True
+        Me.cdCostosTextBoxX1.Size = New System.Drawing.Size(140, 20)
+        Me.cdCostosTextBoxX1.TabIndex = 38
+        Me.cdCostosTextBoxX1.WatermarkText = "-"
         '
         'LabelX20
         '
@@ -306,6 +411,7 @@ Partial Class frmPropietarios
         '
         'duiMaskedTextBox1
         '
+        Me.duiMaskedTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.duiMaskedTextBox1.Location = New System.Drawing.Point(90, 147)
         Me.duiMaskedTextBox1.Mask = "########-#"
         Me.duiMaskedTextBox1.Name = "duiMaskedTextBox1"
@@ -346,13 +452,13 @@ Partial Class frmPropietarios
         '
         'codigoempleadoTextBoxX1
         '
-        Me.codigoempleadoTextBoxX1.BackColor = System.Drawing.Color.White
+        Me.codigoempleadoTextBoxX1.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
         '
         '
         '
         Me.codigoempleadoTextBoxX1.Border.Class = "TextBoxBorder"
         Me.codigoempleadoTextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.codigoempleadoTextBoxX1.DisabledBackColor = System.Drawing.Color.White
+        Me.codigoempleadoTextBoxX1.DisabledBackColor = System.Drawing.Color.WhiteSmoke
         Me.codigoempleadoTextBoxX1.ForeColor = System.Drawing.Color.Black
         Me.codigoempleadoTextBoxX1.Location = New System.Drawing.Point(90, 95)
         Me.codigoempleadoTextBoxX1.MaxLength = 40
@@ -360,7 +466,7 @@ Partial Class frmPropietarios
         Me.codigoempleadoTextBoxX1.ReadOnly = True
         Me.codigoempleadoTextBoxX1.Size = New System.Drawing.Size(140, 20)
         Me.codigoempleadoTextBoxX1.TabIndex = 32
-        Me.codigoempleadoTextBoxX1.WatermarkText = "..."
+        Me.codigoempleadoTextBoxX1.WatermarkText = "-"
         '
         'LabelX17
         '
@@ -387,7 +493,7 @@ Partial Class frmPropietarios
         Me.estatusSwitchButton1.Name = "estatusSwitchButton1"
         Me.estatusSwitchButton1.OffText = "Inactivo"
         Me.estatusSwitchButton1.OnText = "Activo"
-        Me.estatusSwitchButton1.Size = New System.Drawing.Size(105, 25)
+        Me.estatusSwitchButton1.Size = New System.Drawing.Size(105, 20)
         Me.estatusSwitchButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.estatusSwitchButton1.TabIndex = 16
         '
@@ -400,7 +506,7 @@ Partial Class frmPropietarios
         Me.LabelX16.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX16.Location = New System.Drawing.Point(319, 199)
         Me.LabelX16.Name = "LabelX16"
-        Me.LabelX16.Size = New System.Drawing.Size(85, 25)
+        Me.LabelX16.Size = New System.Drawing.Size(85, 20)
         Me.LabelX16.TabIndex = 29
         Me.LabelX16.Text = "Estatus:"
         Me.LabelX16.TextAlignment = System.Drawing.StringAlignment.Far
@@ -443,7 +549,10 @@ Partial Class frmPropietarios
         Me.GroupPanel4.BackColor = System.Drawing.Color.Transparent
         Me.GroupPanel4.CanvasColor = System.Drawing.SystemColors.Control
         Me.GroupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
-        Me.GroupPanel4.Controls.Add(Me.Panel4)
+        Me.GroupPanel4.Controls.Add(Me.propietariolineaTextBoxX5)
+        Me.GroupPanel4.Controls.Add(Me.lineactualTextBoxX4)
+        Me.GroupPanel4.Controls.Add(Me.LabelX13)
+        Me.GroupPanel4.Controls.Add(Me.LabelX14)
         Me.GroupPanel4.DisabledBackColor = System.Drawing.Color.Empty
         Me.GroupPanel4.Location = New System.Drawing.Point(336, 238)
         Me.GroupPanel4.Name = "GroupPanel4"
@@ -454,14 +563,14 @@ Partial Class frmPropietarios
         Me.GroupPanel4.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
         Me.GroupPanel4.Style.BackColorGradientAngle = 90
         Me.GroupPanel4.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
-        Me.GroupPanel4.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel4.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Dash
         Me.GroupPanel4.Style.BorderBottomWidth = 1
         Me.GroupPanel4.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
-        Me.GroupPanel4.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel4.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Dash
         Me.GroupPanel4.Style.BorderLeftWidth = 1
-        Me.GroupPanel4.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel4.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Dash
         Me.GroupPanel4.Style.BorderRightWidth = 1
-        Me.GroupPanel4.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel4.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Dash
         Me.GroupPanel4.Style.BorderTopWidth = 1
         Me.GroupPanel4.Style.CornerDiameter = 4
         Me.GroupPanel4.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded
@@ -489,25 +598,12 @@ Partial Class frmPropietarios
         Me.propietariolineaTextBoxX5.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.propietariolineaTextBoxX5.DisabledBackColor = System.Drawing.Color.White
         Me.propietariolineaTextBoxX5.ForeColor = System.Drawing.Color.Black
-        Me.propietariolineaTextBoxX5.Location = New System.Drawing.Point(107, 21)
+        Me.propietariolineaTextBoxX5.Location = New System.Drawing.Point(107, 20)
         Me.propietariolineaTextBoxX5.Name = "propietariolineaTextBoxX5"
         Me.propietariolineaTextBoxX5.ReadOnly = True
         Me.propietariolineaTextBoxX5.Size = New System.Drawing.Size(166, 20)
         Me.propietariolineaTextBoxX5.TabIndex = 6
         Me.propietariolineaTextBoxX5.WatermarkText = "..."
-        '
-        'LabelX14
-        '
-        Me.LabelX14.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX14.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX14.Location = New System.Drawing.Point(107, 5)
-        Me.LabelX14.Name = "LabelX14"
-        Me.LabelX14.Size = New System.Drawing.Size(85, 13)
-        Me.LabelX14.TabIndex = 5
-        Me.LabelX14.Text = "Propietario"
         '
         'lineactualTextBoxX4
         '
@@ -519,7 +615,7 @@ Partial Class frmPropietarios
         Me.lineactualTextBoxX4.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.lineactualTextBoxX4.DisabledBackColor = System.Drawing.Color.White
         Me.lineactualTextBoxX4.ForeColor = System.Drawing.Color.Black
-        Me.lineactualTextBoxX4.Location = New System.Drawing.Point(7, 21)
+        Me.lineactualTextBoxX4.Location = New System.Drawing.Point(7, 20)
         Me.lineactualTextBoxX4.Name = "lineactualTextBoxX4"
         Me.lineactualTextBoxX4.ReadOnly = True
         Me.lineactualTextBoxX4.Size = New System.Drawing.Size(99, 20)
@@ -533,18 +629,36 @@ Partial Class frmPropietarios
         '
         '
         Me.LabelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX13.Location = New System.Drawing.Point(7, 5)
+        Me.LabelX13.Location = New System.Drawing.Point(7, 4)
         Me.LabelX13.Name = "LabelX13"
         Me.LabelX13.Size = New System.Drawing.Size(75, 13)
         Me.LabelX13.TabIndex = 0
         Me.LabelX13.Text = "Linea"
+        '
+        'LabelX14
+        '
+        Me.LabelX14.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX14.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX14.Location = New System.Drawing.Point(107, 4)
+        Me.LabelX14.Name = "LabelX14"
+        Me.LabelX14.Size = New System.Drawing.Size(85, 13)
+        Me.LabelX14.TabIndex = 5
+        Me.LabelX14.Text = "Propietario"
         '
         'GroupPanel3
         '
         Me.GroupPanel3.BackColor = System.Drawing.Color.Transparent
         Me.GroupPanel3.CanvasColor = System.Drawing.SystemColors.Control
         Me.GroupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
-        Me.GroupPanel3.Controls.Add(Me.Panel3)
+        Me.GroupPanel3.Controls.Add(Me.modeloTextBoxX3)
+        Me.GroupPanel3.Controls.Add(Me.LabelX10)
+        Me.GroupPanel3.Controls.Add(Me.LabelX12)
+        Me.GroupPanel3.Controls.Add(Me.imeiactualTextBoxX1)
+        Me.GroupPanel3.Controls.Add(Me.marcaTextBoxX2)
+        Me.GroupPanel3.Controls.Add(Me.LabelX11)
         Me.GroupPanel3.DisabledBackColor = System.Drawing.Color.Empty
         Me.GroupPanel3.Location = New System.Drawing.Point(25, 238)
         Me.GroupPanel3.Name = "GroupPanel3"
@@ -555,14 +669,14 @@ Partial Class frmPropietarios
         Me.GroupPanel3.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
         Me.GroupPanel3.Style.BackColorGradientAngle = 90
         Me.GroupPanel3.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
-        Me.GroupPanel3.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel3.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Dash
         Me.GroupPanel3.Style.BorderBottomWidth = 1
         Me.GroupPanel3.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
-        Me.GroupPanel3.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel3.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Dash
         Me.GroupPanel3.Style.BorderLeftWidth = 1
-        Me.GroupPanel3.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel3.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Dash
         Me.GroupPanel3.Style.BorderRightWidth = 1
-        Me.GroupPanel3.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel3.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Dash
         Me.GroupPanel3.Style.BorderTopWidth = 1
         Me.GroupPanel3.Style.CornerDiameter = 4
         Me.GroupPanel3.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded
@@ -590,29 +704,38 @@ Partial Class frmPropietarios
         Me.modeloTextBoxX3.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.modeloTextBoxX3.DisabledBackColor = System.Drawing.Color.White
         Me.modeloTextBoxX3.ForeColor = System.Drawing.Color.Black
-        Me.modeloTextBoxX3.Location = New System.Drawing.Point(196, 21)
+        Me.modeloTextBoxX3.Location = New System.Drawing.Point(196, 20)
         Me.modeloTextBoxX3.Name = "modeloTextBoxX3"
         Me.modeloTextBoxX3.ReadOnly = True
         Me.modeloTextBoxX3.Size = New System.Drawing.Size(78, 20)
         Me.modeloTextBoxX3.TabIndex = 5
         Me.modeloTextBoxX3.WatermarkText = "..."
         '
-        'marcaTextBoxX2
+        'LabelX10
         '
-        Me.marcaTextBoxX2.BackColor = System.Drawing.Color.White
+        Me.LabelX10.BackColor = System.Drawing.Color.Transparent
         '
         '
         '
-        Me.marcaTextBoxX2.Border.Class = "TextBoxBorder"
-        Me.marcaTextBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.marcaTextBoxX2.DisabledBackColor = System.Drawing.Color.White
-        Me.marcaTextBoxX2.ForeColor = System.Drawing.Color.Black
-        Me.marcaTextBoxX2.Location = New System.Drawing.Point(108, 21)
-        Me.marcaTextBoxX2.Name = "marcaTextBoxX2"
-        Me.marcaTextBoxX2.ReadOnly = True
-        Me.marcaTextBoxX2.Size = New System.Drawing.Size(87, 20)
-        Me.marcaTextBoxX2.TabIndex = 4
-        Me.marcaTextBoxX2.WatermarkText = "..."
+        Me.LabelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX10.Location = New System.Drawing.Point(8, 4)
+        Me.LabelX10.Name = "LabelX10"
+        Me.LabelX10.Size = New System.Drawing.Size(45, 13)
+        Me.LabelX10.TabIndex = 0
+        Me.LabelX10.Text = "IMEI"
+        '
+        'LabelX12
+        '
+        Me.LabelX12.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX12.Location = New System.Drawing.Point(196, 4)
+        Me.LabelX12.Name = "LabelX12"
+        Me.LabelX12.Size = New System.Drawing.Size(45, 13)
+        Me.LabelX12.TabIndex = 2
+        Me.LabelX12.Text = "Modelo"
         '
         'imeiactualTextBoxX1
         '
@@ -624,25 +747,29 @@ Partial Class frmPropietarios
         Me.imeiactualTextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.imeiactualTextBoxX1.DisabledBackColor = System.Drawing.Color.White
         Me.imeiactualTextBoxX1.ForeColor = System.Drawing.Color.Black
-        Me.imeiactualTextBoxX1.Location = New System.Drawing.Point(7, 21)
+        Me.imeiactualTextBoxX1.Location = New System.Drawing.Point(7, 20)
         Me.imeiactualTextBoxX1.Name = "imeiactualTextBoxX1"
         Me.imeiactualTextBoxX1.ReadOnly = True
         Me.imeiactualTextBoxX1.Size = New System.Drawing.Size(100, 20)
         Me.imeiactualTextBoxX1.TabIndex = 3
         Me.imeiactualTextBoxX1.WatermarkText = "..."
         '
-        'LabelX12
+        'marcaTextBoxX2
         '
-        Me.LabelX12.BackColor = System.Drawing.Color.Transparent
+        Me.marcaTextBoxX2.BackColor = System.Drawing.Color.White
         '
         '
         '
-        Me.LabelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX12.Location = New System.Drawing.Point(196, 5)
-        Me.LabelX12.Name = "LabelX12"
-        Me.LabelX12.Size = New System.Drawing.Size(45, 13)
-        Me.LabelX12.TabIndex = 2
-        Me.LabelX12.Text = "Modelo"
+        Me.marcaTextBoxX2.Border.Class = "TextBoxBorder"
+        Me.marcaTextBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.marcaTextBoxX2.DisabledBackColor = System.Drawing.Color.White
+        Me.marcaTextBoxX2.ForeColor = System.Drawing.Color.Black
+        Me.marcaTextBoxX2.Location = New System.Drawing.Point(108, 20)
+        Me.marcaTextBoxX2.Name = "marcaTextBoxX2"
+        Me.marcaTextBoxX2.ReadOnly = True
+        Me.marcaTextBoxX2.Size = New System.Drawing.Size(87, 20)
+        Me.marcaTextBoxX2.TabIndex = 4
+        Me.marcaTextBoxX2.WatermarkText = "..."
         '
         'LabelX11
         '
@@ -651,28 +778,15 @@ Partial Class frmPropietarios
         '
         '
         Me.LabelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX11.Location = New System.Drawing.Point(109, 5)
+        Me.LabelX11.Location = New System.Drawing.Point(109, 4)
         Me.LabelX11.Name = "LabelX11"
         Me.LabelX11.Size = New System.Drawing.Size(45, 13)
         Me.LabelX11.TabIndex = 1
         Me.LabelX11.Text = "Marca"
         '
-        'LabelX10
-        '
-        Me.LabelX10.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX10.Location = New System.Drawing.Point(8, 5)
-        Me.LabelX10.Name = "LabelX10"
-        Me.LabelX10.Size = New System.Drawing.Size(45, 13)
-        Me.LabelX10.TabIndex = 0
-        Me.LabelX10.Text = "IMEI"
-        '
         'fechabajaTextBoxX5
         '
-        Me.fechabajaTextBoxX5.BackColor = System.Drawing.Color.White
+        Me.fechabajaTextBoxX5.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
         '
         '
         '
@@ -685,7 +799,7 @@ Partial Class frmPropietarios
         Me.fechabajaTextBoxX5.ReadOnly = True
         Me.fechabajaTextBoxX5.Size = New System.Drawing.Size(105, 20)
         Me.fechabajaTextBoxX5.TabIndex = 20
-        Me.fechabajaTextBoxX5.WatermarkText = "..."
+        Me.fechabajaTextBoxX5.WatermarkText = "-"
         '
         'LabelX9
         '
@@ -703,7 +817,7 @@ Partial Class frmPropietarios
         '
         'fechaingresoTextBoxX4
         '
-        Me.fechaingresoTextBoxX4.BackColor = System.Drawing.Color.White
+        Me.fechaingresoTextBoxX4.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
         '
         '
         '
@@ -716,7 +830,7 @@ Partial Class frmPropietarios
         Me.fechaingresoTextBoxX4.ReadOnly = True
         Me.fechaingresoTextBoxX4.Size = New System.Drawing.Size(105, 20)
         Me.fechaingresoTextBoxX4.TabIndex = 18
-        Me.fechaingresoTextBoxX4.WatermarkText = "..."
+        Me.fechaingresoTextBoxX4.WatermarkText = "-"
         '
         'LabelX8
         '
@@ -732,90 +846,6 @@ Partial Class frmPropietarios
         Me.LabelX8.Text = "Fecha Ingreso:"
         Me.LabelX8.TextAlignment = System.Drawing.StringAlignment.Far
         '
-        'ButtonX3
-        '
-        Me.ButtonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX3.Location = New System.Drawing.Point(598, 95)
-        Me.ButtonX3.Name = "ButtonX3"
-        Me.ButtonX3.Size = New System.Drawing.Size(23, 20)
-        Me.ButtonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX3.TabIndex = 16
-        Me.ButtonX3.Text = "+"
-        '
-        'ButtonX2
-        '
-        Me.ButtonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX2.Location = New System.Drawing.Point(598, 69)
-        Me.ButtonX2.Name = "ButtonX2"
-        Me.ButtonX2.Size = New System.Drawing.Size(23, 20)
-        Me.ButtonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX2.TabIndex = 15
-        Me.ButtonX2.Text = "+"
-        '
-        'ButtonX1
-        '
-        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX1.Location = New System.Drawing.Point(598, 43)
-        Me.ButtonX1.Name = "ButtonX1"
-        Me.ButtonX1.Size = New System.Drawing.Size(23, 20)
-        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX1.TabIndex = 14
-        Me.ButtonX1.Text = "+"
-        '
-        'cargoComboBoxEx3
-        '
-        Me.cargoComboBoxEx3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.cargoComboBoxEx3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.cargoComboBoxEx3.DisplayMember = "Text"
-        Me.cargoComboBoxEx3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.cargoComboBoxEx3.Enabled = False
-        Me.cargoComboBoxEx3.ForeColor = System.Drawing.Color.Black
-        Me.cargoComboBoxEx3.FormattingEnabled = True
-        Me.cargoComboBoxEx3.ItemHeight = 14
-        Me.cargoComboBoxEx3.Location = New System.Drawing.Point(408, 95)
-        Me.cargoComboBoxEx3.Name = "cargoComboBoxEx3"
-        Me.cargoComboBoxEx3.Size = New System.Drawing.Size(189, 20)
-        Me.cargoComboBoxEx3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.cargoComboBoxEx3.TabIndex = 13
-        Me.cargoComboBoxEx3.WatermarkText = "-"
-        '
-        'departamentoComboBoxEx2
-        '
-        Me.departamentoComboBoxEx2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.departamentoComboBoxEx2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.departamentoComboBoxEx2.DisplayMember = "Text"
-        Me.departamentoComboBoxEx2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.departamentoComboBoxEx2.Enabled = False
-        Me.departamentoComboBoxEx2.ForeColor = System.Drawing.Color.Black
-        Me.departamentoComboBoxEx2.FormattingEnabled = True
-        Me.departamentoComboBoxEx2.ItemHeight = 14
-        Me.departamentoComboBoxEx2.Location = New System.Drawing.Point(408, 69)
-        Me.departamentoComboBoxEx2.Name = "departamentoComboBoxEx2"
-        Me.departamentoComboBoxEx2.Size = New System.Drawing.Size(189, 20)
-        Me.departamentoComboBoxEx2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.departamentoComboBoxEx2.TabIndex = 12
-        Me.departamentoComboBoxEx2.WatermarkText = "-"
-        '
-        'empresaComboBoxEx1
-        '
-        Me.empresaComboBoxEx1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.empresaComboBoxEx1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.empresaComboBoxEx1.DisplayMember = "Text"
-        Me.empresaComboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.empresaComboBoxEx1.Enabled = False
-        Me.empresaComboBoxEx1.ForeColor = System.Drawing.Color.Black
-        Me.empresaComboBoxEx1.FormattingEnabled = True
-        Me.empresaComboBoxEx1.ItemHeight = 14
-        Me.empresaComboBoxEx1.Location = New System.Drawing.Point(408, 43)
-        Me.empresaComboBoxEx1.Name = "empresaComboBoxEx1"
-        Me.empresaComboBoxEx1.Size = New System.Drawing.Size(189, 20)
-        Me.empresaComboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.empresaComboBoxEx1.TabIndex = 11
-        Me.empresaComboBoxEx1.WatermarkText = "-"
-        '
         'LabelX7
         '
         Me.LabelX7.BackColor = System.Drawing.Color.Transparent
@@ -823,7 +853,7 @@ Partial Class frmPropietarios
         '
         '
         Me.LabelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX7.Location = New System.Drawing.Point(319, 94)
+        Me.LabelX7.Location = New System.Drawing.Point(319, 95)
         Me.LabelX7.Name = "LabelX7"
         Me.LabelX7.Size = New System.Drawing.Size(85, 20)
         Me.LabelX7.TabIndex = 10
@@ -860,13 +890,13 @@ Partial Class frmPropietarios
         '
         'apellidosTextBoxX3
         '
-        Me.apellidosTextBoxX3.BackColor = System.Drawing.Color.White
+        Me.apellidosTextBoxX3.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
         '
         '
         '
         Me.apellidosTextBoxX3.Border.Class = "TextBoxBorder"
         Me.apellidosTextBoxX3.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.apellidosTextBoxX3.DisabledBackColor = System.Drawing.Color.White
+        Me.apellidosTextBoxX3.DisabledBackColor = System.Drawing.Color.WhiteSmoke
         Me.apellidosTextBoxX3.ForeColor = System.Drawing.Color.Black
         Me.apellidosTextBoxX3.Location = New System.Drawing.Point(90, 69)
         Me.apellidosTextBoxX3.MaxLength = 40
@@ -874,7 +904,7 @@ Partial Class frmPropietarios
         Me.apellidosTextBoxX3.ReadOnly = True
         Me.apellidosTextBoxX3.Size = New System.Drawing.Size(225, 20)
         Me.apellidosTextBoxX3.TabIndex = 7
-        Me.apellidosTextBoxX3.WatermarkText = "..."
+        Me.apellidosTextBoxX3.WatermarkText = "-"
         '
         'LabelX4
         '
@@ -892,13 +922,13 @@ Partial Class frmPropietarios
         '
         'nombresTextBoxX2
         '
-        Me.nombresTextBoxX2.BackColor = System.Drawing.Color.White
+        Me.nombresTextBoxX2.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
         '
         '
         '
         Me.nombresTextBoxX2.Border.Class = "TextBoxBorder"
         Me.nombresTextBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.nombresTextBoxX2.DisabledBackColor = System.Drawing.Color.White
+        Me.nombresTextBoxX2.DisabledBackColor = System.Drawing.Color.WhiteSmoke
         Me.nombresTextBoxX2.ForeColor = System.Drawing.Color.Black
         Me.nombresTextBoxX2.Location = New System.Drawing.Point(90, 43)
         Me.nombresTextBoxX2.MaxLength = 40
@@ -906,7 +936,7 @@ Partial Class frmPropietarios
         Me.nombresTextBoxX2.ReadOnly = True
         Me.nombresTextBoxX2.Size = New System.Drawing.Size(225, 20)
         Me.nombresTextBoxX2.TabIndex = 5
-        Me.nombresTextBoxX2.WatermarkText = "..."
+        Me.nombresTextBoxX2.WatermarkText = "-"
         '
         'LabelX3
         '
@@ -938,20 +968,51 @@ Partial Class frmPropietarios
         '
         'idpropietarioTextBoxX1
         '
-        Me.idpropietarioTextBoxX1.BackColor = System.Drawing.Color.White
+        Me.idpropietarioTextBoxX1.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
         '
         '
         '
         Me.idpropietarioTextBoxX1.Border.Class = "TextBoxBorder"
         Me.idpropietarioTextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.idpropietarioTextBoxX1.DisabledBackColor = System.Drawing.Color.White
+        Me.idpropietarioTextBoxX1.DisabledBackColor = System.Drawing.Color.WhiteSmoke
         Me.idpropietarioTextBoxX1.Enabled = False
         Me.idpropietarioTextBoxX1.ForeColor = System.Drawing.Color.Black
         Me.idpropietarioTextBoxX1.Location = New System.Drawing.Point(90, 17)
         Me.idpropietarioTextBoxX1.Name = "idpropietarioTextBoxX1"
         Me.idpropietarioTextBoxX1.Size = New System.Drawing.Size(100, 20)
         Me.idpropietarioTextBoxX1.TabIndex = 2
-        Me.idpropietarioTextBoxX1.WatermarkText = "..."
+        Me.idpropietarioTextBoxX1.WatermarkText = "-"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.seleccionarButtonX4)
+        Me.Panel1.Controls.Add(Me.nuevoButtonX4)
+        Me.Panel1.Controls.Add(Me.guardarButtonX7)
+        Me.Panel1.Controls.Add(Me.eliminarButtonX6)
+        Me.Panel1.Controls.Add(Me.modificarButtonX5)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(0, 52)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Padding = New System.Windows.Forms.Padding(0, 3, 0, 5)
+        Me.Panel1.Size = New System.Drawing.Size(127, 329)
+        Me.Panel1.TabIndex = 26
+        '
+        'seleccionarButtonX4
+        '
+        Me.seleccionarButtonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.seleccionarButtonX4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
+        Me.seleccionarButtonX4.Image = Global.ModuloTelefonos.My.Resources.Resources.ok
+        Me.seleccionarButtonX4.ImageFixedSize = New System.Drawing.Size(25, 25)
+        Me.seleccionarButtonX4.Location = New System.Drawing.Point(9, 278)
+        Me.seleccionarButtonX4.Name = "seleccionarButtonX4"
+        Me.seleccionarButtonX4.Size = New System.Drawing.Size(107, 31)
+        Me.seleccionarButtonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.seleccionarButtonX4.Symbol = ""
+        Me.seleccionarButtonX4.SymbolSize = 12.0!
+        Me.seleccionarButtonX4.TabIndex = 25
+        Me.seleccionarButtonX4.Text = "&Seleccionar"
+        Me.seleccionarButtonX4.Visible = False
         '
         'nuevoButtonX4
         '
@@ -966,37 +1027,7 @@ Partial Class frmPropietarios
         Me.nuevoButtonX4.Symbol = ""
         Me.nuevoButtonX4.SymbolSize = 12.0!
         Me.nuevoButtonX4.TabIndex = 21
-        Me.nuevoButtonX4.Text = "Nuevo"
-        '
-        'modificarButtonX5
-        '
-        Me.modificarButtonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.modificarButtonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
-        Me.modificarButtonX5.Image = Global.ModuloTelefonos.My.Resources.Resources.atencion_revisar
-        Me.modificarButtonX5.ImageFixedSize = New System.Drawing.Size(20, 20)
-        Me.modificarButtonX5.Location = New System.Drawing.Point(9, 55)
-        Me.modificarButtonX5.Name = "modificarButtonX5"
-        Me.modificarButtonX5.Size = New System.Drawing.Size(107, 32)
-        Me.modificarButtonX5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.modificarButtonX5.Symbol = ""
-        Me.modificarButtonX5.SymbolSize = 12.0!
-        Me.modificarButtonX5.TabIndex = 22
-        Me.modificarButtonX5.Text = "& Modificar"
-        '
-        'eliminarButtonX6
-        '
-        Me.eliminarButtonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.eliminarButtonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
-        Me.eliminarButtonX6.Image = Global.ModuloTelefonos.My.Resources.Resources.Eliminar2
-        Me.eliminarButtonX6.ImageFixedSize = New System.Drawing.Size(20, 20)
-        Me.eliminarButtonX6.Location = New System.Drawing.Point(9, 90)
-        Me.eliminarButtonX6.Name = "eliminarButtonX6"
-        Me.eliminarButtonX6.Size = New System.Drawing.Size(107, 32)
-        Me.eliminarButtonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.eliminarButtonX6.Symbol = ""
-        Me.eliminarButtonX6.SymbolSize = 12.0!
-        Me.eliminarButtonX6.TabIndex = 23
-        Me.eliminarButtonX6.Text = "& Eliminar"
+        Me.nuevoButtonX4.Text = "&Nuevo"
         '
         'guardarButtonX7
         '
@@ -1012,7 +1043,95 @@ Partial Class frmPropietarios
         Me.guardarButtonX7.Symbol = ""
         Me.guardarButtonX7.SymbolSize = 12.0!
         Me.guardarButtonX7.TabIndex = 24
-        Me.guardarButtonX7.Text = "& Guardar"
+        Me.guardarButtonX7.Text = "&Guardar"
+        '
+        'eliminarButtonX6
+        '
+        Me.eliminarButtonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.eliminarButtonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
+        Me.eliminarButtonX6.Image = Global.ModuloTelefonos.My.Resources.Resources.Eliminar2
+        Me.eliminarButtonX6.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.eliminarButtonX6.Location = New System.Drawing.Point(9, 90)
+        Me.eliminarButtonX6.Name = "eliminarButtonX6"
+        Me.eliminarButtonX6.Size = New System.Drawing.Size(107, 32)
+        Me.eliminarButtonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.eliminarButtonX6.Symbol = ""
+        Me.eliminarButtonX6.SymbolSize = 12.0!
+        Me.eliminarButtonX6.TabIndex = 23
+        Me.eliminarButtonX6.Text = "&Eliminar"
+        '
+        'modificarButtonX5
+        '
+        Me.modificarButtonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.modificarButtonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
+        Me.modificarButtonX5.Image = Global.ModuloTelefonos.My.Resources.Resources.atencion_revisar
+        Me.modificarButtonX5.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.modificarButtonX5.Location = New System.Drawing.Point(9, 55)
+        Me.modificarButtonX5.Name = "modificarButtonX5"
+        Me.modificarButtonX5.Size = New System.Drawing.Size(107, 32)
+        Me.modificarButtonX5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.modificarButtonX5.Symbol = ""
+        Me.modificarButtonX5.SymbolSize = 12.0!
+        Me.modificarButtonX5.TabIndex = 22
+        Me.modificarButtonX5.Text = "&Modificar"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.Controls.Add(Me.buscarBtn)
+        Me.Panel2.Controls.Add(Me.LabelX1)
+        Me.Panel2.Controls.Add(Me.localizarTextBoxX1)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(0, 0, 0, 3)
+        Me.Panel2.Size = New System.Drawing.Size(772, 52)
+        Me.Panel2.TabIndex = 27
+        '
+        'buscarBtn
+        '
+        Me.buscarBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.buscarBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
+        Me.buscarBtn.Image = Global.ModuloTelefonos.My.Resources.Resources.nuevo
+        Me.buscarBtn.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.buscarBtn.Location = New System.Drawing.Point(9, 9)
+        Me.buscarBtn.Name = "buscarBtn"
+        Me.buscarBtn.Size = New System.Drawing.Size(107, 32)
+        Me.buscarBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.buscarBtn.Symbol = ""
+        Me.buscarBtn.SymbolSize = 12.0!
+        Me.buscarBtn.TabIndex = 22
+        Me.buscarBtn.Text = "&Buscar"
+        '
+        'LabelX1
+        '
+        Me.LabelX1.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX1.Location = New System.Drawing.Point(133, 10)
+        Me.LabelX1.Name = "LabelX1"
+        Me.LabelX1.Size = New System.Drawing.Size(83, 31)
+        Me.LabelX1.TabIndex = 0
+        Me.LabelX1.Text = "Localizar:"
+        Me.LabelX1.TextAlignment = System.Drawing.StringAlignment.Far
+        '
+        'localizarTextBoxX1
+        '
+        Me.localizarTextBoxX1.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.localizarTextBoxX1.Border.Class = "TextBoxBorder"
+        Me.localizarTextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.localizarTextBoxX1.DisabledBackColor = System.Drawing.Color.White
+        Me.localizarTextBoxX1.ForeColor = System.Drawing.Color.Black
+        Me.localizarTextBoxX1.Location = New System.Drawing.Point(220, 16)
+        Me.localizarTextBoxX1.Name = "localizarTextBoxX1"
+        Me.localizarTextBoxX1.Size = New System.Drawing.Size(423, 20)
+        Me.localizarTextBoxX1.TabIndex = 1
+        Me.localizarTextBoxX1.WatermarkText = "..."
         '
         'GroupPanel2
         '
@@ -1022,9 +1141,9 @@ Partial Class frmPropietarios
         Me.GroupPanel2.Controls.Add(Me.DataGridViewX1)
         Me.GroupPanel2.DisabledBackColor = System.Drawing.Color.Empty
         Me.GroupPanel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupPanel2.Location = New System.Drawing.Point(0, 367)
+        Me.GroupPanel2.Location = New System.Drawing.Point(0, 387)
         Me.GroupPanel2.Name = "GroupPanel2"
-        Me.GroupPanel2.Size = New System.Drawing.Size(779, 238)
+        Me.GroupPanel2.Size = New System.Drawing.Size(778, 238)
         '
         '
         '
@@ -1080,7 +1199,7 @@ Partial Class frmPropietarios
         Me.DataGridViewX1.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridViewX1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridViewX1.EnableHeadersVisualStyles = False
-        Me.DataGridViewX1.GridColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.DataGridViewX1.GridColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(229, Byte), Integer))
         Me.DataGridViewX1.Location = New System.Drawing.Point(0, 0)
         Me.DataGridViewX1.Name = "DataGridViewX1"
         Me.DataGridViewX1.ReadOnly = True
@@ -1093,7 +1212,7 @@ Partial Class frmPropietarios
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridViewX1.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridViewX1.RowHeadersWidth = 21
-        Me.DataGridViewX1.Size = New System.Drawing.Size(773, 232)
+        Me.DataGridViewX1.Size = New System.Drawing.Size(772, 232)
         Me.DataGridViewX1.TabIndex = 0
         '
         'id_propietario
@@ -1143,145 +1262,26 @@ Partial Class frmPropietarios
         Me.fill.Name = "fill"
         Me.fill.ReadOnly = True
         '
-        'seleccionarButtonX4
-        '
-        Me.seleccionarButtonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.seleccionarButtonX4.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
-        Me.seleccionarButtonX4.Image = Global.ModuloTelefonos.My.Resources.Resources.ok
-        Me.seleccionarButtonX4.ImageFixedSize = New System.Drawing.Size(25, 25)
-        Me.seleccionarButtonX4.Location = New System.Drawing.Point(9, 259)
-        Me.seleccionarButtonX4.Name = "seleccionarButtonX4"
-        Me.seleccionarButtonX4.Size = New System.Drawing.Size(107, 31)
-        Me.seleccionarButtonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.seleccionarButtonX4.Symbol = ""
-        Me.seleccionarButtonX4.SymbolSize = 12.0!
-        Me.seleccionarButtonX4.TabIndex = 25
-        Me.seleccionarButtonX4.Text = "Seleccionar"
-        Me.seleccionarButtonX4.Visible = False
-        '
-        'localizarTextBoxX1
-        '
-        Me.localizarTextBoxX1.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.localizarTextBoxX1.Border.Class = "TextBoxBorder"
-        Me.localizarTextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.localizarTextBoxX1.DisabledBackColor = System.Drawing.Color.White
-        Me.localizarTextBoxX1.ForeColor = System.Drawing.Color.Black
-        Me.localizarTextBoxX1.Location = New System.Drawing.Point(220, 18)
-        Me.localizarTextBoxX1.Name = "localizarTextBoxX1"
-        Me.localizarTextBoxX1.Size = New System.Drawing.Size(423, 20)
-        Me.localizarTextBoxX1.TabIndex = 1
-        Me.localizarTextBoxX1.WatermarkText = "..."
-        '
-        'LabelX1
-        '
-        Me.LabelX1.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX1.Location = New System.Drawing.Point(133, 12)
-        Me.LabelX1.Name = "LabelX1"
-        Me.LabelX1.Size = New System.Drawing.Size(83, 31)
-        Me.LabelX1.TabIndex = 0
-        Me.LabelX1.Text = "Localizar:"
-        Me.LabelX1.TextAlignment = System.Drawing.StringAlignment.Far
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.seleccionarButtonX4)
-        Me.Panel1.Controls.Add(Me.nuevoButtonX4)
-        Me.Panel1.Controls.Add(Me.guardarButtonX7)
-        Me.Panel1.Controls.Add(Me.eliminarButtonX6)
-        Me.Panel1.Controls.Add(Me.modificarButtonX5)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 52)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Padding = New System.Windows.Forms.Padding(0, 3, 0, 5)
-        Me.Panel1.Size = New System.Drawing.Size(127, 309)
-        Me.Panel1.TabIndex = 26
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.buscarBtn)
-        Me.Panel2.Controls.Add(Me.LabelX1)
-        Me.Panel2.Controls.Add(Me.localizarTextBoxX1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Padding = New System.Windows.Forms.Padding(0, 0, 0, 3)
-        Me.Panel2.Size = New System.Drawing.Size(773, 52)
-        Me.Panel2.TabIndex = 27
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.modeloTextBoxX3)
-        Me.Panel3.Controls.Add(Me.LabelX10)
-        Me.Panel3.Controls.Add(Me.marcaTextBoxX2)
-        Me.Panel3.Controls.Add(Me.LabelX11)
-        Me.Panel3.Controls.Add(Me.imeiactualTextBoxX1)
-        Me.Panel3.Controls.Add(Me.LabelX12)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(282, 47)
-        Me.Panel3.TabIndex = 40
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.propietariolineaTextBoxX5)
-        Me.Panel4.Controls.Add(Me.lineactualTextBoxX4)
-        Me.Panel4.Controls.Add(Me.LabelX14)
-        Me.Panel4.Controls.Add(Me.LabelX13)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(0, 0)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(282, 47)
-        Me.Panel4.TabIndex = 41
-        '
-        'buscarBtn
-        '
-        Me.buscarBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.buscarBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
-        Me.buscarBtn.Image = Global.ModuloTelefonos.My.Resources.Resources.nuevo
-        Me.buscarBtn.ImageFixedSize = New System.Drawing.Size(20, 20)
-        Me.buscarBtn.Location = New System.Drawing.Point(9, 11)
-        Me.buscarBtn.Name = "buscarBtn"
-        Me.buscarBtn.Size = New System.Drawing.Size(107, 32)
-        Me.buscarBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.buscarBtn.Symbol = ""
-        Me.buscarBtn.SymbolSize = 12.0!
-        Me.buscarBtn.TabIndex = 22
-        Me.buscarBtn.Text = " Buscar"
-        '
         'frmPropietarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(779, 605)
+        Me.ClientSize = New System.Drawing.Size(778, 625)
         Me.Controls.Add(Me.PanelEx1)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmPropietarios"
-        Me.Text = "frmPropietarios"
+        Me.Text = "Propietarios"
         Me.PanelEx1.ResumeLayout(False)
         Me.GroupPanel5.ResumeLayout(False)
         Me.GroupPanel1.ResumeLayout(False)
         Me.GroupPanel1.PerformLayout()
         Me.GroupPanel4.ResumeLayout(False)
         Me.GroupPanel3.ResumeLayout(False)
-        Me.GroupPanel2.ResumeLayout(False)
-        CType(Me.DataGridViewX1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
+        Me.GroupPanel2.ResumeLayout(False)
+        CType(Me.DataGridViewX1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1319,12 +1319,6 @@ Partial Class frmPropietarios
     Friend WithEvents LabelX9 As DevComponents.DotNetBar.LabelX
     Friend WithEvents fechaingresoTextBoxX4 As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents LabelX8 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents ButtonX3 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents cargoComboBoxEx3 As DevComponents.DotNetBar.Controls.ComboBoxEx
-    Friend WithEvents departamentoComboBoxEx2 As DevComponents.DotNetBar.Controls.ComboBoxEx
-    Friend WithEvents empresaComboBoxEx1 As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents LabelX7 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX6 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX5 As DevComponents.DotNetBar.LabelX
@@ -1345,12 +1339,16 @@ Partial Class frmPropietarios
     Friend WithEvents fecha_baja As DataGridViewTextBoxColumn
     Friend WithEvents fill As DataGridViewTextBoxColumn
     Friend WithEvents GroupPanel5 As DevComponents.DotNetBar.Controls.GroupPanel
-    Friend WithEvents TextBoxX1 As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents cdCostosTextBoxX1 As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents LabelX20 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents ButtonX4 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents nominaBtn As DevComponents.DotNetBar.ButtonX
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel3 As Panel
     Friend WithEvents buscarBtn As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents cargoTxt As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents idCargoTxt As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents depTxt As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents idDepTxt As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents empresaTxt As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents idEmpresaTxt As DevComponents.DotNetBar.Controls.TextBoxX
 End Class
