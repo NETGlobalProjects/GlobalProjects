@@ -163,7 +163,7 @@ Public Class frmMovimientos
     Private Sub id_propietarioTextBoxX5_KeyDown(sender As Object, e As KeyEventArgs) Handles id_propietarioTextBoxX5.KeyDown
         If e.KeyCode = Keys.F5 Then
             With frmPropietarios
-                .seleccionarButtonX4.Visible = True
+                .seleccionarBtn.Visible = True
                 .WindowState = FormWindowState.Normal
                 .StartPosition = FormStartPosition.CenterScreen
                 .ShowDialog()
