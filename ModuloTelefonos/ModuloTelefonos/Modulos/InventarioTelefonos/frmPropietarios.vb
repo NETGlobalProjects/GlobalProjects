@@ -397,6 +397,14 @@ Public Class frmPropietarios
         Me.Close()
     End Sub
 
+    Private Sub DataGridViewX1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewX1.CellDoubleClick
+        If e.RowIndex >= 0 Then
+            frmMovimientos.id_propietarioTextBoxX5.Text = bsPropitarios.Current("id_propietario")
+            Me.Close()
+        End If
+    End Sub
+
+
     Private Sub buscarBtn_Click(sender As Object, e As EventArgs) Handles buscarBtn.Click
         cargar_propietarios(Me.localizarTextBoxX1.Text)
     End Sub

@@ -680,7 +680,7 @@ Partial Class frmPropietarios
         Me.buscarBtn.ImageFixedSize = New System.Drawing.Size(20, 20)
         Me.buscarBtn.Location = New System.Drawing.Point(625, 10)
         Me.buscarBtn.Name = "buscarBtn"
-        Me.buscarBtn.Size = New System.Drawing.Size(89, 25)
+        Me.buscarBtn.Size = New System.Drawing.Size(82, 25)
         Me.buscarBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.buscarBtn.Symbol = ""
         Me.buscarBtn.SymbolSize = 12.0!
