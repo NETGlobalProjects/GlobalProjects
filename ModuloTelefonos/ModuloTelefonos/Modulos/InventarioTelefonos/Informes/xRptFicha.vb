@@ -25,7 +25,6 @@ Public Class xRptFicha
         Else
             tabla.Visible = False
         End If
-
     End Sub
 
     Private Sub telefonoXrTable2_BeforePrint(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles telefonoXrTable2.BeforePrint

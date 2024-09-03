@@ -22,12 +22,13 @@ Partial Class frmBuscarNomina
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmBuscarNomina))
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.nominasDgv = New DevComponents.DotNetBar.Controls.DataGridViewX()
         Me.codEmpleado = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -36,20 +37,15 @@ Partial Class frmBuscarNomina
         Me.dui = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.fechaIngreso = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.vacio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
-        Me.busquedaTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.filtroCbx = New DevComponents.DotNetBar.Controls.ComboBoxEx()
-        Me.LabelX14 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
-        Me.buscarBtn = New DevComponents.DotNetBar.ButtonX()
-        Me.LabelX13 = New DevComponents.DotNetBar.LabelX()
         Me.GroupPanel3 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.LabelX15 = New DevComponents.DotNetBar.LabelX()
         Me.TextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX14 = New DevComponents.DotNetBar.LabelX()
         Me.nombreTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.telefonoTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX10 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX13 = New DevComponents.DotNetBar.LabelX()
         Me.fechaIngTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX6 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX7 = New DevComponents.DotNetBar.LabelX()
@@ -67,12 +63,17 @@ Partial Class frmBuscarNomina
         Me.dealerTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.direccionTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX8 = New DevComponents.DotNetBar.LabelX()
+        Me.GroupPanel8 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
+        Me.seleccionarBtn = New DevComponents.DotNetBar.ButtonX()
         Me.codigoEmpleadoTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.cancelarBtn = New DevComponents.DotNetBar.ButtonX()
-        Me.seleccionarBtn = New DevComponents.DotNetBar.ButtonX()
-        Me.GroupPanel8 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.GroupPanel2 = New DevComponents.DotNetBar.Controls.GroupPanel()
+        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
+        Me.buscarBtn = New DevComponents.DotNetBar.ButtonX()
+        Me.busquedaTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
+        Me.filtroCbx = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.PanelEx1.SuspendLayout()
         CType(Me.nominasDgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupPanel3.SuspendLayout()
@@ -106,38 +107,38 @@ Partial Class frmBuscarNomina
         Me.nominasDgv.AllowUserToAddRows = False
         Me.nominasDgv.AllowUserToDeleteRows = False
         Me.nominasDgv.BackgroundColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.nominasDgv.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.nominasDgv.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.nominasDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.nominasDgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codEmpleado, Me.nombres, Me.apellidos, Me.dui, Me.fechaIngreso, Me.vacio})
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.nominasDgv.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.nominasDgv.DefaultCellStyle = DataGridViewCellStyle5
         Me.nominasDgv.Dock = System.Windows.Forms.DockStyle.Fill
         Me.nominasDgv.EnableHeadersVisualStyles = False
-        Me.nominasDgv.GridColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.nominasDgv.GridColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.nominasDgv.Location = New System.Drawing.Point(0, 38)
         Me.nominasDgv.Name = "nominasDgv"
         Me.nominasDgv.ReadOnly = True
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.nominasDgv.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.nominasDgv.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.nominasDgv.RowHeadersWidth = 21
         Me.nominasDgv.Size = New System.Drawing.Size(700, 254)
         Me.nominasDgv.TabIndex = 0
@@ -145,9 +146,9 @@ Partial Class frmBuscarNomina
         'codEmpleado
         '
         Me.codEmpleado.DataPropertyName = "Numero"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.codEmpleado.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.codEmpleado.DefaultCellStyle = DataGridViewCellStyle2
         Me.codEmpleado.HeaderText = "#Empleado"
         Me.codEmpleado.Name = "codEmpleado"
         Me.codEmpleado.ReadOnly = True
@@ -175,8 +176,8 @@ Partial Class frmBuscarNomina
         'dui
         '
         Me.dui.DataPropertyName = "DUI"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.dui.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.dui.DefaultCellStyle = DataGridViewCellStyle3
         Me.dui.HeaderText = "DUI"
         Me.dui.Name = "dui"
         Me.dui.ReadOnly = True
@@ -186,8 +187,8 @@ Partial Class frmBuscarNomina
         'fechaIngreso
         '
         Me.fechaIngreso.DataPropertyName = "FechaIngreso"
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.fechaIngreso.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.fechaIngreso.DefaultCellStyle = DataGridViewCellStyle4
         Me.fechaIngreso.HeaderText = "Fecha Ingreso"
         Me.fechaIngreso.Name = "fechaIngreso"
         Me.fechaIngreso.ReadOnly = True
@@ -199,121 +200,6 @@ Partial Class frmBuscarNomina
         Me.vacio.HeaderText = ""
         Me.vacio.Name = "vacio"
         Me.vacio.ReadOnly = True
-        '
-        'LabelX1
-        '
-        Me.LabelX1.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX1.Location = New System.Drawing.Point(18, 6)
-        Me.LabelX1.Name = "LabelX1"
-        Me.LabelX1.Size = New System.Drawing.Size(100, 20)
-        Me.LabelX1.SymbolColor = System.Drawing.SystemColors.ActiveBorder
-        Me.LabelX1.SymbolSize = 15.0!
-        Me.LabelX1.TabIndex = 3
-        Me.LabelX1.Text = "Buscar como:"
-        Me.LabelX1.TextAlignment = System.Drawing.StringAlignment.Far
-        '
-        'busquedaTxt
-        '
-        Me.busquedaTxt.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.busquedaTxt.Border.Class = "TextBoxBorder"
-        Me.busquedaTxt.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.busquedaTxt.DisabledBackColor = System.Drawing.SystemColors.Control
-        Me.busquedaTxt.ForeColor = System.Drawing.Color.Black
-        Me.busquedaTxt.Location = New System.Drawing.Point(121, 6)
-        Me.busquedaTxt.Name = "busquedaTxt"
-        Me.busquedaTxt.Size = New System.Drawing.Size(263, 20)
-        Me.busquedaTxt.TabIndex = 2
-        Me.busquedaTxt.WatermarkText = "Escriba aquí..."
-        '
-        'filtroCbx
-        '
-        Me.filtroCbx.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.filtroCbx.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.filtroCbx.DisplayMember = "Text"
-        Me.filtroCbx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.filtroCbx.ForeColor = System.Drawing.Color.Black
-        Me.filtroCbx.FormattingEnabled = True
-        Me.filtroCbx.ItemHeight = 14
-        Me.filtroCbx.Location = New System.Drawing.Point(445, 6)
-        Me.filtroCbx.Name = "filtroCbx"
-        Me.filtroCbx.Size = New System.Drawing.Size(133, 20)
-        Me.filtroCbx.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.filtroCbx.TabIndex = 12
-        Me.filtroCbx.WatermarkText = "-- Seleccionar --"
-        '
-        'LabelX14
-        '
-        Me.LabelX14.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX14.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX14.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.LabelX14.Location = New System.Drawing.Point(268, 141)
-        Me.LabelX14.Name = "LabelX14"
-        Me.LabelX14.Size = New System.Drawing.Size(70, 17)
-        Me.LabelX14.SymbolColor = System.Drawing.SystemColors.ActiveBorder
-        Me.LabelX14.SymbolSize = 15.0!
-        Me.LabelX14.TabIndex = 26
-        Me.LabelX14.Text = "estatus activo"
-        Me.LabelX14.TextAlignment = System.Drawing.StringAlignment.Far
-        '
-        'LabelX2
-        '
-        Me.LabelX2.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX2.Location = New System.Drawing.Point(390, 6)
-        Me.LabelX2.Name = "LabelX2"
-        Me.LabelX2.Size = New System.Drawing.Size(52, 20)
-        Me.LabelX2.SymbolColor = System.Drawing.SystemColors.ActiveBorder
-        Me.LabelX2.SymbolSize = 15.0!
-        Me.LabelX2.TabIndex = 28
-        Me.LabelX2.Text = "Filtrar por:"
-        Me.LabelX2.TextAlignment = System.Drawing.StringAlignment.Far
-        '
-        'buscarBtn
-        '
-        Me.buscarBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.buscarBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
-        Me.buscarBtn.Image = Global.ModuloTelefonos.My.Resources.Resources.atencion_revisar
-        Me.buscarBtn.ImageFixedSize = New System.Drawing.Size(20, 20)
-        Me.buscarBtn.Location = New System.Drawing.Point(584, 6)
-        Me.buscarBtn.Name = "buscarBtn"
-        Me.buscarBtn.Size = New System.Drawing.Size(92, 20)
-        Me.buscarBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.buscarBtn.Symbol = "59574"
-        Me.buscarBtn.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material
-        Me.buscarBtn.SymbolSize = 12.0!
-        Me.buscarBtn.TabIndex = 27
-        Me.buscarBtn.Text = "&Buscar"
-        '
-        'LabelX13
-        '
-        Me.LabelX13.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX13.ForeColor = System.Drawing.Color.DimGray
-        Me.LabelX13.Location = New System.Drawing.Point(106, 141)
-        Me.LabelX13.Name = "LabelX13"
-        Me.LabelX13.Size = New System.Drawing.Size(161, 17)
-        Me.LabelX13.Symbol = ""
-        Me.LabelX13.SymbolColor = System.Drawing.Color.DimGray
-        Me.LabelX13.SymbolSize = 12.0!
-        Me.LabelX13.TabIndex = 25
-        Me.LabelX13.Text = "Muestra solo empleados con"
-        Me.LabelX13.TextAlignment = System.Drawing.StringAlignment.Far
         '
         'GroupPanel3
         '
@@ -398,7 +284,7 @@ Partial Class frmBuscarNomina
         '
         'TextBoxX1
         '
-        Me.TextBoxX1.BackColor = System.Drawing.Color.Gainsboro
+        Me.TextBoxX1.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -430,9 +316,26 @@ Partial Class frmBuscarNomina
         Me.LabelX3.Text = "Nombre completo:"
         Me.LabelX3.TextAlignment = System.Drawing.StringAlignment.Far
         '
+        'LabelX14
+        '
+        Me.LabelX14.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX14.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX14.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.LabelX14.Location = New System.Drawing.Point(268, 141)
+        Me.LabelX14.Name = "LabelX14"
+        Me.LabelX14.Size = New System.Drawing.Size(70, 17)
+        Me.LabelX14.SymbolColor = System.Drawing.SystemColors.ActiveBorder
+        Me.LabelX14.SymbolSize = 15.0!
+        Me.LabelX14.TabIndex = 26
+        Me.LabelX14.Text = "estatus activo"
+        Me.LabelX14.TextAlignment = System.Drawing.StringAlignment.Far
+        '
         'nombreTxt
         '
-        Me.nombreTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.nombreTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -449,7 +352,7 @@ Partial Class frmBuscarNomina
         '
         'telefonoTxt
         '
-        Me.telefonoTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.telefonoTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -480,9 +383,27 @@ Partial Class frmBuscarNomina
         Me.LabelX10.Text = "Fecha Ingreso:"
         Me.LabelX10.TextAlignment = System.Drawing.StringAlignment.Far
         '
+        'LabelX13
+        '
+        Me.LabelX13.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX13.ForeColor = System.Drawing.Color.DimGray
+        Me.LabelX13.Location = New System.Drawing.Point(106, 141)
+        Me.LabelX13.Name = "LabelX13"
+        Me.LabelX13.Size = New System.Drawing.Size(161, 17)
+        Me.LabelX13.Symbol = ""
+        Me.LabelX13.SymbolColor = System.Drawing.Color.DimGray
+        Me.LabelX13.SymbolSize = 12.0!
+        Me.LabelX13.TabIndex = 25
+        Me.LabelX13.Text = "Muestra solo empleados con"
+        Me.LabelX13.TextAlignment = System.Drawing.StringAlignment.Far
+        '
         'fechaIngTxt
         '
-        Me.fechaIngTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.fechaIngTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -532,7 +453,7 @@ Partial Class frmBuscarNomina
         '
         'centroCostosTxt
         '
-        Me.centroCostosTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.centroCostosTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -550,7 +471,7 @@ Partial Class frmBuscarNomina
         '
         'idDealerTxt
         '
-        Me.idDealerTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.idDealerTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -568,7 +489,7 @@ Partial Class frmBuscarNomina
         '
         'idCargoTxt
         '
-        Me.idCargoTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.idCargoTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -586,7 +507,7 @@ Partial Class frmBuscarNomina
         '
         'duiTxt
         '
-        Me.duiTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.duiTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -619,7 +540,7 @@ Partial Class frmBuscarNomina
         '
         'cargoTxt
         '
-        Me.cargoTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.cargoTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -636,7 +557,7 @@ Partial Class frmBuscarNomina
         '
         'departamentoTxt
         '
-        Me.departamentoTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.departamentoTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -685,7 +606,7 @@ Partial Class frmBuscarNomina
         '
         'idDepartamentoTxt
         '
-        Me.idDepartamentoTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.idDepartamentoTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -719,7 +640,7 @@ Partial Class frmBuscarNomina
         '
         'dealerTxt
         '
-        Me.dealerTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.dealerTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -736,7 +657,7 @@ Partial Class frmBuscarNomina
         '
         'direccionTxt
         '
-        Me.direccionTxt.BackColor = System.Drawing.Color.Gainsboro
+        Me.direccionTxt.BackColor = System.Drawing.Color.White
         '
         '
         '
@@ -766,74 +687,6 @@ Partial Class frmBuscarNomina
         Me.LabelX8.TabIndex = 14
         Me.LabelX8.Text = "Cargo:"
         Me.LabelX8.TextAlignment = System.Drawing.StringAlignment.Far
-        '
-        'LabelX4
-        '
-        Me.LabelX4.BackColor = System.Drawing.Color.Transparent
-        '
-        '
-        '
-        Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX4.Location = New System.Drawing.Point(9, 16)
-        Me.LabelX4.Name = "LabelX4"
-        Me.LabelX4.Size = New System.Drawing.Size(100, 20)
-        Me.LabelX4.SymbolColor = System.Drawing.SystemColors.ActiveBorder
-        Me.LabelX4.SymbolSize = 15.0!
-        Me.LabelX4.TabIndex = 28
-        Me.LabelX4.Text = "# Cód. Empleado:"
-        Me.LabelX4.TextAlignment = System.Drawing.StringAlignment.Far
-        '
-        'codigoEmpleadoTxt
-        '
-        Me.codigoEmpleadoTxt.BackColor = System.Drawing.Color.Gainsboro
-        '
-        '
-        '
-        Me.codigoEmpleadoTxt.Border.Class = "TextBoxBorder"
-        Me.codigoEmpleadoTxt.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.codigoEmpleadoTxt.DisabledBackColor = System.Drawing.SystemColors.Control
-        Me.codigoEmpleadoTxt.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.codigoEmpleadoTxt.ForeColor = System.Drawing.Color.Black
-        Me.codigoEmpleadoTxt.Location = New System.Drawing.Point(112, 16)
-        Me.codigoEmpleadoTxt.Name = "codigoEmpleadoTxt"
-        Me.codigoEmpleadoTxt.ReadOnly = True
-        Me.codigoEmpleadoTxt.Size = New System.Drawing.Size(132, 20)
-        Me.codigoEmpleadoTxt.TabIndex = 27
-        Me.codigoEmpleadoTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.codigoEmpleadoTxt.WatermarkText = "-"
-        '
-        'cancelarBtn
-        '
-        Me.cancelarBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.cancelarBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
-        Me.cancelarBtn.Image = Global.ModuloTelefonos.My.Resources.Resources.atencion_revisar
-        Me.cancelarBtn.ImageFixedSize = New System.Drawing.Size(20, 20)
-        Me.cancelarBtn.Location = New System.Drawing.Point(545, 9)
-        Me.cancelarBtn.Name = "cancelarBtn"
-        Me.cancelarBtn.Size = New System.Drawing.Size(131, 32)
-        Me.cancelarBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.cancelarBtn.Symbol = "58825"
-        Me.cancelarBtn.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material
-        Me.cancelarBtn.SymbolSize = 12.0!
-        Me.cancelarBtn.TabIndex = 26
-        Me.cancelarBtn.Text = "& Cancelar"
-        '
-        'seleccionarBtn
-        '
-        Me.seleccionarBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.seleccionarBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
-        Me.seleccionarBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.seleccionarBtn.Image = Global.ModuloTelefonos.My.Resources.Resources.atencion_revisar
-        Me.seleccionarBtn.ImageFixedSize = New System.Drawing.Size(20, 20)
-        Me.seleccionarBtn.Location = New System.Drawing.Point(270, 9)
-        Me.seleccionarBtn.Name = "seleccionarBtn"
-        Me.seleccionarBtn.Size = New System.Drawing.Size(272, 32)
-        Me.seleccionarBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.seleccionarBtn.Symbol = "59500"
-        Me.seleccionarBtn.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material
-        Me.seleccionarBtn.SymbolSize = 12.0!
-        Me.seleccionarBtn.TabIndex = 25
-        Me.seleccionarBtn.Text = "& Seleccionar"
         '
         'GroupPanel8
         '
@@ -878,6 +731,74 @@ Partial Class frmBuscarNomina
         '
         Me.GroupPanel8.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.GroupPanel8.TabIndex = 49
+        '
+        'LabelX4
+        '
+        Me.LabelX4.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX4.Location = New System.Drawing.Point(9, 16)
+        Me.LabelX4.Name = "LabelX4"
+        Me.LabelX4.Size = New System.Drawing.Size(100, 20)
+        Me.LabelX4.SymbolColor = System.Drawing.SystemColors.ActiveBorder
+        Me.LabelX4.SymbolSize = 15.0!
+        Me.LabelX4.TabIndex = 28
+        Me.LabelX4.Text = "# Cód. Empleado:"
+        Me.LabelX4.TextAlignment = System.Drawing.StringAlignment.Far
+        '
+        'seleccionarBtn
+        '
+        Me.seleccionarBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.seleccionarBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
+        Me.seleccionarBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.seleccionarBtn.Image = Global.ModuloTelefonos.My.Resources.Resources.atencion_revisar
+        Me.seleccionarBtn.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.seleccionarBtn.Location = New System.Drawing.Point(270, 9)
+        Me.seleccionarBtn.Name = "seleccionarBtn"
+        Me.seleccionarBtn.Size = New System.Drawing.Size(272, 32)
+        Me.seleccionarBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.seleccionarBtn.Symbol = "59500"
+        Me.seleccionarBtn.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material
+        Me.seleccionarBtn.SymbolSize = 12.0!
+        Me.seleccionarBtn.TabIndex = 25
+        Me.seleccionarBtn.Text = "& Seleccionar"
+        '
+        'codigoEmpleadoTxt
+        '
+        Me.codigoEmpleadoTxt.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.codigoEmpleadoTxt.Border.Class = "TextBoxBorder"
+        Me.codigoEmpleadoTxt.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.codigoEmpleadoTxt.DisabledBackColor = System.Drawing.SystemColors.Control
+        Me.codigoEmpleadoTxt.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.codigoEmpleadoTxt.ForeColor = System.Drawing.Color.Black
+        Me.codigoEmpleadoTxt.Location = New System.Drawing.Point(112, 16)
+        Me.codigoEmpleadoTxt.Name = "codigoEmpleadoTxt"
+        Me.codigoEmpleadoTxt.ReadOnly = True
+        Me.codigoEmpleadoTxt.Size = New System.Drawing.Size(132, 20)
+        Me.codigoEmpleadoTxt.TabIndex = 27
+        Me.codigoEmpleadoTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.codigoEmpleadoTxt.WatermarkText = "-"
+        '
+        'cancelarBtn
+        '
+        Me.cancelarBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.cancelarBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
+        Me.cancelarBtn.Image = Global.ModuloTelefonos.My.Resources.Resources.atencion_revisar
+        Me.cancelarBtn.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.cancelarBtn.Location = New System.Drawing.Point(545, 9)
+        Me.cancelarBtn.Name = "cancelarBtn"
+        Me.cancelarBtn.Size = New System.Drawing.Size(131, 32)
+        Me.cancelarBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.cancelarBtn.Symbol = "58825"
+        Me.cancelarBtn.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material
+        Me.cancelarBtn.SymbolSize = 12.0!
+        Me.cancelarBtn.TabIndex = 26
+        Me.cancelarBtn.Text = "& Cancelar"
         '
         'GroupPanel2
         '
@@ -924,6 +845,86 @@ Partial Class frmBuscarNomina
         Me.GroupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.GroupPanel2.TabIndex = 50
         '
+        'LabelX1
+        '
+        Me.LabelX1.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX1.Location = New System.Drawing.Point(18, 6)
+        Me.LabelX1.Name = "LabelX1"
+        Me.LabelX1.Size = New System.Drawing.Size(100, 20)
+        Me.LabelX1.SymbolColor = System.Drawing.SystemColors.ActiveBorder
+        Me.LabelX1.SymbolSize = 15.0!
+        Me.LabelX1.TabIndex = 3
+        Me.LabelX1.Text = "Buscar como:"
+        Me.LabelX1.TextAlignment = System.Drawing.StringAlignment.Far
+        '
+        'buscarBtn
+        '
+        Me.buscarBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.buscarBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb
+        Me.buscarBtn.Image = Global.ModuloTelefonos.My.Resources.Resources.atencion_revisar
+        Me.buscarBtn.ImageFixedSize = New System.Drawing.Size(20, 20)
+        Me.buscarBtn.Location = New System.Drawing.Point(584, 6)
+        Me.buscarBtn.Name = "buscarBtn"
+        Me.buscarBtn.Size = New System.Drawing.Size(92, 20)
+        Me.buscarBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.buscarBtn.Symbol = "59574"
+        Me.buscarBtn.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material
+        Me.buscarBtn.SymbolSize = 12.0!
+        Me.buscarBtn.TabIndex = 27
+        Me.buscarBtn.Text = "&Buscar"
+        '
+        'busquedaTxt
+        '
+        Me.busquedaTxt.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.busquedaTxt.Border.Class = "TextBoxBorder"
+        Me.busquedaTxt.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.busquedaTxt.DisabledBackColor = System.Drawing.SystemColors.Control
+        Me.busquedaTxt.ForeColor = System.Drawing.Color.Black
+        Me.busquedaTxt.Location = New System.Drawing.Point(121, 6)
+        Me.busquedaTxt.Name = "busquedaTxt"
+        Me.busquedaTxt.Size = New System.Drawing.Size(263, 20)
+        Me.busquedaTxt.TabIndex = 2
+        Me.busquedaTxt.WatermarkText = "Escriba aquí..."
+        '
+        'LabelX2
+        '
+        Me.LabelX2.BackColor = System.Drawing.Color.Transparent
+        '
+        '
+        '
+        Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX2.Location = New System.Drawing.Point(390, 6)
+        Me.LabelX2.Name = "LabelX2"
+        Me.LabelX2.Size = New System.Drawing.Size(52, 20)
+        Me.LabelX2.SymbolColor = System.Drawing.SystemColors.ActiveBorder
+        Me.LabelX2.SymbolSize = 15.0!
+        Me.LabelX2.TabIndex = 28
+        Me.LabelX2.Text = "Filtrar por:"
+        Me.LabelX2.TextAlignment = System.Drawing.StringAlignment.Far
+        '
+        'filtroCbx
+        '
+        Me.filtroCbx.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.filtroCbx.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.filtroCbx.DisplayMember = "Text"
+        Me.filtroCbx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.filtroCbx.ForeColor = System.Drawing.Color.Black
+        Me.filtroCbx.FormattingEnabled = True
+        Me.filtroCbx.ItemHeight = 14
+        Me.filtroCbx.Location = New System.Drawing.Point(445, 6)
+        Me.filtroCbx.Name = "filtroCbx"
+        Me.filtroCbx.Size = New System.Drawing.Size(133, 20)
+        Me.filtroCbx.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.filtroCbx.TabIndex = 12
+        Me.filtroCbx.WatermarkText = "-- Seleccionar --"
+        '
         'frmBuscarNomina
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -931,6 +932,7 @@ Partial Class frmBuscarNomina
         Me.ClientSize = New System.Drawing.Size(700, 520)
         Me.Controls.Add(Me.PanelEx1)
         Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmBuscarNomina"
         Me.Text = "Datos por nomina"
         Me.PanelEx1.ResumeLayout(False)

@@ -35,27 +35,6 @@ Partial Public Class xRptFicha
         Me.XrTableCell60 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTableRow27 = New DevExpress.XtraReports.UI.XRTableRow()
         Me.XrTableCell61 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.telefonoXrTable2 = New DevExpress.XtraReports.UI.XRTable()
-        Me.XrTableRow20 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell46 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableRow21 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell47 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableRow22 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell48 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell49 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell50 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableRow23 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell51 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell52 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell53 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableRow24 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell54 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell55 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell56 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableRow25 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell57 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell58 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell59 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTable1 = New DevExpress.XtraReports.UI.XRTable()
         Me.XrTableRow14 = New DevExpress.XtraReports.UI.XRTableRow()
         Me.XrTableCell32 = New DevExpress.XtraReports.UI.XRTableCell()
@@ -125,27 +104,6 @@ Partial Public Class xRptFicha
         Me.XrTableCell10 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
         Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
-        Me.equipoXrTable2 = New DevExpress.XtraReports.UI.XRTable()
-        Me.XrTableRow28 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell62 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableRow29 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell63 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableRow30 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell64 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell65 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell66 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableRow31 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell67 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell68 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell69 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableRow34 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell76 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell77 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell78 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableRow32 = New DevExpress.XtraReports.UI.XRTableRow()
-        Me.XrTableCell70 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell71 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell72 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrPageBreak1 = New DevExpress.XtraReports.UI.XRPageBreak()
         Me.XrRichText1 = New DevExpress.XtraReports.UI.XRRichText()
         Me.XrLabel4 = New DevExpress.XtraReports.UI.XRLabel()
@@ -162,14 +120,68 @@ Partial Public Class xRptFicha
         Me.XrPageInfo1 = New DevExpress.XtraReports.UI.XRPageInfo()
         Me.XrLabel16 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrPageInfo3 = New DevExpress.XtraReports.UI.XRPageInfo()
+        Me.XrTableCell59 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell58 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell57 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow25 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell56 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell55 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell54 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow24 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell53 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell52 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell51 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow23 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell50 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell49 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell48 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow22 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell47 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow21 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell46 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow20 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.telefonoXrTable2 = New DevExpress.XtraReports.UI.XRTable()
+        Me.XrTableCell62 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow28 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.equipoXrTable2 = New DevExpress.XtraReports.UI.XRTable()
+        Me.XrTableCell63 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow29 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell72 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell71 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell70 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow32 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell78 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell77 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell76 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow34 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell69 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell68 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell67 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow31 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell66 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell65 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell64 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow30 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableRow33 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell73 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell74 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell75 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow35 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell79 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell80 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell81 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableRow36 = New DevExpress.XtraReports.UI.XRTableRow()
+        Me.XrTableCell82 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell83 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell84 = New DevExpress.XtraReports.UI.XRTableCell()
         CType(Me.acuerdoXrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.telefonoXrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lineaXrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.movimientosXrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.equipoXrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrRichText1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DtsInventarioTelefonos1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.telefonoXrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.equipoXrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         '
         'TopMargin
@@ -315,176 +327,6 @@ Partial Public Class xRptFicha
         Me.XrTableCell61.Text = resources.GetString("XrTableCell61.Text")
         Me.XrTableCell61.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify
         Me.XrTableCell61.Weight = 7.7812489318847655R
-        '
-        'telefonoXrTable2
-        '
-        Me.telefonoXrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0.458374!, 267.9066!)
-        Me.telefonoXrTable2.Name = "telefonoXrTable2"
-        Me.telefonoXrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow20, Me.XrTableRow21, Me.XrTableRow22, Me.XrTableRow23, Me.XrTableRow24, Me.XrTableRow25})
-        Me.telefonoXrTable2.SizeF = New System.Drawing.SizeF(738.5416!, 148.5417!)
-        '
-        'XrTableRow20
-        '
-        Me.XrTableRow20.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell46})
-        Me.XrTableRow20.Name = "XrTableRow20"
-        Me.XrTableRow20.Weight = 1.0R
-        '
-        'XrTableCell46
-        '
-        Me.XrTableCell46.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-        Me.XrTableCell46.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point, New DevExpress.Drawing.DXFontAdditionalProperty() {New DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", CType(0, Byte))})
-        Me.XrTableCell46.Multiline = True
-        Me.XrTableCell46.Name = "XrTableCell46"
-        Me.XrTableCell46.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell46.StylePriority.UseBorders = False
-        Me.XrTableCell46.StylePriority.UseFont = False
-        Me.XrTableCell46.StylePriority.UseTextAlignment = False
-        Me.XrTableCell46.Text = "Datos del teléfono"
-        Me.XrTableCell46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
-        Me.XrTableCell46.Weight = 7.7812489318847655R
-        '
-        'XrTableRow21
-        '
-        Me.XrTableRow21.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell47})
-        Me.XrTableRow21.Name = "XrTableRow21"
-        Me.XrTableRow21.Weight = 0.51298684996873267R
-        '
-        'XrTableCell47
-        '
-        Me.XrTableCell47.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrTableCell47.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point, New DevExpress.Drawing.DXFontAdditionalProperty() {New DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", CType(0, Byte))})
-        Me.XrTableCell47.Multiline = True
-        Me.XrTableCell47.Name = "XrTableCell47"
-        Me.XrTableCell47.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell47.StylePriority.UseBorders = False
-        Me.XrTableCell47.StylePriority.UseFont = False
-        Me.XrTableCell47.StylePriority.UseTextAlignment = False
-        Me.XrTableCell47.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
-        Me.XrTableCell47.Weight = 7.7812489318847655R
-        '
-        'XrTableRow22
-        '
-        Me.XrTableRow22.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell48, Me.XrTableCell49, Me.XrTableCell50})
-        Me.XrTableRow22.Name = "XrTableRow22"
-        Me.XrTableRow22.Weight = 0.77922065579629R
-        '
-        'XrTableCell48
-        '
-        Me.XrTableCell48.Multiline = True
-        Me.XrTableCell48.Name = "XrTableCell48"
-        Me.XrTableCell48.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell48.Text = " "
-        Me.XrTableCell48.Weight = 1.4058680008936335R
-        '
-        'XrTableCell49
-        '
-        Me.XrTableCell49.Multiline = True
-        Me.XrTableCell49.Name = "XrTableCell49"
-        Me.XrTableCell49.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell49.Text = "IMEI"
-        Me.XrTableCell49.Weight = 2.2399648238133976R
-        '
-        'XrTableCell50
-        '
-        Me.XrTableCell50.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[imei]")})
-        Me.XrTableCell50.Multiline = True
-        Me.XrTableCell50.Name = "XrTableCell50"
-        Me.XrTableCell50.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell50.Text = "XrTableCell2"
-        Me.XrTableCell50.Weight = 4.1354161071777344R
-        '
-        'XrTableRow23
-        '
-        Me.XrTableRow23.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell51, Me.XrTableCell52, Me.XrTableCell53})
-        Me.XrTableRow23.Name = "XrTableRow23"
-        Me.XrTableRow23.Weight = 0.77922062973118478R
-        '
-        'XrTableCell51
-        '
-        Me.XrTableCell51.Multiline = True
-        Me.XrTableCell51.Name = "XrTableCell51"
-        Me.XrTableCell51.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell51.Text = " "
-        Me.XrTableCell51.Weight = 1.4058680008936335R
-        '
-        'XrTableCell52
-        '
-        Me.XrTableCell52.Multiline = True
-        Me.XrTableCell52.Name = "XrTableCell52"
-        Me.XrTableCell52.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell52.Text = "Marca"
-        Me.XrTableCell52.Weight = 2.2399648238133976R
-        '
-        'XrTableCell53
-        '
-        Me.XrTableCell53.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[marca]")})
-        Me.XrTableCell53.Multiline = True
-        Me.XrTableCell53.Name = "XrTableCell53"
-        Me.XrTableCell53.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell53.Text = "XrTableCell8"
-        Me.XrTableCell53.Weight = 4.1354161071777344R
-        '
-        'XrTableRow24
-        '
-        Me.XrTableRow24.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell54, Me.XrTableCell55, Me.XrTableCell56})
-        Me.XrTableRow24.Name = "XrTableRow24"
-        Me.XrTableRow24.Weight = 0.77922062973118489R
-        '
-        'XrTableCell54
-        '
-        Me.XrTableCell54.Multiline = True
-        Me.XrTableCell54.Name = "XrTableCell54"
-        Me.XrTableCell54.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell54.Text = " "
-        Me.XrTableCell54.Weight = 1.4058680008936335R
-        '
-        'XrTableCell55
-        '
-        Me.XrTableCell55.Multiline = True
-        Me.XrTableCell55.Name = "XrTableCell55"
-        Me.XrTableCell55.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell55.Text = "Modelo"
-        Me.XrTableCell55.Weight = 2.2399648238133976R
-        '
-        'XrTableCell56
-        '
-        Me.XrTableCell56.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[modelo]")})
-        Me.XrTableCell56.Multiline = True
-        Me.XrTableCell56.Name = "XrTableCell56"
-        Me.XrTableCell56.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell56.Text = "XrTableCell6"
-        Me.XrTableCell56.Weight = 4.1354161071777344R
-        '
-        'XrTableRow25
-        '
-        Me.XrTableRow25.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell57, Me.XrTableCell58, Me.XrTableCell59})
-        Me.XrTableRow25.Name = "XrTableRow25"
-        Me.XrTableRow25.Weight = 0.77922086753046127R
-        '
-        'XrTableCell57
-        '
-        Me.XrTableCell57.Multiline = True
-        Me.XrTableCell57.Name = "XrTableCell57"
-        Me.XrTableCell57.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell57.Text = " "
-        Me.XrTableCell57.Weight = 1.4058680008936335R
-        '
-        'XrTableCell58
-        '
-        Me.XrTableCell58.Multiline = True
-        Me.XrTableCell58.Name = "XrTableCell58"
-        Me.XrTableCell58.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell58.Text = "Estado"
-        Me.XrTableCell58.Weight = 2.2399648238133976R
-        '
-        'XrTableCell59
-        '
-        Me.XrTableCell59.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[estado]")})
-        Me.XrTableCell59.Multiline = True
-        Me.XrTableCell59.Name = "XrTableCell59"
-        Me.XrTableCell59.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell59.Text = "XrTableCell4"
-        Me.XrTableCell59.Weight = 4.1354161071777344R
         '
         'XrTable1
         '
@@ -658,10 +500,10 @@ Partial Public Class xRptFicha
         '
         'lineaXrTable1
         '
-        Me.lineaXrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0.458374!, 267.9066!)
+        Me.lineaXrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0.458374!, 235.5834!)
         Me.lineaXrTable1.Name = "lineaXrTable1"
-        Me.lineaXrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow8, Me.XrTableRow9, Me.XrTableRow10, Me.XrTableRow11, Me.XrTableRow12, Me.XrTableRow13})
-        Me.lineaXrTable1.SizeF = New System.Drawing.SizeF(738.5416!, 148.5417!)
+        Me.lineaXrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow8, Me.XrTableRow9, Me.XrTableRow10, Me.XrTableRow11, Me.XrTableRow12, Me.XrTableRow13, Me.XrTableRow35})
+        Me.lineaXrTable1.SizeF = New System.Drawing.SizeF(738.5416!, 173.5417!)
         '
         'XrTableRow8
         '
@@ -828,10 +670,10 @@ Partial Public Class xRptFicha
         '
         'movimientosXrTable1
         '
-        Me.movimientosXrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0.458374!, 0!)
+        Me.movimientosXrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0.4583756!, 0!)
         Me.movimientosXrTable1.Name = "movimientosXrTable1"
         Me.movimientosXrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow6, Me.XrTableRow7, Me.XrTableRow1, Me.XrTableRow4, Me.XrTableRow3, Me.XrTableRow2, Me.XrTableRow5})
-        Me.movimientosXrTable1.SizeF = New System.Drawing.SizeF(738.5416!, 253.5417!)
+        Me.movimientosXrTable1.SizeF = New System.Drawing.SizeF(738.5416!, 218.125!)
         '
         'XrTableRow6
         '
@@ -1035,178 +877,9 @@ Partial Public Class xRptFicha
         '
         'Detail
         '
-        Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.equipoXrTable2, Me.XrPageBreak1, Me.XrRichText1, Me.XrLabel4, Me.XrLabel3, Me.XrLine3, Me.XrLine2, Me.XrLine1, Me.XrLabel7, Me.movimientosXrTable1, Me.XrLabel5, Me.acuerdoXrTable2, Me.telefonoXrTable2, Me.XrTable1, Me.lineaXrTable1, Me.XrLabel6})
+        Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrPageBreak1, Me.XrRichText1, Me.XrLabel4, Me.XrLabel3, Me.XrLine3, Me.XrLine2, Me.XrLine1, Me.XrLabel7, Me.movimientosXrTable1, Me.XrLabel5, Me.acuerdoXrTable2, Me.telefonoXrTable2, Me.XrTable1, Me.lineaXrTable1, Me.XrLabel6, Me.equipoXrTable2})
         Me.Detail.HeightF = 1758.93!
         Me.Detail.Name = "Detail"
-        '
-        'equipoXrTable2
-        '
-        Me.equipoXrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0.458374!, 267.9066!)
-        Me.equipoXrTable2.Name = "equipoXrTable2"
-        Me.equipoXrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow28, Me.XrTableRow29, Me.XrTableRow30, Me.XrTableRow31, Me.XrTableRow34, Me.XrTableRow32})
-        Me.equipoXrTable2.SizeF = New System.Drawing.SizeF(738.5416!, 148.5417!)
-        '
-        'XrTableRow28
-        '
-        Me.XrTableRow28.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell62})
-        Me.XrTableRow28.Name = "XrTableRow28"
-        Me.XrTableRow28.Weight = 1.0R
-        '
-        'XrTableCell62
-        '
-        Me.XrTableCell62.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-        Me.XrTableCell62.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point, New DevExpress.Drawing.DXFontAdditionalProperty() {New DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", CType(0, Byte))})
-        Me.XrTableCell62.Multiline = True
-        Me.XrTableCell62.Name = "XrTableCell62"
-        Me.XrTableCell62.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell62.StylePriority.UseBorders = False
-        Me.XrTableCell62.StylePriority.UseFont = False
-        Me.XrTableCell62.StylePriority.UseTextAlignment = False
-        Me.XrTableCell62.Text = "Datos del Equipo"
-        Me.XrTableCell62.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
-        Me.XrTableCell62.Weight = 7.7812489318847655R
-        '
-        'XrTableRow29
-        '
-        Me.XrTableRow29.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell63})
-        Me.XrTableRow29.Name = "XrTableRow29"
-        Me.XrTableRow29.Weight = 0.51298684996873267R
-        '
-        'XrTableCell63
-        '
-        Me.XrTableCell63.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrTableCell63.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point, New DevExpress.Drawing.DXFontAdditionalProperty() {New DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", CType(0, Byte))})
-        Me.XrTableCell63.Multiline = True
-        Me.XrTableCell63.Name = "XrTableCell63"
-        Me.XrTableCell63.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell63.StylePriority.UseBorders = False
-        Me.XrTableCell63.StylePriority.UseFont = False
-        Me.XrTableCell63.StylePriority.UseTextAlignment = False
-        Me.XrTableCell63.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
-        Me.XrTableCell63.Weight = 7.7812489318847655R
-        '
-        'XrTableRow30
-        '
-        Me.XrTableRow30.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell64, Me.XrTableCell65, Me.XrTableCell66})
-        Me.XrTableRow30.Name = "XrTableRow30"
-        Me.XrTableRow30.Weight = 0.77922065579629R
-        '
-        'XrTableCell64
-        '
-        Me.XrTableCell64.Multiline = True
-        Me.XrTableCell64.Name = "XrTableCell64"
-        Me.XrTableCell64.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell64.Text = " "
-        Me.XrTableCell64.Weight = 1.4058680008936335R
-        '
-        'XrTableCell65
-        '
-        Me.XrTableCell65.Multiline = True
-        Me.XrTableCell65.Name = "XrTableCell65"
-        Me.XrTableCell65.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell65.Text = "Tipo"
-        Me.XrTableCell65.Weight = 2.2399648238133976R
-        '
-        'XrTableCell66
-        '
-        Me.XrTableCell66.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[tipo_equipo]")})
-        Me.XrTableCell66.Multiline = True
-        Me.XrTableCell66.Name = "XrTableCell66"
-        Me.XrTableCell66.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell66.Text = "XrTableCell2"
-        Me.XrTableCell66.Weight = 4.1354161071777344R
-        '
-        'XrTableRow31
-        '
-        Me.XrTableRow31.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell67, Me.XrTableCell68, Me.XrTableCell69})
-        Me.XrTableRow31.Name = "XrTableRow31"
-        Me.XrTableRow31.Weight = 0.77922062973118478R
-        '
-        'XrTableCell67
-        '
-        Me.XrTableCell67.Multiline = True
-        Me.XrTableCell67.Name = "XrTableCell67"
-        Me.XrTableCell67.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell67.Text = " "
-        Me.XrTableCell67.Weight = 1.4058680008936335R
-        '
-        'XrTableCell68
-        '
-        Me.XrTableCell68.Multiline = True
-        Me.XrTableCell68.Name = "XrTableCell68"
-        Me.XrTableCell68.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell68.Text = "Marca"
-        Me.XrTableCell68.Weight = 2.2399648238133976R
-        '
-        'XrTableCell69
-        '
-        Me.XrTableCell69.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[marca_equipo]")})
-        Me.XrTableCell69.Multiline = True
-        Me.XrTableCell69.Name = "XrTableCell69"
-        Me.XrTableCell69.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell69.Text = "XrTableCell8"
-        Me.XrTableCell69.Weight = 4.1354161071777344R
-        '
-        'XrTableRow34
-        '
-        Me.XrTableRow34.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell76, Me.XrTableCell77, Me.XrTableCell78})
-        Me.XrTableRow34.Name = "XrTableRow34"
-        Me.XrTableRow34.Weight = 0.77922062973118489R
-        '
-        'XrTableCell76
-        '
-        Me.XrTableCell76.Multiline = True
-        Me.XrTableCell76.Name = "XrTableCell76"
-        Me.XrTableCell76.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell76.Weight = 1.4058680008936335R
-        '
-        'XrTableCell77
-        '
-        Me.XrTableCell77.Multiline = True
-        Me.XrTableCell77.Name = "XrTableCell77"
-        Me.XrTableCell77.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell77.Text = "Modelo"
-        Me.XrTableCell77.Weight = 2.2399648238133976R
-        '
-        'XrTableCell78
-        '
-        Me.XrTableCell78.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[modelo_equipo]")})
-        Me.XrTableCell78.Multiline = True
-        Me.XrTableCell78.Name = "XrTableCell78"
-        Me.XrTableCell78.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell78.Text = "XrTableCell78"
-        Me.XrTableCell78.Weight = 4.1354161071777344R
-        '
-        'XrTableRow32
-        '
-        Me.XrTableRow32.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell70, Me.XrTableCell71, Me.XrTableCell72})
-        Me.XrTableRow32.Name = "XrTableRow32"
-        Me.XrTableRow32.Weight = 0.77922062973118489R
-        '
-        'XrTableCell70
-        '
-        Me.XrTableCell70.Multiline = True
-        Me.XrTableCell70.Name = "XrTableCell70"
-        Me.XrTableCell70.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell70.Text = " "
-        Me.XrTableCell70.Weight = 1.4058680008936335R
-        '
-        'XrTableCell71
-        '
-        Me.XrTableCell71.Multiline = True
-        Me.XrTableCell71.Name = "XrTableCell71"
-        Me.XrTableCell71.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell71.Text = "Serie"
-        Me.XrTableCell71.Weight = 2.2399648238133976R
-        '
-        'XrTableCell72
-        '
-        Me.XrTableCell72.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[serie_equipo]")})
-        Me.XrTableCell72.Multiline = True
-        Me.XrTableCell72.Name = "XrTableCell72"
-        Me.XrTableCell72.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrTableCell72.Text = "XrTableCell6"
-        Me.XrTableCell72.Weight = 4.1354161071777344R
         '
         'XrPageBreak1
         '
@@ -1364,6 +1037,429 @@ Partial Public Class xRptFicha
         Me.XrPageInfo3.StylePriority.UseTextAlignment = False
         Me.XrPageInfo3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
         '
+        'XrTableCell59
+        '
+        Me.XrTableCell59.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[estado]")})
+        Me.XrTableCell59.Multiline = True
+        Me.XrTableCell59.Name = "XrTableCell59"
+        Me.XrTableCell59.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell59.Text = "XrTableCell4"
+        Me.XrTableCell59.Weight = 4.1354161071777344R
+        '
+        'XrTableCell58
+        '
+        Me.XrTableCell58.Multiline = True
+        Me.XrTableCell58.Name = "XrTableCell58"
+        Me.XrTableCell58.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell58.Text = "Estado"
+        Me.XrTableCell58.Weight = 2.2399648238133976R
+        '
+        'XrTableCell57
+        '
+        Me.XrTableCell57.Multiline = True
+        Me.XrTableCell57.Name = "XrTableCell57"
+        Me.XrTableCell57.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell57.Text = " "
+        Me.XrTableCell57.Weight = 1.4058680008936335R
+        '
+        'XrTableRow25
+        '
+        Me.XrTableRow25.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell57, Me.XrTableCell58, Me.XrTableCell59})
+        Me.XrTableRow25.Name = "XrTableRow25"
+        Me.XrTableRow25.Weight = 0.77922086753046127R
+        '
+        'XrTableCell56
+        '
+        Me.XrTableCell56.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[modelo]")})
+        Me.XrTableCell56.Multiline = True
+        Me.XrTableCell56.Name = "XrTableCell56"
+        Me.XrTableCell56.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell56.Text = "XrTableCell6"
+        Me.XrTableCell56.Weight = 4.1354161071777344R
+        '
+        'XrTableCell55
+        '
+        Me.XrTableCell55.Multiline = True
+        Me.XrTableCell55.Name = "XrTableCell55"
+        Me.XrTableCell55.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell55.Text = "Modelo"
+        Me.XrTableCell55.Weight = 2.2399648238133976R
+        '
+        'XrTableCell54
+        '
+        Me.XrTableCell54.Multiline = True
+        Me.XrTableCell54.Name = "XrTableCell54"
+        Me.XrTableCell54.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell54.Text = " "
+        Me.XrTableCell54.Weight = 1.4058680008936335R
+        '
+        'XrTableRow24
+        '
+        Me.XrTableRow24.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell54, Me.XrTableCell55, Me.XrTableCell56})
+        Me.XrTableRow24.Name = "XrTableRow24"
+        Me.XrTableRow24.Weight = 0.77922062973118489R
+        '
+        'XrTableCell53
+        '
+        Me.XrTableCell53.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[marca]")})
+        Me.XrTableCell53.Multiline = True
+        Me.XrTableCell53.Name = "XrTableCell53"
+        Me.XrTableCell53.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell53.Text = "XrTableCell8"
+        Me.XrTableCell53.Weight = 4.1354161071777344R
+        '
+        'XrTableCell52
+        '
+        Me.XrTableCell52.Multiline = True
+        Me.XrTableCell52.Name = "XrTableCell52"
+        Me.XrTableCell52.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell52.Text = "Marca"
+        Me.XrTableCell52.Weight = 2.2399648238133976R
+        '
+        'XrTableCell51
+        '
+        Me.XrTableCell51.Multiline = True
+        Me.XrTableCell51.Name = "XrTableCell51"
+        Me.XrTableCell51.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell51.Text = " "
+        Me.XrTableCell51.Weight = 1.4058680008936335R
+        '
+        'XrTableRow23
+        '
+        Me.XrTableRow23.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell51, Me.XrTableCell52, Me.XrTableCell53})
+        Me.XrTableRow23.Name = "XrTableRow23"
+        Me.XrTableRow23.Weight = 0.77922062973118478R
+        '
+        'XrTableCell50
+        '
+        Me.XrTableCell50.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[imei]")})
+        Me.XrTableCell50.Multiline = True
+        Me.XrTableCell50.Name = "XrTableCell50"
+        Me.XrTableCell50.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell50.Text = "XrTableCell2"
+        Me.XrTableCell50.Weight = 4.1354161071777344R
+        '
+        'XrTableCell49
+        '
+        Me.XrTableCell49.Multiline = True
+        Me.XrTableCell49.Name = "XrTableCell49"
+        Me.XrTableCell49.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell49.Text = "IMEI"
+        Me.XrTableCell49.Weight = 2.2399648238133976R
+        '
+        'XrTableCell48
+        '
+        Me.XrTableCell48.Multiline = True
+        Me.XrTableCell48.Name = "XrTableCell48"
+        Me.XrTableCell48.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell48.Text = " "
+        Me.XrTableCell48.Weight = 1.4058680008936335R
+        '
+        'XrTableRow22
+        '
+        Me.XrTableRow22.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell48, Me.XrTableCell49, Me.XrTableCell50})
+        Me.XrTableRow22.Name = "XrTableRow22"
+        Me.XrTableRow22.Weight = 0.77922065579629R
+        '
+        'XrTableCell47
+        '
+        Me.XrTableCell47.Borders = DevExpress.XtraPrinting.BorderSide.None
+        Me.XrTableCell47.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point, New DevExpress.Drawing.DXFontAdditionalProperty() {New DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", CType(0, Byte))})
+        Me.XrTableCell47.Multiline = True
+        Me.XrTableCell47.Name = "XrTableCell47"
+        Me.XrTableCell47.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell47.StylePriority.UseBorders = False
+        Me.XrTableCell47.StylePriority.UseFont = False
+        Me.XrTableCell47.StylePriority.UseTextAlignment = False
+        Me.XrTableCell47.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
+        Me.XrTableCell47.Weight = 7.7812489318847655R
+        '
+        'XrTableRow21
+        '
+        Me.XrTableRow21.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell47})
+        Me.XrTableRow21.Name = "XrTableRow21"
+        Me.XrTableRow21.Weight = 0.51298684996873267R
+        '
+        'XrTableCell46
+        '
+        Me.XrTableCell46.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
+        Me.XrTableCell46.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point, New DevExpress.Drawing.DXFontAdditionalProperty() {New DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", CType(0, Byte))})
+        Me.XrTableCell46.Multiline = True
+        Me.XrTableCell46.Name = "XrTableCell46"
+        Me.XrTableCell46.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell46.StylePriority.UseBorders = False
+        Me.XrTableCell46.StylePriority.UseFont = False
+        Me.XrTableCell46.StylePriority.UseTextAlignment = False
+        Me.XrTableCell46.Text = "Datos del teléfono"
+        Me.XrTableCell46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
+        Me.XrTableCell46.Weight = 7.7812489318847655R
+        '
+        'XrTableRow20
+        '
+        Me.XrTableRow20.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell46})
+        Me.XrTableRow20.Name = "XrTableRow20"
+        Me.XrTableRow20.Weight = 1.0R
+        '
+        'telefonoXrTable2
+        '
+        Me.telefonoXrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0.458374!, 235.5834!)
+        Me.telefonoXrTable2.Name = "telefonoXrTable2"
+        Me.telefonoXrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow20, Me.XrTableRow21, Me.XrTableRow22, Me.XrTableRow23, Me.XrTableRow24, Me.XrTableRow25, Me.XrTableRow33})
+        Me.telefonoXrTable2.SizeF = New System.Drawing.SizeF(738.5416!, 173.5417!)
+        '
+        'XrTableCell62
+        '
+        Me.XrTableCell62.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
+        Me.XrTableCell62.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point, New DevExpress.Drawing.DXFontAdditionalProperty() {New DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", CType(0, Byte))})
+        Me.XrTableCell62.Multiline = True
+        Me.XrTableCell62.Name = "XrTableCell62"
+        Me.XrTableCell62.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell62.StylePriority.UseBorders = False
+        Me.XrTableCell62.StylePriority.UseFont = False
+        Me.XrTableCell62.StylePriority.UseTextAlignment = False
+        Me.XrTableCell62.Text = "Datos del Equipo"
+        Me.XrTableCell62.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
+        Me.XrTableCell62.Weight = 7.7812489318847655R
+        '
+        'XrTableRow28
+        '
+        Me.XrTableRow28.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell62})
+        Me.XrTableRow28.Name = "XrTableRow28"
+        Me.XrTableRow28.Weight = 1.0R
+        '
+        'equipoXrTable2
+        '
+        Me.equipoXrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0.458374!, 235.5834!)
+        Me.equipoXrTable2.Name = "equipoXrTable2"
+        Me.equipoXrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow28, Me.XrTableRow29, Me.XrTableRow30, Me.XrTableRow31, Me.XrTableRow34, Me.XrTableRow32, Me.XrTableRow36})
+        Me.equipoXrTable2.SizeF = New System.Drawing.SizeF(738.5416!, 173.5417!)
+        '
+        'XrTableCell63
+        '
+        Me.XrTableCell63.Borders = DevExpress.XtraPrinting.BorderSide.None
+        Me.XrTableCell63.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point, New DevExpress.Drawing.DXFontAdditionalProperty() {New DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", CType(0, Byte))})
+        Me.XrTableCell63.Multiline = True
+        Me.XrTableCell63.Name = "XrTableCell63"
+        Me.XrTableCell63.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell63.StylePriority.UseBorders = False
+        Me.XrTableCell63.StylePriority.UseFont = False
+        Me.XrTableCell63.StylePriority.UseTextAlignment = False
+        Me.XrTableCell63.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
+        Me.XrTableCell63.Weight = 7.7812489318847655R
+        '
+        'XrTableRow29
+        '
+        Me.XrTableRow29.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell63})
+        Me.XrTableRow29.Name = "XrTableRow29"
+        Me.XrTableRow29.Weight = 0.51298684996873267R
+        '
+        'XrTableCell72
+        '
+        Me.XrTableCell72.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[serie_equipo]")})
+        Me.XrTableCell72.Multiline = True
+        Me.XrTableCell72.Name = "XrTableCell72"
+        Me.XrTableCell72.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell72.Text = "XrTableCell6"
+        Me.XrTableCell72.Weight = 4.1354161071777344R
+        '
+        'XrTableCell71
+        '
+        Me.XrTableCell71.Multiline = True
+        Me.XrTableCell71.Name = "XrTableCell71"
+        Me.XrTableCell71.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell71.Text = "Serie"
+        Me.XrTableCell71.Weight = 2.2399648238133976R
+        '
+        'XrTableCell70
+        '
+        Me.XrTableCell70.Multiline = True
+        Me.XrTableCell70.Name = "XrTableCell70"
+        Me.XrTableCell70.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell70.Text = " "
+        Me.XrTableCell70.Weight = 1.4058680008936335R
+        '
+        'XrTableRow32
+        '
+        Me.XrTableRow32.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell70, Me.XrTableCell71, Me.XrTableCell72})
+        Me.XrTableRow32.Name = "XrTableRow32"
+        Me.XrTableRow32.Weight = 0.77922062973118489R
+        '
+        'XrTableCell78
+        '
+        Me.XrTableCell78.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[modelo_equipo]")})
+        Me.XrTableCell78.Multiline = True
+        Me.XrTableCell78.Name = "XrTableCell78"
+        Me.XrTableCell78.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell78.Text = "XrTableCell78"
+        Me.XrTableCell78.Weight = 4.1354161071777344R
+        '
+        'XrTableCell77
+        '
+        Me.XrTableCell77.Multiline = True
+        Me.XrTableCell77.Name = "XrTableCell77"
+        Me.XrTableCell77.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell77.Text = "Modelo"
+        Me.XrTableCell77.Weight = 2.2399648238133976R
+        '
+        'XrTableCell76
+        '
+        Me.XrTableCell76.Multiline = True
+        Me.XrTableCell76.Name = "XrTableCell76"
+        Me.XrTableCell76.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell76.Weight = 1.4058680008936335R
+        '
+        'XrTableRow34
+        '
+        Me.XrTableRow34.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell76, Me.XrTableCell77, Me.XrTableCell78})
+        Me.XrTableRow34.Name = "XrTableRow34"
+        Me.XrTableRow34.Weight = 0.77922062973118489R
+        '
+        'XrTableCell69
+        '
+        Me.XrTableCell69.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[marca_equipo]")})
+        Me.XrTableCell69.Multiline = True
+        Me.XrTableCell69.Name = "XrTableCell69"
+        Me.XrTableCell69.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell69.Text = "XrTableCell8"
+        Me.XrTableCell69.Weight = 4.1354161071777344R
+        '
+        'XrTableCell68
+        '
+        Me.XrTableCell68.Multiline = True
+        Me.XrTableCell68.Name = "XrTableCell68"
+        Me.XrTableCell68.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell68.Text = "Marca"
+        Me.XrTableCell68.Weight = 2.2399648238133976R
+        '
+        'XrTableCell67
+        '
+        Me.XrTableCell67.Multiline = True
+        Me.XrTableCell67.Name = "XrTableCell67"
+        Me.XrTableCell67.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell67.Text = " "
+        Me.XrTableCell67.Weight = 1.4058680008936335R
+        '
+        'XrTableRow31
+        '
+        Me.XrTableRow31.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell67, Me.XrTableCell68, Me.XrTableCell69})
+        Me.XrTableRow31.Name = "XrTableRow31"
+        Me.XrTableRow31.Weight = 0.77922062973118478R
+        '
+        'XrTableCell66
+        '
+        Me.XrTableCell66.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[tipo_equipo]")})
+        Me.XrTableCell66.Multiline = True
+        Me.XrTableCell66.Name = "XrTableCell66"
+        Me.XrTableCell66.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell66.Text = "XrTableCell2"
+        Me.XrTableCell66.Weight = 4.1354161071777344R
+        '
+        'XrTableCell65
+        '
+        Me.XrTableCell65.Multiline = True
+        Me.XrTableCell65.Name = "XrTableCell65"
+        Me.XrTableCell65.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell65.Text = "Tipo"
+        Me.XrTableCell65.Weight = 2.2399648238133976R
+        '
+        'XrTableCell64
+        '
+        Me.XrTableCell64.Multiline = True
+        Me.XrTableCell64.Name = "XrTableCell64"
+        Me.XrTableCell64.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell64.Text = " "
+        Me.XrTableCell64.Weight = 1.4058680008936335R
+        '
+        'XrTableRow30
+        '
+        Me.XrTableRow30.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell64, Me.XrTableCell65, Me.XrTableCell66})
+        Me.XrTableRow30.Name = "XrTableRow30"
+        Me.XrTableRow30.Weight = 0.77922065579629R
+        '
+        'XrTableRow33
+        '
+        Me.XrTableRow33.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell73, Me.XrTableCell74, Me.XrTableCell75})
+        Me.XrTableRow33.Name = "XrTableRow33"
+        Me.XrTableRow33.Weight = 0.77922086753046127R
+        '
+        'XrTableCell73
+        '
+        Me.XrTableCell73.Multiline = True
+        Me.XrTableCell73.Name = "XrTableCell73"
+        Me.XrTableCell73.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell73.Weight = 1.4058680008936335R
+        '
+        'XrTableCell74
+        '
+        Me.XrTableCell74.Multiline = True
+        Me.XrTableCell74.Name = "XrTableCell74"
+        Me.XrTableCell74.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell74.Text = "Número"
+        Me.XrTableCell74.Weight = 2.2399648238133976R
+        '
+        'XrTableCell75
+        '
+        Me.XrTableCell75.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[numero]")})
+        Me.XrTableCell75.Multiline = True
+        Me.XrTableCell75.Name = "XrTableCell75"
+        Me.XrTableCell75.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell75.Text = "XrTableCell75"
+        Me.XrTableCell75.Weight = 4.1354161071777344R
+        '
+        'XrTableRow35
+        '
+        Me.XrTableRow35.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell79, Me.XrTableCell80, Me.XrTableCell81})
+        Me.XrTableRow35.Name = "XrTableRow35"
+        Me.XrTableRow35.Weight = 0.77922086753046127R
+        '
+        'XrTableCell79
+        '
+        Me.XrTableCell79.Multiline = True
+        Me.XrTableCell79.Name = "XrTableCell79"
+        Me.XrTableCell79.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell79.Weight = 1.4058680008936335R
+        '
+        'XrTableCell80
+        '
+        Me.XrTableCell80.Multiline = True
+        Me.XrTableCell80.Name = "XrTableCell80"
+        Me.XrTableCell80.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell80.Weight = 2.2399648238133976R
+        '
+        'XrTableCell81
+        '
+        Me.XrTableCell81.Multiline = True
+        Me.XrTableCell81.Name = "XrTableCell81"
+        Me.XrTableCell81.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell81.Weight = 4.1354161071777344R
+        '
+        'XrTableRow36
+        '
+        Me.XrTableRow36.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.XrTableCell82, Me.XrTableCell83, Me.XrTableCell84})
+        Me.XrTableRow36.Name = "XrTableRow36"
+        Me.XrTableRow36.Weight = 0.77922062973118489R
+        '
+        'XrTableCell82
+        '
+        Me.XrTableCell82.Multiline = True
+        Me.XrTableCell82.Name = "XrTableCell82"
+        Me.XrTableCell82.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell82.Weight = 1.4058680008936335R
+        '
+        'XrTableCell83
+        '
+        Me.XrTableCell83.Multiline = True
+        Me.XrTableCell83.Name = "XrTableCell83"
+        Me.XrTableCell83.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell83.Weight = 2.2399648238133976R
+        '
+        'XrTableCell84
+        '
+        Me.XrTableCell84.Multiline = True
+        Me.XrTableCell84.Name = "XrTableCell84"
+        Me.XrTableCell84.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrTableCell84.Weight = 4.1354161071777344R
+        '
         'xRptFicha
         '
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.TopMargin, Me.BottomMargin, Me.Detail, Me.PageFooter})
@@ -1372,16 +1468,16 @@ Partial Public Class xRptFicha
         Me.DataMember = "Fichas"
         Me.DataSource = Me.DtsInventarioTelefonos1
         Me.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!)
-        Me.Margins = New DevExpress.Drawing.DXMargins(60, 51, 127, 11)
-        Me.Version = "18.2"
+        Me.Margins = New DevExpress.Drawing.DXMargins(60.0!, 51.0!, 127.4381!, 10.8139!)
+        Me.Version = "22.2"
         CType(Me.acuerdoXrTable2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.telefonoXrTable2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.XrTable1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lineaXrTable1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.movimientosXrTable1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.equipoXrTable2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.XrRichText1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DtsInventarioTelefonos1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.telefonoXrTable2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.equipoXrTable2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
     End Sub
@@ -1441,27 +1537,6 @@ Partial Public Class xRptFicha
     Friend WithEvents XrTableCell29 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell30 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell31 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents telefonoXrTable2 As DevExpress.XtraReports.UI.XRTable
-    Friend WithEvents XrTableRow20 As DevExpress.XtraReports.UI.XRTableRow
-    Friend WithEvents XrTableCell46 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableRow21 As DevExpress.XtraReports.UI.XRTableRow
-    Friend WithEvents XrTableCell47 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableRow22 As DevExpress.XtraReports.UI.XRTableRow
-    Friend WithEvents XrTableCell48 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableCell49 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableCell50 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableRow23 As DevExpress.XtraReports.UI.XRTableRow
-    Friend WithEvents XrTableCell51 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableCell52 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableCell53 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableRow24 As DevExpress.XtraReports.UI.XRTableRow
-    Friend WithEvents XrTableCell54 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableCell55 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableCell56 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableRow25 As DevExpress.XtraReports.UI.XRTableRow
-    Friend WithEvents XrTableCell57 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableCell58 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableCell59 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTable1 As DevExpress.XtraReports.UI.XRTable
     Friend WithEvents XrTableRow14 As DevExpress.XtraReports.UI.XRTableRow
     Friend WithEvents XrTableCell32 As DevExpress.XtraReports.UI.XRTableCell
@@ -1520,12 +1595,45 @@ Partial Public Class xRptFicha
     Friend WithEvents XrTableCell67 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell68 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell69 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableRow32 As DevExpress.XtraReports.UI.XRTableRow
-    Friend WithEvents XrTableCell70 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableCell71 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrTableCell72 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableRow34 As DevExpress.XtraReports.UI.XRTableRow
     Friend WithEvents XrTableCell76 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell77 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell78 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableRow32 As DevExpress.XtraReports.UI.XRTableRow
+    Friend WithEvents XrTableCell70 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell71 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell72 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents telefonoXrTable2 As DevExpress.XtraReports.UI.XRTable
+    Friend WithEvents XrTableRow20 As DevExpress.XtraReports.UI.XRTableRow
+    Friend WithEvents XrTableCell46 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableRow21 As DevExpress.XtraReports.UI.XRTableRow
+    Friend WithEvents XrTableCell47 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableRow22 As DevExpress.XtraReports.UI.XRTableRow
+    Friend WithEvents XrTableCell48 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell49 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell50 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableRow23 As DevExpress.XtraReports.UI.XRTableRow
+    Friend WithEvents XrTableCell51 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell52 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell53 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableRow24 As DevExpress.XtraReports.UI.XRTableRow
+    Friend WithEvents XrTableCell54 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell55 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell56 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableRow25 As DevExpress.XtraReports.UI.XRTableRow
+    Friend WithEvents XrTableCell57 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell58 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell59 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableRow33 As DevExpress.XtraReports.UI.XRTableRow
+    Friend WithEvents XrTableCell73 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell74 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell75 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableRow35 As DevExpress.XtraReports.UI.XRTableRow
+    Friend WithEvents XrTableCell79 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell80 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell81 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableRow36 As DevExpress.XtraReports.UI.XRTableRow
+    Friend WithEvents XrTableCell82 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell83 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrTableCell84 As DevExpress.XtraReports.UI.XRTableCell
 End Class

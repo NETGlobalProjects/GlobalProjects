@@ -175,10 +175,6 @@ Public Class frmLineas
         End Try
     End Sub
 
-
-
-
-
     Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
         With frmReposicionesSIM
             .WindowState = FormWindowState.Normal
@@ -202,7 +198,6 @@ Public Class frmLineas
         Catch ex As Exception
             Me.ButtonX2.Text = "Reposiciones de SIM (Error)"
         End Try
-
     End Sub
 
     Private Sub lecturaButtonX3_Click(sender As Object, e As EventArgs) Handles lecturaButtonX3.Click

@@ -1,5 +1,6 @@
 ﻿Imports DevComponents.DotNetBar.Rendering
 Imports DevComponents.DotNetBar
+Imports System.Text.RegularExpressions
 Public Class frmMovimientos
     Inherits DevComponents.DotNetBar.Office2007Form
     Dim dtsMovimientos As New dtsInventarioTelefonosTableAdapters.movimientos_lineas_telefonosTableAdapter
@@ -18,6 +19,9 @@ Public Class frmMovimientos
     Dim bsLineas As New BindingSource
     Dim bsBuscarTelefonos As New BindingSource
     Public odtsInventarioTelefonos As New dtsInventarioTelefonos
+
+    'TextBoxX1
+    'numeroTextBoxX2
 
     Private Sub frmMovimientos_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         If Me.nuevoButtonX1.Text = "&Cancelar" Then
@@ -50,6 +54,7 @@ Public Class frmMovimientos
             MessageBoxEx.Show(ex.Message, "Error - Cargar Movimientos", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
     Sub habilitar()
         Me.numeroTextBoxX2.Enabled = True
         Me.imeiTextBoxX3.Enabled = True
@@ -61,6 +66,7 @@ Public Class frmMovimientos
         Me.estadoComboBoxEx3.Enabled = True
         Me.DataGridViewX1.Enabled = False
     End Sub
+
     Sub deshabilitar()
         Me.numeroTextBoxX2.Enabled = False
         Me.imeiTextBoxX3.Enabled = False
@@ -72,6 +78,7 @@ Public Class frmMovimientos
         Me.estadoComboBoxEx3.Enabled = False
         Me.DataGridViewX1.Enabled = True
     End Sub
+
     Sub cargarmovimientos(id_propietario As String, buscar As String)
         Try
             dtsMovimientos.Fill(odtsInventarioTelefonos.movimientos_lineas_telefonos, id_propietario, buscar)
@@ -79,7 +86,6 @@ Public Class frmMovimientos
 
             Me.DataGridViewX1.AutoGenerateColumns = False
             Me.DataGridViewX1.DataSource = bsMovimientos
-
 
             Me.noMovimientoTextBoxX1.DataBindings.Clear()
             Me.tipomovimientoComboBoxEx1.DataBindings.Clear()
@@ -107,25 +113,24 @@ Public Class frmMovimientos
             MessageBox.Show(ex.Message, "Admin GT - Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
     Sub cargarpropietarios()
         Try
-
             Dim dtsPropietariosNombreCompleto As New dtsInventarioTelefonosTableAdapters.propietariosNombreApellidosTableAdapter
             dtsPropietariosNombreCompleto.Fill(odtsInventarioTelefonos.propietariosNombreApellidos)
             id_propietario.DataSource = odtsInventarioTelefonos.propietariosNombreApellidos
             id_propietario.DisplayMember = "nombre_completo"
             id_propietario.ValueMember = "id_propietario"
-
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Admin GT - Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
     Sub cargarmotivos()
         Try
             id_motivo.DataSource = dtsMotivosMovimientos.GetData
             id_motivo.DisplayMember = "descripcion"
             id_motivo.ValueMember = "id_motivo"
-
             Me.motivoComboBoxEx2.DataSource = dtsMotivosMovimientos.GetData
             motivoComboBoxEx2.DisplayMember = "descripcion"
             motivoComboBoxEx2.ValueMember = "id_motivo"
@@ -133,12 +138,12 @@ Public Class frmMovimientos
             MessageBox.Show(ex.Message, "Admin GT - Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
     Sub cargarestados()
         Try
             id_estado.DataSource = dtsestados.GetData
             id_estado.DisplayMember = "descripcion"
             id_estado.ValueMember = "id_estado"
-
             Me.estadoComboBoxEx3.DataSource = dtsestados.GetData
             Me.estadoComboBoxEx3.DisplayMember = "descripcion"
             Me.estadoComboBoxEx3.ValueMember = "id_estado"
@@ -146,12 +151,12 @@ Public Class frmMovimientos
             MessageBox.Show(ex.Message, "Admin GT - Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
     Sub cargartiposmovientos()
         Try
             id_tipo_movimiento.DataSource = dtsTiposMovimientos.GetData
             id_tipo_movimiento.DisplayMember = "descripcion"
             id_tipo_movimiento.ValueMember = "id_tipo_movimiento"
-
             Me.tipomovimientoComboBoxEx1.DataSource = dtsTiposMovimientos.GetData
             tipomovimientoComboBoxEx1.DisplayMember = "descripcion"
             tipomovimientoComboBoxEx1.ValueMember = "id_tipo_movimiento"
@@ -175,20 +180,19 @@ Public Class frmMovimientos
         Try
             Me.nombrecompletoTextBoxX1.Text = dtspropietarios.GetNombreCompleto(Me.id_propietarioTextBoxX5.Text)
         Catch ex As Exception
-
         End Try
-
     End Sub
+
     Sub guardarcambios()
         Try
             Me.Validate()
             bsMovimientos.EndEdit()
             dtsMovimientos.Update(odtsInventarioTelefonos.movimientos_lineas_telefonos)
-
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Admin GT - Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
     Private Sub eliminarButtonX3_Click(sender As Object, e As EventArgs) Handles eliminarButtonX3.Click
         Try
             Dim resp As MsgBoxResult = MessageBoxEx.Show("Realmente desea eliminar por completo el no de movimiento: " & Me.noMovimientoTextBoxX1.Text, "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
@@ -200,6 +204,7 @@ Public Class frmMovimientos
             MessageBox.Show(ex.Message, "Admin GT - Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
     Private Sub nuevoButtonX1_Click(sender As Object, e As EventArgs) Handles nuevoButtonX1.Click
         If Me.nuevoButtonX1.Text = "&Nuevo" Then
             Me.nuevoButtonX1.Text = "&Cancelar"
@@ -223,6 +228,7 @@ Public Class frmMovimientos
             bsMovimientos.CancelEdit()
         End If
     End Sub
+
     Private Sub guardarButtonX4_Click(sender As Object, e As EventArgs) Handles guardarButtonX4.Click
         If nuevoButtonX1.Text = "&Cancelar" Then
             If Me.id_propietarioTextBoxX5.Text = "" Or Me.id_propietarioTextBoxX5.Text = "0" Then
@@ -233,67 +239,86 @@ Public Class frmMovimientos
                 bsMovimientos.Current("no_movimiento") = dtsMovimientos.GetNextId
                 bsMovimientos.Current("realizado_por") = UsuarioActual
                 guardarcambios()
+
                 If Me.tipomovimientoComboBoxEx1.SelectedValue = 1 Then '<--- Telefono
                     dtsTelefonos.Update_UsuarioActual(bsMovimientos.Current("id_propietario"), bsMovimientos.Current("imei"))
                     dtspropietarios.UpdateIMEIActual(bsMovimientos.Current("imei"), bsMovimientos.Current("id_propietario"))
                     dtsLineas.UpdateImeiActual(bsMovimientos.Current("imei"), dtspropietarios.GetNumeroActual(bsMovimientos.Current("id_propietario")))
 
+                    If Me.numeroTextBoxX2.Text <> "" Then
+                        Dim phoneRegex As New Regex("^\d{8,10}$")
+                        If phoneRegex.IsMatch(Me.numeroTextBoxX2.Text) Then
+                            dtsLineas.UpdatePropActual(bsMovimientos.Current("id_propietario"), bsMovimientos.Current("numero"))
+                            dtspropietarios.UpdateNumeroActual(bsMovimientos.Current("numero"), bsMovimientos.Current("id_propietario"))
+                            dtsTelefonos.UpdateLineaActual(bsMovimientos.Current("numero"), dtspropietarios.GetImeiActual(bsMovimientos.Current("id_propietario")))
+                        Else
+                            MessageBox.Show("El número ingresado no es válido. Por favor, ingrese un número de teléfono correcto.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        End If
+                    End If
+
                     If Me.motivoComboBoxEx2.SelectedValue = 1 Or Me.motivoComboBoxEx2.SelectedValue = 2 Or Me.motivoComboBoxEx2.SelectedValue = 3 Or Me.motivoComboBoxEx2.SelectedValue = 4 Or Me.motivoComboBoxEx2.SelectedValue = 5 Or Me.motivoComboBoxEx2.SelectedValue = 10 Then
                         dtsTelefonos.UpdateIdEstadoTelefono(5, bsMovimientos.Current("imei"))
+
                     ElseIf Me.motivoComboBoxEx2.SelectedValue = 6 Then
                         dtsTelefonos.UpdateIdEstadoTelefono(1, bsMovimientos.Current("imei"))
                         dtspropietarios.UpdateIMEIActual("", bsMovimientos.Current("id_propietario"))
                         dtsLineas.UpdateImeiActual("", dtspropietarios.GetNumeroActual(bsMovimientos.Current("id_propietario")))
                         dtsTelefonos.Update_UsuarioActual(0, bsMovimientos.Current("imei"))
+
                     ElseIf Me.motivoComboBoxEx2.SelectedValue = 7 Then
                         dtsTelefonos.UpdateIdEstadoTelefono(4, bsMovimientos.Current("imei"))
                         dtspropietarios.UpdateIMEIActual("", bsMovimientos.Current("id_propietario"))
                         dtsLineas.UpdateImeiActual("", dtspropietarios.GetNumeroActual(bsMovimientos.Current("id_propietario")))
                         dtsTelefonos.Update_UsuarioActual(0, bsMovimientos.Current("imei"))
+
                     ElseIf Me.motivoComboBoxEx2.SelectedValue = 8 Then
                         dtsTelefonos.UpdateIdEstadoTelefono(2, bsMovimientos.Current("imei"))
                         dtspropietarios.UpdateIMEIActual("", bsMovimientos.Current("id_propietario"))
                         dtsLineas.UpdateImeiActual("", dtspropietarios.GetNumeroActual(bsMovimientos.Current("id_propietario")))
                         dtsTelefonos.Update_UsuarioActual(0, bsMovimientos.Current("imei"))
+
                     ElseIf Me.motivoComboBoxEx2.SelectedValue = 9 Then
                         dtsTelefonos.UpdateIdEstadoTelefono(3, bsMovimientos.Current("imei"))
                         dtspropietarios.UpdateIMEIActual("", bsMovimientos.Current("id_propietario"))
                         dtsLineas.UpdateImeiActual("", dtspropietarios.GetNumeroActual(bsMovimientos.Current("id_propietario")))
                         dtsTelefonos.Update_UsuarioActual(0, bsMovimientos.Current("imei"))
+
                     End If
 
                 ElseIf tipomovimientoComboBoxEx1.SelectedValue = 2 Then '<----- Linea
                     dtsLineas.UpdatePropActual(bsMovimientos.Current("id_propietario"), bsMovimientos.Current("numero"))
                     dtspropietarios.UpdateNumeroActual(bsMovimientos.Current("numero"), bsMovimientos.Current("id_propietario"))
                     dtsTelefonos.UpdateLineaActual(bsMovimientos.Current("numero"), dtspropietarios.GetImeiActual(bsMovimientos.Current("id_propietario")))
-                End If
 
+                End If
                 Me.nuevoButtonX1.Text = "&Nuevo"
                 deshabilitar()
                 Me.modificarButtonX2.Enabled = True
                 Me.eliminarButtonX3.Enabled = True
                 Me.imprimirButtonX5.Enabled = True
                 Me.guardarButtonX4.Enabled = False
+
             End If
 
         ElseIf Me.modificarButtonX2.Text = "&Cancelar" Then
             guardarcambios()
-
             Me.modificarButtonX2.Text = "&Modificar"
             deshabilitar()
-
             Me.nuevoButtonX1.Enabled = True
             Me.eliminarButtonX3.Enabled = True
             Me.imprimirButtonX5.Enabled = True
             Me.guardarButtonX4.Enabled = False
+
         End If
     End Sub
+
     Sub quitarespacios()
         Me.numeroTextBoxX2.Text.TrimEnd()
         Me.imeiTextBoxX3.Text.TrimEnd()
         Me.justificanteTextBoxX6.Text.TrimEnd()
         Me.id_propietarioTextBoxX5.Text.TrimEnd()
     End Sub
+
     Private Sub modificarButtonX2_Click(sender As Object, e As EventArgs) Handles modificarButtonX2.Click
         If Me.modificarButtonX2.Text = "&Modificar" Then
             Me.modificarButtonX2.Text = "&Cancelar"
@@ -307,7 +332,6 @@ Public Class frmMovimientos
             bsMovimientos.CancelEdit()
             Me.modificarButtonX2.Text = "&Modificar"
             deshabilitar()
-
             Me.nuevoButtonX1.Enabled = True
             Me.eliminarButtonX3.Enabled = True
             Me.imprimirButtonX5.Enabled = True
@@ -318,6 +342,7 @@ Public Class frmMovimientos
     Private Sub numeroTextBoxX2_GotFocus(sender As Object, e As EventArgs) Handles numeroTextBoxX2.GotFocus
         Me.numeroTextBoxX2.SelectAll()
     End Sub
+
     Private Sub numeroTextBoxX2_KeyDown(sender As Object, e As KeyEventArgs) Handles numeroTextBoxX2.KeyDown
         If e.KeyCode = Keys.Escape Then
             panelNumerosGroupPanel1.Visible = False
@@ -352,9 +377,9 @@ Public Class frmMovimientos
                 Me.panelNumerosGroupPanel1.Visible = False
                 Me.numeroTextBoxX2.SelectionStart = 9
             End If
-
         End If
     End Sub
+
     Private Sub imeiTextBoxX3_KeyDown(sender As Object, e As KeyEventArgs) Handles imeiTextBoxX3.KeyDown
         If e.KeyCode = Keys.Escape Then
             Me.paneltelefonosGroupPanel1.Visible = True
@@ -390,14 +415,15 @@ Public Class frmMovimientos
             End If
         End If
     End Sub
+
     Private Sub imeiTextBoxX3_LostFocus(sender As Object, e As EventArgs) Handles imeiTextBoxX3.LostFocus
         If Me.tipomovimientoComboBoxEx1.SelectedValue = 1 Then
             If Me.nuevoButtonX1.Text = "&Cancelar" Then
                 'Me.id_propietarioTextBoxX5.Text = dtsTelefonos.GetIdUsuarioActual(Me.imeiTextBoxX3.Text)
             End If
-
         End If
     End Sub
+
     Private Sub imeiTextBoxX3_TextChanged(sender As Object, e As EventArgs) Handles imeiTextBoxX3.TextChanged
         Me.marcaTextBoxX1.Text = dtstelefonosMarcas.GetMarcaTelefono(RTrim(imeiTextBoxX3.Text))
         Me.modeloTextBoxX2.Text = dtstelefonosMarcas.GetModeloTelefono(RTrim(imeiTextBoxX3.Text))
@@ -415,7 +441,7 @@ Public Class frmMovimientos
         Try
             If Me.tipomovimientoComboBoxEx1.SelectedValue = 1 And Me.guardarButtonX4.Enabled = True Then
                 Me.imeiTextBoxX3.Enabled = True
-                Me.numeroTextBoxX2.Enabled = False
+                Me.numeroTextBoxX2.Enabled = True
                 Me.idEquipoTextBoxX2.Enabled = False
             ElseIf Me.tipomovimientoComboBoxEx1.SelectedValue = 2 And Me.guardarButtonX4.Enabled = True Then
                 Me.imeiTextBoxX3.Enabled = False
@@ -429,8 +455,8 @@ Public Class frmMovimientos
         Catch ex As Exception
 
         End Try
-
     End Sub
+
     Public Sub Actualizar()
         cargarestados()
         cargarmotivos()
@@ -438,6 +464,7 @@ Public Class frmMovimientos
         cargartiposmovientos()
         cargarmovimientos("", "")
     End Sub
+
     Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
         Actualizar()
     End Sub
@@ -447,7 +474,6 @@ Public Class frmMovimientos
         'Dim rptfichas As New rptFicha
         'Dim dtsFichas As New dtsInventarioTelefonosTableAdapters.FichasTableAdapter
         'dtsFichas.Fill(odtsInventarioTelefonos.Fichas, bsMovimientos.Current("no_movimiento"))
-
         'rptfichas.SetParameterValue("realizadopor", RTrim(UsuarioActual))
         'rptfichas.SetDataSource(odtsInventarioTelefonos.Tables("Fichas"))
         'rptfichas.Refresh()
@@ -457,7 +483,6 @@ Public Class frmMovimientos
         '    .WindowState = FormWindowState.Maximized
         '    .Show()
         'End With
-
 
         Dim rpt As New xRptFicha
 
@@ -482,6 +507,17 @@ Public Class frmMovimientos
             cargarbusquedanumeros(Me.numeroTextBoxX2.Text)
         Else
             panelNumerosGroupPanel1.Visible = False
+        End If
+    End Sub
+
+    Private Sub TextBoxX1_TextChanged(sender As Object, e As EventArgs) Handles TextBoxX1.TextChanged
+        If Me.TextBoxX1.TextLength > 0 And Me.PorNombreCheckBoxX1.CheckState = CheckState.Checked Then
+            Me.panelPropietariosGroupPanel2.Visible = True
+            Me.panelPropietariosGroupPanel2.Size = New Size(615, 125)
+            cargarbusquedaPropietarios(Me.TextBoxX1.Text)
+        Else
+            Me.panelPropietariosGroupPanel2.Visible = False
+            cargarmovimientos("", Me.TextBoxX1.Text)
         End If
     End Sub
 
@@ -515,24 +551,18 @@ Public Class frmMovimientos
         End If
     End Sub
 
-
-
-
     Sub cargarbusquedaPropietarios(buscar As String)
         Try
             Dim dtsbuscarpropietarios As New dtsInventarioTelefonosTableAdapters.BuscarPropietariosTableAdapter
-
             dtsbuscarpropietarios.Fill(odtsInventarioTelefonos.BuscarPropietarios, buscar)
-
-
             Me.DataGridViewX2.AutoGenerateColumns = False
             bsBuscarPropietarios.DataSource = odtsInventarioTelefonos.BuscarPropietarios
             Me.DataGridViewX2.DataSource = bsBuscarPropietarios
-
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Admin GT - Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
     Sub cargarbusquedanumeros(numero As String)
         Try
             dtsBuscarLineas.Fill(odtsInventarioTelefonos.buscarNumeros, numero)
@@ -543,33 +573,18 @@ Public Class frmMovimientos
             MessageBox.Show(ex.Message, "Admin GT - Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
     Sub cargarbusquedaTelefonos(imei As String)
         Try
             dtsBuscarTelefonos.Fill(odtsInventarioTelefonos.buscartelefonos, imei)
             bsBuscarTelefonos.DataSource = odtsInventarioTelefonos.buscartelefonos
-
             Me.DataGridViewX4.AutoGenerateColumns = False
             Me.DataGridViewX4.DataSource = bsBuscarTelefonos
-
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Admin GT - Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 
-
-
-
-    Private Sub TextBoxX1_TextChanged(sender As Object, e As EventArgs) Handles TextBoxX1.TextChanged
-        If Me.TextBoxX1.TextLength > 0 And Me.PorNombreCheckBoxX1.CheckState = CheckState.Checked Then
-
-            Me.panelPropietariosGroupPanel2.Visible = True
-            Me.panelPropietariosGroupPanel2.Size = New Size(615, 125)
-            cargarbusquedaPropietarios(Me.TextBoxX1.Text)
-        Else
-            Me.panelPropietariosGroupPanel2.Visible = False
-            cargarmovimientos("", Me.TextBoxX1.Text)
-        End If
-    End Sub
     Private Sub DataGridViewX2_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewX2.CellDoubleClick
         Try
             cargarmovimientos(Me.DataGridViewX2.CurrentRow.Cells(0).Value, "")
@@ -577,11 +592,9 @@ Public Class frmMovimientos
             Me.panelPropietariosGroupPanel2.Visible = False
         Catch ex As Exception
         End Try
-
     End Sub
 
     Private Sub fechaTextBoxX4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles fechaTextBoxX4.KeyPress
-
         If Asc(e.KeyChar) >= 48 And Asc(e.KeyChar) <= 57 Or Asc(e.KeyChar) = 8 And Not Asc(e.KeyChar) = 47 And Not Asc(e.KeyChar) = 46 And Not Asc(e.KeyChar) = 45 Then
             e.Handled = False
         Else
@@ -604,6 +617,7 @@ Public Class frmMovimientos
             Me.numeroTextBoxX2.SelectionStart = 9
         End If
     End Sub
+
     Private Sub DataGridViewX4_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewX4.CellDoubleClick
         If Me.paneltelefonosGroupPanel1.Visible = True Then
             Me.imeiTextBoxX3.Text = bsBuscarTelefonos.Current("imei")
@@ -620,7 +634,6 @@ Public Class frmMovimientos
         ElseIf Me.tipomovimientoComboBoxEx1.SelectedValue <> 1 Then
             MessageBoxEx.Show("El descuento solo se puede aplicar a un movimiento de tipo teléfono", "No permitido", MessageBoxButtons.OK, MessageBoxIcon.Stop)
         Else
-
             If Me.id_propietarioTextBoxX5.Text <> "0" And Me.id_propietarioTextBoxX5.Text <> "" Then
                 With dlgDescuentosxReposicion
                     .WindowState = FormWindowState.Normal
@@ -631,11 +644,8 @@ Public Class frmMovimientos
                 End With
             Else
                 MessageBoxEx.Show("No ha ingresado el propietario", "Incompleto", MessageBoxButtons.OK, MessageBoxIcon.Stop)
-
-
             End If
         End If
-
     End Sub
 
     Private Sub fechaTextBoxX4_TextChanged(sender As Object, e As EventArgs) Handles fechaTextBoxX4.TextChanged
