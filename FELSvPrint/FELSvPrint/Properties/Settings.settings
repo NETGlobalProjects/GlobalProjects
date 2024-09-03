@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FELSvPrint.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="directorioPDF" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\FELPrint\ToPrinter\</Value>
+    </Setting>
+    <Setting Name="tiempoEscaneo" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="destinoPDF" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\FELPrint\Printed\</Value>
+    </Setting>
+    <Setting Name="destinoErrores" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\FELPrint\Errores\</Value>
+    </Setting>
+    <Setting Name="marginTop" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="marginBottom" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="marginLeft" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="marginRigh" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="hilos" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

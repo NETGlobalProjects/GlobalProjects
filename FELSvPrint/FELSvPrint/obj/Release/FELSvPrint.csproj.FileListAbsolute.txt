@@ -1,0 +1,48 @@
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\FELSvPrint.exe.config
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\FELSvPrint.exe
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\FELSvPrint.pdb
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\DevComponents.DotNetBar.Layout.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\DevComponents.DotNetBar2.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\DevComponents.Instrumentation.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\EntityFramework.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\Spire.Pdf.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\Microsoft.mshtml.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\DevComponents.DotNetBar.SuperGrid.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\DevComponents.DotNetBar2.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\DevComponents.Instrumentation.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\EntityFramework.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Release\Spire.Pdf.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.csproj.AssemblyReference.cache
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.Form1.resources
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.frmAjustes.resources
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.Properties.Resources.resources
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.csproj.GenerateResource.cache
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.csproj.CoreCompileInputs.cache
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.csproj.CopyComplete
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.exe
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.pdb
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\FELSvPrint.exe.config
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\FELSvPrint.exe
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\FELSvPrint.pdb
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\EntityFramework.dll
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\EntityFramework.SqlServer.dll
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\Spire.Pdf.dll
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\Microsoft.mshtml.dll
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\DevComponents.DotNetBar.SuperGrid.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\DevComponents.DotNetBar2.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\DevComponents.Instrumentation.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\EntityFramework.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\EntityFramework.SqlServer.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Release\Spire.Pdf.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.csproj.AssemblyReference.cache
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.Form1.resources
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.frmAjustes.resources
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.Properties.Resources.resources
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.csproj.GenerateResource.cache
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.csproj.CoreCompileInputs.cache
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.csproj.CopyComplete
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.exe
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Release\FELSvPrint.pdb

@@ -1,0 +1,145 @@
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.exe.config
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.exe
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.pdb
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.AssemblyReference.cache
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.Form1.resources
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.frmAjustes.resources
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.Properties.Resources.resources
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.GenerateResource.cache
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.CoreCompileInputs.cache
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.exe
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.pdb
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.Instrumentation.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\Spire.Pdf.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\Microsoft.mshtml.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\Spire.Pdf.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.exe.config
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.exe
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.pdb
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.dll
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.SqlServer.dll
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\Spire.Pdf.dll
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\Microsoft.mshtml.dll
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar2.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.Instrumentation.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.SqlServer.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\bin\Debug\Spire.Pdf.xml
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.AssemblyReference.cache
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.Form1.resources
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.frmAjustes.resources
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.Properties.Resources.resources
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.GenerateResource.cache
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.CoreCompileInputs.cache
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.CopyComplete
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.exe
+C:\FE_PDF\FELSvPrint\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.pdb
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.exe.config
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.exe
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.pdb
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.dll
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\Spire.Pdf.dll
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\zxing.dll
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\zxing.presentation.dll
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\Microsoft.mshtml.dll
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.Instrumentation.xml
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.xml
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\Spire.Pdf.xml
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\zxing.xml
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\zxing.presentation.xml
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.AssemblyReference.cache
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.Form1.resources
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.frmAjustes.resources
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.Properties.Resources.resources
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.GenerateResource.cache
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.CoreCompileInputs.cache
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.Up2Date
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.exe
+C:\Users\Jose Duran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.pdb
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\zxing.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\zxing.presentation.dll
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\zxing.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\bin\Debug\zxing.presentation.xml
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.Up2Date
+C:\Users\JoseDuran\Documents\Visual Studio 2022\Projects\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.frmTempPrintTicket.resources
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.exe.config
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.exe
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.pdb
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.Layout.dll
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar2.dll
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.Instrumentation.dll
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.dll
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.SqlServer.dll
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\Spire.Pdf.dll
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\zxing.dll
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\zxing.presentation.dll
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\Microsoft.mshtml.dll
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar2.xml
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.Instrumentation.xml
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.xml
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.SqlServer.xml
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\Spire.Pdf.xml
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\zxing.xml
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\bin\Debug\zxing.presentation.xml
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.AssemblyReference.cache
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.Form1.resources
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.frmAjustes.resources
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.frmTempPrintTicket.resources
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.Properties.Resources.resources
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.GenerateResource.cache
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.CoreCompileInputs.cache
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.Up2Date
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.exe
+\\192.168.0.24\Herramientas_IT\Proyectos .NET\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.pdb
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.AssemblyReference.cache
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.exe
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.pdb
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.Form1.resources
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.frmAjustes.resources
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.frmTempPrintTicket.resources
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.Properties.Resources.resources
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.GenerateResource.cache
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.CoreCompileInputs.cache
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.exe.config
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.exe
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\FELSvPrint.pdb
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.dll
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\Spire.Pdf.dll
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\zxing.dll
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\zxing.presentation.dll
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\Microsoft.mshtml.dll
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\DevComponents.Instrumentation.xml
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.xml
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\Spire.Pdf.xml
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\zxing.xml
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\bin\Debug\zxing.presentation.xml
+C:\Users\JoseDuran\Desktop\FELSvPrint\FELSvPrint\obj\Debug\FELSvPrint.csproj.Up2Date
