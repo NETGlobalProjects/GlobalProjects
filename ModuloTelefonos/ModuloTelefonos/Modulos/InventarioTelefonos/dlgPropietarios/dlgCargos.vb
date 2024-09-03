@@ -3,7 +3,7 @@
     Dim bscargos As New BindingSource
     Public odtsInventarioTelefonos As New dtsInventarioTelefonos
     Private Sub dlgCargos_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
-        frmPropietarios.cargar_cargos()
+        'frmPropietarios.cargar_cargos()
     End Sub
     Private Sub dlgCargos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
@@ -51,6 +51,7 @@
     End Sub
 
     Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+        'frmPropietarios.cargoComboBoxEx3.SelectedValue = bscargos.Current("id_Cargo")
         Me.Close()
     End Sub
 End Class

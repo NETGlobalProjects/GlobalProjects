@@ -212,6 +212,11 @@ ModuloTelefonos
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ModuloTelefonos.My.Resources.Resources.digitalizacion_rrhh">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ModuloTelefonos.My.Resources.Resources.disable_image">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

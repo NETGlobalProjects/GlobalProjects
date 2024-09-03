@@ -3,7 +3,7 @@
     Dim bsempresas As New BindingSource
     Public odtsInventarioTelefonos As New dtsInventarioTelefonos
     Private Sub dlgEmpresas_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
-        frmPropietarios.cargar_empresas()
+        'frmPropietarios.cargar_empresas()
     End Sub
     Private Sub dlgEmpresas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
@@ -51,7 +51,7 @@
     End Sub
 
     Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
-        frmPropietarios.empresaComboBoxEx1.SelectedValue = bsempresas.Current("id_empresa")
+        'frmPropietarios.empresaComboBoxEx1.SelectedValue = bsempresas.Current("id_empresa")
         Me.Close()
     End Sub
 End Class
